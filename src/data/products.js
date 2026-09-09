@@ -1,0 +1,450 @@
+export const PRODUCTS = [
+  {
+    id: 'uv-digital',
+    title: 'UV Digital Printing Services',
+    category: 'largeformat',
+    price: '₹ 40 – ₹ 50',
+    unit: '/ Pc',
+    badge: 'Best Seller',
+    image: '/assets/images/uv-flatbed-printer-machine.jpg',
+    description: 'Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero fading.',
+    features: [
+      'Instant UV-LED lamp curing with zero smudging',
+      'Fade-proof & scratch-resistant pigment inks',
+      'Prints directly on glass, wood, acrylic & metal up to 100mm thick',
+      'CMYK + White ink underlay + 3D embossed varnish options'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: '5+ Years Indoors / 3+ Years Direct Sun Outdoors',
+    materials: ['Cast Acrylic', 'Architectural Glass', 'MDF / Natural Wood', 'WPC Foam Board', 'ACP Sheets', 'Leather & Metal Plates'],
+    applications: ['Luxury Interior Wall Art', 'Commercial Glass Partitions', 'Hotel Keycards & Badges', 'Corporate Name Plates', 'Custom Acrylic Gifts'],
+    specs: {
+      'Bed Dimensions': '8 ft × 4 ft Flatbed',
+      'Max Thickness': 'Up to 100 mm (4 inches)',
+      'Resolution': 'Up to 2400 × 1200 DPI',
+      'Ink Curing': 'Cold UV-LED Dual Lamps',
+      'Color Profile': 'CMYK + Dual White + Clear Gloss Varnish',
+      'Durability': '100% Waterproof, Alcohol & Scratch Resistant'
+    }
+  },
+  {
+    id: 'solvent-vinyl',
+    title: 'Solvent Vinyl Printing Services',
+    category: 'largeformat',
+    price: '₹ 40 – ₹ 50',
+    unit: '/ Sq.ft',
+    badge: 'Popular',
+    image: '/assets/images/locor-eco-solvent-vinyl-printer.jpg',
+    description: 'High-durability solvent vinyl graphics for storefront branding, showroom wall graphics, vehicle wraps, and high-impact outdoor displays.',
+    features: [
+      'Gloss / Matte protective lamination available',
+      'Waterproof & weather-resistant aggressive adhesive backing',
+      'Vivid high-definition color reproduction with deep black saturation',
+      'Seamless edge cutting with Japanese Roland contour plotters'
+    ],
+    turnaround: 'Same Day Dispatch (Urgent batches in 4 hrs)',
+    lifespan: '3 to 5 Years Outdoor Weatherproof',
+    materials: ['Avery Dennison Self-Adhesive Vinyl', 'LG / Star High Tack Vinyl', 'Cast Vehicle Wrap Vinyl', 'Anti-Slip Floor Vinyl'],
+    applications: ['Retail Storefront Facades', 'Showroom Wall Branding', 'Fleet Vehicle Advertising', 'Exhibition Stall Backdrops', 'Corridor Graphics'],
+    specs: {
+      'Max Roll Width': 'Up to 64 inches (1.62 meters) seamless',
+      'Resolution': '1440 DPI Ultra High Definition',
+      'Adhesive': 'Permanent Solvent Acrylic / Removable Gray Tack',
+      'Lamination': 'Thermal Gloss / Velvet Matte / Anti-Skid Floor Shield',
+      'Ink System': 'True Eco-Solvent Greenguard Certified',
+      'Origin': 'Fabricated in Fraser Road, Patna'
+    }
+  },
+  {
+    id: 'led-acrylic-letters',
+    title: 'Glossy LED Acrylic 3D Letters',
+    category: 'signage',
+    price: 'Custom Built',
+    unit: '120V / 12V LED',
+    badge: 'Premium',
+    image: '/assets/images/kashish-ad-led-acrylic-glow-sign-board.jpg',
+    description: 'Laser-cut acrylic 3D profile letters with built-in waterproof Samsung/Osram LED modules, front-lit face, and custom painted aluminum returns.',
+    features: [
+      'Front-lit, Back-lit halo illumination & side-lit variants',
+      'High brightness with ultra-low 12V power consumption',
+      'Seamless automated computer channel bending for sharp angles',
+      'IP67 certified waterproof outdoor transformer power supplies'
+    ],
+    turnaround: '2 to 3 Business Days',
+    lifespan: '7+ Years (50,000 Operating LED Hours)',
+    materials: ['Virgin Cast Acrylic (3mm to 10mm)', 'Aluminum Channel Strips', 'Samsung IP68 LED Modules', 'MeanWell / Osram 12V SMPS'],
+    applications: ['Retail Showroom Entrances', 'Hospital & Healthcare Facades', 'Corporate Headquarters Elevations', 'Hotel & Restaurant Signage'],
+    specs: {
+      'Letter Height Range': '4 inches to 72 inches (Custom scalable)',
+      'Depth / Return': '30mm to 120mm return channel',
+      'Face Finish': 'Glossy, Frosted, Titanium Mirror, Rose Gold',
+      'Illumination Color': 'Warm White (3000K), Cool White (6500K), Amber, RGB',
+      'Mounting': 'Direct Facade Studs, ACP Box Base, Metal Framework',
+      'Warranty': '2-Year Replacement Warranty on LED Modules & SMPS'
+    }
+  },
+  {
+    id: 'ss-sign-board',
+    title: 'Stainless Steel Sign Board (Outdoor)',
+    category: 'signage',
+    price: 'SS 304 Grade',
+    unit: 'Mirror / Hairline',
+    badge: 'Heavy Duty',
+    image: '/assets/images/stainless-steel-metal-name-plate.jpg',
+    description: 'Architectural outdoor stainless steel signage boards with laser-cut, acid-etched, or titanium gold 3D letters built for corporate elevations.',
+    features: [
+      '100% Anti-rust authentic SS 304 / SS 316 stainless steel',
+      'Mirror polished or brushed hairline architectural finish',
+      'Resistant to extreme rain, sun, chemical corrosion & humidity',
+      'Optional warm white concealed halo backlight illumination'
+    ],
+    turnaround: '3 to 4 Working Days',
+    lifespan: '15+ Years Anti-Rust Guarantee',
+    materials: ['Jindal SS 304 Grade Stainless Steel', 'Titanium Gold / Bronze PVD Coating', 'Cast Acrylic Base Inserts', 'Heavy Brass Mounting Spacers'],
+    applications: ['Government Office Cabins', 'Corporate Elevation Monoliths', 'Architectural Entrances', 'Hospital Campus Directories', 'Luxury Bunglow Name Plates'],
+    specs: {
+      'Metal Gauge': '18 Gauge (1.2mm) to 14 Gauge (2.0mm) sheet',
+      'Finish Choices': 'Gold Titanium, Rose Gold, Mirror Chrome, Hairline Brush',
+      'Fabrication': 'Fiber Laser Cut with argon welding',
+      'Letter Depths': '20mm to 100mm solid fabricated returns',
+      'Mounting': 'Concealed SS threaded studs with chemical anchors',
+      'Testing': 'Salt Spray & Corrosion Tested for Bihar Climate'
+    }
+  },
+  {
+    id: 'frontlit-flex',
+    title: 'Frontlit & Backlit Flex Banner',
+    category: 'largeformat',
+    price: '₹ 10 – ₹ 25',
+    unit: '/ Sq.ft',
+    badge: 'Fast Turnaround',
+    image: '/assets/images/wide-format-flex-inkjet-plotter.jpg',
+    description: 'High-speed industrial digital printing on 240 GSM to 440 GSM Star flex banner material with heat-sealed borders and heavy brass eyelets.',
+    features: [
+      'Economical bulk solution for promotional outdoor advertising',
+      'Tear-resistant polyester mesh core with PVC coating',
+      'Weather-sealed borders with welded hems and brass grommets',
+      'Vivid contrast under sunlight and external halogen spotlights'
+    ],
+    turnaround: 'Same Day (Within 2 to 4 hours for urgent orders)',
+    lifespan: '1 to 2 Years Outdoor',
+    materials: ['Normal 240 GSM Flex', 'Heavy 340 GSM Star Flex', 'Blackout Zero Show-Through Flex', 'Translucent Backlit Flex'],
+    applications: ['Event Hoardings & Billboards', 'Political & Exhibition Banners', 'Shopfront Promotional Fascias', 'Stage Backdrops'],
+    specs: {
+      'Print Width': 'Up to 10.5 ft seamless width (any length)',
+      'Resolution': '720 DPI to 1200 DPI high-speed printheads',
+      'Finishing': 'Reinforced Hemming, Brass Eyelets every 2 feet, Pole Pockets',
+      'Production Speed': 'Over 2,000 sq.ft per hour in-house capacity',
+      'Color Inks': 'Heavy Pigment Outdoor Solvent CMYK'
+    }
+  },
+  {
+    id: 'rollup-standee',
+    title: 'Rollup Banner Standee (6 × 3 ft)',
+    category: 'promotional',
+    price: '₹ 1,100 – ₹ 1,400',
+    unit: '/ Pc',
+    badge: 'Portable',
+    image: '/assets/images/signage-products-hexagonal-collage.jpg',
+    description: 'Portable retractable aluminum rollup standee equipped with anti-curl non-tearable synthetic media and padded canvas carry bag.',
+    features: [
+      'Tool-free setup in under 30 seconds',
+      'Non-curl synthetic polymer matte film with zero glare',
+      'Heavy anodized aluminum base with dual fold-out stabilizing feet',
+      'Padded nylon carrying bag with shoulder strap included'
+    ],
+    turnaround: 'Ready in 3 Hours / Same Day',
+    lifespan: 'Multi-year reusable mechanism with swappable banners',
+    materials: ['Anodized Aluminum Cassette', 'Anti-Curl Non-Tearable PET Film', 'Telescopic Aluminum Support Rod'],
+    applications: ['Conference & Seminar Podiums', 'Trade Show & Exhibition Stalls', 'Showroom Product Launches', 'Hotel Lobby Signage'],
+    specs: {
+      'Standard Dimensions': '6 ft (Height) × 3 ft (Width) or 6 ft × 2.5 ft',
+      'Weight': 'Approx 2.4 kg (Extremely lightweight for travel)',
+      'Media Finish': 'Velvet Matte Anti-Reflective (No camera flash flare)',
+      'Mechanism': 'Internal spring-loaded roller cartridge',
+      'Packaging': 'Individual cardboard carton + padded zip bag'
+    }
+  },
+  {
+    id: 'label-sticker',
+    title: 'Custom Label & Sticker Printing',
+    category: 'corporate',
+    price: '₹ 2 – ₹ 5',
+    unit: '/ Pc Sheet',
+    badge: 'Japanese Plotter',
+    image: '/assets/images/vinyl-die-cut-sticker-label-printing.jpg',
+    description: 'Japanese Roland print-and-cut contour vinyl stickers for packaging labels, product bottles, equipment warning tags, and custom decals.',
+    features: [
+      'Intricate contour die-cutting around any custom silhouette',
+      'Waterproof, oil-proof & scratch-resistant vinyl stocks',
+      'Supplied on convenient kiss-cut sheets or individual die-cut pieces',
+      'Available in Gloss White, Matte, Transparent, and Metallic Gold/Silver'
+    ],
+    turnaround: '24 Hours Delivery',
+    lifespan: 'Permanent Adhesive (Waterproof & Chemical Proof)',
+    materials: ['Vinyl Gloss / Matte Sticker', 'Clear Transparent Film', 'Silver Chrome / Gold Foil Vinyl', 'High-Tack Destructive Security Paper'],
+    applications: ['Cosmetic & Bottle Packaging', 'FMCG Food Jar Labels', 'Electronics Warranty Seals', 'Vehicle Decals & Brand Badges'],
+    specs: {
+      'Die-Cut Precision': '0.01 mm blade accuracy on Roland Plotter',
+      'Resolution': '1440 × 1440 DPI photo realistic micro-drops',
+      'Shapes': 'Circles, Ovals, Custom organic shapes, Rectangles',
+      'Sheets Size': 'Supplied in A4, A3+ or custom width rolls'
+    }
+  },
+  {
+    id: '3d-wallpaper',
+    title: '3D Wallpaper Printing for Interiors',
+    category: 'largeformat',
+    price: '₹ 45 – ₹ 65',
+    unit: '/ Sq.ft',
+    badge: 'Seamless',
+    image: '/assets/images/stretched-canvas-wall-photo-print.jpg',
+    description: 'Custom textured wallpaper printing with embossed 3D visual depth: floral murals, geometric marble motifs, and corporate feature walls.',
+    features: [
+      'Seamless multi-meter wall coverage with zero visible overlaps',
+      'Odorless, non-toxic, eco-friendly water-based Latex inks',
+      'Textured canvas, leather-grain, and silk fabric media options',
+      'Wipeable surface resistant to moisture and dust accumulation'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '8+ Years Indoor Permanence',
+    materials: ['Non-Woven Fabric Base', 'Canvas Texture Vinyl', 'Seamless Silk Wallpaper', 'Sparkle Grain Wallpaper'],
+    applications: ['Living Room TV Feature Walls', 'Hotel Suite Headboards', 'Corporate Boardrooms', 'Cafe & Restaurant Themes'],
+    specs: {
+      'Print Technology': 'HP Latex 570 Press (100% Odorless & UL Greenguard Gold)',
+      'Dimensions': 'Custom tailored to exact site wall measurements',
+      'Cleaning': 'Mild damp sponge cleanable',
+      'Installation': 'Standard starch-based wallpaper adhesive compatible'
+    }
+  },
+  {
+    id: 'fabric-banner',
+    title: 'Digital Cloth & Satin Fabric Banner',
+    category: 'promotional',
+    price: '₹ 35 – ₹ 50',
+    unit: '/ Sq.ft',
+    badge: 'Foldable',
+    image: '/assets/images/acetek-eco-solvent-banner-printer.jpg',
+    description: 'High-density dye-sublimation textile printing on satin and polyester cloth for lightweight, wrinkle-free, foldable corporate flags and backdrops.',
+    features: [
+      '100% Foldable & wrinkle-free for hassle-free travel and courier',
+      'Washable fabric with deep color penetration on both sides',
+      'Zero glare or reflection under heavy television and studio lights',
+      'Ideal for tension fabric lightboxes with silicone edge graphics (SEG)'
+    ],
+    turnaround: '24 Hours',
+    lifespan: 'Washable & Reusable Indoors/Outdoors',
+    materials: ['Gloss Satin Silk', 'Polyester Flag Knit', 'Tension Stretch Fabric', 'Blackout Canvas Cloth'],
+    applications: ['Political & Corporate Flags', 'Press Conference Stage Backdrops', 'Trade Show SEG Lightboxes', 'Religious Canopies'],
+    specs: {
+      'Sublimation Width': 'Up to 64 inches seamless (multi-panel stitching available)',
+      'Fabric Weight': '140 GSM to 220 GSM high tensile polyester',
+      'Edge Finishing': 'Hemmed edges, flag pole sleeves, grommets, SEG keder',
+      'Washability': 'Cold water machine washable'
+    }
+  },
+  {
+    id: 'uv-glass',
+    title: 'UV Direct Printing on Glass Panels',
+    category: 'largeformat',
+    price: 'Custom Built',
+    unit: 'Toughened Glass',
+    badge: 'Luxury',
+    image: '/assets/images/acrylic-floating-poster-frame-display.jpg',
+    description: 'Architectural direct UV flatbed printing on clear, frosted, or toughened glass sheets with brilliant backlight transparency and primer bonding.',
+    features: [
+      'Chemical glass primer pre-treatment for unbreakable pigment adhesion',
+      'Selective white ink masks for glowing backlit chandeliers and partitions',
+      'Scratch-resistant topcoat impervious to cleaning chemicals',
+      'Available on 5mm, 8mm, 10mm, and 12mm toughened glass'
+    ],
+    turnaround: '3 to 4 Days',
+    lifespan: '10+ Years Indoor / Scratch & Humidity Resistant',
+    materials: ['Saint-Gobain / ModiGuard Toughened Glass', 'Extra Clear Low-Iron Glass', 'Frosted Acid-Etched Glass'],
+    applications: ['Modern Kitchen Backsplashes', 'Shower Cubicle Art Panels', 'Temple Glass Partitions', 'Elevator Cabin Murals'],
+    specs: {
+      'Max Glass Sheet Size': '8 ft × 4 ft in single pass',
+      'Glass Thickness': '4mm up to 25mm thick',
+      'Ink Layers': 'CMYK + Opaque White + Clear Gloss Coat',
+      'Safety': 'Safe for kitchen heat & wet bathroom zones'
+    }
+  },
+  {
+    id: 'cnc-laser-jali',
+    title: 'CNC Laser Jali & Gate Cutting',
+    category: 'cnc',
+    price: 'Custom Design',
+    unit: 'MS, SS, WPC, MDF',
+    badge: 'Architectural',
+    image: '/assets/images/metal-laser-cutting-jali-design.jpg',
+    description: 'Precision 2D and 3D architectural jali patterns cut on mild steel, stainless steel, aluminum, brass, WPC/PVC foam, and MDF boards.',
+    features: [
+      'Heavy-gauge laser cutting with razor-smooth slag-free edges',
+      'Driveway gates, balcony safety screens & entrance boundary panels',
+      'Intricate Islamic, traditional floral, and geometric CAD patterns',
+      'Available raw or fully powder-coated in custom architectural colors'
+    ],
+    turnaround: '3 to 5 Days',
+    lifespan: 'Decades of Structural Integrity',
+    materials: ['Mild Steel (MS) 2mm to 10mm', 'SS 304 Stainless Steel', 'WPC / PVC Waterproof Foam', 'MDF / HDF Pine Boards'],
+    applications: ['Modern Driveway Main Gates', 'Balcony & Staircase Railing Screens', 'Temple & Mandir Jali Partitions', 'Exterior Building Facades'],
+    specs: {
+      'Bed Area': '8 ft × 4 ft and 10 ft × 5 ft industrial beds',
+      'Laser Accuracy': '±0.02 mm high precision kerf',
+      'CAD File Formats': 'DXF, DWG, AI, CDR, PDF supported',
+      'Finishing': 'Anti-rust zinc primer + Epoxy / PU / Powder Coating'
+    }
+  },
+  {
+    id: 'glow-sign-board',
+    title: 'LED Glow Sign Board & Box',
+    category: 'signage',
+    price: 'All Dimensions',
+    unit: 'LED Backlit',
+    badge: 'Illuminated',
+    image: '/assets/images/commercial-storefront-acp-sign-board.jpg',
+    description: 'Heavy-gauge powder coated metal framework with translucent backlit flex or acrylic face and waterproof LED modules for 24/7 store branding.',
+    features: [
+      'Uniform internal illumination with zero dark spots or tube shadows',
+      'Heavy-duty square iron pipe framework resistant to heavy storm winds',
+      'Energy efficient 12V LED system reducing monthly electricity bills by 60%',
+      'Single-sided storefront wall mount or double-sided projecting lollipop boxes'
+    ],
+    turnaround: '2 to 3 Days',
+    lifespan: '5+ Years Heavy Duty Framework',
+    materials: ['GI Sheet / Aluminum Casing', 'Heavy MS Iron Frame', 'Translucent Star Backlit Flex / 3mm Acrylic', 'Waterproof IP68 LEDs'],
+    applications: ['Automotive Garages & Showrooms', 'Retail Chemists & Grocery Stores', 'Bank & ATM Fascias', 'Fast Food & Restaurant Entrances'],
+    specs: {
+      'Sizes': 'Custom built from 3x2 ft up to 40x8 ft continuous boxes',
+      'Box Depth': '5 inches to 8 inches for optimal optical dispersion',
+      'Lighting': 'High-Lumen Edge or Lattice LED Array with MeanWell driver',
+      'Installation': 'On-site mounting brackets & civil fasteners included'
+    }
+  },
+  {
+    id: 'led-slim-lightbox',
+    title: 'LED Slim Light Box Poster Panels',
+    category: 'signage',
+    price: 'Slim Profile',
+    unit: 'Magnetic / Snap',
+    badge: 'Modern Display',
+    image: '/assets/images/modern-double-sided-lightbox-sign.jpg',
+    description: 'Ultra-thin aluminum snap-frame lightboxes for instant graphic changes. Widely installed in shopping mall corridors, food courts, and showrooms.',
+    features: [
+      'Super slim 18mm–25mm frame thickness for sleek wall integration',
+      'Laser dot-matrix acrylic light guide plate (LGP) for 95% uniform glow',
+      'Quick snap mechanism allowing poster replacement in under 60 seconds',
+      'Crystal clear protective front acrylic sheet with UV filter'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '50,000 Operating Hours',
+    materials: ['Anodized Extruded Aluminum', 'Optical Cast Acrylic LGP', 'High Density Edge LED Strips'],
+    applications: ['Multiplex & Cineplex Movie Posters', 'QSR Restaurant Menu Boards', 'Shopping Mall Walkways', 'Luxury Retail Showrooms'],
+    specs: {
+      'Standard Poster Sizes': 'A4, A3, A2, A1, A0, 2x3 ft, 3x4 ft, 4x6 ft',
+      'Depth': 'Ultra-thin 18 mm to 24 mm profile',
+      'Power': '12V DC external adaptor supplied',
+      'Print Media': 'High-resolution backlit photographic film'
+    }
+  },
+  {
+    id: 'name-plates',
+    title: 'House & Executive Name Plates',
+    category: 'corporate',
+    price: 'Custom Engraved',
+    unit: 'Acrylic & Wood',
+    badge: 'Personalized',
+    image: '/assets/images/acrylic-corporate-name-plate-studs.jpg',
+    description: 'Bespoke residential entrance plates, doctor/advocate chamber signs, and luxury wooden-acrylic hybrid desk name plates with golden embossed letters.',
+    features: [
+      'Golden mirror finish embossed titanium typography',
+      'Weatherproof outdoor cast acrylic base with faux wood grain or stone finish',
+      'Optional warm concealed LED halo backlight illumination with light sensor',
+      'Pre-drilled mounting holes with heavy brass or SS decorative cap screws'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '10+ Years Indoor & Sheltered Outdoor',
+    materials: ['Imported Cast Acrylic', 'Titanium Mirror Acrylic', 'Natural Teak Wood / MDF Base', 'Stainless Steel Standoffs'],
+    applications: ['Residential Villa & Flat Entrances', 'Doctors, Lawyers & CA Chamber Doors', 'Corporate Executive Desks', 'Boutique Hotel Room Numbers'],
+    specs: {
+      'Popular Sizes': '12x6 in, 16x8 in, 18x12 in, 24x14 in (Custom scalable)',
+      'Lettering': 'Laser-cut 3D raised letters (3mm to 6mm relief)',
+      'Lighting': 'Concealed warm white 3000K waterproof LEDs',
+      'Accessories': 'Solid brass mounting studs, screws, wall plugs included'
+    }
+  },
+  {
+    id: 'glass-film',
+    title: 'One-Way Vision & Frosted Glass Film',
+    category: 'corporate',
+    price: 'Perforated Vinyl',
+    unit: 'Glass Branding',
+    badge: 'Retail Privacy',
+    image: '/assets/images/multi-graphic-backlit-film-display.jpg',
+    description: 'Perforated vinyl graphics that display high-resolution full-color imagery to exterior passers-by while allowing full visibility from inside the store.',
+    features: [
+      'Maintains complete exterior visibility and natural daylight from inside',
+      'Provides daytime privacy against outside onlookers',
+      'Reduces solar heat transmission and indoor AC cooling loss by up to 35%',
+      'Also available in frosted decorative vinyl with custom plotter cut logo patterns'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: '2 to 3 Years Outdoor Weatherproof',
+    materials: ['Micro-Perforated 60/40 Adhesive Vinyl', '3M / Avery Frosted Dusted Crystal Film', 'Clear PET Transfer Tape'],
+    applications: ['Commercial Bank & Retail Glass Facades', 'Corporate Office Conference Rooms', 'Hospital ICU & Clinic Glass Doors', 'Showroom Storefronts'],
+    specs: {
+      'Perforation Ratio': '60% printable area / 40% open micro-hole pattern',
+      'Roll Width': '50 inches and 60 inches seamless rolls',
+      'Installation': 'Bubble-free wet/dry application by our trained team in Patna'
+    }
+  },
+  {
+    id: 'paper-stationery',
+    title: 'Bill Books, Catalogs & Color Prints',
+    category: 'corporate',
+    price: 'Bulk Pricing',
+    unit: 'Offset & Digital',
+    badge: 'Corporate',
+    image: '/assets/images/printed-product-catalog-brochure.jpg',
+    description: 'High-speed business stationery printing: GST tax invoice books with carbonless duplicate sheets, tri-fold catalogs, corporate brochures, and flyers.',
+    features: [
+      'Carbonless NCR duplicate & triplicate paper sets with crisp impressions',
+      'Gloss or velvet matte thermal lamination for durable corporate catalogs',
+      'Sequential red ink numbering, perforations, and hardbound cover binding',
+      'Vivid high-volume offset and rapid digital short-run printing'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: 'Archival Quality Paper Stock',
+    materials: ['56 GSM to 80 GSM Carbonless NCR Paper', '170 GSM to 350 GSM Art Card', 'Thermal Lamination Film'],
+    applications: ['GST Tax Invoices & Challan Books', 'Product Catalogs & Price Lists', 'Flyers & Pamphlets Distribution', 'Corporate Letterheads & Envelopes'],
+    specs: {
+      'Standard Sizes': 'A4, A5, 1/4 Demy, 1/8 Demy',
+      'Copies per Book': '50 or 100 sets per bill book',
+      'Binding Options': 'Perforated pad binding, wire-o spiral, saddle stitch'
+    }
+  },
+  {
+    id: 'corporate-gifting',
+    title: 'Promotional Merchandise & Keychains',
+    category: 'corporate',
+    price: 'Bulk Discounts',
+    unit: 'UV Direct Print',
+    badge: 'Merchandise',
+    image: '/assets/images/custom-photo-keychain-printing.jpg',
+    description: 'Custom laser-cut acrylic keychains, corporate name badges, executive desk accessories, and event giveaways printed with permanent UV inks.',
+    features: [
+      'Permanent scratch-resistant color printing with direct UV flatbed curing',
+      'Precision laser-cut shapes matching your exact brand logo or emblem',
+      'Durable metallic keyrings and magnetic safety pins for badges',
+      'Low minimum order quantities with high-volume wholesale slab discounts'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: 'Permanent Ink Bonding',
+    materials: ['3mm to 5mm Cast Acrylic', 'Brushed Metal Badges', 'Nickel Plated Steel Rings'],
+    applications: ['Corporate Identity Badges', 'Automobile Dealership Keychains', 'Event & Conference Souvenirs', 'Hotel Room Key Tags'],
+    specs: {
+      'Print Technology': 'High-definition micro-droplet UV-LED flatbed',
+      'Attachments': 'Magnetic back plates, safety pins, split rings, leather fobs'
+    }
+  }
+];

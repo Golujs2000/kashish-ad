@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none">
+  <!-- Symbol / Monogram Mark -->
+  <g transform="translate(4, 4)">
+    <!-- Base Glow/Shadow -->
+    <rect x="0" y="0" width="56" height="56" rx="14" fill="#1a3a6b" />
+    
+    <!-- Stylized 3D K Layer -->
+    <!-- Vertical Pillar (Navy with highlight) -->
+    <rect x="13" y="12" width="9" height="32" rx="3" fill="#ffffff" />
+    
+    <!-- Top Diagonal (Vibrant Orange Signage Chevron) -->
+    <path d="M25 28L36 14C37.2 12.5 39.5 12.5 40.8 14C42 15.3 42 17.5 40.6 18.8L31.5 29.5L25 28Z" fill="#e85c1a" />
+    
+    <!-- Bottom Diagonal (Deep Orange/Amber Dimension) -->
+    <path d="M28.5 26.5L40.5 39.5C41.8 40.9 41.6 43 40.2 44.2C38.9 45.4 36.8 45.2 35.5 43.8L25 32L28.5 26.5Z" fill="#ff7a38" />
+
+    <!-- Overlap Accent Dot / Spot color -->
+    <circle cx="27" cy="28" r="3.5" fill="#e85c1a" />
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(70, 0)">
+    <!-- Brand Title -->
+    <text x="0" y="34" font-family="'Outfit', 'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="900" letter-spacing="-0.5" fill="#1a3a6b">
+      KASHISH <tspan fill="#e85c1a">AD</tspan><tspan font-size="14" dy="-10" fill="#e85c1a">®</tspan>
+    </text>
+    
+    <!-- Tagline -->
+    <text x="1" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" letter-spacing="1.5" fill="#64748b">
+      DIGITAL PRINTING &amp; SIGNAGE
+    </text>
+  </g>
+</svg>
