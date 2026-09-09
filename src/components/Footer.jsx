@@ -15,9 +15,14 @@ export default function Footer() {
                 className="h-11 w-auto object-contain brightness-0 invert group-hover:scale-105 transition-transform shrink-0"
               />
               <div className="flex flex-col justify-center">
-                <span className="font-raphtalia text-xl sm:text-2xl font-bold tracking-[0.14em] text-white leading-tight">
-                  Kashish Ad®
-                </span>
+                <div className="inline-flex items-start">
+                  <span className="font-raphtalia text-xl sm:text-2xl font-bold tracking-[0.14em] text-white leading-tight">
+                    Kashish Ad
+                  </span>
+                  <span className="font-sans text-[10px] sm:text-[11px] font-black text-white ml-0.5 leading-none">
+                    ®
+                  </span>
+                </div>
                 <span className="text-[9px] font-bold tracking-widest text-slate-300 uppercase leading-tight mt-0.5">
                   — LET'S PRINT BRANDING —
                 </span>

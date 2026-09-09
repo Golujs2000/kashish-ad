@@ -88,9 +88,14 @@ export default function Header() {
               className="h-11 sm:h-12 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
             />
             <div className="flex flex-col justify-center">
-              <span className="font-raphtalia text-2xl sm:text-3xl md:text-4xl font-bold tracking-[0.14em] text-[#1a3a6b] leading-none">
-                Kashish Ad®
-              </span>
+              <div className="inline-flex items-start">
+                <span className="font-raphtalia text-2xl sm:text-3xl md:text-4xl font-bold tracking-[0.14em] text-[#1a3a6b] leading-none">
+                  Kashish Ad
+                </span>
+                <span className="font-sans text-[11px] sm:text-xs md:text-sm font-black text-[#1a3a6b] ml-0.5 leading-none">
+                  ®
+                </span>
+              </div>
               <span className="text-[8.5px] sm:text-[9.5px] md:text-[10.5px] font-bold tracking-[0.18em] text-[#475569] uppercase leading-tight mt-1">
                 — LET'S PRINT BRANDING —
               </span>

@@ -82,10 +82,15 @@ export default function HeroSlider() {
                   className="w-8 h-8 object-contain"
                 />
                 <div>
-                  <span className="text-sm sm:text-base font-raphtalia font-bold tracking-wider text-[#1a3a6b] uppercase block leading-none">
-                    Kashish Ad®
-                  </span>
-                  <span className="text-[9px] sm:text-[10px] font-bold text-[#e85c1a] tracking-widest uppercase">
+                  <div className="inline-flex items-start">
+                    <span className="text-sm sm:text-base font-raphtalia font-bold tracking-wider text-[#1a3a6b] uppercase block leading-none">
+                      Kashish Ad
+                    </span>
+                    <span className="font-sans text-[9px] sm:text-[10px] font-black text-[#1a3a6b] ml-0.5 leading-none">
+                      ®
+                    </span>
+                  </div>
+                  <span className="text-[9px] sm:text-[10px] font-bold text-[#e85c1a] tracking-widest uppercase block">
                     Quality • Trust • Commitment
                   </span>
                 </div>
