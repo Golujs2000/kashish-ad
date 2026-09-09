@@ -8,15 +8,23 @@ export default function Header() {
   return (
     <>
       {/* Top Announcement Bar in Navy #1a3a6b */}
-      <div className="bg-[#1a3a6b] text-white/90 text-xs py-2 px-4 border-b border-[#12284c]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-          <div className="flex items-center gap-2 text-xs font-medium">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
-            <span>Open Mon – Sat: <strong className="text-white font-semibold">9:00 AM – 9:00 PM</strong> | Capital Tower, Fraser Rd, Patna</span>
+      <div className="bg-[#1a3a6b] text-white/90 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-[#12284c]">
+        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
+          {/* Mobile status / Desktop full announcement */}
+          <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-medium truncate">
+            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse shrink-0"></span>
+            <span className="sm:hidden font-semibold truncate">
+              Capital Tower, Fraser Rd, Patna • <span className="text-[#e85c1a]">9AM–9PM</span>
+            </span>
+            <span className="hidden sm:inline">
+              Open Mon – Sat: <strong className="text-white font-semibold">9:00 AM – 9:00 PM</strong> | Capital Tower, Fraser Rd, Patna
+            </span>
           </div>
-          <div className="flex items-center gap-3">
+
+          {/* Right side icons & hotline */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {/* Social Profiles */}
-            <div className="flex items-center gap-2 border-r border-blue-900/60 pr-3">
+            <div className="hidden md:flex items-center gap-2 border-r border-blue-900/60 pr-3">
               <a
                 href="https://www.instagram.com/kashishadpatna"
                 target="_blank"
@@ -45,7 +53,7 @@ export default function Header() {
 
             <a
               href="mailto:kashishadpatna@gmail.com"
-              className="hidden md:flex items-center gap-1.5 text-white/90 hover:text-[#e85c1a] transition-colors"
+              className="hidden lg:flex items-center gap-1.5 text-white/90 hover:text-[#e85c1a] transition-colors"
               title="Email kashishadpatna@gmail.com"
             >
               <svg className="w-3.5 h-3.5 text-[#e85c1a]" viewBox="0 0 24 24" fill="currentColor">
@@ -58,7 +66,7 @@ export default function Header() {
             </span>
             <a
               href="tel:09308327111"
-              className="flex items-center gap-1.5 text-white font-bold hover:text-[#e85c1a] transition-colors"
+              className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/10 sm:bg-transparent text-white font-bold hover:text-[#e85c1a] transition-colors"
             >
               <svg className="w-3.5 h-3.5 text-[#e85c1a]" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.4 11.4 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.58 1 1 0 01-.25 1.02l-2.2 2.19z" />
@@ -71,19 +79,19 @@ export default function Header() {
 
       {/* Main Sticky Header */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          {/* Brand Logo: Icon + Side-by-Side KASHISH AD in Raphtalia font & Monologue */}
-          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group py-1" onClick={closeMenu} aria-label="Kashish Ad Home">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 h-20 sm:h-22 flex items-center justify-between">
+          {/* Brand Logo: Icon + KASHISH AD (Enlarged and lengthened on mobile) */}
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3.5 group py-1 shrink-0" onClick={closeMenu} aria-label="Kashish Ad Home">
             <img
               src="/assets/logo-icon.png"
               alt="Kashish Ad Monogram"
-              className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
+              className="h-11 sm:h-12 md:h-14 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
             />
             <div className="flex flex-col justify-center">
-              <span className="font-raphtalia text-xl sm:text-4xl font-bold tracking-[0.14em] text-[#1a3a6b] leading-tight">
+              <span className="font-raphtalia text-2xl sm:text-3xl md:text-4xl font-bold tracking-[0.14em] text-[#1a3a6b] leading-none">
                 Kashish Ad
               </span>
-              <span className="text-[8px] sm:text-[9.5px] font-bold tracking-widest text-[#475569] uppercase leading-tight mt-0.5">
+              <span className="text-[8.5px] sm:text-[9.5px] md:text-[10.5px] font-bold tracking-[0.18em] text-[#475569] uppercase leading-tight mt-1">
                 — LET'S PRINT BRANDING —
               </span>
             </div>

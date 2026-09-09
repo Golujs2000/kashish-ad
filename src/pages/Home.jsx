@@ -72,17 +72,17 @@ export default function Home() {
         canonicalUrl="http://localhost:3000/"
         structuredData={[faqSchema]}
       />
-      {/* 1. Hero Section - Inspired by reference */}
-      <section className="relative overflow-hidden bg-white pt-10 pb-14 lg:pt-16 lg:pb-20">
+      {/* 1. Hero Section - Inspired by reference with Generous White Space */}
+      <section className="relative overflow-hidden bg-white pt-14 pb-12 sm:pt-20 sm:pb-20 lg:pt-28 lg:pb-36 mb-8 sm:mb-12 lg:mb-0">
         {/* Subtle Blueprint/Graph Grid Pattern matching reference (Enlarged 54px squares) */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.75] bg-grid-pattern" />
         {/* Subtle gradient overlay to soften edges */}
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none lg:opacity-40" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             {/* Left Content */}
-            <div className="lg:col-span-6 space-y-6 text-left">
+            <div className="lg:col-span-6 space-y-7 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eff4fb] border border-blue-100 text-[#1a3a6b] text-xs font-bold uppercase tracking-wider shadow-xs">
                 <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
                 Capital Tower, Fraser Road • Patna's Direct Printing Hub
@@ -122,8 +122,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Visual Card - Interactive Hero Slider matching reference */}
-            <div className="lg:col-span-6 relative w-full">
+            {/* Right Visual Card - Interactive Hero Slider with Mobile Bottom Spacing */}
+            <div className="lg:col-span-6 relative w-full mt-8 sm:mt-10 lg:mt-0 mb-6 sm:mb-8 lg:mb-0">
               <HeroSlider />
             </div>
           </div>
@@ -131,12 +131,12 @@ export default function Home() {
       </section>
 
       {/* 2. Dark Navy Stats Bar (#1a3a6b) with Colorful Modern Icons */}
-      <section className="bg-[#1a3a6b] text-white py-12 border-y border-[#12284c] relative overflow-hidden">
+      <section className="bg-[#1a3a6b] text-white py-16 sm:py-20 lg:py-24 border-y border-[#12284c] relative overflow-hidden">
         {/* Subtle decorative glow behind stats */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_center,#234c8a_0%,transparent_70%)] pointer-events-none opacity-40"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y lg:divide-y-0 lg:divide-x divide-blue-800/60">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14 text-center divide-y lg:divide-y-0 lg:divide-x divide-blue-800/60">
 
             {/* Stat 1: 4.6 Google Reviews with Official Multi-Color Google G */}
             <div className="pt-4 lg:pt-0 flex flex-col items-center">
@@ -198,16 +198,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. "Your heavy-duty production partner." - Inspired by reference */}
-      <section className="relative overflow-hidden py-16 lg:py-24 bg-white">
+      {/* 3. "Your heavy-duty production partner." */}
+      <section className="relative overflow-hidden py-24 sm:py-32 lg:py-36 bg-white">
         {/* Subtle Architectural Blueprint Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.5] bg-grid-pattern-subtle" />
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
             {/* Left text */}
-            <div className="lg:col-span-6 space-y-6">
+            <div className="lg:col-span-6 space-y-7">
               <div className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">
                 COMMERCIAL FABRICATION &amp; PRINTING
               </div>
@@ -270,14 +270,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. "Our Best Sellers" - 3x3 Grid matching inspiration */}
-      <section className="py-16 sm:py-24 bg-slate-50 border-t border-slate-200">
+      {/* 4. "Our Best Sellers" - 3x3 Grid with Generous Breathing Room */}
+      <section className="py-24 sm:py-32 lg:py-36 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
             <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">
               PROVEN COMMERCIAL QUALITY
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] mt-1">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] mt-2">
               Our Best Sellers
             </h2>
             <p className="mt-2 text-sm text-slate-600">
@@ -345,19 +345,20 @@ export default function Home() {
           </div>
 
           {/* View All Button */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 sm:mt-16">
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1a3a6b] hover:bg-[#102447] shadow-md transition-all"
+              className="inline-flex items-center justify-center gap-2.5 px-8 sm:px-10 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm uppercase tracking-wider text-white bg-[#1a3a6b] hover:bg-[#e85c1a] shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 active:scale-98"
             >
-              <span>VIEW COMPLETE 17 PRODUCTS CATALOG →</span>
+              <span>VIEW COMPLETE 22+ PRODUCTS CATALOG</span>
+              <span className="text-base sm:text-lg leading-none">→</span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 5. Dark Navy Callout Banner (#1a3a6b) - Exact from inspiration */}
-      <section className="bg-[#1a3a6b] text-white py-16">
+      {/* 5. Dark Navy Callout Banner (#1a3a6b) */}
+      <section className="bg-[#1a3a6b] text-white py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-7 space-y-3 text-center lg:text-left">
@@ -396,9 +397,9 @@ export default function Home() {
       </section>
 
       {/* 6. "The complete matrix of our printing & design services" */}
-      <section className="py-16 sm:py-24 bg-white">
+      <section className="py-24 sm:py-32 lg:py-36 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-18 sm:mb-20">
             <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">
               CAPABILITIES DIRECTORY
             </span>
@@ -481,14 +482,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. "Our Client Reviews" - Matching reference layout */}
-      <section className="relative overflow-hidden py-16 sm:py-24 bg-white">
+      {/* 8. "Our Client Reviews" */}
+      <section className="relative overflow-hidden py-24 sm:py-32 lg:py-36 bg-white">
         {/* Subtle Architectural Blueprint Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.55] bg-grid-pattern-subtle" />
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-amber-50 border border-amber-200 shadow-2xs mb-4">
               <span className="text-xl">⭐</span>
               <div className="text-left">
@@ -566,8 +567,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. Google Map Location Frame - Inspired by reference map embed */}
-      <section className="pb-16 bg-white">
+      {/* 9. Google Map Location Frame */}
+      <section className="pb-24 sm:pb-32 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>

@@ -7,9 +7,9 @@ export default function Machinery() {
   const machineImages = {
     'hp-latex-570': '/assets/images/hp-latex-wide-format-banner-printer.jpg',
     'roland-print-cut': '/assets/images/roland-truevis-print-cut-machine.jpg',
-    'uv-flatbed': '/assets/images/uv-flatbed-printer-machine.jpg',
+    'uv-flatbed': '/assets/images/kashish-ad-uv-flatbed-printing-machine.jpg',
     'cnc-router': '/assets/images/cnc-milling-router-jali-cutting.jpg',
-    'fiber-laser': '/assets/images/fiber-laser-sheet-cutting-machine.jpg',
+    'fiber-laser': '/assets/images/kashish-ad-1.5kw-fiber-laser-cutting-machine.jpg',
     'letter-bender': '/assets/images/3d-channel-letters-acrylic-trim-cap.jpg',
     'vinyl-laminator': '/assets/images/roll-vinyl-lamination-machine.jpg',
     'digital-cloth': '/assets/images/wide-format-flex-inkjet-plotter.jpg'
@@ -185,6 +185,72 @@ export default function Machinery() {
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 Finished 3D letters and delicate signage are protected in bubble-wrapped wooden crates for zero damage.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Live Production Video & Plant Facility */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-4">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Live Workshop Demonstration
+            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1a3a6b]">
+              Watch Our <span className="text-[#e85c1a]">Fabrication in Action</span>
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-600 mt-2">
+              See how our technicians operate precision cutting and printing machinery at our Fraser Road plant in Patna.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Real Video Player */}
+            <div className="lg:col-span-7 bg-black rounded-3xl overflow-hidden shadow-2xl border-2 border-[#1a3a6b]/20 relative aspect-video flex items-center justify-center">
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                className="w-full h-full object-cover"
+                poster="/assets/images/kashish-ad-plant-workshop-inside.jpg"
+              >
+                <source src="/assets/videos/kashish-ad-workshop-fabrication-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Official Plant Banner & Capabilities */}
+            <div className="lg:col-span-5 space-y-4">
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-black">
+                <img
+                  src="/assets/images/kashish-ad-machinery-services-black-banner.jpg"
+                  alt="Kashish Ad In-House Plant Machinery Banner"
+                  className="w-full h-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+
+              <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2.5 text-xs text-slate-700">
+                <div className="flex items-center gap-2 font-bold text-[#1a3a6b]">
+                  <span className="text-[#e85c1a] text-base">★</span>
+                  <span>Registered GSTIN: 10AENPH7809D1ZT</span>
+                </div>
+                <p className="text-slate-600 leading-relaxed">
+                  Every order is manufactured directly on-site with certified 1.5 kW Fiber Lasers, ColorJet UV Flatbeds, and heavy CNC routers. Zero sub-contracting ensures verified quality and lowest factory rates.
+                </p>
+                <div className="pt-2 flex items-center gap-3">
+                  <a
+                    href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20watched%20your%20workshop%20video%20and%20want%20to%20discuss%20a%20project."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#25d366] hover:bg-[#1da851] text-white font-bold text-xs"
+                  >
+                    💬 WhatsApp Video Inquiry
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

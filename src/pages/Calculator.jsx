@@ -134,6 +134,66 @@ const SERVICES_RATES = [
       { name: 'Raw Precision CNC Routed', extra: 0 },
       { name: 'Primed & PU Painted Finish', extra: 45 }
     ]
+  },
+  {
+    id: 'tshirt-printing',
+    name: 'Custom T-Shirt & Corporate Apparel Printing',
+    unitType: 'piece',
+    rateMin: 140,
+    rateMax: 220,
+    unitLabel: 'piece',
+    defaultW: 1,
+    defaultH: 1,
+    finishes: [
+      { name: 'Standard Cotton Round Neck (Screen/DTG)', extra: 0 },
+      { name: 'Dri-FIT Sports Collar Polo', extra: 60 },
+      { name: 'Heavy 220 GSM Bio-Washed Cotton Polo', extra: 90 }
+    ]
+  },
+  {
+    id: 'promotional-canopy',
+    name: 'Promotional Canopy Tent & Gazebo (6×6 & 4×4 ft)',
+    unitType: 'piece',
+    rateMin: 2400,
+    rateMax: 3200,
+    unitLabel: 'complete tent set',
+    defaultW: 6,
+    defaultH: 6,
+    finishes: [
+      { name: '6x6 ft MS Iron Frame + Star Flex Roof', extra: 0 },
+      { name: '6x6 ft Aluminum Frame + 600D Oxford Fabric', extra: 800 },
+      { name: 'Full 3-Side Printed Wall Enclosure', extra: 650 }
+    ]
+  },
+  {
+    id: 'cup-mug-printing',
+    name: 'Custom Ceramic Coffee Mugs & Cup Printing',
+    unitType: 'piece',
+    rateMin: 90,
+    rateMax: 140,
+    unitLabel: 'piece',
+    defaultW: 1,
+    defaultH: 1,
+    finishes: [
+      { name: 'Standard 11oz White Ceramic Mug', extra: 0 },
+      { name: 'Dual-Tone Color Inside Mug', extra: 25 },
+      { name: 'Magic Thermosensitive Heat-Reveal Mug', extra: 65 }
+    ]
+  },
+  {
+    id: 'trophy-memento-awards',
+    name: 'Custom Trophies, Mementos & Awards',
+    unitType: 'piece',
+    rateMin: 350,
+    rateMax: 850,
+    unitLabel: 'piece',
+    defaultW: 1,
+    defaultH: 1,
+    finishes: [
+      { name: 'Custom Laser-Cut Acrylic + Direct UV Print', extra: 0 },
+      { name: 'Teak Wooden Base + Brass Golden Plaque', extra: 150 },
+      { name: 'Heavy Optical K9 Crystal Award with Velvet Box', extra: 450 }
+    ]
   }
 ];
 

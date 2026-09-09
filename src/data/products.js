@@ -6,7 +6,7 @@ export const PRODUCTS = [
     price: '₹ 40 – ₹ 50',
     unit: '/ Pc',
     badge: 'Best Seller',
-    image: '/assets/images/uv-flatbed-printer-machine.jpg',
+    image: '/assets/images/kashish-ad-uv-flatbed-printing-machine.jpg',
     description: 'Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero fading.',
     features: [
       'Instant UV-LED lamp curing with zero smudging',
@@ -62,7 +62,7 @@ export const PRODUCTS = [
     price: 'Custom Built',
     unit: '120V / 12V LED',
     badge: 'Premium',
-    image: '/assets/images/kashish-ad-led-acrylic-glow-sign-board.jpg',
+    image: '/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg',
     description: 'Laser-cut acrylic 3D profile letters with built-in waterproof Samsung/Osram LED modules, front-lit face, and custom painted aluminum returns.',
     features: [
       'Front-lit, Back-lit halo illumination & side-lit variants',
@@ -302,7 +302,7 @@ export const PRODUCTS = [
     price: 'All Dimensions',
     unit: 'LED Backlit',
     badge: 'Illuminated',
-    image: '/assets/images/commercial-storefront-acp-sign-board.jpg',
+    image: '/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg',
     description: 'Heavy-gauge powder coated metal framework with translucent backlit flex or acrylic face and waterproof LED modules for 24/7 store branding.',
     features: [
       'Uniform internal illumination with zero dark spots or tube shadows',
@@ -445,6 +445,138 @@ export const PRODUCTS = [
     specs: {
       'Print Technology': 'High-definition micro-droplet UV-LED flatbed',
       'Attachments': 'Magnetic back plates, safety pins, split rings, leather fobs'
+    }
+  },
+  {
+    id: 'tshirt-printing',
+    title: 'Custom T-Shirt & Corporate Apparel Printing',
+    category: 'promotional',
+    price: '₹ 120 – ₹ 280',
+    unit: '/ Pc',
+    badge: 'Custom Apparel',
+    image: '/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg',
+    description: 'Full-color custom T-shirt printing in Patna: Corporate polo shirts, event t-shirts, dry-fit sports jerseys, staff uniforms, and promotional bulk t-shirts with DTG, sublimation, and vinyl heat transfer.',
+    features: [
+      '100% Breathable cotton (180–220 GSM), dry-fit sports polyester & polo pique fabric',
+      'Vivid fade-resistant prints with zero cracking, peeling, or fading across 50+ washes',
+      'Multiple placement options: chest crest, full front, back headline, collar, and sleeve branding',
+      'Fast turnaround for political rallies, sports meets, college festivals, and corporate staff'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '50+ Machine Washes',
+    materials: ['100% Combed Cotton', 'Dri-FIT Breathable Polyester', 'Matty Cotton Polo', 'PU Heat Transfer Film'],
+    applications: ['Corporate Staff & Factory Uniforms', 'Political Election Rallies & Campaigns', 'College Fests & Sports Jerseys', 'Promotional Brand Activation Merchandise'],
+    specs: {
+      'Printing Tech': 'Sublimation, Screen Print, DTG & Vinyl Heat Press',
+      'Size Range': 'XS, S, M, L, XL, XXL, 3XL (Custom sizing available)',
+      'Fabric Weight': '160 GSM to 240 GSM heavy combed fabric',
+      'Colors': 'White, Black, Navy Blue, Red, Royal Blue, Yellow, Grey',
+      'Min Order': '10 pieces for custom print; bulk slab rates from 100+ pcs'
+    }
+  },
+  {
+    id: 'promotional-canopy',
+    title: 'Promotional Canopy Tent & Gazebo (6×6 & 4×4 ft)',
+    category: 'promotional',
+    price: '₹ 2,200 – ₹ 3,800',
+    unit: '/ Set',
+    badge: 'Outdoor Promo',
+    image: '/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg',
+    description: 'Heavy-duty pop-up promotional canopy tents with 100% waterproof printed flex or Oxford fabric, collapsible scissor frame, 4-sided valance branding, and heavy carry bag for outdoor promotions in Patna.',
+    features: [
+      'Instant 2-minute scissor fold setup with zero loose tools or assembly required',
+      'Tough rust-proof powder-coated MS steel / aluminum heavy collapsible structure',
+      'High-resolution waterproof digital printing on top canopy and back/side fabric panels',
+      'Includes reinforced nylon zippered carry bag for hassle-free mobile transport across Bihar'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: '3+ Years Reusable Heavy Steel Framework',
+    materials: ['Waterproof Oxford 600D / Tetron Fabric', '340 GSM Star Flex', 'Heavy Powder-Coated MS Scissor Frame'],
+    applications: ['Rural & Urban Roadshow Marketing', 'Telecom, Banking & Loan Customer Desks', 'Automobile Test Drive Kiosks', 'Outdoor Food & Product Demo Stalls'],
+    specs: {
+      'Standard Sizes': '6 ft × 6 ft (Most Popular) & 4 ft × 4 ft compact',
+      'Frame Weight': 'Approx 12–15 kg heavy stability against wind',
+      'Fabrication': 'Industrial heat-sealed edges and heavy Velcro straps',
+      'Branding Area': 'Full roof, 4 side valances, plus optional 3-side full/half walls',
+      'Packaging': 'Complete kit in zip canvas bag with ground stake pins'
+    }
+  },
+  {
+    id: 'cup-mug-printing',
+    title: 'Custom Ceramic Coffee Mugs & Cup Printing',
+    category: 'corporate',
+    price: '₹ 80 – ₹ 160',
+    unit: '/ Pc',
+    badge: 'Corporate Gift',
+    image: '/assets/images/custom-photo-keychain-printing.jpg',
+    description: 'Premium gloss white, color-inside, and magic heat-sensitive ceramic mugs with high-definition permanent sublimation photo printing for corporate gifts and employee kits.',
+    features: [
+      'Microwave and dishwasher safe with permanent glossy ceramic glaze transfer',
+      'Full 360-degree wrap-around color printing with photo-realistic sharpness',
+      'Magic Color-Changing Mugs that reveal your printed design when hot liquid is poured',
+      'Each mug packed in individual white cardboard safety gift box'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: 'Permanent Ceramic Bond',
+    materials: ['Grade-A Ceramic (325ml / 11oz)', 'Sublimation Inks', 'Color Changing Thermosensitive Glaze'],
+    applications: ['Corporate Executive Onboarding Kits', 'Client Diwali & New Year Gifting', 'Brand Promotion Giveaways', 'Personalized Photo Keepsakes'],
+    specs: {
+      'Capacity': '11 oz (325 ml standard coffee mug)',
+      'Mug Styles': 'Plain Gloss White, Two-Tone Inner Color, Magic Heat Reveal, Frost Glass',
+      'Print Resolution': '300 DPI edge-to-edge sublimation print',
+      'Packaging': 'Individual corrugated foam-lined box per mug'
+    }
+  },
+  {
+    id: 'trophy-memento-awards',
+    title: 'Custom Trophies, Mementos & Awards',
+    category: 'corporate',
+    price: '₹ 250 – ₹ 1,500',
+    unit: '/ Pc',
+    badge: 'Recognition',
+    image: '/assets/images/kashish-ad-patna-badge-logo.png',
+    description: 'Custom laser-cut acrylic, wooden, and crystal mementos with direct UV color printing, golden foil accents, and personalized name engraving for institutions and events in Patna.',
+    features: [
+      'Intricate fiber laser & CNC router cut contours matching corporate emblems or sports crests',
+      'Direct high-resolution UV flatbed color printing with white underlay & 3D gloss finish',
+      'Heavy natural polished teak wood or heavy crystal base with engraved brass metal plaque',
+      'Custom tailored designs for sports tournaments, schools, annual meets, and government awards'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: 'Permanent Showpiece Quality',
+    materials: ['8mm to 20mm Clear Cast Acrylic', 'Polished Teak Wood', 'Brushed Golden Brass Foil Plate', 'Optical K9 Crystal'],
+    applications: ['Corporate Annual Excellence Awards', 'Sports Tournaments & Championship Cups', 'School & College Annual Day Felicitation', 'Government & VIP Guest Mementos'],
+    specs: {
+      'Height Range': '6 inches to 18 inches customized height',
+      'Finishes': 'Laser Engraved, Gold Foiled, UV Full Color, 3D Embossed Varnish',
+      'Base Type': 'Piano finish wood, Black acrylic, Heavy marble block',
+      'Packaging': 'Deluxe satin-lined velvet presentation gift box'
+    }
+  },
+  {
+    id: 'large-illuminated-signage',
+    title: 'Large Outdoor Illuminated Sign Structures',
+    category: 'signage',
+    price: 'Custom Quotation',
+    unit: 'Heavy Truss / Backlit',
+    badge: 'Monumental',
+    image: '/assets/images/kashish-ad-bssa-sports-complex-illuminated-signage.jpg',
+    description: 'Turnkey structural engineering and fabrication for large-format outdoor illuminated signs, sports complex elevations, rooftop monoliths, and campus entrance landmarks across Bihar.',
+    features: [
+      'Heavy-duty welded MS truss framework engineered for certified wind loads and storm resilience',
+      'Uniform high-efficiency LED matrix lighting with IP68 outdoor waterproof power supplies',
+      'Custom non-standard polygonal, curved, and triangular 3D architectural silhouettes',
+      'End-to-end service including structural scaffolding, crane installation, and turnkey electrical wiring'
+    ],
+    turnaround: '5 to 7 Working Days',
+    lifespan: '10+ Years Structural Guarantee',
+    materials: ['Heavy MS Tubular Truss', 'Cast Translucent Polycarbonate / Acrylic', 'High-Lumen IP68 LED Modules', 'Heavy Weatherproof Backlit Sheeting'],
+    applications: ['Sports Stadiums & Government Complexes (e.g. BSSA Patliputra)', 'Shopping Mall & Multiplex Facades', 'Highway Entry Gate Monoliths', 'Hospital & University Campus Landmarks'],
+    specs: {
+      'Dimensions': 'Scalable up to 50 ft × 30 ft and monumental proportions',
+      'Lighting': 'High-power IP68 Samsung LED modules with automated dusk-to-dawn sensors',
+      'Framework': 'Galvanized & anti-rust primed heavy gauge MS steel tubing',
+      'Warranty': '3 Years Comprehensive Warranty on Structure and Electricals'
     }
   }
 ];

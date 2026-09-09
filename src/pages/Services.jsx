@@ -49,9 +49,9 @@ export default function Services() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Printing & Signage Services Catalog Patna (17+ Products)"
-        description="Browse Kashish Ad's complete digital printing and signage board catalog in Patna. UV printing, solvent vinyl, 3D acrylic LED letters, SS name boards, roll-up standees. Fraser Road Patna hotline: 09308327111."
-        keywords="printing services patna, sign board manufacturer patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
+        title="Printing & Signage Services Catalog Patna (22+ Products)"
+        description="Browse Kashish Ad's complete digital printing, promotional merchandise, and signage board catalog in Patna. UV printing, solvent vinyl, 3D acrylic LED letters, custom T-shirts, canopies, coffee mugs, trophies. Fraser Road Patna hotline: 09308327111."
+        keywords="printing services patna, sign board manufacturer patna, tshirt printing patna, canopy tent patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
         canonicalUrl="http://localhost:3000/services"
         structuredData={[breadcrumbSchema]}
       />
@@ -65,10 +65,10 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
-            17+ Commercial Printing &amp; Signage Solutions
+            22+ Commercial Printing, Canopy &amp; Merchandise Solutions
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Digital Printing &amp; Signage <span className="text-[#e85c1a]">Catalog</span>
+            Digital Printing, Signage &amp; <span className="text-[#e85c1a]">Merchandise Catalog</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Explore our complete industrial printing range — from instant UV flatbed curing to architectural SS 3D letters, solvent vinyl banners, and custom corporate labels. Manufactured in-house at Fraser Road, Patna.
@@ -154,6 +154,50 @@ export default function Services() {
             Showing <strong className="text-slate-900">{filteredProducts.length}</strong> of {PRODUCTS.length} products
             {searchQuery && <span> matching "<em>{searchQuery}</em>"</span>}
           </div>
+
+          {/* Quick Services Showcase Banner */}
+          {!searchQuery && activeCategory === 'all' && (
+            <div className="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-gradient-to-r from-red-950 via-slate-900 to-red-950 p-1">
+              <img
+                src="/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg"
+                alt="Kashish Ad Flex Print, Laser Cutting, Canopy, T-Shirt, Trophy Banner"
+                className="w-full h-auto max-h-36 sm:max-h-48 object-cover rounded-xl"
+                loading="lazy"
+              />
+              <div className="p-3 bg-white/95 backdrop-blur-sm rounded-xl mt-1 flex flex-wrap items-center justify-between gap-2 text-xs">
+                <div className="flex items-center gap-1.5 font-bold text-[#1a3a6b]">
+                  <span className="text-[#e85c1a]">★</span>
+                  <span>Popular Quick Picks:</span>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <Link
+                    to="/services/tshirt-printing"
+                    className="px-2.5 py-1 rounded-lg bg-orange-50 border border-orange-200 text-[#e85c1a] font-bold hover:bg-[#e85c1a] hover:text-white transition-colors"
+                  >
+                    👕 T-Shirt Printing
+                  </Link>
+                  <Link
+                    to="/services/promotional-canopy"
+                    className="px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 text-[#1a3a6b] font-bold hover:bg-[#1a3a6b] hover:text-white transition-colors"
+                  >
+                    🎪 Promo Canopy
+                  </Link>
+                  <Link
+                    to="/services/cup-mug-printing"
+                    className="px-2.5 py-1 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 font-bold hover:bg-emerald-600 hover:text-white transition-colors"
+                  >
+                    ☕ Photo Mugs
+                  </Link>
+                  <Link
+                    to="/services/trophy-memento-awards"
+                    className="px-2.5 py-1 rounded-lg bg-amber-50 border border-amber-200 text-amber-800 font-bold hover:bg-amber-600 hover:text-white transition-colors"
+                  >
+                    🏆 Trophies &amp; Awards
+                  </Link>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Products Grid */}
           {filteredProducts.length > 0 ? (

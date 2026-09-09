@@ -62,15 +62,15 @@ export default function HeroSlider() {
       aria-roledescription="carousel"
       aria-label="Kashish Ad Hero Showcase Slider"
     >
-      {/* Slides Container */}
-      <div className="relative overflow-hidden w-full min-h-[480px] sm:min-h-[520px] lg:min-h-[540px] flex flex-col justify-between bg-gradient-to-b from-white via-slate-50/50 to-slate-100/70">
+      {/* Slides Container with Generous White Space */}
+      <div className="relative overflow-hidden w-full min-h-[560px] sm:min-h-[620px] lg:min-h-[660px] flex flex-col justify-between bg-gradient-to-b from-white via-slate-50/40 to-slate-100/60">
 
         {/* =========================================================================
             SLIDE 1: "YOUR BRAND. EVERYWHERE." (Inspired by Shyam Advertising Slide 1)
            ========================================================================= */}
         <div
           className={`transition-opacity duration-700 ease-in-out ${currentSlide === 0 ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none absolute inset-0 z-0'
-            } p-3.5 sm:p-5 flex flex-col justify-between h-full`}
+            } p-5 sm:p-7 lg:p-8 flex flex-col justify-between h-full`}
         >
           {/* Top Brand & Header Section */}
           <div>
@@ -100,40 +100,40 @@ export default function HeroSlider() {
             </div>
 
             {/* Main Headline */}
-            <div className="mb-3">
+            <div className="mb-4 sm:mb-5">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-black font-display tracking-tight text-[#1a3a6b] uppercase leading-none">
                 Your Brand. <span className="text-[#e85c1a]">Everywhere.</span>
               </h2>
-              <h3 className="text-[10px] sm:text-xs font-bold text-[#1a3a6b]/80 uppercase tracking-wider mt-1">
+              <h3 className="text-[10px] sm:text-xs font-bold text-[#1a3a6b]/80 uppercase tracking-wider mt-1.5">
                 Complete Advertising Solutions That Get You Noticed
               </h3>
-              <p className="text-[11px] sm:text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+              <p className="text-[11px] sm:text-xs text-slate-600 mt-1.5 line-clamp-2 leading-relaxed">
                 From creative concept to precision CNC fabrication & on-site installation, we create impactful signage that commands attention across Bihar.
               </p>
             </div>
 
             {/* 4 Pillars Badges */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-2 mb-3">
-              <div className="bg-[#eff4fb] border border-blue-100 rounded-lg p-1.5 text-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 mb-4 sm:mb-5">
+              <div className="bg-[#eff4fb] border border-blue-100 rounded-xl p-2 sm:p-2.5 text-center">
                 <div className="text-[#1a3a6b] font-bold text-[10px] sm:text-[11px] uppercase">Creative Design</div>
                 <div className="text-[9px] text-slate-500">Custom 2D/3D Mockups</div>
               </div>
-              <div className="bg-[#eff4fb] border border-blue-100 rounded-lg p-1.5 text-center">
+              <div className="bg-[#eff4fb] border border-blue-100 rounded-xl p-2 sm:p-2.5 text-center">
                 <div className="text-[#1a3a6b] font-bold text-[10px] sm:text-[11px] uppercase">Premium Quality</div>
                 <div className="text-[9px] text-slate-500">Long-Life Cast Acrylic</div>
               </div>
-              <div className="bg-[#eff4fb] border border-blue-100 rounded-lg p-1.5 text-center">
+              <div className="bg-[#eff4fb] border border-blue-100 rounded-xl p-2 sm:p-2.5 text-center">
                 <div className="text-[#1a3a6b] font-bold text-[10px] sm:text-[11px] uppercase">Direct Factory</div>
                 <div className="text-[9px] text-slate-500">Capital Tower Setup</div>
               </div>
-              <div className="bg-[#eff4fb] border border-blue-100 rounded-lg p-1.5 text-center">
+              <div className="bg-[#eff4fb] border border-blue-100 rounded-xl p-2 sm:p-2.5 text-center">
                 <div className="text-[#1a3a6b] font-bold text-[10px] sm:text-[11px] uppercase">Installation</div>
                 <div className="text-[9px] text-slate-500">Turnkey Setup Bihar</div>
               </div>
             </div>
 
-            {/* 8-Tile Product Grid Showcase (Exact 2x4 Layout from reference) */}
-            <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
+            {/* 8-Tile Product Grid Showcase */}
+            <div className="grid grid-cols-4 gap-2 sm:gap-2.5 mb-2">
               <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
                 <img
                   src="/assets/images/lux-venus-3d-led-glow-sign-board.jpg"
@@ -160,7 +160,7 @@ export default function HeroSlider() {
 
               <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
                 <img
-                  src="/assets/images/kashish-ad-patna-illuminated-sign-board.jpg"
+                  src="/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg"
                   alt="Light Boards"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
@@ -172,20 +172,8 @@ export default function HeroSlider() {
 
               <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
                 <img
-                  src="/assets/images/kashish-ad-patna-promotional-branding-sample.jpg"
-                  alt="Standees"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-[#e85c1a] text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
-                  Standees
-                </div>
-              </div>
-
-              <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
-                <img
-                  src="/assets/images/kashish-ad-patna-outdoor-flex-banner.jpg"
-                  alt="Canopies & Hoardings"
+                  src="/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg"
+                  alt="Canopies"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
@@ -196,37 +184,25 @@ export default function HeroSlider() {
 
               <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
                 <img
-                  src="/assets/images/bridal-jewelry-backlit-display-board.jpg"
-                  alt="Backlit Frames"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-[#1a3a6b]/95 text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
-                  Backlit Frames
-                </div>
-              </div>
-
-              <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
-                <img
-                  src="/assets/images/commercial-storefront-acp-sign-board.jpg"
+                  src="/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg"
                   alt="Letter Boards"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-[#e85c1a] text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
+                <div className="absolute inset-x-0 bottom-0 bg-[#1a3a6b]/95 text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
                   Letter Boards
                 </div>
               </div>
 
               <div className="group relative rounded-lg overflow-hidden border border-slate-200 aspect-[4/3] bg-slate-100">
                 <img
-                  src="/assets/images/vinyl-digital-printing-services.jpg"
-                  alt="Vehicle Graphics"
+                  src="/assets/images/kashish-ad-hanzala-hajj-umrah-storefront-sign-board.jpg"
+                  alt="Storefront Signs"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-[#1a3a6b]/95 text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
-                  Vehicle Graphics
+                <div className="absolute inset-x-0 bottom-0 bg-[#e85c1a] text-white text-[8px] sm:text-[9px] font-bold uppercase text-center py-0.5 tracking-wider">
+                  Storefront Signs
                 </div>
               </div>
             </div>
@@ -269,11 +245,11 @@ export default function HeroSlider() {
            ========================================================================= */}
         <div
           className={`transition-opacity duration-700 ease-in-out ${currentSlide === 1 ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none absolute inset-0 z-0'
-            } p-3.5 sm:p-5 flex flex-col justify-between h-full`}
+            } p-5 sm:p-7 lg:p-8 flex flex-col justify-between h-full`}
         >
           <div>
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-slate-200/80 pb-2 mb-2.5">
+            <div className="flex items-center justify-between border-b border-slate-200/80 pb-3 mb-4">
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 rounded bg-[#e85c1a] text-white font-black text-[10px] tracking-wider uppercase">
                   DIRECT FACTORY
@@ -296,16 +272,16 @@ export default function HeroSlider() {
             {/* Center Visual: Large Format Printer Machinery */}
             <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[16/8] sm:aspect-[16/7] bg-slate-900 mb-2.5 shadow-md">
               <img
-                src="/assets/images/kashish-ad-all-machinery-collage.jpg"
-                alt="Kashish Ad Industrial Printing Machinery & Flatbed"
-                className="w-full h-full object-cover opacity-90 hover:scale-102 transition-transform duration-500"
+                src="/assets/images/kashish-ad-machinery-services-black-banner.jpg"
+                alt="Kashish Ad In-House Plant Machinery & Equipment"
+                className="w-full h-full object-contain bg-black"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-2.5 text-white">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                   <span className="text-[11px] sm:text-xs font-bold tracking-wide">
-                    Wide-Format 10ft & UV Flatbed Machines in Active Operation
+                    1.5 kW Fiber Laser, UV Flatbed & 10ft Solvent In Active Operation
                   </span>
                 </div>
               </div>
@@ -377,11 +353,11 @@ export default function HeroSlider() {
            ========================================================================= */}
         <div
           className={`transition-opacity duration-700 ease-in-out ${currentSlide === 2 ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none absolute inset-0 z-0'
-            } p-3.5 sm:p-5 flex flex-col justify-between h-full`}
+            } p-5 sm:p-7 lg:p-8 flex flex-col justify-between h-full`}
         >
           <div>
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-slate-200/80 pb-2 mb-2.5">
+            <div className="flex items-center justify-between border-b border-slate-200/80 pb-3 mb-4">
               <div className="flex items-center gap-2">
                 <div className="w-8 h-8 rounded-lg bg-[#e85c1a] flex items-center justify-center text-white font-bold text-xs">
                   ★
@@ -412,37 +388,37 @@ export default function HeroSlider() {
             <div className="grid grid-cols-3 gap-2 mb-3">
               <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
                 <img
-                  src="/assets/images/3d-channel-letters-acrylic-trim-cap.jpg"
-                  alt="3D Channel Letters"
+                  src="/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg"
+                  alt="Rasmalai 3D LED Board"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-[#1a3a6b]/90 text-white text-[8px] font-bold text-center py-0.5 uppercase">
-                  3D Channel Letters
+                  3D Glow Sign
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
                 <img
-                  src="/assets/images/kashish-ad-led-letters-testing-wall.jpg"
-                  alt="LED Letters Testing Wall"
+                  src="/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg"
+                  alt="Aakash Deep 3D Acrylic Letters"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-[#e85c1a]/95 text-white text-[8px] font-bold text-center py-0.5 uppercase">
-                  In-House QC Testing
+                  Acrylic 3D Letters
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
                 <img
-                  src="/assets/images/commercial-backlit-glow-sign-film.jpg"
-                  alt="Commercial Glow Signs"
+                  src="/assets/images/kashish-ad-bssa-sports-complex-illuminated-signage.jpg"
+                  alt="BSSA Sports Complex Illuminated Sign"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-[#1a3a6b]/90 text-white text-[8px] font-bold text-center py-0.5 uppercase">
-                  Storefront Signage
+                  Monumental Signage
                 </div>
               </div>
             </div>
@@ -494,11 +470,11 @@ export default function HeroSlider() {
            ========================================================================= */}
         <div
           className={`transition-opacity duration-700 ease-in-out ${currentSlide === 3 ? 'opacity-100 z-10' : 'opacity-0 pointer-events-none absolute inset-0 z-0'
-            } p-3.5 sm:p-5 flex flex-col justify-between h-full`}
+            } p-5 sm:p-7 lg:p-8 flex flex-col justify-between h-full`}
         >
           <div>
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-slate-200/80 pb-2 mb-2.5">
+            <div className="flex items-center justify-between border-b border-slate-200/80 pb-3 mb-4">
               <div className="flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
                 <span className="text-xs sm:text-sm font-black text-[#1a3a6b] uppercase">
@@ -520,29 +496,29 @@ export default function HeroSlider() {
               </p>
             </div>
 
-            {/* Split Visual: Workshop Inside + Storefront */}
+            {/* Split Visual: Storefront Facade + On-Site Installation */}
             <div className="grid grid-cols-2 gap-2 mb-2.5">
               <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
                 <img
-                  src="/assets/images/kashish-ad-capital-tower-storefront.jpg"
-                  alt="Kashish Ad Capital Tower Storefront"
+                  src="/assets/images/kashish-ad-red-storefront-facade-elevation-mockup.jpg"
+                  alt="Kashish Ad Storefront Facade 3D Elevation"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-black/75 text-white text-[9px] font-bold text-center py-1 uppercase">
-                  Main Storefront Entrance
+                  Storefront Facade Design
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden border border-slate-200 aspect-[4/3]">
                 <img
-                  src="/assets/images/kashish-ad-plant-workshop-inside.jpg"
-                  alt="Kashish Ad Plant & Workshop Inside"
+                  src="/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg"
+                  alt="Kashish Ad Installation Team at Capital Tower"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-black/75 text-white text-[9px] font-bold text-center py-1 uppercase">
-                  Fabrication & Laser Floor
+                  On-Site Installation Team
                 </div>
               </div>
             </div>

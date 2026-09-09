@@ -142,5 +142,69 @@ export const GALLERY_ITEMS = [
     image: '/assets/images/acrylic-sheet-laser-cutting.jpg',
     location: 'CNC Laser Workshop, Patna',
     description: 'Zero-taper optical CO2 laser cutting of cast acrylic sheets for letter fabrication and display fixtures.'
+  },
+  {
+    id: 19,
+    title: 'Aakash Deep Storefront 3D Acrylic Glow Sign Board',
+    category: '3dletters',
+    image: '/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg',
+    location: 'Retail Boutique, Patna',
+    description: 'Vibrant red 3D acrylic LED channel letters on storefront elevation with intense night luminosity.'
+  },
+  {
+    id: 20,
+    title: 'Rasmalai The Mithai Shop Dual-Script 3D LED Board',
+    category: '3dletters',
+    image: '/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg',
+    location: 'Sweets & Restaurant, Patna',
+    description: 'Dual-script English and Hindi 3D front-lit LED letters mounted on fluted red ACP sheet base.'
+  },
+  {
+    id: 21,
+    title: 'Hanzala Hajj Umrah ACP Storefront Elevation Board',
+    category: 'signboards',
+    image: '/assets/images/kashish-ad-hanzala-hajj-umrah-storefront-sign-board.jpg',
+    location: 'Fraser Road Commercial Complex, Patna',
+    description: 'Architectural ACP panelling with deep 3D embossed acrylic letters and circular brand emblem.'
+  },
+  {
+    id: 22,
+    title: 'BSSA Patliputra Sports Complex Illuminated Sign Structure',
+    category: 'signboards',
+    image: '/assets/images/kashish-ad-bssa-sports-complex-illuminated-signage.jpg',
+    location: 'Kankarbagh Sports Complex, Patna',
+    description: 'Monumental outdoor illuminated signage structure fabricated for Bihar State Sports Authority.'
+  },
+  {
+    id: 23,
+    title: 'Storefront Facade Architectural 3D Elevation Design',
+    category: 'signboards',
+    image: '/assets/images/kashish-ad-red-storefront-facade-elevation-mockup.jpg',
+    location: 'Kashish Ad Design Center, Patna',
+    description: 'Complete 3D commercial facade layout showing ACP cladding, LED display panels, and shop entrance.'
+  },
+  {
+    id: 24,
+    title: 'Capital Tower On-Site Signage Fitting & Installation',
+    category: 'signboards',
+    image: '/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg',
+    location: 'Capital Tower, Fraser Road, Patna',
+    description: 'Our trained technical crew installing flex hoardings, 3D channel letters, and ACP cladding.'
+  },
+  {
+    id: 25,
+    title: 'Kashish Ad Comprehensive Services Showcase Banner',
+    category: 'uvprint',
+    image: '/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg',
+    location: 'Fraser Road Production Facility, Patna',
+    description: 'Showcasing Flex, Glow Signs, ACP Boards, Standees, Canopies, T-Shirt & Cup printing, and Trophies.'
+  },
+  {
+    id: 26,
+    title: 'Bilingual Regional Promotion Banner (Flex & Laser Cutting)',
+    category: 'uvprint',
+    image: '/assets/images/kashish-ad-yahan-flex-print-laser-cutting-banner.jpg',
+    location: 'Patna Regional Display',
+    description: 'High-density outdoor promotional banner printed with eco-solvent weather-proof inks.'
   }
 ];

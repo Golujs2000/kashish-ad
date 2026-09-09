@@ -29,7 +29,7 @@ export default function Gallery() {
         canonicalUrl="http://localhost:3000/gallery"
       />
       {/* Page Hero */}
-      <section className="bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
+      <section className="bg-slate-50 border-b border-slate-200 py-20 sm:py-28 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
@@ -57,10 +57,10 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-12 sm:py-16">
+      <section className="py-16 sm:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Category Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex flex-wrap justify-center gap-2.5 mb-16">
             {categories.map((cat) => {
               const count = cat.id === 'all'
                 ? GALLERY_ITEMS.length
@@ -90,8 +90,8 @@ export default function Gallery() {
             })}
           </div>
 
-          {/* Gallery Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Gallery Items Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
             {filteredItems.map((item) => (
               <div
                 key={item.id}
@@ -121,7 +121,7 @@ export default function Gallery() {
                 </div>
 
                 {/* Metadata */}
-                <div className="p-5 flex-1 flex flex-col justify-between">
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="font-display font-bold text-base text-[#1a3a6b] group-hover:text-[#e85c1a] transition-colors">
                       {item.title}
