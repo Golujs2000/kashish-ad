@@ -32,7 +32,7 @@ export default function Contact() {
 
     // Open WhatsApp with pre-filled details
     const waText = encodeURIComponent(
-      `Hello Kashish Ad®, I am submitting an inquiry from your website:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nCity: ${formData.city}\nRequirement: ${formData.message}`
+      `Hello Kashish Ad, I am submitting an inquiry from your website:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nCity: ${formData.city}\nRequirement: ${formData.message}`
     );
     window.open(`https://wa.me/919308327111?text=${waText}`, '_blank');
   };
@@ -40,8 +40,8 @@ export default function Contact() {
   const contactSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact Kashish Ad® Patna',
-    description: 'Contact Kashish Ad® for instant commercial digital printing quotes, signage board consultation, and workshop visits in Fraser Road, Patna.',
+    name: 'Contact Kashish Ad Patna',
+    description: 'Contact Kashish Ad for instant commercial digital printing quotes, signage board consultation, and workshop visits in Fraser Road, Patna.',
     url: 'http://localhost:3000/contact'
   };
 
@@ -49,7 +49,7 @@ export default function Contact() {
     <div className="bg-white min-h-screen">
       <SEO
         title="Contact & Location in Patna | Call 09308327111"
-        description="Visit or contact Kashish Ad® at Capital Tower, Fraser Road, Patna. Hotline: 09308327111. Get directions, WhatsApp order desk, and B2B corporate consultation."
+        description="Visit or contact Kashish Ad at Capital Tower, Fraser Road, Patna. Hotline: 09308327111. Get directions, WhatsApp order desk, and B2B corporate consultation."
         keywords="contact kashish ad, kashish ad phone number 09308327111, capital tower fraser road patna, print shop near me patna"
         canonicalUrl="http://localhost:3000/contact"
         structuredData={[contactSchema]}
@@ -66,7 +66,7 @@ export default function Contact() {
             Direct Workshop Hotline: 09308327111
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Contact &amp; Visit <span className="text-[#e85c1a] font-raphtalia tracking-wide">Kashish Ad®</span>
+            Contact &amp; Visit <span className="text-[#e85c1a] font-raphtalia tracking-wide">Kashish Ad</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Get in touch directly with our Fraser Road printing and signage team. Visit our showroom and production units at Capital Tower, Patna, or chat with us on WhatsApp for rapid turnaround.
@@ -99,7 +99,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-bold text-[#1a3a6b] text-sm">Workshop &amp; Showroom Address</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      <strong>Kashish Ad®</strong><br />
+                      <strong>Kashish Ad</strong><br />
                       Capital Tower, A-6 &amp; B-16, Fraser Rd,<br />
                       Old Jakkanpur, Lodipur, Patna, Bihar 800001
                     </p>
@@ -237,7 +237,7 @@ export default function Contact() {
                     <div className="text-3xl">✅</div>
                     <h4 className="font-bold text-slate-900 text-base">Inquiry Received!</h4>
                     <p className="text-xs text-slate-600 max-w-sm mx-auto">
-                      Thank you for contacting Kashish Ad®. A representative is reviewing your details. You can also chat directly on WhatsApp.
+                      Thank you for contacting Kashish Ad. A representative is reviewing your details. You can also chat directly on WhatsApp.
                     </p>
                     <a
                       href="https://wa.me/919308327111"
@@ -357,7 +357,7 @@ export default function Contact() {
             <div>
               <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">Directions to Our Storefront</span>
               <h2 className="text-2xl font-display font-black text-[#1a3a6b] mt-0.5">
-                Visit Kashish Ad® on Google Maps
+                Visit Kashish Ad on Google Maps
               </h2>
             </div>
             <a

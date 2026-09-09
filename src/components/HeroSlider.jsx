@@ -83,7 +83,7 @@ export default function HeroSlider() {
                 />
                 <div>
                   <span className="text-sm sm:text-base font-raphtalia font-bold tracking-wider text-[#1a3a6b] uppercase block leading-none">
-                    Kashish Ad
+                    Kashish Ad®
                   </span>
                   <span className="text-[9px] sm:text-[10px] font-bold text-[#e85c1a] tracking-widest uppercase">
                     Quality • Trust • Commitment

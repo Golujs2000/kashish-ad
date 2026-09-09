@@ -16,7 +16,7 @@ export default function Footer() {
               />
               <div className="flex flex-col justify-center">
                 <span className="font-raphtalia text-xl sm:text-2xl font-bold tracking-[0.14em] text-white leading-tight">
-                  Kashish Ad
+                  Kashish Ad®
                 </span>
                 <span className="text-[9px] font-bold tracking-widest text-slate-300 uppercase leading-tight mt-0.5">
                   — LET'S PRINT BRANDING —

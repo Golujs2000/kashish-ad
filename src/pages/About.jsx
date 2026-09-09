@@ -6,7 +6,7 @@ export default function About() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'About Kashish Ad®',
+    name: 'About Kashish Ad',
     description: 'Learn about Kashish Ad, Patna\'s foremost digital printing and sign board fabrication company founded by S Haidar in 1999.',
     url: 'http://localhost:3000/about'
   };
@@ -14,8 +14,8 @@ export default function About() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="About Kashish Ad® | Patna Digital Printing & Signage Pioneer"
-        description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1999 by CEO S Haidar. Located at Capital Tower, Fraser Road."
+        title="About Kashish Ad | Patna Digital Printing & Signage Pioneer"
+        description="Learn about Kashish Ad - Patna's premier digital printing and architectural sign board manufacturer founded in 1999 by CEO S Haidar. Located at Capital Tower, Fraser Road."
         keywords="about kashish ad, s haidar patna, printing press fraser road patna, signage manufacturer bihar"
         canonicalUrl="http://localhost:3000/about"
         structuredData={[aboutSchema]}
@@ -32,10 +32,10 @@ export default function About() {
             Established 1999 • Patna, Bihar
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            About <span className="text-[#e85c1a] font-raphtalia tracking-wide">Kashish Ad®</span>
+            About <span className="text-[#e85c1a] font-raphtalia tracking-wide">Kashish Ad</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Founded under the visionary leadership of <strong>CEO S Haidar</strong>, Kashish Ad® has grown into Patna's premier digital printing and architectural 3D signage manufacturing enterprise, combining industrial-grade technology with handcrafted precision.
+            Founded under the visionary leadership of <strong>CEO S Haidar</strong>, Kashish Ad has grown into Patna's premier digital printing and architectural 3D signage manufacturing enterprise, combining industrial-grade technology with handcrafted precision.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -65,7 +65,7 @@ export default function About() {
                 Setting the Standard for Commercial Branding in Bihar
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
-                Since our GST registration in <strong>1999</strong>, Kashish Ad® has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
+                Since our GST registration in <strong>1999</strong>, Kashish Ad has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Operating from our multi-unit facility at <strong>Capital Tower, A-6 &amp; B-16, Fraser Road</strong>, we have invested continuously in cutting-edge machinery — including Japanese Roland print-and-cut plotters, heavy-duty industrial UV flatbeds, fiber metal lasers, and CNC routing centers.
@@ -104,7 +104,7 @@ export default function About() {
                   className="w-full h-80 object-cover rounded-2xl"
                 />
                 <div className="p-4">
-                  <h4 className="font-bold text-[#1a3a6b] text-sm">Kashish Ad® Primary Workshop &amp; Showroom</h4>
+                  <h4 className="font-bold text-[#1a3a6b] text-sm">Kashish Ad Primary Workshop &amp; Showroom</h4>
                   <p className="text-xs text-slate-500 mt-0.5">Capital Tower, Fraser Road, Patna</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function About() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                 <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">Legal Entity Name</span>
-                <span className="block text-base font-bold text-[#1a3a6b] mt-1">Kashish Ad®</span>
+                <span className="block text-base font-bold text-[#1a3a6b] mt-1">Kashish Ad</span>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                 <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">Company CEO / Proprietor</span>
@@ -225,7 +225,7 @@ export default function About() {
                 Ready to Elevate Your Business Identity?
               </h2>
               <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                Whether you need a single illuminated glow sign board or a statewide rollout across Bihar, CEO S Haidar and the Kashish Ad® team are ready to assist you.
+                Whether you need a single illuminated glow sign board or a statewide rollout across Bihar, CEO S Haidar and the Kashish Ad team are ready to assist you.
               </p>
             </div>
 
