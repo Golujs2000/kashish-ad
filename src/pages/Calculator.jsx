@@ -286,12 +286,12 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
       {/* Page Hero */}
       <section className="bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Transparent Factory Direct Pricing
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Digital Printing &amp; Signage <span className="text-[#e85c1a]">Rate Calculator</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+            Digital Printing &amp; Signage <span className="text-[#1346a8]">Rate Calculator</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Configure your exact dimensions, select premium finishes, and calculate an instant factory-direct estimated quote. Send it directly to our Fraser Road workshop on WhatsApp with one click!
@@ -306,7 +306,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
             {/* Input Controls Form Card */}
             <div className="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-card space-y-6">
               <div className="border-b border-slate-100 pb-4">
-                <h2 className="text-xl font-display font-black text-[#1a3a6b]">
+                <h2 className="text-xl font-display font-black text-[#1346a8]">
                   1. Select Service &amp; Dimensions
                 </h2>
                 <p className="text-xs text-slate-500 mt-0.5">Customize your project specs below to see live pricing.</p>
@@ -319,7 +319,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                 </label>
                 <select
                   id="calc-service"
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                   value={selectedServiceId}
                   onChange={(e) => setSelectedServiceId(e.target.value)}
                 >
@@ -343,7 +343,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                       type="number"
                       min="1"
                       step="0.5"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                       value={width}
                       onChange={(e) => setWidth(Math.max(0.1, parseFloat(e.target.value) || 0))}
                     />
@@ -357,7 +357,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                       type="number"
                       min="1"
                       step="0.5"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                       value={height}
                       onChange={(e) => setHeight(Math.max(0.1, parseFloat(e.target.value) || 0))}
                     />
@@ -376,7 +376,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                       type="number"
                       min="4"
                       max="72"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                       value={width}
                       onChange={(e) => setWidth(Math.max(1, parseInt(e.target.value) || 0))}
                     />
@@ -390,7 +390,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                       id="calc-letter-count"
                       type="number"
                       min="1"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                       value={height}
                       onChange={(e) => setHeight(Math.max(1, parseInt(e.target.value) || 0))}
                     />
@@ -416,7 +416,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                       key={idx}
                       className={`flex items-center justify-between p-3.5 rounded-xl border cursor-pointer transition-all ${
                         selectedFinishIdx === idx
-                          ? 'border-[#e85c1a] bg-orange-50/50 shadow-2xs'
+                          ? 'border-[#1346a8] bg-blue-50/60 shadow-2xs'
                           : 'border-slate-200 bg-white hover:bg-slate-50'
                       }`}
                     >
@@ -424,13 +424,13 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                         <input
                           type="radio"
                           name="finish"
-                          className="w-4 h-4 text-[#e85c1a] focus:ring-[#e85c1a]"
+                          className="w-4 h-4 text-[#1346a8] focus:ring-[#1346a8]"
                           checked={selectedFinishIdx === idx}
                           onChange={() => setSelectedFinishIdx(idx)}
                         />
                         <span className="text-xs sm:text-sm font-semibold text-slate-800">{f.name}</span>
                       </div>
-                      <span className="text-xs font-bold text-[#e85c1a] font-mono">
+                      <span className="text-xs font-bold text-[#1346a8] font-mono">
                         {f.extra > 0 ? `+₹${f.extra} / ${activeService.unitLabel}` : 'Included'}
                       </span>
                     </label>
@@ -448,7 +448,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                     id="calc-quantity"
                     type="number"
                     min="1"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-sm font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     value={quantity}
                     onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
                   />
@@ -459,7 +459,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                   </label>
                   <select
                     id="calc-city"
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     value={customerCity}
                     onChange={(e) => setCustomerCity(e.target.value)}
                   >
@@ -482,7 +482,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                 <textarea
                   id="calc-notes"
                   rows="2"
-                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                  className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                   placeholder="e.g. Need by Thursday evening, or vector CDR / AI file ready..."
                   value={customerNotes}
                   onChange={(e) => setCustomerNotes(e.target.value)}
@@ -493,10 +493,10 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
             {/* Summary Column */}
             <div className="lg:col-span-5 space-y-6">
               <div className="bg-slate-50 rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-card">
-                <span className="text-[11px] font-black uppercase tracking-widest text-[#e85c1a]">
+                <span className="text-[11px] font-black uppercase tracking-widest text-[#1346a8]">
                   Estimated Factory Quote
                 </span>
-                <h3 className="text-xl font-display font-black text-[#1a3a6b] mt-1">
+                <h3 className="text-xl font-display font-black text-[#1346a8] mt-1">
                   {activeService.name}
                 </h3>
 
@@ -528,7 +528,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                   <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-1">
                     Estimated Total Price:
                   </span>
-                  <div className="text-3xl font-display font-black text-[#e85c1a]">
+                  <div className="text-3xl font-display font-black text-[#1346a8]">
                     ₹{calculation.totalMin.toLocaleString()} – ₹{calculation.totalMax.toLocaleString()}*
                   </div>
                   <span className="text-[11px] text-slate-400 mt-1 block">
@@ -542,13 +542,13 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md shadow-orange-500/20 active:scale-95 transition-all text-center"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-95 transition-all text-center"
                   >
                     <span>💬 Send Quote to WhatsApp</span>
                   </a>
                   <a
                     href="tel:09308327111"
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-xs text-[#1a3a6b] bg-white hover:bg-slate-100 border border-slate-200 transition-colors text-center"
+                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-xs text-[#1346a8] bg-white hover:bg-slate-100 border border-slate-200 transition-colors text-center"
                   >
                     <span>📞 Confirm Immediately: 09308327111</span>
                   </a>
@@ -568,8 +568,8 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
               </div>
 
               {/* Helpful Tip */}
-              <div className="bg-orange-50/50 border border-orange-200/60 rounded-2xl p-5 text-xs text-slate-700 leading-relaxed">
-                <strong className="text-[#e85c1a] block mb-1">💡 Tip for Complex Facades</strong>
+              <div className="bg-blue-50/60 border border-blue-200/60 rounded-2xl p-5 text-xs text-slate-700 leading-relaxed">
+                <strong className="text-[#1346a8] block mb-1">💡 Tip for Complex Facades</strong>
                 Prices for multi-story building elevations, ACP sheet cladding structures, and titanium 3D architectural gates depend on structural scaffolding. WhatsApp us your facade photo for a turnkey quote with installation.
               </div>
             </div>

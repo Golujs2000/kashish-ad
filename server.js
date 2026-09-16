@@ -23,7 +23,7 @@ app.get('/api/health', (req, res) => {
     brandHindi: 'कशिश एड(र)',
     ceo: 'S Haidar',
     gstin: '10AENPH7809D1ZT',
-    phone: '09308327111',
+    phone: '07488984637',
     address: 'Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001',
     port: PORT,
     timestamp: new Date().toISOString()
@@ -39,8 +39,8 @@ app.get('/api/info', (req, res) => {
     gstRegistrationDate: '2017',
     natureOfBusiness: 'Trader - Retailer & Supplier of Services',
     teamSize: 'Upto 10 People',
-    phone: '09308327111',
-    whatsapp: '919308327111',
+    phone: '07488984637',
+    whatsapp: '917488984637',
     rating: 4.6,
     reviewsCount: 61,
     googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.5510078491084!2d85.13891387416965!3d25.612511514756072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1788667065067!5m2!1sen!2sin'
@@ -91,6 +91,6 @@ app.listen(PORT, () => {
   console.log(`=======================================================`);
   console.log(`🚀 Kashish Ad® Server running at http://localhost:${PORT}`);
   console.log(`📍 Capital Tower, Fraser Road, Patna, Bihar 800001`);
-  console.log(`📞 Phone & WhatsApp: 09308327111`);
+  console.log(`📞 Phone & WhatsApp: 07488984637`);
   console.log(`=======================================================`);
 });

@@ -63,12 +63,12 @@ export default function Services() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             22+ Commercial Printing, Canopy &amp; Merchandise Solutions
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Digital Printing, Signage &amp; <span className="text-[#e85c1a]">Merchandise Catalog</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+            Digital Printing, Signage &amp; <span className="text-slate-900">Merchandise Catalog</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Explore our complete industrial printing range — from instant UV flatbed curing to architectural SS 3D letters, solvent vinyl banners, and custom corporate labels. Manufactured in-house at Fraser Road, Patna.
@@ -106,7 +106,7 @@ export default function Services() {
                     key={cat.id}
                     className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
                       activeCategory === cat.id
-                        ? 'bg-[#1a3a6b] text-white shadow-md'
+                        ? 'bg-[#1346a8] text-white shadow-md'
                         : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
                     }`}
                     onClick={() => setActiveCategory(cat.id)}
@@ -115,7 +115,7 @@ export default function Services() {
                     <span
                       className={`text-[11px] px-2 py-0.5 rounded-full font-mono ${
                         activeCategory === cat.id
-                          ? 'bg-[#e85c1a] text-white'
+                          ? 'bg-[#1346a8] text-white'
                           : 'bg-slate-200 text-slate-700'
                       }`}
                     >
@@ -133,7 +133,7 @@ export default function Services() {
               </span>
               <input
                 type="text"
-                className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a] focus:border-transparent transition-all"
+                className="w-full pl-10 pr-10 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8] focus:border-transparent transition-all"
                 placeholder="Search products (UV, Vinyl, Acrylic)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -157,28 +157,28 @@ export default function Services() {
 
           {/* Quick Services Showcase Banner */}
           {!searchQuery && activeCategory === 'all' && (
-            <div className="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-gradient-to-r from-red-950 via-slate-900 to-red-950 p-1">
+            <div className="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 p-1">
               <img
-                src="/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg"
-                alt="Kashish Ad Flex Print, Laser Cutting, Canopy, T-Shirt, Trophy Banner"
+                src="/assets/images/kashish-ad-header-branding-strip.jpg"
+                alt="Kashish Ad Complete Signage & Printing Solutions Banner"
                 className="w-full h-auto max-h-36 sm:max-h-48 object-cover rounded-xl"
                 loading="lazy"
               />
               <div className="p-3 bg-white/95 backdrop-blur-sm rounded-xl mt-1 flex flex-wrap items-center justify-between gap-2 text-xs">
-                <div className="flex items-center gap-1.5 font-bold text-[#1a3a6b]">
-                  <span className="text-[#e85c1a]">★</span>
+                <div className="flex items-center gap-1.5 font-bold text-[#1346a8]">
+                  <span className="text-[#1346a8]">★</span>
                   <span>Popular Quick Picks:</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <Link
                     to="/services/tshirt-printing"
-                    className="px-2.5 py-1 rounded-lg bg-orange-50 border border-orange-200 text-[#e85c1a] font-bold hover:bg-[#e85c1a] hover:text-white transition-colors"
+                    className="px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 text-[#1346a8] font-bold hover:bg-[#1346a8] hover:text-white transition-colors"
                   >
                     👕 T-Shirt Printing
                   </Link>
                   <Link
                     to="/services/promotional-canopy"
-                    className="px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 text-[#1a3a6b] font-bold hover:bg-[#1a3a6b] hover:text-white transition-colors"
+                    className="px-2.5 py-1 rounded-lg bg-blue-50 border border-blue-200 text-[#1346a8] font-bold hover:bg-[#1346a8] hover:text-white transition-colors"
                   >
                     🎪 Promo Canopy
                   </Link>
@@ -222,12 +222,12 @@ export default function Services() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       {product.badge && (
-                        <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#e85c1a] text-white shadow-md">
+                        <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#1346a8] text-white shadow-md">
                           {product.badge}
                         </span>
                       )}
                       <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-baseline gap-1">
-                        <span className="text-sm font-black text-[#e85c1a] font-display">{product.price}</span>
+                        <span className="text-sm font-black text-[#1346a8] font-display">{product.price}</span>
                         <span className="text-xs font-semibold text-slate-600">{product.unit}</span>
                       </div>
                     </Link>
@@ -242,7 +242,7 @@ export default function Services() {
                           {product.category === 'corporate' && 'Labels & Corporate Stationery'}
                         </span>
                         <Link to={`/services/${product.id}`} className="block">
-                          <h2 className="mt-1 text-base font-bold font-display text-[#1a3a6b] group-hover:text-[#e85c1a] transition-colors">
+                          <h2 className="mt-1 text-base font-bold font-display text-slate-900 group-hover:text-[#1346a8] transition-colors">
                             {product.title}
                           </h2>
                         </Link>
@@ -254,7 +254,7 @@ export default function Services() {
                           <ul className="mt-4 space-y-1.5 border-t border-slate-100 pt-3 text-xs text-slate-600">
                             {product.features.slice(0, 3).map((feat, idx) => (
                               <li key={idx} className="flex items-start gap-2">
-                                <span className="text-[#e85c1a] font-bold">✓</span>
+                                <span className="text-[#1346a8] font-bold">✓</span>
                                 <span>{feat}</span>
                               </li>
                             ))}
@@ -268,13 +268,13 @@ export default function Services() {
                           href={`https://wa.me/919308327111?text=${waMessage}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl font-bold text-xs text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-sm shadow-orange-500/20 active:scale-95 transition-all"
+                          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl font-bold text-xs text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-sm shadow-blue-900/20 active:scale-95 transition-all"
                         >
                           <span>💬 WhatsApp</span>
                         </a>
                         <Link
                           to={`/services/${product.id}`}
-                          className="py-2.5 px-3 rounded-xl font-bold text-xs text-[#1a3a6b] bg-slate-100 hover:bg-[#eff4fb] border border-slate-200 transition-colors text-center inline-flex items-center gap-1"
+                          className="py-2.5 px-3 rounded-xl font-bold text-xs text-[#1346a8] bg-slate-100 hover:bg-[#f0f7ff] border border-slate-200 transition-colors text-center inline-flex items-center gap-1"
                         >
                           <span>View Details</span>
                           <span>→</span>
@@ -288,12 +288,12 @@ export default function Services() {
           ) : (
             <div className="text-center py-16 bg-slate-50 rounded-2xl border border-slate-200">
               <div className="text-4xl mb-3">🔍</div>
-              <h3 className="text-lg font-bold text-[#1a3a6b]">No products found</h3>
+              <h3 className="text-lg font-bold text-[#1346a8]">No products found</h3>
               <p className="text-xs text-slate-500 mt-1 max-w-md mx-auto">
                 We couldn't find any products matching your search criteria. Try a different keyword or category.
               </p>
               <button
-                className="mt-4 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#1a3a6b]"
+                className="mt-4 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#1346a8]"
                 onClick={() => {
                   setActiveCategory('all');
                   setSearchQuery('');
@@ -306,12 +306,12 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Bulk Order Banner in Navy #1a3a6b */}
+      {/* Bulk Order Banner in Navy #1346a8 */}
       <section className="pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1a3a6b] text-white rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+          <div className="bg-[#1346a8] text-white rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
             <div className="space-y-3 max-w-2xl text-center lg:text-left">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#e85c1a] text-white">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#1346a8] text-white">
                 Special Trade Discounts
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
@@ -333,7 +333,7 @@ export default function Services() {
                 href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20have%20a%20bulk/corporate%20printing%20requirement.%20Please%20connect%20with%20me."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md shadow-orange-500/30 text-center transition-all"
+                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 text-center transition-all"
               >
                 Request Corporate Quote
               </a>

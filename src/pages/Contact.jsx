@@ -61,12 +61,12 @@ export default function Contact() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Direct Workshop Hotline: 09308327111
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Contact &amp; Visit <span className="inline-flex items-start text-[#e85c1a]"><span className="font-raphtalia tracking-wide">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none">®</span></span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+            Contact &amp; Visit <span className="inline-flex items-start text-[#1346a8]"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none">®</span></span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Get in touch directly with our Fraser Road printing and signage team. Visit our showroom and production units at Capital Tower, Patna, or chat with us on WhatsApp for rapid turnaround.
@@ -81,8 +81,8 @@ export default function Contact() {
             {/* Contact Info & Details */}
             <div className="lg:col-span-6 space-y-6">
               <div>
-                <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">Direct Touchpoints</span>
-                <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1a3a6b] mt-1">
+                <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Direct Touchpoints</span>
+                <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
                   We're Here to Help
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
@@ -93,11 +93,11 @@ export default function Contact() {
               <div className="space-y-4">
                 {/* Address */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1a3a6b] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     📍
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">Workshop &amp; Showroom Address</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">Workshop &amp; Showroom Address</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       <strong>Kashish Ad®</strong><br />
                       Capital Tower, A-6 &amp; B-16, Fraser Rd,<br />
@@ -111,13 +111,13 @@ export default function Contact() {
 
                 {/* Phone & WhatsApp */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#e85c1a] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     📞
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">Phone Hotline &amp; WhatsApp</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">Phone Hotline &amp; WhatsApp</h4>
                     <p className="mt-1">
-                      <a href="tel:09308327111" className="text-lg font-display font-black text-[#e85c1a] hover:underline">
+                      <a href="tel:09308327111" className="text-lg font-display font-black text-[#1346a8] hover:underline">
                         09308327111
                       </a>
                     </p>
@@ -126,7 +126,7 @@ export default function Contact() {
                       href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20would%20like%20to%20enquire%20about%20your%20printing%20services."
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-sm active:scale-95 transition-all"
+                      className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-sm active:scale-95 transition-all"
                     >
                       💬 Chat on WhatsApp (09308327111)
                     </a>
@@ -135,20 +135,20 @@ export default function Contact() {
 
                 {/* Email Address */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1a3a6b] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     ✉️
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">Official Email Address</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">Official Email Address</h4>
                     <p className="mt-1">
-                      <a href="mailto:kashishadpatna@gmail.com" className="text-base sm:text-lg font-bold text-[#1a3a6b] hover:text-[#e85c1a] transition-colors break-all">
+                      <a href="mailto:kashishadpatna@gmail.com" className="text-base sm:text-lg font-bold text-[#1346a8] hover:text-[#0f3a8e] transition-colors break-all">
                         kashishadpatna@gmail.com
                       </a>
                     </p>
                     <p className="text-xs text-slate-500 mt-0.5">Send drawings, vector CDR/PDF artwork, and B2B corporate RFQs.</p>
                     <a
                       href="mailto:kashishadpatna@gmail.com"
-                      className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#1a3a6b] bg-white border border-slate-200 hover:bg-slate-50 shadow-2xs active:scale-95 transition-all"
+                      className="mt-3 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-white border border-slate-200 hover:bg-slate-50 shadow-2xs active:scale-95 transition-all"
                     >
                       ✉️ Send Email Inquiry
                     </a>
@@ -157,11 +157,11 @@ export default function Contact() {
 
                 {/* Operating Hours */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1a3a6b] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     🕒
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">Operating Working Hours</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">Operating Working Hours</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       <strong>Monday – Saturday:</strong> 9:00 AM – 9:00 PM<br />
                       <strong>Sunday:</strong> Scheduled Site Installations &amp; Emergency Printing
@@ -171,11 +171,11 @@ export default function Contact() {
 
                 {/* Statutory */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1a3a6b] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     📜
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">GST &amp; Business Credentials</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">GST &amp; Business Credentials</h4>
                     <p className="text-xs text-slate-600 mt-1">
                       <strong>GSTIN:</strong> 10AENPH7809D1ZT<br />
                       <strong>CEO:</strong> S Haidar • <strong>Est.</strong> 2017
@@ -185,11 +185,11 @@ export default function Contact() {
 
                 {/* Official Social Media Channels */}
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#e85c1a] flex items-center justify-center text-lg shrink-0 shadow-2xs">
+                  <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 text-[#1346a8] flex items-center justify-center text-lg shrink-0 shadow-2xs">
                     🌐
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1a3a6b] text-sm">Official Social Channels</h4>
+                    <h4 className="font-bold text-[#1346a8] text-sm">Official Social Channels</h4>
                     <p className="text-xs text-slate-500 mt-0.5 mb-3">
                       Follow our daily live shop runs, machine demos, and completed client signage across Bihar.
                     </p>
@@ -225,7 +225,7 @@ export default function Contact() {
             {/* Quick Inquiry Form */}
             <div className="lg:col-span-6">
               <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-card">
-                <h3 className="text-xl font-display font-black text-[#1a3a6b]">
+                <h3 className="text-xl font-display font-black text-[#1346a8]">
                   Send Us a Direct Message
                 </h3>
                 <p className="text-xs text-slate-500 mt-1 mb-6">
@@ -258,7 +258,7 @@ export default function Contact() {
                         id="contact-name"
                         type="text"
                         required
-                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                         placeholder="e.g. Rahul Kumar or Sharma Retail Ltd."
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -273,7 +273,7 @@ export default function Contact() {
                         id="contact-phone"
                         type="tel"
                         required
-                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                         placeholder="e.g. 09308327111"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -287,7 +287,7 @@ export default function Contact() {
                         </label>
                         <select
                           id="contact-service"
-                          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                           value={formData.service}
                           onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                         >
@@ -310,7 +310,7 @@ export default function Contact() {
                         <input
                           id="contact-city"
                           type="text"
-                          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                          className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-medium focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                           placeholder="e.g. Patna, Muzaffarpur"
                           value={formData.city}
                           onChange={(e) => setFormData({ ...formData, city: e.target.value })}
@@ -325,7 +325,7 @@ export default function Contact() {
                       <textarea
                         id="contact-message"
                         rows="4"
-                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                        className="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                         placeholder="e.g. Need 10x4 ft backlit glow sign board with installation in Fraser Road area..."
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -335,7 +335,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md shadow-orange-500/20 active:scale-98 transition-all text-center"
+                      className="w-full py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-98 transition-all text-center"
                     >
                       {isSubmitting ? 'Submitting...' : 'Submit & Connect on WhatsApp →'}
                     </button>
@@ -355,8 +355,8 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
-              <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">Directions to Our Storefront</span>
-              <h2 className="text-2xl font-display font-black text-[#1a3a6b] mt-0.5">
+              <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Directions to Our Storefront</span>
+              <h2 className="text-2xl font-display font-black text-[#1346a8] mt-0.5">
                 Visit Kashish Ad® on Google Maps
               </h2>
             </div>
@@ -364,7 +364,7 @@ export default function Contact() {
               href="https://maps.google.com/?cid=13267923724395025653"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-xl text-xs font-bold text-[#1a3a6b] bg-slate-100 hover:bg-[#eff4fb] border border-slate-200 transition-colors"
+              className="px-4 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-slate-100 hover:bg-[#f0f7ff] border border-slate-200 transition-colors"
             >
               Open in Google Maps App ↗
             </a>

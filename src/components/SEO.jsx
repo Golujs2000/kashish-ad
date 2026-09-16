@@ -1,4 +1,14 @@
 import React, { useEffect } from 'react';
+import {
+  COMPANY_INFO,
+  CONTACT_INFO,
+  LOCATION_INFO,
+  WORKING_HOURS,
+  SOCIAL_LINKS,
+  TRUST_METRICS,
+  SERVICE_AREAS,
+  SEO_DEFAULTS
+} from '../data/siteData';
 
 /**
  * Advanced Local & Technical SEO Component
@@ -15,14 +25,14 @@ export default function SEO({
   description,
   keywords,
   canonicalUrl,
-  ogImage = '/assets/images/kashish-ad-capital-tower-storefront.jpg',
+  ogImage = SEO_DEFAULTS.ogImage,
   ogType = 'website',
   structuredData = null
 }) {
-  const siteName = 'Kashish Ad®';
-  const defaultTitle = "Kashish Ad® | Patna's Leading Digital Printing & LED Sign Board Manufacturer";
-  const defaultDesc = 'Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar\'s premier digital printing and architectural sign board manufacturer. UV flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 09308327111.';
-  const defaultKeywords = 'digital printing patna, signage board patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing';
+  const siteName = SEO_DEFAULTS.siteName;
+  const defaultTitle = SEO_DEFAULTS.title;
+  const defaultDesc = SEO_DEFAULTS.description;
+  const defaultKeywords = SEO_DEFAULTS.keywords;
 
   const finalTitle = title ? `${title} | ${siteName} Patna` : defaultTitle;
   const finalDesc = description || defaultDesc;
@@ -48,20 +58,20 @@ export default function SEO({
     setMeta('description', finalDesc);
     setMeta('keywords', finalKeywords);
     setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
-    setMeta('author', 'Kashish Ad® (S Haidar)');
+    setMeta('author', SEO_DEFAULTS.author);
 
     // 3. Local SEO Geo Tags for Patna, Bihar
-    setMeta('geo.region', 'IN-BR');
-    setMeta('geo.placename', 'Patna, Bihar, India');
-    setMeta('geo.position', '25.612512;85.138914');
-    setMeta('ICBM', '25.612512, 85.138914');
+    setMeta('geo.region', LOCATION_INFO.geoRegion);
+    setMeta('geo.placename', LOCATION_INFO.geoPlacename);
+    setMeta('geo.position', `${LOCATION_INFO.coordinates.latitude};${LOCATION_INFO.coordinates.longitude}`);
+    setMeta('ICBM', `${LOCATION_INFO.coordinates.latitude}, ${LOCATION_INFO.coordinates.longitude}`);
 
     // 4. Open Graph Tags
     setMeta('og:locale', 'en_IN', true);
     setMeta('og:type', ogType, true);
     setMeta('og:title', finalTitle, true);
     setMeta('og:description', finalDesc, true);
-    setMeta('og:site_name', 'Kashish Ad® Patna', true);
+    setMeta('og:site_name', `${COMPANY_INFO.fullName} Patna`, true);
     const currentUrl = canonicalUrl || (typeof window !== 'undefined' ? window.location.href : 'http://localhost:3000');
     setMeta('og:url', currentUrl, true);
     if (ogImage) {
@@ -90,63 +100,57 @@ export default function SEO({
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
       '@id': 'http://localhost:3000/#localbusiness',
-      name: 'Kashish Ad®',
-      legalName: 'Kashish Ad',
-      description: "Patna's leading commercial digital printing house and sign board manufacturer specializing in UV flatbed printing, 3D acrylic LED letters, solvent vinyl, and architectural signage.",
+      name: COMPANY_INFO.fullName,
+      legalName: COMPANY_INFO.legalName,
+      description: COMPANY_INFO.fullDescription,
       url: 'http://localhost:3000',
-      telephone: '+919308327111',
-      email: 'kashishadpatna@gmail.com',
-      priceRange: '₹40 - ₹5000',
+      telephone: CONTACT_INFO.phoneIntl,
+      email: CONTACT_INFO.email,
+      priceRange: COMPANY_INFO.priceRange,
       image: [
-        'http://localhost:3000/assets/logo.png',
-        'http://localhost:3000/assets/images/kashish-ad-capital-tower-storefront.jpg'
+        `http://localhost:3000${COMPANY_INFO.logoFull}`,
+        `http://localhost:3000${COMPANY_INFO.storefrontImage}`
       ],
       sameAs: [
-        'https://www.instagram.com/kashishadpatna',
-        'https://www.facebook.com/kashishadpatna/'
+        SOCIAL_LINKS.instagram.url,
+        SOCIAL_LINKS.facebook.url
       ],
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur',
-        addressLocality: 'Patna',
-        addressRegion: 'Bihar',
-        postalCode: '800001',
-        addressCountry: 'IN'
+        streetAddress: `${LOCATION_INFO.building}, ${LOCATION_INFO.shopNo}, ${LOCATION_INFO.street}, ${LOCATION_INFO.locality}`,
+        addressLocality: LOCATION_INFO.city,
+        addressRegion: LOCATION_INFO.state,
+        postalCode: LOCATION_INFO.pincode,
+        addressCountry: LOCATION_INFO.countryCode
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 25.612512,
-        longitude: 85.138914
+        latitude: LOCATION_INFO.coordinates.latitude,
+        longitude: LOCATION_INFO.coordinates.longitude
       },
-      hasMap: 'https://maps.google.com/?cid=13267980838971487477',
-      openingHoursSpecification: [
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          opens: '10:00',
-          closes: '20:30'
-        }
-      ],
+      hasMap: LOCATION_INFO.googleMapsCidUrl,
+      openingHoursSpecification: WORKING_HOURS.schemaHours.map(h => ({
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: h.dayOfWeek,
+        opens: h.opens,
+        closes: h.closes
+      })),
       founder: {
         '@type': 'Person',
-        name: 'S Haidar'
+        name: COMPANY_INFO.founder
       },
-      taxID: '10AENPH7809D1ZT',
+      taxID: COMPANY_INFO.gstin,
       aggregateRating: {
         '@type': 'AggregateRating',
-        ratingValue: '4.6',
-        reviewCount: '61',
+        ratingValue: String(TRUST_METRICS.googleRating),
+        reviewCount: String(TRUST_METRICS.reviewsCount),
         bestRating: '5',
         worstRating: '1'
       },
-      areaServed: [
-        { '@type': 'City', name: 'Patna' },
-        { '@type': 'AdministrativeArea', name: 'Bihar' },
-        { '@type': 'City', name: 'Muzaffarpur' },
-        { '@type': 'City', name: 'Gaya' },
-        { '@type': 'City', name: 'Bhagalpur' },
-        { '@type': 'City', name: 'Darbhanga' }
-      ]
+      areaServed: SERVICE_AREAS.map(a => ({
+        '@type': a.type,
+        name: a.name
+      }))
     };
 
     // Inject JSON-LD Schema

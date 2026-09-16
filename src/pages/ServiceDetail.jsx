@@ -25,20 +25,20 @@ export default function ServiceDetail() {
         <SEO title="Service Not Found" description="The requested printing or signage service was not found." />
         <div className="max-w-md w-full text-center bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
           <div className="text-5xl mb-4">🔍</div>
-          <h1 className="text-2xl font-display font-black text-[#1a3a6b]">Service Not Found</h1>
+          <h1 className="text-2xl font-display font-black text-[#1346a8]">Service Not Found</h1>
           <p className="text-sm text-slate-600 mt-2">
             The printing or signage solution you are looking for is not listed or has moved.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               to="/services"
-              className="px-5 py-2.5 rounded-xl bg-[#e85c1a] text-white font-bold text-xs hover:bg-[#cf4e12] transition-colors"
+              className="px-5 py-2.5 rounded-xl bg-[#1346a8] text-white font-bold text-xs hover:bg-[#0f3a8e] transition-colors"
             >
               Browse All 17 Services
             </Link>
             <Link
               to="/"
-              className="px-5 py-2.5 rounded-xl bg-[#1a3a6b] text-white font-bold text-xs hover:bg-[#12284a] transition-colors"
+              className="px-5 py-2.5 rounded-xl bg-[#1346a8] text-white font-bold text-xs hover:bg-[#0b1c36] transition-colors"
             >
               Go to Homepage
             </Link>
@@ -152,14 +152,14 @@ export default function ServiceDetail() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ol className="flex items-center flex-wrap gap-2 text-xs text-slate-500 font-medium">
             <li>
-              <Link to="/" className="hover:text-[#1a3a6b] transition-colors">Home</Link>
+              <Link to="/" className="hover:text-[#1346a8] transition-colors">Home</Link>
             </li>
             <li>/</li>
             <li>
-              <Link to="/services" className="hover:text-[#1a3a6b] transition-colors">Services &amp; Products</Link>
+              <Link to="/services" className="hover:text-[#1346a8] transition-colors">Services &amp; Products</Link>
             </li>
             <li>/</li>
-            <li className="text-[#1a3a6b] font-bold truncate max-w-xs sm:max-w-md">
+            <li className="text-[#1346a8] font-bold truncate max-w-xs sm:max-w-md">
               {product.title}
             </li>
           </ol>
@@ -180,7 +180,7 @@ export default function ServiceDetail() {
                   className="w-full h-full object-cover"
                 />
                 {product.badge && (
-                  <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#e85c1a] text-white shadow-md">
+                  <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#1346a8] text-white shadow-md">
                     {product.badge}
                   </span>
                 )}
@@ -195,14 +195,14 @@ export default function ServiceDetail() {
                 <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
                   <span className="text-xl">🏭</span>
                   <div className="text-left">
-                    <div className="text-[11px] font-bold text-[#1a3a6b] uppercase">In-House Machines</div>
+                    <div className="text-[11px] font-bold text-[#1346a8] uppercase">In-House Machines</div>
                     <div className="text-[10px] text-slate-500">Zero third-party delay</div>
                   </div>
                 </div>
                 <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 flex items-center gap-2.5">
                   <span className="text-xl">⚡</span>
                   <div className="text-left">
-                    <div className="text-[11px] font-bold text-[#1a3a6b] uppercase">Express Dispatch</div>
+                    <div className="text-[11px] font-bold text-[#1346a8] uppercase">Express Dispatch</div>
                     <div className="text-[10px] text-slate-500">{product.turnaround || '24-48 Hours'}</div>
                   </div>
                 </div>
@@ -213,25 +213,25 @@ export default function ServiceDetail() {
             <div className="lg:col-span-7 flex flex-col justify-between">
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider mb-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#e85c1a]"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#1346a8]"></span>
                   {product.category === 'largeformat' && 'Large Format Digital Printing'}
                   {product.category === 'signage' && '3D Signage & Architectural Letters'}
                   {product.category === 'promotional' && 'Outdoor & Promotional Media'}
                   {product.category === 'corporate' && 'Labels & Corporate Branding'}
                 </div>
 
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1a3a6b] tracking-tight leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8] tracking-tight leading-tight">
                   {product.title}
                 </h1>
 
                 {/* Price & Turnaround Bar */}
-                <div className="mt-4 p-4 rounded-2xl bg-[#eff4fb] border border-blue-100 flex flex-wrap items-center justify-between gap-4">
+                <div className="mt-4 p-4 rounded-2xl bg-[#f0f7ff] border border-blue-100 flex flex-wrap items-center justify-between gap-4">
                   <div>
                     <span className="text-[11px] uppercase tracking-wider text-slate-500 font-bold block">
                       Direct Manufacturer Pricing
                     </span>
                     <div className="flex items-baseline gap-1.5 mt-0.5">
-                      <span className="text-2xl sm:text-3xl font-black font-display text-[#e85c1a]">
+                      <span className="text-2xl sm:text-3xl font-black font-display text-[#1346a8]">
                         {product.price}
                       </span>
                       <span className="text-sm font-semibold text-slate-600">
@@ -242,7 +242,7 @@ export default function ServiceDetail() {
 
                   <div className="flex flex-col text-right">
                     <span className="text-[11px] uppercase tracking-wider text-slate-500 font-bold">Turnaround Time</span>
-                    <span className="text-xs font-bold text-[#1a3a6b] mt-0.5">{product.turnaround || 'Same Day / 24h'}</span>
+                    <span className="text-xs font-bold text-[#1346a8] mt-0.5">{product.turnaround || 'Same Day / 24h'}</span>
                   </div>
                 </div>
 
@@ -260,7 +260,7 @@ export default function ServiceDetail() {
                     <ul className="space-y-2">
                       {product.features.map((feat, i) => (
                         <li key={i} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700 font-medium">
-                          <span className="text-[#e85c1a] font-bold text-base leading-none shrink-0">✓</span>
+                          <span className="text-[#1346a8] font-bold text-base leading-none shrink-0">✓</span>
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -275,14 +275,14 @@ export default function ServiceDetail() {
                   href={`https://wa.me/919308327111?text=${waOrderMsg}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md shadow-orange-500/20 active:scale-95 transition-all text-center"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-95 transition-all text-center"
                 >
                   <span className="text-base">💬</span>
                   <span>Order via WhatsApp</span>
                 </a>
                 <a
                   href="tel:09308327111"
-                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1a3a6b] hover:bg-[#12284a] shadow-md shadow-navy-500/20 active:scale-95 transition-all text-center"
+                  className="flex-1 inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0b1c36] shadow-md shadow-navy-500/20 active:scale-95 transition-all text-center"
                 >
                   <span className="text-base">📞</span>
                   <span>Call Hotline: 09308327111</span>
@@ -300,8 +300,8 @@ export default function ServiceDetail() {
         <section className="py-12 bg-slate-50 border-y border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mb-8">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#e85c1a]">Engineered Precision</span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1a3a6b] mt-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#1346a8]">Engineered Precision</span>
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
                 Technical Specifications &amp; Parameters
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -313,7 +313,7 @@ export default function ServiceDetail() {
               {Object.entries(product.specs).map(([label, value], idx) => (
                 <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
                   <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">{label}</div>
-                  <div className="text-sm font-bold text-[#1a3a6b] mt-1">{value}</div>
+                  <div className="text-sm font-bold text-[#1346a8] mt-1">{value}</div>
                 </div>
               ))}
               {product.lifespan && (
@@ -336,7 +336,7 @@ export default function ServiceDetail() {
               <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">🧱</span>
-                  <h3 className="text-lg font-bold font-display text-[#1a3a6b]">
+                  <h3 className="text-lg font-bold font-display text-[#1346a8]">
                     Supported Substrates &amp; Materials
                   </h3>
                 </div>
@@ -361,7 +361,7 @@ export default function ServiceDetail() {
               <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">🏢</span>
-                  <h3 className="text-lg font-bold font-display text-[#1a3a6b]">
+                  <h3 className="text-lg font-bold font-display text-[#1346a8]">
                     Popular Business Applications
                   </h3>
                 </div>
@@ -372,7 +372,7 @@ export default function ServiceDetail() {
                   {product.applications.map((app, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1.5 rounded-lg bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-semibold"
+                      className="px-3 py-1.5 rounded-lg bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-semibold"
                     >
                       📍 {app}
                     </span>
@@ -389,10 +389,10 @@ export default function ServiceDetail() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-6 sm:p-10">
             <div className="text-center max-w-xl mx-auto mb-8">
-              <span className="inline-block px-3 py-1 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider">
+              <span className="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider">
                 Direct Work Order
               </span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1a3a6b] mt-2">
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-2">
                 Request a Custom Quote for {product.title}
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -412,7 +412,7 @@ export default function ServiceDetail() {
                     href={`https://wa.me/919308327111?text=${encodeURIComponent(`Hi Kashish Ad, I just submitted an inquiry on the website for ${product.title} under name ${formData.name} (${formData.phone}).`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-[#e85c1a] text-white font-bold text-xs"
+                    className="px-5 py-2.5 rounded-xl bg-[#1346a8] text-white font-bold text-xs"
                   >
                     Open in WhatsApp for Instant Follow-up
                   </a>
@@ -435,7 +435,7 @@ export default function ServiceDetail() {
                       placeholder="e.g. Ramesh Kumar"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     />
                   </div>
                   <div>
@@ -446,7 +446,7 @@ export default function ServiceDetail() {
                       placeholder="e.g. 09308327111"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     />
                   </div>
                 </div>
@@ -458,7 +458,7 @@ export default function ServiceDetail() {
                       type="text"
                       value={formData.city}
                       onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                       placeholder="e.g. Fraser Rd, Patna"
                     />
                   </div>
@@ -469,7 +469,7 @@ export default function ServiceDetail() {
                       placeholder="e.g. 10 ft × 4 ft"
                       value={formData.dimensions}
                       onChange={(e) => setFormData({ ...formData, dimensions: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     />
                   </div>
                   <div>
@@ -479,7 +479,7 @@ export default function ServiceDetail() {
                       placeholder="e.g. 5 Pcs / 100 Sq.ft"
                       value={formData.quantity}
                       onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                     />
                   </div>
                 </div>
@@ -491,7 +491,7 @@ export default function ServiceDetail() {
                     placeholder="Describe specific finishes, base material, lighting requirements, or emergency turnaround deadlines..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#e85c1a]"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#1346a8]"
                   ></textarea>
                 </div>
 
@@ -499,7 +499,7 @@ export default function ServiceDetail() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] transition-colors shadow-md shadow-orange-500/20"
+                    className="w-full py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] transition-colors shadow-md shadow-blue-900/20"
                   >
                     {loading ? 'Submitting Inquiry...' : `Submit Quote Request for ${product.title}`}
                   </button>
@@ -515,14 +515,14 @@ export default function ServiceDetail() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-end mb-8">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#e85c1a]">Explore Alternatives</span>
-              <h2 className="text-xl sm:text-2xl font-display font-black text-[#1a3a6b] mt-1">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#1346a8]">Explore Alternatives</span>
+              <h2 className="text-xl sm:text-2xl font-display font-black text-[#1346a8] mt-1">
                 Other Popular Digital Printing &amp; Signage
               </h2>
             </div>
             <Link
               to="/services"
-              className="text-xs font-bold text-[#e85c1a] hover:underline"
+              className="text-xs font-bold text-[#1346a8] hover:underline"
             >
               View Full Catalog (17 Products) →
             </Link>
@@ -542,20 +542,20 @@ export default function ServiceDetail() {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-white/95 text-[11px] font-bold text-[#e85c1a] shadow-xs">
+                  <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-white/95 text-[11px] font-bold text-[#1346a8] shadow-xs">
                     {rel.price} {rel.unit}
                   </div>
                 </div>
                 <div className="p-4 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-sm font-bold text-[#1a3a6b] group-hover:text-[#e85c1a] transition-colors">
+                    <h3 className="text-sm font-bold text-[#1346a8] group-hover:text-[#0f3a8e] transition-colors">
                       {rel.title}
                     </h3>
                     <p className="text-xs text-slate-500 mt-1 line-clamp-2">
                       {rel.description}
                     </p>
                   </div>
-                  <div className="mt-3 text-xs font-bold text-[#e85c1a] flex items-center gap-1">
+                  <div className="mt-3 text-xs font-bold text-[#1346a8] flex items-center gap-1">
                     <span>View Specifications</span>
                     <span>→</span>
                   </div>

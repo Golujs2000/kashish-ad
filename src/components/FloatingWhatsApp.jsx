@@ -1,14 +1,15 @@
 import React from 'react';
+import { CONTACT_INFO } from '../data/siteData';
 
 export default function FloatingWhatsApp() {
   return (
     <a
-      href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20want%20to%20inquire%20about%20printing%20/%20signage%20services."
+      href={CONTACT_INFO.getWhatsAppUrl()}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-20 md:bottom-8 right-6 z-40 group flex items-center justify-center w-14 h-14 rounded-full bg-brand-whatsapp text-white shadow-xl shadow-emerald-500/30 hover:scale-110 active:scale-95 transition-all duration-300"
+      className="hidden md:flex fixed bottom-8 right-6 z-40 group items-center justify-center w-14 h-14 rounded-full bg-brand-whatsapp text-white shadow-xl shadow-emerald-500/30 hover:scale-110 active:scale-95 transition-all duration-300"
       aria-label="Order on WhatsApp"
-      title="Chat with Kashish Ad on WhatsApp (09308327111)"
+      title={`Chat with Kashish Ad on WhatsApp (${CONTACT_INFO.phoneFormatted})`}
     >
       <span className="absolute -inset-1 rounded-full bg-emerald-400 opacity-40 animate-ping"></span>
       <svg className="w-8 h-8 relative z-10" viewBox="0 0 24 24" fill="currentColor">

@@ -13,7 +13,7 @@
 
 .font-raphtalia {
   font-family: 'Raphtalia', 'Outfit', sans-serif;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
 }
 
 /* ==========================================================================
@@ -31,22 +31,22 @@
 
   --border-subtle: #e2e8f0;
   --border-strong: #cbd5e1;
-  --border-focus: #e85c1a;
+  --border-focus: #1346a8;
 
-  --brand-navy: #1a3a6b;
-  --brand-navy-dark: #102447;
-  --brand-navy-light: #eff4fb;
+  --brand-navy: #1346a8;
+  --brand-navy-dark: #0b1c36;
+  --brand-navy-light: #f0f7ff;
 
-  --brand-orange: #e85c1a;
-  --brand-orange-hover: #cf4e12;
-  --brand-orange-light: #fff3ec;
-  --brand-orange-shadow: rgba(232, 92, 26, 0.25);
+  --brand-orange: #1346a8;
+  --brand-orange-hover: #0f3a8e;
+  --brand-orange-light: #f0f7ff;
+  --brand-orange-shadow: rgba(19, 70, 168, 0.25);
 
-  --brand-red: #e85c1a;
-  --brand-red-hover: #cf4e12;
-  --brand-red-light: #fff3ec;
-  --brand-red-border: #fed7aa;
-  --brand-red-shadow: rgba(232, 92, 26, 0.25);
+  --brand-red: #1346a8;
+  --brand-red-hover: #0f3a8e;
+  --brand-red-light: #f0f7ff;
+  --brand-red-border: #bfdbfe;
+  --brand-red-shadow: rgba(19, 70, 168, 0.25);
 
   --brand-whatsapp: #25d366;
   --brand-whatsapp-hover: #1da851;
@@ -81,21 +81,12 @@
 }
 
 /* ==========================================================================
-   ARCHITECTURAL GRAPH / BLUEPRINT GRID UTILITIES (Enlarged 54px Squares)
+   ARCHITECTURAL GRAPH / BLUEPRINT GRID UTILITIES (Disabled per user request)
    ========================================================================== */
-.bg-grid-pattern {
-  background-image: linear-gradient(to right, #cbd5e1 1.2px, transparent 1.2px), linear-gradient(to bottom, #cbd5e1 1.2px, transparent 1.2px);
-  background-size: 54px 54px;
-}
-
-.bg-grid-pattern-subtle {
-  background-image: linear-gradient(to right, #e2e8f0 1.2px, transparent 1.2px), linear-gradient(to bottom, #e2e8f0 1.2px, transparent 1.2px);
-  background-size: 54px 54px;
-}
-
+.bg-grid-pattern,
+.bg-grid-pattern-subtle,
 .bg-grid-pattern-dark {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px), linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px);
-  background-size: 54px 54px;
+  background-image: none !important;
 }
 
 /* Reset & Base */

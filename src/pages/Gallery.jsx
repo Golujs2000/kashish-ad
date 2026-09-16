@@ -31,12 +31,12 @@ export default function Gallery() {
       {/* Page Hero */}
       <section className="bg-slate-50 border-b border-slate-200 py-20 sm:py-28 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Executed Projects &amp; Installations
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Our Work <span className="text-[#e85c1a]">Portfolio</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+            Our Work <span className="text-[#1346a8]">Portfolio</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Browse authentic photographs of retail shopfronts, 3D LED glow signage, UV prints, hotel elevations, and laser-cut metal architectural works completed across Patna and Bihar.
@@ -70,7 +70,7 @@ export default function Gallery() {
                   key={cat.id}
                   className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
                     activeCategory === cat.id
-                      ? 'bg-[#1a3a6b] text-white shadow-md'
+                      ? 'bg-[#1346a8] text-white shadow-md'
                       : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
                   }`}
                   onClick={() => setActiveCategory(cat.id)}
@@ -79,7 +79,7 @@ export default function Gallery() {
                   <span
                     className={`text-[11px] px-2 py-0.5 rounded-full font-mono ${
                       activeCategory === cat.id
-                        ? 'bg-[#e85c1a] text-white'
+                        ? 'bg-[#1346a8] text-white'
                         : 'bg-slate-200 text-slate-700'
                     }`}
                   >
@@ -107,12 +107,12 @@ export default function Gallery() {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-[#1a3a6b]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                    <span className="px-4 py-2 rounded-xl bg-white text-[#1a3a6b] font-bold text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <div className="absolute inset-0 bg-[#1346a8]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="px-4 py-2 rounded-xl bg-white text-[#1346a8] font-bold text-xs shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">
                       🔍 Expand Photo
                     </span>
                   </div>
-                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-md text-[#1a3a6b] shadow-sm border border-slate-200/60">
+                  <span className="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 backdrop-blur-md text-[#1346a8] shadow-sm border border-slate-200/60">
                     {item.category === 'signboards' && 'Sign Board'}
                     {item.category === '3dletters' && '3D Letter'}
                     {item.category === 'uvprint' && 'UV Print'}
@@ -123,7 +123,7 @@ export default function Gallery() {
                 {/* Metadata */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-display font-bold text-base text-[#1a3a6b] group-hover:text-[#e85c1a] transition-colors">
+                    <h3 className="font-display font-bold text-base text-[#1346a8] group-hover:text-[#0f3a8e] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-[11px] text-slate-500 font-medium mt-1">📍 {item.location}</p>
@@ -131,7 +131,7 @@ export default function Gallery() {
                       {item.description}
                     </p>
                   </div>
-                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#e85c1a]">
+                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#1346a8]">
                     <span>Click to inspect &amp; inquire</span>
                     <span>→</span>
                   </div>
@@ -140,8 +140,8 @@ export default function Gallery() {
             ))}
           </div>
 
-          {/* Quick Consultation Banner in Navy #1a3a6b */}
-          <div className="mt-16 bg-[#1a3a6b] text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+          {/* Quick Consultation Banner in Navy #1346a8 */}
+          <div className="mt-16 bg-[#1346a8] text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
             <div className="space-y-2 max-w-xl text-center md:text-left">
               <h3 className="text-xl sm:text-2xl font-display font-black text-white">
                 Have a custom design or architectural elevation in mind?
@@ -154,7 +154,7 @@ export default function Gallery() {
               href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20have%20a%20site%20photo/artwork%20and%20need%20a%20quotation%20and%20layout."
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md shadow-orange-500/30 whitespace-nowrap active:scale-95 transition-all"
+              className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 whitespace-nowrap active:scale-95 transition-all"
             >
               💬 Send Artwork on WhatsApp
             </a>

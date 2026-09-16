@@ -6,7 +6,7 @@ export const PRODUCTS = [
     price: '₹ 40 – ₹ 50',
     unit: '/ Pc',
     badge: 'Best Seller',
-    image: '/assets/images/kashish-ad-uv-flatbed-printing-machine.jpg',
+    image: '/assets/images/hero-showcase-wide-format-printer.png',
     description: 'Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero fading.',
     features: [
       'Instant UV-LED lamp curing with zero smudging',
@@ -34,7 +34,7 @@ export const PRODUCTS = [
     price: '₹ 40 – ₹ 50',
     unit: '/ Sq.ft',
     badge: 'Popular',
-    image: '/assets/images/locor-eco-solvent-vinyl-printer.jpg',
+    image: '/assets/images/portfolio-delivery-van-on-the-move.png',
     description: 'High-durability solvent vinyl graphics for storefront branding, showroom wall graphics, vehicle wraps, and high-impact outdoor displays.',
     features: [
       'Gloss / Matte protective lamination available',
@@ -62,7 +62,7 @@ export const PRODUCTS = [
     price: 'Custom Built',
     unit: '120V / 12V LED',
     badge: 'Premium',
-    image: '/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg',
+    image: '/assets/images/led-letters-hotel-the-grand.jpg',
     description: 'Laser-cut acrylic 3D profile letters with built-in waterproof Samsung/Osram LED modules, front-lit face, and custom painted aluminum returns.',
     features: [
       'Front-lit, Back-lit halo illumination & side-lit variants',
@@ -90,7 +90,7 @@ export const PRODUCTS = [
     price: 'SS 304 Grade',
     unit: 'Mirror / Hairline',
     badge: 'Heavy Duty',
-    image: '/assets/images/stainless-steel-metal-name-plate.jpg',
+    image: '/assets/images/name-plates-brushed-gold-office.jpg',
     description: 'Architectural outdoor stainless steel signage boards with laser-cut, acid-etched, or titanium gold 3D letters built for corporate elevations.',
     features: [
       '100% Anti-rust authentic SS 304 / SS 316 stainless steel',
@@ -118,7 +118,7 @@ export const PRODUCTS = [
     price: '₹ 10 – ₹ 25',
     unit: '/ Sq.ft',
     badge: 'Fast Turnaround',
-    image: '/assets/images/wide-format-flex-inkjet-plotter.jpg',
+    image: '/assets/images/kashish-ad-flex-printing-banner.png',
     description: 'High-speed industrial digital printing on 240 GSM to 440 GSM Star flex banner material with heat-sealed borders and heavy brass eyelets.',
     features: [
       'Economical bulk solution for promotional outdoor advertising',
@@ -145,7 +145,7 @@ export const PRODUCTS = [
     price: '₹ 1,100 – ₹ 1,400',
     unit: '/ Pc',
     badge: 'Portable',
-    image: '/assets/images/signage-products-hexagonal-collage.jpg',
+    image: '/assets/images/portfolio-event-stage-standees.png',
     description: 'Portable retractable aluminum rollup standee equipped with anti-curl non-tearable synthetic media and padded canvas carry bag.',
     features: [
       'Tool-free setup in under 30 seconds',
@@ -172,7 +172,7 @@ export const PRODUCTS = [
     price: '₹ 2 – ₹ 5',
     unit: '/ Pc Sheet',
     badge: 'Japanese Plotter',
-    image: '/assets/images/vinyl-die-cut-sticker-label-printing.jpg',
+    image: '/assets/images/kashish-ad-client-branding-portfolio.png',
     description: 'Japanese Roland print-and-cut contour vinyl stickers for packaging labels, product bottles, equipment warning tags, and custom decals.',
     features: [
       'Intricate contour die-cutting around any custom silhouette',
@@ -198,7 +198,7 @@ export const PRODUCTS = [
     price: '₹ 45 – ₹ 65',
     unit: '/ Sq.ft',
     badge: 'Seamless',
-    image: '/assets/images/stretched-canvas-wall-photo-print.jpg',
+    image: '/assets/images/production-wide-format-wall-graphics.png',
     description: 'Custom textured wallpaper printing with embossed 3D visual depth: floral murals, geometric marble motifs, and corporate feature walls.',
     features: [
       'Seamless multi-meter wall coverage with zero visible overlaps',
@@ -224,7 +224,7 @@ export const PRODUCTS = [
     price: '₹ 35 – ₹ 50',
     unit: '/ Sq.ft',
     badge: 'Foldable',
-    image: '/assets/images/acetek-eco-solvent-banner-printer.jpg',
+    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
     description: 'High-density dye-sublimation textile printing on satin and polyester cloth for lightweight, wrinkle-free, foldable corporate flags and backdrops.',
     features: [
       '100% Foldable & wrinkle-free for hassle-free travel and courier',
@@ -250,7 +250,7 @@ export const PRODUCTS = [
     price: 'Custom Built',
     unit: 'Toughened Glass',
     badge: 'Luxury',
-    image: '/assets/images/acrylic-floating-poster-frame-display.jpg',
+    image: '/assets/images/portfolio-avantek-corporate-reception.png',
     description: 'Architectural direct UV flatbed printing on clear, frosted, or toughened glass sheets with brilliant backlight transparency and primer bonding.',
     features: [
       'Chemical glass primer pre-treatment for unbreakable pigment adhesion',
@@ -276,7 +276,7 @@ export const PRODUCTS = [
     price: 'Custom Design',
     unit: 'MS, SS, WPC, MDF',
     badge: 'Architectural',
-    image: '/assets/images/metal-laser-cutting-jali-design.jpg',
+    image: '/assets/images/production-cnc-laser-cutting-sparks.png',
     description: 'Precision 2D and 3D architectural jali patterns cut on mild steel, stainless steel, aluminum, brass, WPC/PVC foam, and MDF boards.',
     features: [
       'Heavy-gauge laser cutting with razor-smooth slag-free edges',
@@ -302,7 +302,7 @@ export const PRODUCTS = [
     price: 'All Dimensions',
     unit: 'LED Backlit',
     badge: 'Illuminated',
-    image: '/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg',
+    image: '/assets/images/sign-boards-fashion-boutique-lightbox.jpg',
     description: 'Heavy-gauge powder coated metal framework with translucent backlit flex or acrylic face and waterproof LED modules for 24/7 store branding.',
     features: [
       'Uniform internal illumination with zero dark spots or tube shadows',
@@ -328,7 +328,7 @@ export const PRODUCTS = [
     price: 'Slim Profile',
     unit: 'Magnetic / Snap',
     badge: 'Modern Display',
-    image: '/assets/images/modern-double-sided-lightbox-sign.jpg',
+    image: '/assets/images/sign-boards-pizza-zone-blade.jpg',
     description: 'Ultra-thin aluminum snap-frame lightboxes for instant graphic changes. Widely installed in shopping mall corridors, food courts, and showrooms.',
     features: [
       'Super slim 18mm–25mm frame thickness for sleek wall integration',
@@ -354,7 +354,7 @@ export const PRODUCTS = [
     price: 'Custom Engraved',
     unit: 'Acrylic & Wood',
     badge: 'Personalized',
-    image: '/assets/images/acrylic-corporate-name-plate-studs.jpg',
+    image: '/assets/images/name-plates-acrylic-brass-studs.jpg',
     description: 'Bespoke residential entrance plates, doctor/advocate chamber signs, and luxury wooden-acrylic hybrid desk name plates with golden embossed letters.',
     features: [
       'Golden mirror finish embossed titanium typography',
@@ -380,7 +380,7 @@ export const PRODUCTS = [
     price: 'Perforated Vinyl',
     unit: 'Glass Branding',
     badge: 'Retail Privacy',
-    image: '/assets/images/multi-graphic-backlit-film-display.jpg',
+    image: '/assets/images/portfolio-samsung-store-branding.png',
     description: 'Perforated vinyl graphics that display high-resolution full-color imagery to exterior passers-by while allowing full visibility from inside the store.',
     features: [
       'Maintains complete exterior visibility and natural daylight from inside',
@@ -405,7 +405,7 @@ export const PRODUCTS = [
     price: 'Bulk Pricing',
     unit: 'Offset & Digital',
     badge: 'Corporate',
-    image: '/assets/images/printed-product-catalog-brochure.jpg',
+    image: '/assets/images/production-marketing-brochures.png',
     description: 'High-speed business stationery printing: GST tax invoice books with carbonless duplicate sheets, tri-fold catalogs, corporate brochures, and flyers.',
     features: [
       'Carbonless NCR duplicate & triplicate paper sets with crisp impressions',
@@ -430,7 +430,7 @@ export const PRODUCTS = [
     price: 'Bulk Discounts',
     unit: 'UV Direct Print',
     badge: 'Merchandise',
-    image: '/assets/images/custom-photo-keychain-printing.jpg',
+    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
     description: 'Custom laser-cut acrylic keychains, corporate name badges, executive desk accessories, and event giveaways printed with permanent UV inks.',
     features: [
       'Permanent scratch-resistant color printing with direct UV flatbed curing',
@@ -454,7 +454,7 @@ export const PRODUCTS = [
     price: '₹ 120 – ₹ 280',
     unit: '/ Pc',
     badge: 'Custom Apparel',
-    image: '/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg',
+    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
     description: 'Full-color custom T-shirt printing in Patna: Corporate polo shirts, event t-shirts, dry-fit sports jerseys, staff uniforms, and promotional bulk t-shirts with DTG, sublimation, and vinyl heat transfer.',
     features: [
       '100% Breathable cotton (180–220 GSM), dry-fit sports polyester & polo pique fabric',
@@ -481,7 +481,7 @@ export const PRODUCTS = [
     price: '₹ 2,200 – ₹ 3,800',
     unit: '/ Set',
     badge: 'Outdoor Promo',
-    image: '/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg',
+    image: '/assets/images/bansal-learning-promotional-canopy-tent.jpg',
     description: 'Heavy-duty pop-up promotional canopy tents with 100% waterproof printed flex or Oxford fabric, collapsible scissor frame, 4-sided valance branding, and heavy carry bag for outdoor promotions in Patna.',
     features: [
       'Instant 2-minute scissor fold setup with zero loose tools or assembly required',
@@ -508,7 +508,7 @@ export const PRODUCTS = [
     price: '₹ 80 – ₹ 160',
     unit: '/ Pc',
     badge: 'Corporate Gift',
-    image: '/assets/images/custom-photo-keychain-printing.jpg',
+    image: '/assets/images/neon-sign-coffee-house-cafe.jpg',
     description: 'Premium gloss white, color-inside, and magic heat-sensitive ceramic mugs with high-definition permanent sublimation photo printing for corporate gifts and employee kits.',
     features: [
       'Microwave and dishwasher safe with permanent glossy ceramic glaze transfer',
@@ -534,7 +534,7 @@ export const PRODUCTS = [
     price: '₹ 250 – ₹ 1,500',
     unit: '/ Pc',
     badge: 'Recognition',
-    image: '/assets/images/kashish-ad-patna-badge-logo.png',
+    image: '/assets/images/name-plates-brushed-gold-office.jpg',
     description: 'Custom laser-cut acrylic, wooden, and crystal mementos with direct UV color printing, golden foil accents, and personalized name engraving for institutions and events in Patna.',
     features: [
       'Intricate fiber laser & CNC router cut contours matching corporate emblems or sports crests',
@@ -560,7 +560,7 @@ export const PRODUCTS = [
     price: 'Custom Quotation',
     unit: 'Heavy Truss / Backlit',
     badge: 'Monumental',
-    image: '/assets/images/kashish-ad-bssa-sports-complex-illuminated-signage.jpg',
+    image: '/assets/images/acp-work-architectural-facade.jpg',
     description: 'Turnkey structural engineering and fabrication for large-format outdoor illuminated signs, sports complex elevations, rooftop monoliths, and campus entrance landmarks across Bihar.',
     features: [
       'Heavy-duty welded MS truss framework engineered for certified wind loads and storm resilience',

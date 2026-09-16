@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { CONTACT_INFO } from '../data/siteData';
 
 export default function MobileStickyBar() {
   return (
@@ -8,17 +9,17 @@ export default function MobileStickyBar() {
       aria-label="Mobile Quick Actions"
     >
       <a
-        href="tel:09308327111"
+        href={CONTACT_INFO.phoneTel}
         className="flex-1 flex flex-col items-center justify-center py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition-colors"
       >
-        <svg className="w-4 h-4 text-[#e85c1a] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
+        <svg className="w-4 h-4 text-[#1346a8] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
           <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.4 11.4 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.58 1 1 0 01-.25 1.02l-2.2 2.19z"/>
         </svg>
         <span>Call Now</span>
       </a>
 
       <a
-        href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20want%20to%20order%20printing%20/%20signage."
+        href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I want to order printing / signage.')}
         target="_blank"
         rel="noopener noreferrer"
         className="flex-[1.4] flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-brand-whatsapp text-white font-bold text-xs shadow-md shadow-emerald-500/20 active:scale-95 transition-all"

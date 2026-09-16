@@ -1,210 +1,303 @@
 export const GALLERY_ITEMS = [
+  // --- 1. NEW SHOWCASES FROM REAL CLIENT ASSETS ---
   {
-    id: 1,
-    title: 'Kashish Ad® Capital Tower Facility & Storefront',
+    id: 'p-paragon-flange',
+    title: 'Paragon Footwear Double-Sided Circular LED Lightbox Sign',
     category: 'signboards',
-    image: '/assets/images/kashish-ad-capital-tower-storefront.jpg',
-    location: 'Capital Tower, Fraser Road, Patna',
-    description: 'Our primary executive facility and client demonstration center located at Fraser Road, Patna.'
+    image: '/assets/images/paragon-footwear-circular-led-lightbox-flange-sign.jpg',
+    location: 'Footwear Retail Outlet, Patna',
+    description: 'High-output circular LED projecting blade sign board with custom curved diffuser and IP67 weather seal.'
   },
   {
-    id: 2,
-    title: 'Commercial Storefront ACP Sign Board',
+    id: 'p-bombay-kulfi-facade',
+    title: 'Bombay Kulfi & Toys Adda Storefront Elevation Signage',
     category: 'signboards',
-    image: '/assets/images/commercial-storefront-acp-sign-board.jpg',
-    location: 'Raza Market Commercial District, Patna',
-    description: 'Weather-resistant ACP panelling with high-visibility commercial fascia sign board fabrication.'
+    image: '/assets/images/kashish-ad-bombay-kulfi-toys-adda-storefront-signage.jpg',
+    location: 'Patna Commercial Complex Storefront',
+    description: 'Turnkey retail elevation with multi-color 3D acrylic letters, architectural grid paneling, and entrance signage.'
   },
   {
-    id: 3,
-    title: 'Modern Double-Sided Projecting Lightbox Sign',
-    category: 'signboards',
-    image: '/assets/images/modern-double-sided-lightbox-sign.jpg',
-    location: 'Retail Showroom Corridor, Patna',
-    description: 'Dual-face illuminated circular projecting sign board with high-output IP67 Samsung LED modules.'
-  },
-  {
-    id: 4,
-    title: 'Outdoor Rooftop Unipole Hoarding Billboard',
-    category: 'signboards',
-    image: '/assets/images/rooftop-unipole-hoarding-billboard.jpg',
-    location: 'Commercial Arterial Roadway, Patna',
-    description: 'Heavy structural truss unipole billboard engineered with wind-load certification and night floodlights.'
-  },
-  {
-    id: 5,
-    title: 'Kashish Ad In-House Fabrication Plant & Workshop',
-    category: 'signboards',
-    image: '/assets/images/kashish-ad-plant-workshop-inside.jpg',
-    location: 'Patna Production Plant',
-    description: 'Inside look at our in-house manufacturing floor with acrylic sheet bending, framing, and sign assembly.'
-  },
-  {
-    id: 6,
-    title: 'Shahi Mahal 3D LED Acrylic Glow Sign Board',
+    id: 'p-ncc-honor-board',
+    title: 'NCC Directorate Bihar Architectural Honor Roll Wooden Boards',
     category: '3dletters',
-    image: '/assets/images/kashish-ad-led-acrylic-glow-sign-board.jpg',
-    location: 'Patna Restaurant Facade',
-    description: 'Cast acrylic 3D profile letters with brilliant internal warm LED backlight illumination.'
+    image: '/assets/images/ncc-directorate-bihar-honor-roll-board.jpg',
+    location: 'NCC Directorate Headquarters, Bihar',
+    description: 'Handcrafted arched solid wood boards with metallic gold screen lettering, crest emblem, and polished border trim.'
   },
   {
-    id: 7,
-    title: 'Lux Venus 3D LED Channel Letters Sign Board',
-    category: '3dletters',
-    image: '/assets/images/lux-venus-3d-led-glow-sign-board.jpg',
-    location: 'Commercial Showroom, Patna',
-    description: 'Precision automated channel letter fabricated with high-grade aluminium returns and acrylic face.'
-  },
-  {
-    id: 8,
-    title: '3D Acrylic Channel Letters with Trim Cap',
-    category: '3dletters',
-    image: '/assets/images/3d-channel-letters-acrylic-trim-cap.jpg',
-    location: 'Kashish Ad Letter Workshop, Patna',
-    description: 'Precision bender fabrication showing edge trim-capping and high-density interior LED module wiring.'
-  },
-  {
-    id: 9,
-    title: 'Custom Flexible Neon LED Sign Board',
-    category: '3dletters',
-    image: '/assets/images/custom-neon-sign-board-red.jpg',
-    location: 'Cafe & Studio Interior, Patna',
-    description: 'Ultra-vibrant silicone flex neon mounted on CNC contour-cut clear virgin acrylic baseplate.'
-  },
-  {
-    id: 10,
-    title: 'Stainless Steel Metal Name Plate with Standoffs',
-    category: '3dletters',
-    image: '/assets/images/stainless-steel-metal-name-plate.jpg',
-    location: 'Corporate Office Entrance, Patna',
-    description: 'Grade 304 brushed stainless steel engraved name plate mounted with heavy-duty architectural standoffs.'
-  },
-  {
-    id: 11,
-    title: 'Corporate Acrylic Name Plate with SS Studs',
-    category: '3dletters',
-    image: '/assets/images/acrylic-corporate-name-plate-studs.jpg',
-    location: 'Executive Chamber, Capital Tower, Patna',
-    description: '10mm optically clear virgin cast acrylic panel with flame-polished beveled edges and SS wall spacers.'
-  },
-  {
-    id: 12,
-    title: 'HandTop Industrial UV Flatbed Rigid Media Printing',
-    category: 'uvprint',
-    image: '/assets/images/uv-flatbed-printer-machine.jpg',
-    location: 'Kashish Ad UV Flatbed Hall',
-    description: 'Direct-to-surface instant cold UV-LED cured printing on acrylic, ACP, glass, foam board, and wood.'
-  },
-  {
-    id: 13,
-    title: 'Roland TrueVIS High-Definition Print & Cut System',
-    category: 'uvprint',
-    image: '/assets/images/roland-truevis-print-cut-machine.jpg',
-    location: 'Vinyl Graphics Production Unit',
-    description: 'Dual print and integrated contour kiss-cut system producing photographic vinyl graphics and labels.'
-  },
-  {
-    id: 14,
-    title: 'Matrix Duo High-Gloss Roll Vinyl Lamination',
-    category: 'uvprint',
-    image: '/assets/images/roll-vinyl-lamination-machine.jpg',
-    location: 'Finishing & Post-Press Section',
-    description: 'Heavy thermal roller lamination protecting outdoor vinyl prints from UV fading and scratches.'
-  },
-  {
-    id: 15,
-    title: 'Fine Art Stretched Canvas Wall Photo Print',
-    category: 'uvprint',
-    image: '/assets/images/stretched-canvas-wall-photo-print.jpg',
+    id: 'p-mandir-temple-jali',
+    title: 'Intricate CNC Carved Temple Altar & Mandir Backlit Jali',
+    category: 'cnc',
+    image: '/assets/images/cnc-carved-wooden-mandir-temple-jali-backlit.webp',
     location: 'Luxury Residential Interior, Patna',
-    description: '380 GSM textured cotton canvas printed with 1440 DPI archival inks and gallery stretched on pine wood frame.'
+    description: 'High-precision 3-axis CNC router carved mandir with glowing backlit Om mandala and floral trellis pillars.'
   },
   {
-    id: 16,
-    title: 'Commercial Multi-Page Gloss Catalog & Brochure Printing',
+    id: 'p-austin-3d-letters',
+    title: 'Austin 3D Acrylic Front-Lit Channel Letters with Perforated Returns',
+    category: '3dletters',
+    image: '/assets/images/3d-acrylic-led-channel-letters-austin.webp',
+    location: 'Commercial Brand Showroom, Patna',
+    description: 'High-brightness front-lit acrylic face letters with diamond-pattern perforated returns for high-contrast night visibility.'
+  },
+  {
+    id: 'p-bansal-canopy',
+    title: 'Bansal Learning 6x6 ft Outdoor Promotional Canopy Tent',
     category: 'uvprint',
-    image: '/assets/images/printed-product-catalog-brochure.jpg',
-    location: 'Commercial Print Section, Fraser Road',
-    description: 'High-speed commercial printing of multi-page saddle-stitched catalogs, brochures, and corporate profiles.'
+    image: '/assets/images/bansal-learning-promotional-canopy-tent.jpg',
+    location: 'Educational Promotional Campaign, Patna',
+    description: 'Heavy-gauge collapsible iron frame with high-density waterproof printed flex canopy and three-side promotional walls.'
   },
   {
-    id: 17,
-    title: 'CNC Laser Cut Architectural Metal Jali Design',
-    category: 'cnc',
-    image: '/assets/images/metal-laser-cutting-jali-design.jpg',
-    location: 'Architectural Project, Patna',
-    description: 'Fiber laser cut decorative floral jali pattern in mild steel with anti-rust epoxy powder coating.'
-  },
-  {
-    id: 18,
-    title: 'Precision Cast Acrylic Sheet Laser Profile Cutting',
-    category: 'cnc',
-    image: '/assets/images/acrylic-sheet-laser-cutting.jpg',
-    location: 'CNC Laser Workshop, Patna',
-    description: 'Zero-taper optical CO2 laser cutting of cast acrylic sheets for letter fabrication and display fixtures.'
-  },
-  {
-    id: 19,
-    title: 'Aakash Deep Storefront 3D Acrylic Glow Sign Board',
+    id: 'p-led-hotel-grand',
+    title: 'Hotel The Grand Luxury Warm Backlit 3D Letters',
     category: '3dletters',
-    image: '/assets/images/kashish-ad-aakash-deep-3d-led-glow-sign-board.jpg',
-    location: 'Retail Boutique, Patna',
-    description: 'Vibrant red 3D acrylic LED channel letters on storefront elevation with intense night luminosity.'
+    image: '/assets/images/led-letters-hotel-the-grand.jpg',
+    location: 'Patna Luxury Hospitality Project',
+    description: 'Precision fabricated warm-white halo-illuminated 3D architectural letters mounted on custom matte black fascia.'
   },
   {
-    id: 20,
-    title: 'Rasmalai The Mithai Shop Dual-Script 3D LED Board',
+    id: 'p-acp-commercial-facade',
+    title: 'Commercial Architectural ACP Paneling & Elevation Facade',
+    category: 'signboards',
+    image: '/assets/images/acp-work-architectural-facade.jpg',
+    location: 'High Street Commercial Elevation, Patna',
+    description: 'Modern architectural ACP exterior wall cladding with warm recessed downlighting and seamless corner grooving.'
+  },
+  {
+    id: 'p-sign-pizza-zone',
+    title: 'Pizza Zone Double-Sided Projecting Circular Blade Sign',
+    category: 'signboards',
+    image: '/assets/images/sign-boards-pizza-zone-blade.jpg',
+    location: 'Food Street & Restaurant Corridor, Patna',
+    description: 'Dual-faced illuminated projecting round blade sign with custom vibrant acrylic graphics and IP67 LED modules.'
+  },
+  {
+    id: 'p-neon-good-vibes',
+    title: 'Good Vibes Rainbow LED Neon Flex Art Signage',
     category: '3dletters',
-    image: '/assets/images/kashish-ad-rasmalai-the-mithai-shop-3d-led-sign-board.jpg',
-    location: 'Sweets & Restaurant, Patna',
-    description: 'Dual-script English and Hindi 3D front-lit LED letters mounted on fluted red ACP sheet base.'
+    image: '/assets/images/neon-sign-good-vibes-rainbow.jpg',
+    location: 'Modern Cafe & Lounge Interior, Patna',
+    description: 'Vibrant multicolored silicone neon flex hand-mounted on CNC contour-cut optical clear virgin acrylic baseplate.'
   },
   {
-    id: 21,
-    title: 'Hanzala Hajj Umrah ACP Storefront Elevation Board',
-    category: 'signboards',
-    image: '/assets/images/kashish-ad-hanzala-hajj-umrah-storefront-sign-board.jpg',
-    location: 'Fraser Road Commercial Complex, Patna',
-    description: 'Architectural ACP panelling with deep 3D embossed acrylic letters and circular brand emblem.'
+    id: 'p-nameplate-sharma',
+    title: 'Executive Chamber Acrylic Name Plate with Brass Standoffs',
+    category: '3dletters',
+    image: '/assets/images/name-plates-acrylic-brass-studs.jpg',
+    location: 'Fraser Road Executive Suites, Patna',
+    description: 'High-gloss deep black cast acrylic name plate with gold dimensional lettering and four architectural brass wall spacers.'
   },
   {
-    id: 22,
-    title: 'BSSA Patliputra Sports Complex Illuminated Sign Structure',
+    id: 'p-sign-fashion-boutique',
+    title: 'Fashion Boutique Perimeter-Glow Storefront Lightbox Sign',
     category: 'signboards',
-    image: '/assets/images/kashish-ad-bssa-sports-complex-illuminated-signage.jpg',
-    location: 'Kankarbagh Sports Complex, Patna',
-    description: 'Monumental outdoor illuminated signage structure fabricated for Bihar State Sports Authority.'
+    image: '/assets/images/sign-boards-fashion-boutique-lightbox.jpg',
+    location: 'Retail Showroom Avenue, Patna',
+    description: 'Ultra-clean matte black metal box sign featuring warm golden perimeter halo glow and razor-sharp script typography.'
   },
   {
-    id: 23,
-    title: 'Storefront Facade Architectural 3D Elevation Design',
-    category: 'signboards',
-    image: '/assets/images/kashish-ad-red-storefront-facade-elevation-mockup.jpg',
-    location: 'Kashish Ad Design Center, Patna',
-    description: 'Complete 3D commercial facade layout showing ACP cladding, LED display panels, and shop entrance.'
+    id: 'p-led-abc-warm',
+    title: 'ABC Precision Warm Halo-Lit 3D Channel Letters',
+    category: '3dletters',
+    image: '/assets/images/led-letters-abc-warm-glow.jpg',
+    location: 'Corporate Entrance Elevation, Patna',
+    description: 'Computer-bent aluminium return channels with high-lumen warm-white Samsung LED illumination and acrylic front face.'
   },
   {
-    id: 24,
-    title: 'Capital Tower On-Site Signage Fitting & Installation',
+    id: 'p-neon-coffee-house',
+    title: 'Coffee House Dual-Tone Steaming Cup Neon Sign',
+    category: '3dletters',
+    image: '/assets/images/neon-sign-coffee-house-cafe.jpg',
+    location: 'Specialty Roastery & Bistro, Patna',
+    description: 'Precision neon flex graphic featuring iconic steaming blue cup and crisp red/white neon script letters.'
+  },
+  {
+    id: 'p-nameplate-office-gold',
+    title: 'Brushed Architectural Brass Executive Office Door Plate',
+    category: '3dletters',
+    image: '/assets/images/name-plates-brushed-gold-office.jpg',
+    location: 'Corporate Headquarters Boardroom, Patna',
+    description: 'Grade 304 brushed brass metal door plaque with chemical etching, black enamel inlay, and counter-sunk mounting screws.'
+  },
+  {
+    id: 'p-acp-wall-plaque',
+    title: 'Architectural Geometric ACP Wall Plaque & Gate Plaque',
     category: 'signboards',
-    image: '/assets/images/kashish-ad-work-in-progress-site-branding-banner.jpg',
+    image: '/assets/images/acp-work-commercial-wall-plaque.jpg',
+    location: 'Corporate Campus Entry Portal, Patna',
+    description: 'Modular metallic grey ACP panelling with flush-reveal borders engineered for prestigious outdoor entrance walls.'
+  },
+  {
+    id: 'p-kashish-complete-showcase',
+    title: 'Kashish Ad Complete Signage & Printing Solution Master Showcase',
+    category: 'uvprint',
+    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
+    location: 'Kashish Ad Fraser Road Headquarters, Patna',
+    description: 'Comprehensive printing & signage overview: 3D Letters, CNC Cutting, Flex Printing, and corporate branding production.'
+  },
+
+  // --- 2. FULL POSTER MASTERWORKS ---
+  {
+    id: 'p-poster-acp',
+    title: 'Turnkey Architectural ACP Elevation & Panel Works Portfolio',
+    category: 'signboards',
+    image: '/assets/images/acp-work-poster-full.jpg',
+    location: 'Patna & Bihar Commercial Infrastructure',
+    description: 'Complete portfolio showcase of exterior ACP cladding, facade lighting integration, and modular wall panelling.'
+  },
+  {
+    id: 'p-poster-led',
+    title: 'Master 3D LED Letters & Glow Channel Fabrication Portfolio',
+    category: '3dletters',
+    image: '/assets/images/led-letters-poster-full.jpg',
+    location: 'Bihar Commercial Retail & Hospitality',
+    description: 'Comprehensive collection of custom LED channel letters, warm backlighting, and acrylic profile dimensional lettering.'
+  },
+  {
+    id: 'p-poster-neon',
+    title: 'Artisan Custom Flexible LED Neon Art Signage Portfolio',
+    category: '3dletters',
+    image: '/assets/images/neon-sign-poster-full.jpg',
+    location: 'Patna Cafes, Studios & Retail Spaces',
+    description: 'Full collection of bespoke silicone LED neon flex signs designed for eye-catching photo zones and retail interiors.'
+  },
+  {
+    id: 'p-poster-nameplates',
+    title: 'Bespoke Executive Name Plates & Architectural Door Signage',
+    category: '3dletters',
+    image: '/assets/images/name-plates-poster-full.jpg',
+    location: 'Patna Corporate & Residential Suites',
+    description: 'Luxury residential villa name plates, brass corporate plaques, and cast acrylic directional signage with brass studs.'
+  },
+  {
+    id: 'p-poster-signboards',
+    title: 'Illuminated Commercial Sign Boards & Lightbox Displays',
+    category: 'signboards',
+    image: '/assets/images/sign-boards-poster-full.jpg',
+    location: 'Retail Showrooms & High-Street Plazas, Patna',
+    description: 'Turnkey commercial signage: circular double-sided blade signs, rectangular storefront lightboxes, and glow fascia.'
+  },
+
+  // --- 3. EXISTING PORTFOLIO INSTALLATIONS ---
+  {
+    id: 'p-trends',
+    title: 'Trends Retail Storefront & 3D Illuminated Facade',
+    category: 'signboards',
+    image: '/assets/images/portfolio-trends-retail-storefront.png',
+    location: 'High Street Retail Zone, Patna',
+    description: 'Turnkey retail showroom facade with matte black ACP background, 3D acrylic edge-lit letters, and promo banners.'
+  },
+  {
+    id: 'p-samsung',
+    title: 'Samsung Smart Experience Store Branding',
+    category: 'signboards',
+    image: '/assets/images/portfolio-samsung-store-branding.png',
+    location: 'Electronics Plaza, Patna',
+    description: 'Complete indoor showroom branding including illuminated Samsung LED 3D letters and high-contrast back-lit fabric displays.'
+  },
+  {
+    id: 'p-avantek',
+    title: 'Avantek Technologies 3D Architectural Reception Sign',
+    category: '3dletters',
+    image: '/assets/images/portfolio-avantek-corporate-reception.png',
+    location: 'Corporate Business Park, Patna',
+    description: 'Precision dual-tone metallic acrylic dimensional logo mounted on Italian marble backdrop with accent warm lighting.'
+  },
+  {
+    id: 'p-channel-letters',
+    title: 'Kashish Ad® Warm-White Backlit 3D Channel Letters',
+    category: '3dletters',
+    image: '/assets/images/kashish-ad-3d-led-channel-letters.png',
+    location: 'Capital Tower Storefront, Patna',
+    description: 'Custom fabricated stainless steel and golden trim channel letters with high-lumen warm-white Samsung LED backlighting.'
+  },
+  {
+    id: 'p-van-fleet',
+    title: 'Commercial Fleet & Delivery Vehicle Wrap',
+    category: 'signboards',
+    image: '/assets/images/portfolio-delivery-van-on-the-move.png',
+    location: 'Patna Transit & Distribution Fleet',
+    description: 'Full body 3M cast vinyl wrap with UV protective overlaminate for high-durability on-the-road brand promotion.'
+  },
+  {
+    id: 'p-laser-sparks',
+    title: 'High-Speed CNC Router & Fiber Laser Cutting',
+    category: 'cnc',
+    image: '/assets/images/production-cnc-laser-cutting-sparks.png',
+    location: 'Kashish Ad In-House Fabrication Plant',
+    description: 'High precision laser cutting of intricate ornamental jali patterns on stainless steel and decorative acrylic panels.'
+  },
+  {
+    id: 'p-cnc-banner-showcase',
+    title: 'Industrial CNC Cutting & Laser Engraving Production',
+    category: 'cnc',
+    image: '/assets/images/kashish-ad-cnc-cutting-banner.png',
+    location: 'CNC Precision Fabrication Workshop, Patna',
+    description: 'Heavy duty 3-axis CNC router cutting MDF, ACP, acrylic, and PVC foam boards for architectural installations.'
+  },
+  {
+    id: 'p-letter-banner-showcase',
+    title: '3D Letter Profile Bending & Fabrication Production',
+    category: 'cnc',
+    image: '/assets/images/kashish-ad-3d-letter-printing-banner.png',
+    location: 'Automated Letter Bending Center, Patna',
+    description: 'Computer-controlled automated strip feeding, grooving, and edge trimming for flawless channel letter contours.'
+  },
+  {
+    id: 'p-wallpaper-art',
+    title: 'Custom High-Density Wall Graphics & Wallpaper Murals',
+    category: 'uvprint',
+    image: '/assets/images/production-wide-format-wall-graphics.png',
+    location: 'Interior Architecture & Wall Decor Project',
+    description: 'Seamless eco-solvent and UV flatbed printed textured wallpapers with vibrant, fade-resistant pigments.'
+  },
+  {
+    id: 'p-event-standees',
+    title: 'Luxury Event Easel Boards & Roll-Up Standees',
+    category: 'uvprint',
+    image: '/assets/images/portfolio-event-stage-standees.png',
+    location: 'Grand Convention Center, Patna',
+    description: 'Wooden tripod easels with printed satin rigid foam boards, welcome signages, and luxury retractable banners.'
+  },
+  {
+    id: 'p-marketing-brochures',
+    title: 'Commercial Multi-Page Catalog & Corporate Brochure Printing',
+    category: 'uvprint',
+    image: '/assets/images/production-marketing-brochures.png',
+    location: 'Commercial Print Section, Fraser Road, Patna',
+    description: 'High-speed multi-page saddle-stitched catalogs, corporate profile brochures, and promotional print collateral.'
+  },
+  {
+    id: 'p-flex-banner-showcase',
+    title: 'High-Density Outdoor Flex & Hoarding Banner Printing',
+    category: 'uvprint',
+    image: '/assets/images/kashish-ad-flex-printing-banner.png',
+    location: 'Wide-Format Print Floor, Patna',
+    description: 'Heavy-duty 440 GSM star flex printing with Japanese high-speed solvent plotters for outdoor billboard campaigns.'
+  },
+  {
+    id: 'p-production-grid',
+    title: 'Multi-Machine Printing & Sign Fabrication Plant Floor',
+    category: 'uvprint',
+    image: '/assets/images/kashish-ad-production-services-grid.png',
+    location: 'Kashish Ad Fraser Road Plant, Patna',
+    description: 'An overview of our 9 industrial production machines running simultaneously for same-day fabrication and delivery.'
+  },
+  {
+    id: 'p-office-reception',
+    title: 'Executive Client Demonstration & Design Studio',
+    category: 'signboards',
+    image: '/assets/images/production-office-reception-studio.png',
     location: 'Capital Tower, Fraser Road, Patna',
-    description: 'Our trained technical crew installing flex hoardings, 3D channel letters, and ACP cladding.'
+    description: 'Our primary design studio where clients review material swatches, LED luminous samples, and 3D architectural elevations.'
   },
   {
-    id: 25,
-    title: 'Kashish Ad Comprehensive Services Showcase Banner',
-    category: 'uvprint',
-    image: '/assets/images/kashish-ad-flex-print-laser-cutting-horizontal-banner.jpg',
-    location: 'Fraser Road Production Facility, Patna',
-    description: 'Showcasing Flex, Glow Signs, ACP Boards, Standees, Canopies, T-Shirt & Cup printing, and Trophies.'
-  },
-  {
-    id: 26,
-    title: 'Bilingual Regional Promotion Banner (Flex & Laser Cutting)',
-    category: 'uvprint',
-    image: '/assets/images/kashish-ad-yahan-flex-print-laser-cutting-banner.jpg',
-    location: 'Patna Regional Display',
-    description: 'High-density outdoor promotional banner printed with eco-solvent weather-proof inks.'
+    id: 'p-van-fleet-branded',
+    title: 'Branded Express Delivery & Installation Fleet',
+    category: 'signboards',
+    image: '/assets/images/production-branded-delivery-van-fleet.png',
+    location: 'Patna & Bihar Regional Logistics',
+    description: 'Dedicated transport fleet ensuring prompt, secure site delivery and turnkey installation across all Bihar districts.'
   }
 ];

@@ -5,14 +5,14 @@ import SEO from '../components/SEO';
 
 export default function Machinery() {
   const machineImages = {
-    'hp-latex-570': '/assets/images/hp-latex-wide-format-banner-printer.jpg',
-    'roland-print-cut': '/assets/images/roland-truevis-print-cut-machine.jpg',
-    'uv-flatbed': '/assets/images/kashish-ad-uv-flatbed-printing-machine.jpg',
-    'cnc-router': '/assets/images/cnc-milling-router-jali-cutting.jpg',
-    'fiber-laser': '/assets/images/kashish-ad-1.5kw-fiber-laser-cutting-machine.jpg',
-    'letter-bender': '/assets/images/3d-channel-letters-acrylic-trim-cap.jpg',
-    'vinyl-laminator': '/assets/images/roll-vinyl-lamination-machine.jpg',
-    'digital-cloth': '/assets/images/wide-format-flex-inkjet-plotter.jpg'
+    'hp-latex-570': '/assets/images/kashish-ad-flex-printing-banner.png',
+    'roland-print-cut': '/assets/images/hero-showcase-3d-letters-and-prints.png',
+    'uv-flatbed': '/assets/images/hero-showcase-wide-format-printer.png',
+    'cnc-router': '/assets/images/kashish-ad-cnc-cutting-banner.png',
+    'fiber-laser': '/assets/images/production-cnc-laser-cutting-sparks.png',
+    'letter-bender': '/assets/images/kashish-ad-3d-letter-printing-banner.png',
+    'vinyl-laminator': '/assets/images/production-wide-format-wall-graphics.png',
+    'digital-cloth': '/assets/images/kashish-ad-complete-signage-solution-banner.png'
   };
 
   return (
@@ -30,12 +30,12 @@ export default function Machinery() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200 text-[#e85c1a] text-xs font-bold uppercase tracking-wider mb-6">
-            <span className="w-2 h-2 rounded-full bg-[#e85c1a] animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Advanced In-House Production Facility
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1a3a6b] tracking-tight max-w-3xl mx-auto">
-            Our Printing &amp; Fabrication <span className="text-[#e85c1a]">Machinery</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+            Our Printing &amp; Fabrication <span className="text-[#1346a8]">Machinery</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             At Kashish Ad®, we believe true craftsmanship begins with uncompromising technology. Our production plant at Fraser Road, Patna is equipped with heavy-duty Japanese and industrial-grade machines capable of 24/7 high-volume runs.
@@ -63,8 +63,8 @@ export default function Machinery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-12 border-b border-slate-200 mb-12">
             <div>
-              <span className="text-xs font-black uppercase tracking-widest text-[#e85c1a]">Zero Outsourcing</span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1a3a6b] mt-1">
+              <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Zero Outsourcing</span>
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
                 Built On State-of-the-Art Hardware
               </h2>
             </div>
@@ -75,7 +75,7 @@ export default function Machinery() {
 
           <div className="space-y-12">
             {MACHINERY.map((machine, index) => {
-              const imageSrc = machineImages[machine.id] || '/assets/images/kashish-ad-all-machinery-collage.jpg';
+              const imageSrc = machineImages[machine.id] || '/assets/images/kashish-ad-production-services-grid.png';
               const waMsg = encodeURIComponent(
                 `Hello Kashish Ad®, I am interested in printing/fabrication using your "${machine.name}" (${machine.type}). Please provide details.`
               );
@@ -95,10 +95,10 @@ export default function Machinery() {
                         loading="lazy"
                         className="w-full h-full object-cover"
                       />
-                      <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#e85c1a] text-white shadow-md">
+                      <span className="absolute top-4 left-4 px-3.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#1346a8] text-white shadow-md">
                         {machine.badge}
                       </span>
-                      <div className="absolute bottom-4 right-4 w-12 h-12 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 text-[#1a3a6b] font-display font-black text-xl flex items-center justify-center shadow-md">
+                      <div className="absolute bottom-4 right-4 w-12 h-12 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 text-[#1346a8] font-display font-black text-xl flex items-center justify-center shadow-md">
                         0{index + 1}
                       </div>
                     </div>
@@ -106,15 +106,15 @@ export default function Machinery() {
                     {/* Content column */}
                     <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between">
                       <div>
-                        <div className="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-[#eff4fb] text-[#1a3a6b] mb-2">
+                        <div className="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-[#f0f7ff] text-[#1346a8] mb-2">
                           {machine.type}
                         </div>
-                        <h3 className="text-2xl font-display font-black text-[#1a3a6b]">{machine.name}</h3>
+                        <h3 className="text-2xl font-display font-black text-[#1346a8]">{machine.name}</h3>
                         <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">{machine.description}</p>
 
                         {/* Specs grid */}
                         <div className="mt-6 pt-6 border-t border-slate-100">
-                          <h4 className="text-[11px] font-black uppercase tracking-widest text-[#e85c1a] mb-3">
+                          <h4 className="text-[11px] font-black uppercase tracking-widest text-[#1346a8] mb-3">
                             Technical Specifications
                           </h4>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -134,13 +134,13 @@ export default function Machinery() {
                           href={`https://wa.me/919308327111?text=${waMsg}`}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-sm shadow-orange-500/20 active:scale-95 transition-all"
+                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-sm shadow-blue-900/20 active:scale-95 transition-all"
                         >
                           <span>💬 Inquire for This Machine</span>
                         </a>
                         <Link
                           to="/services"
-                          className="px-5 py-2.5 rounded-xl font-bold text-xs text-[#1a3a6b] bg-slate-100 hover:bg-[#eff4fb] border border-slate-200 transition-colors"
+                          className="px-5 py-2.5 rounded-xl font-bold text-xs text-[#1346a8] bg-slate-100 hover:bg-[#f0f7ff] border border-slate-200 transition-colors"
                         >
                           Explore Services →
                         </Link>
@@ -160,28 +160,28 @@ export default function Machinery() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
               <div className="text-3xl mb-3">🔬</div>
-              <h3 className="font-bold text-sm text-[#1a3a6b]">Color Calibration</h3>
+              <h3 className="font-bold text-sm text-[#1346a8]">Color Calibration</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 Every print matches your brand's Pantone and CMYK profiles accurately under D50 daylight standards.
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
               <div className="text-3xl mb-3">⚡</div>
-              <h3 className="font-bold text-sm text-[#1a3a6b]">Dual Power Backup</h3>
+              <h3 className="font-bold text-sm text-[#1346a8]">Dual Power Backup</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 Equipped with dual industrial silent gensets ensuring uninterrupted 24-hour manufacturing cycles.
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
               <div className="text-3xl mb-3">🧼</div>
-              <h3 className="font-bold text-sm text-[#1a3a6b]">Clean Room Zone</h3>
+              <h3 className="font-bold text-sm text-[#1346a8]">Clean Room Zone</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 UV flatbed and vinyl lamination operate in temperature-regulated clean zones eliminating dust bubbles.
               </p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
               <div className="text-3xl mb-3">🚚</div>
-              <h3 className="font-bold text-sm text-[#1a3a6b]">Rigid Crate Packaging</h3>
+              <h3 className="font-bold text-sm text-[#1346a8]">Rigid Crate Packaging</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 Finished 3D letters and delicate signage are protected in bubble-wrapped wooden crates for zero damage.
               </p>
@@ -198,8 +198,8 @@ export default function Machinery() {
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               Live Workshop Demonstration
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1a3a6b]">
-              Watch Our <span className="text-[#e85c1a]">Fabrication in Action</span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8]">
+              Watch Our <span className="text-[#1346a8]">Fabrication in Action</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-2">
               See how our technicians operate precision cutting and printing machinery at our Fraser Road plant in Patna.
@@ -208,15 +208,15 @@ export default function Machinery() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Real Video Player */}
-            <div className="lg:col-span-7 bg-black rounded-3xl overflow-hidden shadow-2xl border-2 border-[#1a3a6b]/20 relative aspect-video flex items-center justify-center">
+            <div className="lg:col-span-7 bg-black rounded-3xl overflow-hidden shadow-2xl border-2 border-[#1346a8]/20 relative aspect-video flex items-center justify-center">
               <video
                 controls
                 playsInline
                 preload="metadata"
                 className="w-full h-full object-cover"
-                poster="/assets/images/kashish-ad-plant-workshop-inside.jpg"
+                poster="/assets/images/kashish-ad-production-services-grid.png"
               >
-                <source src="/assets/videos/kashish-ad-workshop-fabrication-video.mp4" type="video/mp4" />
+                <source src="/assets/videos/kashish-ad-shop-overview-1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -225,7 +225,7 @@ export default function Machinery() {
             <div className="lg:col-span-5 space-y-4">
               <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-black">
                 <img
-                  src="/assets/images/kashish-ad-machinery-services-black-banner.jpg"
+                  src="/assets/images/kashish-ad-complete-signage-solution-banner.png"
                   alt="Kashish Ad In-House Plant Machinery Banner"
                   className="w-full h-auto object-contain"
                   loading="lazy"
@@ -233,8 +233,8 @@ export default function Machinery() {
               </div>
 
               <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-2xs space-y-2.5 text-xs text-slate-700">
-                <div className="flex items-center gap-2 font-bold text-[#1a3a6b]">
-                  <span className="text-[#e85c1a] text-base">★</span>
+                <div className="flex items-center gap-2 font-bold text-[#1346a8]">
+                  <span className="text-[#1346a8] text-base">★</span>
                   <span>Registered GSTIN: 10AENPH7809D1ZT</span>
                 </div>
                 <p className="text-slate-600 leading-relaxed">
@@ -259,7 +259,7 @@ export default function Machinery() {
       {/* Workshop Visit Banner */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1a3a6b] text-white rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+          <div className="bg-[#1346a8] text-white rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
             <div className="space-y-2 max-w-xl text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
                 Experience Our Workshop in Person
@@ -274,7 +274,7 @@ export default function Machinery() {
                 href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20would%20like%20to%20schedule%20a%20visit%20to%20your%20workshop%20at%20Capital%20Tower,%20Patna."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#e85c1a] hover:bg-[#cf4e12] shadow-md text-center transition-all"
+                className="px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md text-center transition-all"
               >
                 💬 Book Workshop Tour
               </a>

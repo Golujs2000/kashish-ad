@@ -25,7 +25,17 @@ const map = {
   'WhatsApp Image 2026-09-07 at 4.01.26 PM.jpeg': 'kashish-ad-yahan-flex-print-laser-cutting-banner.jpg',
   'WhatsApp Image 2026-09-07 at 4.04.30 PM.jpeg': 'kashish-ad-1.5kw-fiber-laser-cutting-machine.jpg',
   'WhatsApp Image 2026-09-07 at 4.06.35 PM.jpeg': 'kashish-ad-uv-flatbed-printing-machine.jpg',
-  'WhatsApp Video 2026-09-07 at 3.32.20 PM.mp4': 'kashish-ad-workshop-fabrication-video.mp4'
+  'WhatsApp Video 2026-09-07 at 3.32.20 PM.mp4': 'kashish-ad-workshop-fabrication-video.mp4',
+
+  // 2026-09-10 Batch
+  'WhatsApp Image 2026-09-10 at 11.40.13 AM.jpeg': 'kashish-ad-lets-print-branding-horizontal-banner.jpg',
+  'WhatsApp Image 2026-09-10 at 11.40.14 AM.jpeg': 'kashish-ad-lets-print-branding-horizontal-banner-alt.jpg',
+  'WhatsApp Image 2026-09-10 at 11.40.15 AM (1).jpeg': 'kashish-ad-lets-print-branding-display-mockup.jpg',
+  'WhatsApp Image 2026-09-10 at 11.40.15 AM.jpeg': 'kashish-ad-brand-monogram-square-logo.jpg',
+  'WhatsApp Video 2026-09-10 at 11.39.54 AM.mp4': 'kashish-ad-patna-signage-storefront-elevation-video.mp4',
+  'WhatsApp Video 2026-09-10 at 11.40.11 AM.mp4': 'kashish-ad-showroom-interior-trophy-neon-tour-video.mp4',
+  'WhatsApp Video 2026-09-10 at 11.40.12 AM.mp4': 'kashish-ad-storefront-entrance-walkthrough-video.mp4',
+  'WhatsApp Video 2026-09-10 at 11.40.13 AM.mp4': 'kashish-ad-reception-desk-acrylic-nameplate-video.mp4'
 };
 
 console.log('Renaming WhatsApp files in ASSETS and syncing to public assets...\n');
