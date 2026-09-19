@@ -4,11 +4,35 @@
  * operational hours, trust metrics, navigation links, SEO defaults, and FAQs.
  */
 
+export const SITE_CONFIG = {
+  baseUrl: 'https://kashishad.web.app',
+  /**
+   * Resolves an absolute canonical URL using current origin in browser or production baseUrl
+   */
+  resolveUrl(path = '/') {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    if (typeof window !== 'undefined' && window.location && window.location.origin) {
+      // In development or custom deployment, use current origin
+      return `${window.location.origin}${cleanPath}`;
+    }
+    return `${SITE_CONFIG.baseUrl}${cleanPath}`;
+  },
+  /**
+   * Returns guaranteed production URL for sitemaps and external Schema.org entities
+   */
+  getProductionUrl(path = '/') {
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    return `${SITE_CONFIG.baseUrl}${cleanPath}`;
+  }
+};
+
 export const COMPANY_INFO = {
   name: 'Kashish Ad',
   legalName: 'Kashish Ad',
   registeredSymbol: '®',
   fullName: 'Kashish Ad®',
+  alternateName: 'कशिश एड(र)',
+  hindiName: 'कशिश एड(र)',
   tagline: "LET'S PRINT BRANDING",
   headline: 'WE DESIGN THE BEST, WE PRINT YOUR THEME.',
   subheadline: 'We combine industrial-grade production capacity with precision design to create physical branding that stands out and is built to last.',
@@ -22,16 +46,26 @@ export const COMPANY_INFO = {
   logoIcon: '/assets/logo-icon.png',
   logoFull: '/assets/logo.png',
   storefrontImage: '/assets/images/hero-showcase-storefront-facade.png',
-  priceRange: '₹40 - ₹5000'
+  priceRange: '₹10 - ₹50000',
+  currenciesAccepted: 'INR',
+  paymentAccepted: 'Cash, UPI, Google Pay, PhonePe, Paytm, Credit Card, Debit Card, Net Banking, Cheque, NEFT/RTGS'
 };
 
 export const CONTACT_INFO = {
-  phone: '07488984637',
-  phoneFormatted: '07488984637',
-  phoneIntl: '+917488984637',
-  phoneTel: 'tel:07488984637',
-  whatsappNumber: '917488984637',
-  whatsappDisplay: '07488984637',
+  primaryPhone: '09308327111',
+  primaryPhoneFormatted: '09308327111',
+  primaryPhoneIntl: '+919308327111',
+  secondaryPhone: '07488984637',
+  secondaryPhoneFormatted: '07488984637',
+  secondaryPhoneIntl: '+917488984637',
+  phone: '09308327111',
+  phoneFormatted: '09308327111',
+  phoneIntl: '+919308327111',
+  phoneTel: 'tel:09308327111',
+  allPhones: ['+919308327111', '+917488984637'],
+  whatsappNumber: '919308327111',
+  whatsappDisplay: '09308327111',
+  whatsappSecondary: '917488984637',
   email: 'kashishadpatna@gmail.com',
   emailMailto: 'mailto:kashishadpatna@gmail.com',
   /**
@@ -40,7 +74,7 @@ export const CONTACT_INFO = {
    * @returns {string} Fully-qualified WhatsApp deep link
    */
   getWhatsAppUrl(message = 'Hello Kashish Ad, I want to inquire about printing / signage services.') {
-    return `https://wa.me/917488984637?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/919308327111?text=${encodeURIComponent(message)}`;
   }
 };
 
@@ -55,7 +89,7 @@ export const LOCATION_INFO = {
   pincode: '800001',
   country: 'India',
   countryCode: 'IN',
-  landmark: 'Capital Tower, Fraser Road (Near Canara Bank / Chhabra Sports)',
+  landmark: 'Capital Tower, Fraser Road (Near Canara Bank / Chhabra Sports, Opposite Patna Junction Corridor)',
   fullAddress: 'Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001',
   shortAddress: 'Capital Tower, Fraser Rd, Patna',
   cityState: 'Patna, Bihar',
@@ -100,8 +134,8 @@ export const SOCIAL_LINKS = {
     title: 'Follow us on Facebook @kashishadpatna'
   },
   whatsapp: {
-    url: 'https://wa.me/917488984637',
-    handle: '07488984637',
+    url: 'https://wa.me/919308327111',
+    handle: '09308327111',
     label: 'WhatsApp',
     title: 'Order via WhatsApp'
   }
@@ -122,7 +156,20 @@ export const TRUST_METRICS = {
 };
 
 export const SERVICE_AREAS = [
+  // Patna Localities
   { name: 'Patna', type: 'City', isHQ: true },
+  { name: 'Fraser Road', type: 'Place', isHQ: true },
+  { name: 'Dak Bunglow Road', type: 'Place', isHQ: false },
+  { name: 'Kankarbagh', type: 'Place', isHQ: false },
+  { name: 'Boring Road', type: 'Place', isHQ: false },
+  { name: 'Bailey Road', type: 'Place', isHQ: false },
+  { name: 'Exhibition Road', type: 'Place', isHQ: false },
+  { name: 'Patna Junction', type: 'Place', isHQ: false },
+  { name: 'Rajendra Nagar', type: 'Place', isHQ: false },
+  { name: 'Patliputra Colony', type: 'Place', isHQ: false },
+  { name: 'Danapur', type: 'Place', isHQ: false },
+  { name: 'Anisabad', type: 'Place', isHQ: false },
+  // Major Bihar Cities
   { name: 'Bihar', type: 'AdministrativeArea', isHQ: false },
   { name: 'Muzaffarpur', type: 'City', isHQ: false },
   { name: 'Gaya', type: 'City', isHQ: false },
@@ -132,13 +179,15 @@ export const SERVICE_AREAS = [
   { name: 'Ara', type: 'City', isHQ: false },
   { name: 'Begusarai', type: 'City', isHQ: false },
   { name: 'Chapra', type: 'City', isHQ: false },
-  { name: 'Bihar Sharif', type: 'City', isHQ: false }
+  { name: 'Bihar Sharif', type: 'City', isHQ: false },
+  { name: 'Samastipur', type: 'City', isHQ: false },
+  { name: 'Motihari', type: 'City', isHQ: false }
 ];
 
 export const NAV_CONFIG = {
   mainNav: [
     { label: 'Home', path: '/' },
-    { label: 'Products & Services', path: '/services', badge: '17 Items' },
+    { label: 'Products & Services', path: '/services', badge: '22+ Items' },
     { label: 'Machinery', path: '/machinery', badge: '8 Units' },
     { label: 'Gallery', path: '/gallery' },
     { label: 'Price Calculator', path: '/calculator', isHot: true },
@@ -156,7 +205,7 @@ export const NAV_CONFIG = {
   ],
   quickLinks: [
     { label: 'Home Page', path: '/' },
-    { label: 'All 17 Products & Services', path: '/services' },
+    { label: 'All 22+ Products & Services', path: '/services' },
     { label: 'In-House Machinery (8 Units)', path: '/machinery' },
     { label: 'Executed Projects Portfolio', path: '/gallery' },
     { label: 'Price Estimator Calculator', path: '/calculator' },
@@ -168,8 +217,8 @@ export const NAV_CONFIG = {
 export const SEO_DEFAULTS = {
   siteName: 'Kashish Ad®',
   title: "Kashish Ad® | Patna's Leading Digital Printing & LED Sign Board Manufacturer",
-  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier digital printing and architectural sign board manufacturer. UV flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 07488984637.",
-  keywords: 'digital printing patna, signage board patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing',
+  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier digital printing and architectural sign board manufacturer. UV flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 09308327111.",
+  keywords: 'digital printing patna, signage board patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing, sign board manufacturer patna',
   ogImage: '/assets/images/hero-showcase-storefront-facade.png',
   author: 'Kashish Ad® (S Haidar)'
 };
@@ -177,19 +226,19 @@ export const SEO_DEFAULTS = {
 export const FAQ_DATA = [
   {
     question: 'Where is Kashish Ad located in Patna?',
-    answer: 'Kashish Ad is located at Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001 (Near Chhabra Sports / Canara Bank).'
+    answer: 'Kashish Ad is located at Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001 (Near Canara Bank / Chhabra Sports, close to Dak Bunglow & Patna Junction).'
   },
   {
     question: 'What services does Kashish Ad specialize in?',
-    answer: 'Kashish Ad specializes in UV Digital Flatbed Printing, Solvent Vinyl Printing, 3D Acrylic LED Letters, Stainless Steel Sign Boards, Frontlit Flex, Glow Sign Boards, Roll-up Standees, and CNC Laser Jali Cutting.'
+    answer: 'Kashish Ad specializes in UV Digital Flatbed Printing, Solvent Vinyl Printing, 3D Acrylic LED Letters, Stainless Steel Sign Boards, Frontlit Flex, Glow Sign Boards, Roll-up Standees, CNC Laser Jali Cutting, Custom T-Shirts, Promotional Canopies, and Corporate Mementos.'
   },
   {
     question: 'How can I place an urgent printing order at Kashish Ad?',
-    answer: 'You can directly call our primary hotline at 07488984637 or message us on WhatsApp at 917488984637 for same-day fabrication and dispatch.'
+    answer: 'You can directly call our primary hotline at 09308327111 or WhatsApp us at 919308327111 / 917488984637 for immediate quotation, artwork review, same-day fabrication, and dispatch.'
   },
   {
     question: 'Does Kashish Ad offer delivery outside Patna across Bihar?',
-    answer: 'Yes, we manufacture in-house at Fraser Road, Patna and supply signage, banners, and digital prints across all districts of Bihar including Muzaffarpur, Gaya, Bhagalpur, Darbhanga, and Purnia.'
+    answer: 'Yes, we manufacture in-house at Fraser Road, Patna and supply signage, promotional canopies, banners, and digital prints across all districts of Bihar including Muzaffarpur, Gaya, Bhagalpur, Darbhanga, Begusarai, Ara, and Purnia.'
   }
 ];
 

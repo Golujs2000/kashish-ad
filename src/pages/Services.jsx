@@ -1,11 +1,12 @@
-import React, { useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useMemo, useEffect } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { PRODUCTS } from '../data/products';
 import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 export default function Services() {
-  const [activeCategory, setActiveCategory] = useState('all');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryParam = searchParams.get('category');
 
   const categories = [
     { id: 'all', label: 'All Products & Services' },
@@ -14,6 +15,32 @@ export default function Services() {
     { id: 'promotional', label: 'Promotional & Outdoor' },
     { id: 'corporate', label: 'Labels & Corporate' }
   ];
+
+  const mapCategory = (param) => {
+    if (!param) return 'all';
+    const map = {
+      'digital': 'largeformat',
+      'uv': 'largeformat',
+      'largeformat': 'largeformat',
+      'signage': 'signage',
+      '3dletters': 'signage',
+      'branding': 'promotional',
+      'promotional': 'promotional',
+      'corporate': 'corporate',
+      'vehicle': 'largeformat',
+      'cnc': 'all'
+    };
+    return map[param] || (categories.some(c => c.id === param) ? param : 'all');
+  };
+
+  const [activeCategory, setActiveCategory] = useState(() => mapCategory(categoryParam));
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    if (categoryParam) {
+      setActiveCategory(mapCategory(categoryParam));
+    }
+  }, [categoryParam]);
 
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((p) => {
@@ -35,15 +62,27 @@ export default function Services() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'http://localhost:3000/'
+        item: SITE_CONFIG.getProductionUrl('/')
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Services & Products',
-        item: 'http://localhost:3000/services'
+        item: SITE_CONFIG.getProductionUrl('/services')
       }
     ]
+  };
+
+  // Schema for Product ItemList
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: PRODUCTS.slice(0, 15).map((p, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: p.title,
+      url: SITE_CONFIG.getProductionUrl(`/services/${p.id}`)
+    }))
   };
 
   return (
@@ -52,8 +91,8 @@ export default function Services() {
         title="Printing & Signage Services Catalog Patna (22+ Products)"
         description="Browse Kashish Ad's complete digital printing, promotional merchandise, and signage board catalog in Patna. UV printing, solvent vinyl, 3D acrylic LED letters, custom T-shirts, canopies, coffee mugs, trophies. Fraser Road Patna hotline: 09308327111."
         keywords="printing services patna, sign board manufacturer patna, tshirt printing patna, canopy tent patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
-        canonicalUrl="http://localhost:3000/services"
-        structuredData={[breadcrumbSchema]}
+        canonicalUrl="/services"
+        structuredData={[breadcrumbSchema, itemListSchema]}
       />
 
       {/* Services Hero */}
@@ -67,8 +106,8 @@ export default function Services() {
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             22+ Commercial Printing, Canopy &amp; Merchandise Solutions
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
-            Digital Printing, Signage &amp; <span className="text-slate-900">Merchandise Catalog</span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
+            Digital Printing, Signage &amp; <span className="text-[#1346a8]">Merchandise Catalog</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Explore our complete industrial printing range — from instant UV flatbed curing to architectural SS 3D letters, solvent vinyl banners, and custom corporate labels. Manufactured in-house at Fraser Road, Patna.
@@ -109,7 +148,14 @@ export default function Services() {
                         ? 'bg-[#1346a8] text-white shadow-md'
                         : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
                     }`}
-                    onClick={() => setActiveCategory(cat.id)}
+                    onClick={() => {
+                      setActiveCategory(cat.id);
+                      if (cat.id === 'all') {
+                        setSearchParams({});
+                      } else {
+                        setSearchParams({ category: cat.id });
+                      }
+                    }}
                   >
                     <span>{cat.label}</span>
                     <span
@@ -307,11 +353,11 @@ export default function Services() {
       </section>
 
       {/* Bulk Order Banner in Navy #1346a8 */}
-      <section className="pb-16">
+      <section className="pb-16 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1346a8] text-white rounded-3xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl">
+          <div className="bg-[#1346a8] text-white rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-card">
             <div className="space-y-3 max-w-2xl text-center lg:text-left">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#1346a8] text-white">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/15 border border-white/20 text-white">
                 Special Trade Discounts
               </span>
               <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
@@ -333,7 +379,7 @@ export default function Services() {
                 href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20have%20a%20bulk/corporate%20printing%20requirement.%20Please%20connect%20with%20me."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 text-center transition-all"
+                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-[#1346a8] bg-white hover:bg-slate-100 shadow-sm text-center transition-all"
               >
                 Request Corporate Quote
               </a>

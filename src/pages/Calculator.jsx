@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 const SERVICES_RATES = [
   {
@@ -281,8 +283,51 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
     return `https://wa.me/919308327111?text=${encodeURIComponent(msg)}`;
   }, [activeService, calculation, customerCity, customerNotes]);
 
+  const calculatorSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Kashish Ad Signage & Digital Printing Rate Calculator',
+    url: SITE_CONFIG.getProductionUrl('/calculator'),
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'All',
+    browserRequirements: 'Requires JavaScript. Requires HTML5.',
+    description: 'Instant factory-direct rate estimator for 3D LED letters, UV flatbed printing, solvent vinyl, glow signs, and banners in Patna.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'INR'
+    }
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_CONFIG.getProductionUrl('/')
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Price Calculator',
+        item: SITE_CONFIG.getProductionUrl('/calculator')
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
+      <SEO
+        title="Digital Printing & Sign Board Price Calculator Patna"
+        description="Calculate instant factory-direct costs for 3D LED acrylic letters, UV flatbed printing, solvent vinyl, glow signs, and flex banners in Patna. Real-time rates by Kashish Ad®."
+        keywords="sign board price calculator patna, flex printing cost estimator bihar, led acrylic letters rate per sq ft, uv printing cost calculator patna, glow sign board quotation"
+        canonicalUrl="/calculator"
+        structuredData={[calculatorSchema, breadcrumbSchema]}
+      />
+
       {/* Page Hero */}
       <section className="bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -290,7 +335,7 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Transparent Factory Direct Pricing
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
             Digital Printing &amp; Signage <span className="text-[#1346a8]">Rate Calculator</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -304,9 +349,9 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             {/* Input Controls Form Card */}
-            <div className="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-card space-y-6">
+            <div className="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-card space-y-6">
               <div className="border-b border-slate-100 pb-4">
-                <h2 className="text-xl font-display font-black text-[#1346a8]">
+                <h2 className="text-xl font-display font-black text-slate-900">
                   1. Select Service &amp; Dimensions
                 </h2>
                 <p className="text-xs text-slate-500 mt-0.5">Customize your project specs below to see live pricing.</p>
@@ -492,11 +537,11 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
 
             {/* Summary Column */}
             <div className="lg:col-span-5 space-y-6">
-              <div className="bg-slate-50 rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-card">
+              <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-card">
                 <span className="text-[11px] font-black uppercase tracking-widest text-[#1346a8]">
                   Estimated Factory Quote
                 </span>
-                <h3 className="text-xl font-display font-black text-[#1346a8] mt-1">
+                <h3 className="text-xl font-display font-black text-slate-900 mt-1">
                   {activeService.name}
                 </h3>
 

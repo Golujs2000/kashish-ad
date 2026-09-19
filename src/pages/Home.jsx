@@ -59,8 +59,9 @@ export default function Home() {
       <SEO
         title="Kashish Ad® | Patna's Leading Digital Printing & 3D Sign Board Manufacturer"
         description="Patna's premier manufacturing center for UV Flatbed, Solvent Vinyl, 3D LED Acrylic Letters, and Architectural Signage. 4.6★ (61 Google Reviews). Call 09308327111."
-        canonical="http://localhost:3000/"
-        schema={FAQ_SCHEMA}
+        keywords="digital printing patna, signage board patna, led sign board maker patna, 3d acrylic letters patna, uv printing bihar, glow sign board fraser road, capital tower printing"
+        canonicalUrl="/"
+        structuredData={[FAQ_SCHEMA]}
       />
 
       {/* 0. HERO BANNER CAROUSEL (Desktop & Tablet only - Hidden on Mobile View) */}

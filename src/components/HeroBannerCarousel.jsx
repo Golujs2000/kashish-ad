@@ -8,7 +8,7 @@ const BANNERS = [
     subtitle: 'Turn Ideas Into Impact • Acrylic • LED • Steel Letters',
     image: '/assets/images/kashish-ad-3d-letter-banner.png',
     mobileImage: '/assets/images/kashish-ad-3d-letter-banner-mobile.png',
-    link: '/services?category=signage',
+    link: '/services/led-acrylic-letters',
     accentColor: '#1346a8',
     category: '3D Letters'
   },
@@ -18,7 +18,7 @@ const BANNERS = [
     subtitle: 'Precision Creates Possibilities • Acrylic • MDF • ACP • Wood',
     image: '/assets/images/kashish-ad-cnc-cutting-banner.png',
     mobileImage: '/assets/images/kashish-ad-cnc-cutting-banner-mobile.png',
-    link: '/machinery',
+    link: '/services/cnc-laser-jali',
     accentColor: '#1346a8',
     category: 'CNC & Laser Cutting'
   },
@@ -28,7 +28,7 @@ const BANNERS = [
     subtitle: 'Bigger Visibility • Stronger Brands • High Quality & Fast Turnaround',
     image: '/assets/images/kashish-ad-flex-printing-banner.png',
     mobileImage: '/assets/images/kashish-ad-flex-printing-banner.png',
-    link: '/services?category=digital',
+    link: '/services/frontlit-flex',
     accentColor: '#1346a8',
     category: 'Flex & Digital Printing'
   }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { PRODUCTS } from '../data/products';
 import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
@@ -22,7 +23,7 @@ export default function ServiceDetail() {
   if (!product) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center bg-slate-50 px-4 py-16">
-        <SEO title="Service Not Found" description="The requested printing or signage service was not found." />
+        <SEO title="Service Not Found" description="The requested printing or signage service was not found." robots="noindex, follow" />
         <div className="max-w-md w-full text-center bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
           <div className="text-5xl mb-4">🔍</div>
           <h1 className="text-2xl font-display font-black text-[#1346a8]">Service Not Found</h1>
@@ -84,11 +85,12 @@ export default function ServiceDetail() {
   };
 
   // Structured Data Schemas for Local & Technical SEO
+  const productPriceNumber = product.price ? product.price.replace(/[^0-9]/g, '') : '';
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.title,
-    image: `http://localhost:3000${product.image}`,
+    image: SITE_CONFIG.getProductionUrl(product.image),
     description: product.description,
     sku: `KASHISH-${product.id.toUpperCase()}`,
     brand: {
@@ -97,9 +99,9 @@ export default function ServiceDetail() {
     },
     offers: {
       '@type': 'Offer',
-      url: `http://localhost:3000/services/${product.id}`,
+      url: SITE_CONFIG.getProductionUrl(`/services/${product.id}`),
       priceCurrency: 'INR',
-      price: product.price.replace(/[^0-9]/g, '') || '100',
+      price: productPriceNumber || '100',
       priceValidUntil: '2027-12-31',
       itemCondition: 'https://schema.org/NewCondition',
       availability: 'https://schema.org/InStock',
@@ -118,19 +120,19 @@ export default function ServiceDetail() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'http://localhost:3000/'
+        item: SITE_CONFIG.getProductionUrl('/')
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Services',
-        item: 'http://localhost:3000/services'
+        item: SITE_CONFIG.getProductionUrl('/services')
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: product.title,
-        item: `http://localhost:3000/services/${product.id}`
+        item: SITE_CONFIG.getProductionUrl(`/services/${product.id}`)
       }
     ]
   };
@@ -141,7 +143,7 @@ export default function ServiceDetail() {
         title={`${product.title} in Patna | Best Price & Specs`}
         description={`${product.title} in Patna by Kashish Ad®: ${product.description} Rate: ${product.price} ${product.unit}. Same-day printing at Fraser Road, Patna. Call 09308327111.`}
         keywords={`${product.title} patna, ${product.title} bihar, sign board patna, digital printing capital tower fraser road, kashish ad 09308327111`}
-        canonicalUrl={`http://localhost:3000/services/${product.id}`}
+        canonicalUrl={`/services/${product.id}`}
         ogImage={product.image}
         ogType="product"
         structuredData={[productSchema, breadcrumbSchema]}
@@ -220,7 +222,7 @@ export default function ServiceDetail() {
                   {product.category === 'corporate' && 'Labels & Corporate Branding'}
                 </div>
 
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8] tracking-tight leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 tracking-tight leading-tight">
                   {product.title}
                 </h1>
 
@@ -301,7 +303,7 @@ export default function ServiceDetail() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mb-8">
               <span className="text-xs font-bold uppercase tracking-wider text-[#1346a8]">Engineered Precision</span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-1">
                 Technical Specifications &amp; Parameters
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -313,7 +315,7 @@ export default function ServiceDetail() {
               {Object.entries(product.specs).map(([label, value], idx) => (
                 <div key={idx} className="bg-white p-4 rounded-xl border border-slate-200 shadow-2xs">
                   <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">{label}</div>
-                  <div className="text-sm font-bold text-[#1346a8] mt-1">{value}</div>
+                  <div className="text-sm font-bold text-slate-900 mt-1">{value}</div>
                 </div>
               ))}
               {product.lifespan && (
@@ -336,7 +338,7 @@ export default function ServiceDetail() {
               <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">🧱</span>
-                  <h3 className="text-lg font-bold font-display text-[#1346a8]">
+                  <h3 className="text-lg font-bold font-display text-slate-900">
                     Supported Substrates &amp; Materials
                   </h3>
                 </div>
@@ -361,7 +363,7 @@ export default function ServiceDetail() {
               <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-2xl">🏢</span>
-                  <h3 className="text-lg font-bold font-display text-[#1346a8]">
+                  <h3 className="text-lg font-bold font-display text-slate-900">
                     Popular Business Applications
                   </h3>
                 </div>
@@ -387,12 +389,12 @@ export default function ServiceDetail() {
       {/* Instant Custom Quote Form for This Service */}
       <section className="py-12 bg-slate-50 border-t border-slate-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-3xl border border-slate-200 shadow-lg p-6 sm:p-10">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-card p-6 sm:p-10">
             <div className="text-center max-w-xl mx-auto mb-8">
               <span className="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider">
                 Direct Work Order
               </span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-2">
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-2">
                 Request a Custom Quote for {product.title}
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -516,7 +518,7 @@ export default function ServiceDetail() {
           <div className="flex justify-between items-end mb-8">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-[#1346a8]">Explore Alternatives</span>
-              <h2 className="text-xl sm:text-2xl font-display font-black text-[#1346a8] mt-1">
+              <h2 className="text-xl sm:text-2xl font-display font-black text-slate-900 mt-1">
                 Other Popular Digital Printing &amp; Signage
               </h2>
             </div>
@@ -548,7 +550,7 @@ export default function ServiceDetail() {
                 </div>
                 <div className="p-4 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-sm font-bold text-[#1346a8] group-hover:text-[#0f3a8e] transition-colors">
+                    <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#1346a8] transition-colors">
                       {rel.title}
                     </h3>
                     <p className="text-xs text-slate-500 mt-1 line-clamp-2">

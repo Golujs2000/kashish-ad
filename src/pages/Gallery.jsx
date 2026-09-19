@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { GALLERY_ITEMS } from '../data/gallery';
 import LightboxModal from '../components/LightboxModal';
 import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -20,22 +21,42 @@ export default function Gallery() {
     return GALLERY_ITEMS.filter((item) => item.category === activeCategory);
   }, [activeCategory]);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_CONFIG.getProductionUrl('/')
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Project Portfolio',
+        item: SITE_CONFIG.getProductionUrl('/gallery')
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
       <SEO
         title="Project Portfolio & Signage Gallery Patna"
         description="View real photographs of completed signage installations, 3D acrylic LED boards, CNC gates, and UV prints manufactured by Kashish Ad® across Bihar."
         keywords="signage gallery patna, sign board photos bihar, 3d led letter work patna, kashish ad portfolio"
-        canonicalUrl="http://localhost:3000/gallery"
+        canonicalUrl="/gallery"
+        structuredData={[breadcrumbSchema]}
       />
       {/* Page Hero */}
-      <section className="bg-slate-50 border-b border-slate-200 py-20 sm:py-28 lg:py-32">
+      <section className="bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Executed Projects &amp; Installations
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
             Our Work <span className="text-[#1346a8]">Portfolio</span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -57,10 +78,10 @@ export default function Gallery() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 sm:py-24 lg:py-28">
+      <section className="py-16 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Category Filter Tabs */}
-          <div className="flex flex-wrap justify-center gap-2.5 mb-16">
+          <div className="flex flex-wrap justify-center gap-2.5 mb-12">
             {categories.map((cat) => {
               const count = cat.id === 'all'
                 ? GALLERY_ITEMS.length
@@ -91,7 +112,7 @@ export default function Gallery() {
           </div>
 
           {/* Gallery Items Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredItems.map((item) => (
               <div
                 key={item.id}
@@ -123,7 +144,7 @@ export default function Gallery() {
                 {/* Metadata */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="font-display font-bold text-base text-[#1346a8] group-hover:text-[#0f3a8e] transition-colors">
+                    <h3 className="font-display font-bold text-base text-slate-900 group-hover:text-[#1346a8] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-[11px] text-slate-500 font-medium mt-1">📍 {item.location}</p>

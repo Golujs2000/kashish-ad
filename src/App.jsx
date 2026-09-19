@@ -13,6 +13,7 @@ import Gallery from './pages/Gallery';
 import Calculator from './pages/Calculator';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 // Scroll to top automatically on route change
 function ScrollToTop() {
@@ -40,7 +41,7 @@ export default function App() {
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

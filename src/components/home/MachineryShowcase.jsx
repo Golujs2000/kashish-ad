@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { MACHINERY } from '../../data/machinery';
 
 const MACHINE_IMAGES = {
-  'hp-latex-570': '/assets/images/kashish-ad-flex-printing-banner.png',
-  'roland-print-cut': '/assets/images/hero-showcase-3d-letters-and-prints.png',
-  'uv-flatbed': '/assets/images/hero-showcase-wide-format-printer.png',
-  'cnc-router': '/assets/images/kashish-ad-cnc-cutting-banner.png',
-  'fiber-laser': '/assets/images/production-cnc-laser-cutting-sparks.png',
-  'letter-bender': '/assets/images/kashish-ad-3d-letter-printing-banner.png',
-  'vinyl-laminator': '/assets/images/production-wide-format-wall-graphics.png',
-  'digital-cloth': '/assets/images/kashish-ad-complete-signage-solution-banner.png'
+  'hp-latex-570': '/assets/images/machinery/hp-latex-570.jpg',
+  'roland-print-cut': '/assets/images/machinery/roland-print-cut.jpg',
+  'uv-flatbed': '/assets/images/machinery/uv-flatbed.jpg',
+  'cnc-router': '/assets/images/machinery/cnc-router.jpg',
+  'fiber-laser': '/assets/images/machinery/fiber-laser.jpg',
+  'letter-bender': '/assets/images/machinery/letter-bender.jpg',
+  'vinyl-laminator': '/assets/images/machinery/vinyl-laminator.jpg',
+  'digital-cloth': '/assets/images/machinery/digital-cloth.jpg'
 };
 
 export default function MachineryShowcase() {
@@ -25,7 +25,7 @@ export default function MachineryShowcase() {
               <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
               In-House Production Plant • Zero Outsourcing
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8] tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 tracking-tight">
               Equipped With 15+ Advanced Industrial Machines
             </h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
@@ -76,7 +76,7 @@ export default function MachineryShowcase() {
         {/* Machine Showcase Grid (Top 6 Workhorses) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {MACHINERY.slice(0, 6).map((m, idx) => {
-            const imgSrc = MACHINE_IMAGES[m.id] || '/assets/images/kashish-ad-production-services-grid.png';
+            const imgSrc = m.image || MACHINE_IMAGES[m.id] || '/assets/images/kashish-ad-production-services-grid.png';
             return (
               <div
                 key={m.id}
@@ -102,7 +102,7 @@ export default function MachineryShowcase() {
                     <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
                       {m.type}
                     </div>
-                    <h3 className="text-base sm:text-lg font-display font-black text-[#1346a8] mt-1 group-hover:text-[#0f3a8e] transition-colors">
+                    <h3 className="text-base sm:text-lg font-display font-black text-slate-900 mt-1 group-hover:text-[#1346a8] transition-colors">
                       {m.name}
                     </h3>
                     <p className="text-xs text-slate-600 mt-2 line-clamp-2 leading-relaxed">

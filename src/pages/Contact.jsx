@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SEO from '../components/SEO';
+import { SITE_CONFIG, CONTACT_INFO } from '../data/siteData';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,19 +19,22 @@ export default function Contact() {
 
     try {
       // Post to Express backend API
-      await fetch('/api/inquiry', {
+      const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
+      if (res.ok) {
+        setSubmitted(true);
+      }
     } catch (err) {
-      console.warn('Backend API endpoint call notice:', err);
+      console.warn('Backend API offline, proceeding with client confirmation', err);
+      setSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
     }
 
-    setSubmitted(true);
-    setIsSubmitting(false);
-
-    // Open WhatsApp with pre-filled details
+    // Also trigger WhatsApp redirect for immediate attention
     const waText = encodeURIComponent(
       `Hello Kashish Ad®, I am submitting an inquiry from your website:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nCity: ${formData.city}\nRequirement: ${formData.message}`
     );
@@ -42,17 +46,36 @@ export default function Contact() {
     '@type': 'ContactPage',
     name: 'Contact Kashish Ad® Patna',
     description: 'Contact Kashish Ad® for instant commercial digital printing quotes, signage board consultation, and workshop visits in Fraser Road, Patna.',
-    url: 'http://localhost:3000/contact'
+    url: SITE_CONFIG.getProductionUrl('/contact')
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_CONFIG.getProductionUrl('/')
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Contact & Location',
+        item: SITE_CONFIG.getProductionUrl('/contact')
+      }
+    ]
   };
 
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Contact & Location in Patna | Call 09308327111"
-        description="Visit or contact Kashish Ad® at Capital Tower, Fraser Road, Patna. Hotline: 09308327111. Get directions, WhatsApp order desk, and B2B corporate consultation."
-        keywords="contact kashish ad, kashish ad phone number 09308327111, capital tower fraser road patna, print shop near me patna"
-        canonicalUrl="http://localhost:3000/contact"
-        structuredData={[contactSchema]}
+        title="Contact & Workshop Location in Patna | Call 09308327111"
+        description="Visit or contact Kashish Ad® at Capital Tower, Fraser Road, Patna. Hotline: 09308327111 / 07488984637. Near Canara Bank & Chhabra Sports. Live Google Maps directions & WhatsApp support."
+        keywords="contact kashish ad, kashish ad phone number 09308327111, capital tower fraser road patna, print shop near me patna, sign board maker patna contact"
+        canonicalUrl="/contact"
+        structuredData={[contactSchema, breadcrumbSchema]}
       />
       {/* Page Hero */}
       <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
@@ -65,7 +88,7 @@ export default function Contact() {
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Direct Workshop Hotline: 09308327111
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
             Contact &amp; Visit <span className="inline-flex items-start text-[#1346a8]"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none">®</span></span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
@@ -82,7 +105,7 @@ export default function Contact() {
             <div className="lg:col-span-6 space-y-6">
               <div>
                 <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Direct Touchpoints</span>
-                <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
+                <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-1">
                   We're Here to Help
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
@@ -97,7 +120,7 @@ export default function Contact() {
                     📍
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1346a8] text-sm">Workshop &amp; Showroom Address</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Workshop &amp; Showroom Address</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       <strong>Kashish Ad®</strong><br />
                       Capital Tower, A-6 &amp; B-16, Fraser Rd,<br />
@@ -115,7 +138,7 @@ export default function Contact() {
                     📞
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1346a8] text-sm">Phone Hotline &amp; WhatsApp</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Phone Hotline &amp; WhatsApp</h4>
                     <p className="mt-1">
                       <a href="tel:09308327111" className="text-lg font-display font-black text-[#1346a8] hover:underline">
                         09308327111
@@ -139,7 +162,7 @@ export default function Contact() {
                     ✉️
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1346a8] text-sm">Official Email Address</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Official Email Address</h4>
                     <p className="mt-1">
                       <a href="mailto:kashishadpatna@gmail.com" className="text-base sm:text-lg font-bold text-[#1346a8] hover:text-[#0f3a8e] transition-colors break-all">
                         kashishadpatna@gmail.com
@@ -161,7 +184,7 @@ export default function Contact() {
                     🕒
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1346a8] text-sm">Operating Working Hours</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Operating Working Hours</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                       <strong>Monday – Saturday:</strong> 9:00 AM – 9:00 PM<br />
                       <strong>Sunday:</strong> Scheduled Site Installations &amp; Emergency Printing
@@ -175,10 +198,10 @@ export default function Contact() {
                     📜
                   </div>
                   <div>
-                    <h4 className="font-bold text-[#1346a8] text-sm">GST &amp; Business Credentials</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">GST &amp; Business Credentials</h4>
                     <p className="text-xs text-slate-600 mt-1">
                       <strong>GSTIN:</strong> 10AENPH7809D1ZT<br />
-                      <strong>CEO:</strong> S Haidar • <strong>Est.</strong> 2017
+                      <strong>CEO:</strong> S Haidar • <strong>Est.</strong> 1999
                     </p>
                   </div>
                 </div>
@@ -189,7 +212,7 @@ export default function Contact() {
                     🌐
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-bold text-[#1346a8] text-sm">Official Social Channels</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Official Social Channels</h4>
                     <p className="text-xs text-slate-500 mt-0.5 mb-3">
                       Follow our daily live shop runs, machine demos, and completed client signage across Bihar.
                     </p>
@@ -224,8 +247,8 @@ export default function Contact() {
 
             {/* Quick Inquiry Form */}
             <div className="lg:col-span-6">
-              <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-card">
-                <h3 className="text-xl font-display font-black text-[#1346a8]">
+              <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-card">
+                <h3 className="text-xl font-display font-black text-slate-900">
                   Send Us a Direct Message
                 </h3>
                 <p className="text-xs text-slate-500 mt-1 mb-6">
@@ -356,7 +379,7 @@ export default function Contact() {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
               <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Directions to Our Storefront</span>
-              <h2 className="text-2xl font-display font-black text-[#1346a8] mt-0.5">
+              <h2 className="text-2xl font-display font-black text-slate-900 mt-0.5">
                 Visit Kashish Ad® on Google Maps
               </h2>
             </div>
@@ -370,7 +393,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="rounded-3xl border-2 border-slate-200 overflow-hidden shadow-card">
+          <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-card">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.5510078491084!2d85.13891387416965!3d25.612511514756072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1788667065067!5m2!1sen!2sin"
               width="100%"

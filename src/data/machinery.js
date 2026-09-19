@@ -4,6 +4,7 @@ export const MACHINERY = [
     name: 'HP Latex 570 Press',
     type: 'Eco-Friendly Large Format',
     badge: 'Industrial Printer',
+    image: '/assets/images/machinery/hp-latex-570.jpg',
     specs: {
       'Print Width': 'Up to 64 inches (1.62 m)',
       'Ink Type': 'Water-based HP Latex Inks (Odorless)',
@@ -17,6 +18,7 @@ export const MACHINERY = [
     name: 'Roland Print & Cut System',
     type: 'Japanese Precision Plotter',
     badge: 'Contour Cutting',
+    image: '/assets/images/machinery/roland-print-cut.jpg',
     specs: {
       'Resolution': 'Up to 1440 DPI',
       'Cut Accuracy': '0.01 mm precision',
@@ -30,6 +32,7 @@ export const MACHINERY = [
     name: 'High-Precision UV Flatbed Printer',
     type: 'Direct-to-Rigid Printing',
     badge: 'Direct UV Curing',
+    image: '/assets/images/machinery/uv-flatbed.jpg',
     specs: {
       'Bed Size': '8 ft × 4 ft industrial bed',
       'Curing System': 'Instant UV-LED Cold Lamp',
@@ -43,6 +46,7 @@ export const MACHINERY = [
     name: 'Heavy Duty 3-Axis CNC Router',
     type: 'Computer Numerical Control',
     badge: '3D Carving & Routing',
+    image: '/assets/images/machinery/cnc-router.jpg',
     specs: {
       'Working Area': '8 ft × 4 ft vacuum bed',
       'Spindle Speed': '24,000 RPM high-torque spindle',
@@ -56,6 +60,7 @@ export const MACHINERY = [
     name: 'Fiber Laser Cutting Machine',
     type: 'High Precision Metal Cutting',
     badge: 'Metal Fabrication',
+    image: '/assets/images/machinery/fiber-laser.jpg',
     specs: {
       'Laser Source': 'Raycus / Max Fiber Laser',
       'Cutting Metals': 'Stainless Steel (SS 304), Mild Steel, Brass, Aluminum',
@@ -69,6 +74,7 @@ export const MACHINERY = [
     name: 'Automatic Channel Letter Bender',
     type: 'CNC Profile Bender',
     badge: 'Automated 3D Letters',
+    image: '/assets/images/machinery/letter-bender.jpg',
     specs: {
       'Material Feeding': 'Automatic aluminum & SS strip feeder',
       'Return Heights': '30mm to 150mm returns',
@@ -82,6 +88,7 @@ export const MACHINERY = [
     name: 'Thermal & Cold Roll Laminator',
     type: 'Protective Film Applicator',
     badge: 'Protective Shield',
+    image: '/assets/images/machinery/vinyl-laminator.jpg',
     specs: {
       'Width': '65 inches wide roller',
       'Temperature': 'Adjustable heat assist up to 60°C',
@@ -95,6 +102,7 @@ export const MACHINERY = [
     name: 'Digital Cloth & Fabric Printer',
     type: 'Textile & Sublimation',
     badge: 'Fabric Printing',
+    image: '/assets/images/machinery/digital-cloth.jpg',
     specs: {
       'Media': 'Tension fabric, satin, canvas, flag cloth',
       'Inks': 'High density dye-sublimation pigments',

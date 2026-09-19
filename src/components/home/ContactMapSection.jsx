@@ -40,8 +40,8 @@ export default function ContactMapSection() {
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Direct Workshop &amp; Showroom Access
           </div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8] tracking-tight">
-            Contact Us &amp; Visit Our Workshop in Patna
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 tracking-tight">
+            Contact Us &amp; Visit Our Workshop <span className="text-[#1346a8]">in Patna</span>
           </h2>
           <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
             Drop by our Fraser Road production unit at Capital Tower to inspect real material samples, talk directly to our signage fabrication engineers, or reach our direct order desk for fast turnaround.
@@ -181,7 +181,7 @@ export default function ContactMapSection() {
 
           {/* Right Column (7 Cols): Embedded Interactive Google Map */}
           <div className="lg:col-span-7 flex flex-col">
-            <div className="bg-white rounded-3xl border-2 border-slate-200 shadow-card overflow-hidden flex-1 flex flex-col min-h-[460px] sm:min-h-[520px]">
+            <div className="bg-white rounded-2xl border-2 border-slate-200 shadow-card overflow-hidden flex-1 flex flex-col min-h-[460px] sm:min-h-[520px]">
               
               {/* Map Header Bar */}
               <div className="p-4 sm:px-6 bg-slate-100/80 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0">

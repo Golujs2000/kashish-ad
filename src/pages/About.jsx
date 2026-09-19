@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 export default function About() {
   const aboutSchema = {
@@ -8,7 +9,26 @@ export default function About() {
     '@type': 'AboutPage',
     name: 'About Kashish Ad®',
     description: 'Learn about Kashish Ad®, Patna\'s foremost digital printing and sign board fabrication company founded by S Haidar in 1999.',
-    url: 'http://localhost:3000/about'
+    url: SITE_CONFIG.getProductionUrl('/about')
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_CONFIG.getProductionUrl('/')
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'About Us',
+        item: SITE_CONFIG.getProductionUrl('/about')
+      }
+    ]
   };
 
   return (
@@ -16,9 +36,9 @@ export default function About() {
       <SEO
         title="About Kashish Ad® | Patna Digital Printing & Signage Pioneer"
         description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1999 by CEO S Haidar. Located at Capital Tower, Fraser Road."
-        keywords="about kashish ad, s haidar patna, printing press fraser road patna, signage manufacturer bihar"
-        canonicalUrl="http://localhost:3000/about"
-        structuredData={[aboutSchema]}
+        keywords="about kashish ad, s haidar patna, printing press fraser road patna, signage manufacturer bihar, sign board maker patna"
+        canonicalUrl="/about"
+        structuredData={[aboutSchema, breadcrumbSchema]}
       />
       {/* Page Hero */}
       <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
@@ -31,11 +51,11 @@ export default function About() {
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Established 1999 • Patna, Bihar
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-[#1346a8] tracking-tight max-w-3xl mx-auto">
-            About <span className="inline-flex items-start text-slate-900"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none text-[#1346a8]">®</span></span>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
+            About <span className="inline-flex items-start text-[#1346a8]"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none text-[#1346a8]">®</span></span>
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Founded under the visionary leadership of <strong>CEO S Haidar</strong>, Kashish Ad® has grown into Patna's premier digital printing and architectural 3D signage manufacturing enterprise, combining industrial-grade technology with handcrafted precision.
+            Founded under the visionary leadership of <strong className="text-slate-900">CEO S Haidar</strong>, Kashish Ad® has grown into Patna's premier digital printing and architectural 3D signage manufacturing enterprise, combining industrial-grade technology with handcrafted precision.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -61,14 +81,14 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-5">
               <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Our Journey</span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-[#1346a8] leading-tight">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 leading-tight">
                 Setting the Standard for Commercial Branding in Bihar
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
-                Since our GST registration in <strong>1999</strong>, Kashish Ad® has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
+                Since our GST registration in <strong className="text-slate-900">1999</strong>, Kashish Ad® has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                Operating from our multi-unit facility at <strong>Capital Tower, A-6 &amp; B-16, Fraser Road</strong>, we have invested continuously in cutting-edge machinery — including Japanese Roland print-and-cut plotters, heavy-duty industrial UV flatbeds, fiber metal lasers, and CNC routing centers.
+                Operating from our multi-unit facility at <strong className="text-slate-900">Capital Tower, A-6 &amp; B-16, Fraser Road</strong>, we have invested continuously in cutting-edge machinery — including Japanese Roland print-and-cut plotters, heavy-duty industrial UV flatbeds, fiber metal lasers, and CNC routing centers.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 By keeping all fabrication, cutting, printing, and wiring strictly in-house, we eliminate third-party delays and middleman markups, passing on superior quality and factory-direct savings to our clients.
@@ -97,14 +117,14 @@ export default function About() {
 
             {/* Media column */}
             <div className="lg:col-span-5">
-              <div className="bg-white rounded-3xl border-2 border-slate-200 p-3 shadow-card overflow-hidden">
+              <div className="bg-white rounded-2xl border border-slate-200 p-3 shadow-card overflow-hidden">
                 <img
                   src="/assets/images/hero-showcase-storefront-facade.png"
                   alt="Kashish Ad Storefront at Capital Tower Patna"
-                  className="w-full h-80 object-cover rounded-2xl"
+                  className="w-full h-80 object-cover rounded-xl"
                 />
                 <div className="p-4">
-                  <h4 className="font-bold text-[#1346a8] text-sm">Kashish Ad® Primary Workshop &amp; Showroom</h4>
+                  <h4 className="font-bold text-slate-900 text-sm">Kashish Ad® Primary Workshop &amp; Showroom</h4>
                   <p className="text-xs text-slate-500 mt-0.5">Capital Tower, Fraser Road, Patna</p>
                 </div>
               </div>
@@ -120,7 +140,7 @@ export default function About() {
             <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">
               Government &amp; Corporate Verification
             </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
+            <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-1">
               Verified Statutory Profile
             </h2>
             <p className="mt-2 text-xs sm:text-sm text-slate-600">
@@ -128,7 +148,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 shadow-card p-6 sm:p-10">
+          <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-card p-6 sm:p-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                 <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">Legal Entity Name</span>
@@ -178,38 +198,38 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Why Clients Trust Us</span>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-[#1346a8] mt-1">
+            <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-1">
               Our Operational Pillars
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-card transition-shadow">
               <div className="text-3xl mb-3">🎯</div>
-              <h3 className="font-bold text-sm text-[#1346a8]">Precision Engineering</h3>
+              <h3 className="font-bold text-sm text-slate-900">Precision Engineering</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 From 0.01mm fiber laser kerfs to automated channel letter bending, our work delivers millimeter-perfect alignment.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-card transition-shadow">
               <div className="text-3xl mb-3">☀️</div>
-              <h3 className="font-bold text-sm text-[#1346a8]">Weather &amp; Fade Resilience</h3>
+              <h3 className="font-bold text-sm text-slate-900">Weather &amp; Fade Resilience</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 Outdoor UV-LED pigments and SS 304 alloys that withstand Patna's scorching summers and monsoon rains.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-card transition-shadow">
               <div className="text-3xl mb-3">⚡</div>
-              <h3 className="font-bold text-sm text-[#1346a8]">Fast Turnaround Times</h3>
+              <h3 className="font-bold text-sm text-slate-900">Fast Turnaround Times</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
                 With dual shifts and in-house inventory, we execute urgent flex banners and signage on guaranteed timelines.
               </p>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs">
+            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-2xs hover:shadow-card transition-shadow">
               <div className="text-3xl mb-3">🤝</div>
-              <h3 className="font-bold text-sm text-[#1346a8]">Direct WhatsApp Hotline</h3>
+              <h3 className="font-bold text-sm text-slate-900">Direct WhatsApp Hotline</h3>
               <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                Chat directly on <strong>09308327111</strong> for instant file verification, proof approvals, and live dispatch updates.
+                Chat directly on <strong className="text-slate-900">09308327111</strong> for instant file verification, proof approvals, and live dispatch updates.
               </p>
             </div>
           </div>
@@ -217,9 +237,9 @@ export default function About() {
       </section>
 
       {/* CTA in Navy #1346a8 */}
-      <section className="pb-16">
+      <section className="pb-16 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1346a8] text-white rounded-3xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+          <div className="bg-[#1346a8] text-white rounded-2xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-card">
             <div className="space-y-2 max-w-xl text-center md:text-left">
               <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
                 Ready to Elevate Your Business Identity?
@@ -234,7 +254,7 @@ export default function About() {
                 href="https://wa.me/919308327111?text=Hello%20CEO%20S%20Haidar%20/%20Kashish%20Ad,%20I%20would%20like%20to%20discuss%20a%20project."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 text-center transition-all"
+                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-[#1346a8] bg-white hover:bg-slate-100 shadow-sm text-center transition-all"
               >
                 💬 WhatsApp CEO / Workshop
               </a>

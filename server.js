@@ -67,9 +67,27 @@ app.get('/api/inquiries', (req, res) => {
   res.json({ total: inquiries.length, inquiries });
 });
 
-// Serve frontend static files from dist directory
+// Security & SEO Headers Middleware
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  next();
+});
+
+// Serve frontend static files from dist directory with optimized caching
 const distPath = path.join(__dirname, 'dist');
-app.use(express.static(distPath));
+app.use(express.static(distPath, {
+  maxAge: '7d',
+  setHeaders: (res, filePath) => {
+    // Hashed production Vite assets get long-term caching
+    if (filePath.includes(`${path.sep}assets${path.sep}`)) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    } else if (filePath.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+    }
+  }
+}));
 
 // Explicit SEO endpoints
 app.get('/sitemap.xml', (req, res) => {
@@ -91,6 +109,6 @@ app.listen(PORT, () => {
   console.log(`=======================================================`);
   console.log(`🚀 Kashish Ad® Server running at http://localhost:${PORT}`);
   console.log(`📍 Capital Tower, Fraser Road, Patna, Bihar 800001`);
-  console.log(`📞 Phone & WhatsApp: 07488984637`);
+  console.log(`📞 Phone & WhatsApp: 09308327111 / 07488984637`);
   console.log(`=======================================================`);
 });

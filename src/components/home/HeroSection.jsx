@@ -35,9 +35,9 @@ export default function HeroSection() {
             {/* 5 Circular Service Categories */}
             <div className="mt-4 sm:mt-5 grid grid-cols-5 gap-2 sm:gap-3 max-w-md">
               <Link
-                to="/services?category=digital"
+                to="/services/uv-digital"
                 className="flex flex-col items-center group text-center"
-                title="Digital & Offset Printing"
+                title="Digital & Large Format UV Printing"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -50,9 +50,9 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                to="/services?category=signage"
+                to="/services/led-acrylic-letters"
                 className="flex flex-col items-center group text-center"
-                title="Sign Boards & LED Letters"
+                title="3D LED Letters & Glow Signage"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -65,9 +65,9 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                to="/services?category=branding"
+                to="/services/solvent-vinyl"
                 className="flex flex-col items-center group text-center"
-                title="Shop & Office Branding"
+                title="Shop & Office Vinyl Branding"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -80,9 +80,9 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                to="/machinery"
+                to="/services/cnc-laser-jali"
                 className="flex flex-col items-center group text-center"
-                title="CNC & Laser Cutting"
+                title="CNC Laser & Jali Cutting"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -95,9 +95,9 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                to="/services?category=vehicle"
+                to="/services/solvent-vinyl"
                 className="flex flex-col items-center group text-center"
-                title="Vehicle & Fleet Branding"
+                title="Vehicle & Fleet Vinyl Branding"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">

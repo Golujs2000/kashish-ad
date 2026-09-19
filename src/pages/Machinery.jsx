@@ -2,17 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { MACHINERY } from '../data/machinery';
 import SEO from '../components/SEO';
+import { SITE_CONFIG } from '../data/siteData';
 
 export default function Machinery() {
   const machineImages = {
-    'hp-latex-570': '/assets/images/kashish-ad-flex-printing-banner.png',
-    'roland-print-cut': '/assets/images/hero-showcase-3d-letters-and-prints.png',
-    'uv-flatbed': '/assets/images/hero-showcase-wide-format-printer.png',
-    'cnc-router': '/assets/images/kashish-ad-cnc-cutting-banner.png',
-    'fiber-laser': '/assets/images/production-cnc-laser-cutting-sparks.png',
-    'letter-bender': '/assets/images/kashish-ad-3d-letter-printing-banner.png',
-    'vinyl-laminator': '/assets/images/production-wide-format-wall-graphics.png',
-    'digital-cloth': '/assets/images/kashish-ad-complete-signage-solution-banner.png'
+    'hp-latex-570': '/assets/images/machinery/hp-latex-570.jpg',
+    'roland-print-cut': '/assets/images/machinery/roland-print-cut.jpg',
+    'uv-flatbed': '/assets/images/machinery/uv-flatbed.jpg',
+    'cnc-router': '/assets/images/machinery/cnc-router.jpg',
+    'fiber-laser': '/assets/images/machinery/fiber-laser.jpg',
+    'letter-bender': '/assets/images/machinery/letter-bender.jpg',
+    'vinyl-laminator': '/assets/images/machinery/vinyl-laminator.jpg',
+    'digital-cloth': '/assets/images/machinery/digital-cloth.jpg'
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: SITE_CONFIG.getProductionUrl('/')
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'In-House Machinery',
+        item: SITE_CONFIG.getProductionUrl('/machinery')
+      }
+    ]
   };
 
   return (
@@ -21,7 +41,8 @@ export default function Machinery() {
         title="Industrial Printing & CNC Machinery Plant in Patna"
         description="Explore Kashish Ad's in-house machinery in Patna: UV Flatbeds, Roland Eco-Solvent plotters, Fiber Laser metal cutters, and automated CNC routers at Fraser Road."
         keywords="printing machinery patna, uv flatbed printer patna, roland eco solvent bihar, laser cutting sign board patna, kashish ad plant"
-        canonicalUrl="http://localhost:3000/machinery"
+        canonicalUrl="/machinery"
+        structuredData={[breadcrumbSchema]}
       />
       {/* Page Hero */}
       <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
@@ -75,7 +96,7 @@ export default function Machinery() {
 
           <div className="space-y-12">
             {MACHINERY.map((machine, index) => {
-              const imageSrc = machineImages[machine.id] || '/assets/images/kashish-ad-production-services-grid.png';
+              const imageSrc = machine.image || machineImages[machine.id] || '/assets/images/kashish-ad-production-services-grid.png';
               const waMsg = encodeURIComponent(
                 `Hello Kashish Ad®, I am interested in printing/fabrication using your "${machine.name}" (${machine.type}). Please provide details.`
               );
@@ -84,7 +105,7 @@ export default function Machinery() {
                 <div
                   key={machine.id}
                   id={machine.id}
-                  className="bg-white rounded-3xl border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden"
+                  className="bg-white rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 overflow-hidden"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
                     {/* Media column */}
@@ -109,7 +130,7 @@ export default function Machinery() {
                         <div className="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-[#f0f7ff] text-[#1346a8] mb-2">
                           {machine.type}
                         </div>
-                        <h3 className="text-2xl font-display font-black text-[#1346a8]">{machine.name}</h3>
+                        <h3 className="text-2xl font-display font-black text-slate-900">{machine.name}</h3>
                         <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">{machine.description}</p>
 
                         {/* Specs grid */}
@@ -208,7 +229,7 @@ export default function Machinery() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Real Video Player */}
-            <div className="lg:col-span-7 bg-black rounded-3xl overflow-hidden shadow-2xl border-2 border-[#1346a8]/20 relative aspect-video flex items-center justify-center">
+            <div className="lg:col-span-7 bg-black rounded-2xl overflow-hidden shadow-card border-2 border-[#1346a8]/20 relative aspect-video flex items-center justify-center">
               <video
                 controls
                 playsInline

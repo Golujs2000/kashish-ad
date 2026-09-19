@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import {
+  SITE_CONFIG,
   COMPANY_INFO,
   CONTACT_INFO,
   LOCATION_INFO,
@@ -11,32 +12,58 @@ import {
 } from '../data/siteData';
 
 /**
- * Advanced Local & Technical SEO Component
- * Automatically injects:
+ * Advanced Local, Technical & Structured Data SEO Component
+ * Automatically injects & manages:
  * - Document <title>
- * - Standard Meta: description, keywords, robots
+ * - Standard Search Meta: description, keywords, robots, author
  * - Geo Meta Tags for Patna, Bihar Local SEO
- * - Open Graph & Twitter Cards
- * - Canonical link
- * - Schema.org JSON-LD (LocalBusiness, Product, Breadcrumbs, FAQs)
+ * - Open Graph & Twitter Cards with verified image dimensions
+ * - Canonical link resolution
+ * - Schema.org JSON-LD (Multi-type LocalBusiness/PrintShop, WebSite, Product, BreadcrumbList, FAQs)
  */
 export default function SEO({
   title,
   description,
   keywords,
   canonicalUrl,
+  canonical, // Support alias
   ogImage = SEO_DEFAULTS.ogImage,
   ogType = 'website',
-  structuredData = null
+  robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+  structuredData = null,
+  schema = null // Support alias
 }) {
   const siteName = SEO_DEFAULTS.siteName;
   const defaultTitle = SEO_DEFAULTS.title;
   const defaultDesc = SEO_DEFAULTS.description;
   const defaultKeywords = SEO_DEFAULTS.keywords;
 
-  const finalTitle = title ? `${title} | ${siteName} Patna` : defaultTitle;
+  const finalTitle = title ? (title.includes(siteName) ? title : `${title} | ${siteName} Patna`) : defaultTitle;
   const finalDesc = description || defaultDesc;
   const finalKeywords = keywords || defaultKeywords;
+  const finalRobots = robots;
+
+  // Resolve Canonical URL safely
+  const rawCanonical = canonicalUrl || canonical;
+  let finalCanonical = '';
+  if (rawCanonical) {
+    if (rawCanonical.startsWith('http')) {
+      finalCanonical = rawCanonical;
+    } else {
+      finalCanonical = SITE_CONFIG.resolveUrl(rawCanonical);
+    }
+  } else if (typeof window !== 'undefined') {
+    finalCanonical = `${window.location.origin}${window.location.pathname}`;
+  } else {
+    finalCanonical = SITE_CONFIG.getProductionUrl('/');
+  }
+
+  // Resolve OG Image URL safely
+  const resolvedOgImage = ogImage.startsWith('http')
+    ? ogImage
+    : SITE_CONFIG.getProductionUrl(ogImage);
+
+  const activeStructuredData = structuredData || schema;
 
   useEffect(() => {
     // 1. Set Document Title
@@ -45,7 +72,7 @@ export default function SEO({
     // Helper to update or create meta tags
     const setMeta = (name, content, isProperty = false) => {
       const attr = isProperty ? 'property' : 'name';
-      let element = document.querySelector(`meta[${attr}="${name}"]`);
+      let element = document.head.querySelector(`meta[${attr}="${name}"]`);
       if (!element) {
         element = document.createElement('meta');
         element.setAttribute(attr, name);
@@ -57,7 +84,7 @@ export default function SEO({
     // 2. Standard Search Meta
     setMeta('description', finalDesc);
     setMeta('keywords', finalKeywords);
-    setMeta('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    setMeta('robots', finalRobots);
     setMeta('author', SEO_DEFAULTS.author);
 
     // 3. Local SEO Geo Tags for Patna, Bihar
@@ -72,48 +99,55 @@ export default function SEO({
     setMeta('og:title', finalTitle, true);
     setMeta('og:description', finalDesc, true);
     setMeta('og:site_name', `${COMPANY_INFO.fullName} Patna`, true);
-    const currentUrl = canonicalUrl || (typeof window !== 'undefined' ? window.location.href : 'http://localhost:3000');
-    setMeta('og:url', currentUrl, true);
-    if (ogImage) {
-      setMeta('og:image', ogImage, true);
+    setMeta('og:url', finalCanonical, true);
+    if (resolvedOgImage) {
+      setMeta('og:image', resolvedOgImage, true);
+      setMeta('og:image:secure_url', resolvedOgImage, true);
+      setMeta('og:image:alt', `${COMPANY_INFO.fullName} - Signage & Digital Printing Patna`, true);
     }
 
     // 5. Twitter Card Tags
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', finalTitle);
     setMeta('twitter:description', finalDesc);
-    if (ogImage) {
-      setMeta('twitter:image', ogImage);
+    if (resolvedOgImage) {
+      setMeta('twitter:image', resolvedOgImage);
     }
 
     // 6. Canonical Link
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    let canonicalLink = document.head.querySelector('link[rel="canonical"]');
     if (!canonicalLink) {
       canonicalLink = document.createElement('link');
       canonicalLink.setAttribute('rel', 'canonical');
       document.head.appendChild(canonicalLink);
     }
-    canonicalLink.setAttribute('href', currentUrl);
+    canonicalLink.setAttribute('href', finalCanonical);
 
-    // 7. Base LocalBusiness Schema (Always Active)
+    // 7. Base Multi-Type LocalBusiness & PrintShop Schema
+    const productionOrigin = SITE_CONFIG.getProductionUrl('');
     const baseLocalBusinessSchema = {
       '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': 'http://localhost:3000/#localbusiness',
+      '@type': ['LocalBusiness', 'PrintShop', 'ProfessionalService'],
+      '@id': `${productionOrigin}/#localbusiness`,
       name: COMPANY_INFO.fullName,
+      alternateName: [COMPANY_INFO.alternateName, 'Kashish Ad Patna', 'Kashish Advertisement'],
       legalName: COMPANY_INFO.legalName,
       description: COMPANY_INFO.fullDescription,
-      url: 'http://localhost:3000',
-      telephone: CONTACT_INFO.phoneIntl,
+      url: productionOrigin,
+      telephone: CONTACT_INFO.allPhones,
       email: CONTACT_INFO.email,
       priceRange: COMPANY_INFO.priceRange,
+      currenciesAccepted: COMPANY_INFO.currenciesAccepted,
+      paymentAccepted: COMPANY_INFO.paymentAccepted,
       image: [
-        `http://localhost:3000${COMPANY_INFO.logoFull}`,
-        `http://localhost:3000${COMPANY_INFO.storefrontImage}`
+        `${productionOrigin}${COMPANY_INFO.logoFull}`,
+        `${productionOrigin}${COMPANY_INFO.storefrontImage}`
       ],
+      logo: `${productionOrigin}${COMPANY_INFO.logoFull}`,
       sameAs: [
         SOCIAL_LINKS.instagram.url,
-        SOCIAL_LINKS.facebook.url
+        SOCIAL_LINKS.facebook.url,
+        LOCATION_INFO.googleMapsCidUrl
       ],
       address: {
         '@type': 'PostalAddress',
@@ -137,8 +171,10 @@ export default function SEO({
       })),
       founder: {
         '@type': 'Person',
-        name: COMPANY_INFO.founder
+        name: COMPANY_INFO.founder,
+        jobTitle: COMPANY_INFO.role
       },
+      foundingDate: `${COMPANY_INFO.foundedYear}-01-01`,
       taxID: COMPANY_INFO.gstin,
       aggregateRating: {
         '@type': 'AggregateRating',
@@ -153,6 +189,19 @@ export default function SEO({
       }))
     };
 
+    // 8. Base WebSite Schema with Potential Search Action
+    const webSiteSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': `${productionOrigin}/#website`,
+      url: productionOrigin,
+      name: COMPANY_INFO.fullName,
+      alternateName: 'Kashish Ad Patna',
+      publisher: {
+        '@id': `${productionOrigin}/#localbusiness`
+      }
+    };
+
     // Inject JSON-LD Schema
     const scriptId = 'kashish-structured-data';
     let scriptTag = document.getElementById(scriptId);
@@ -163,16 +212,20 @@ export default function SEO({
       document.head.appendChild(scriptTag);
     }
 
-    const schemasToInject = structuredData 
-      ? [baseLocalBusinessSchema, ...(Array.isArray(structuredData) ? structuredData : [structuredData])]
-      : [baseLocalBusinessSchema];
+    const schemasToInject = [
+      baseLocalBusinessSchema,
+      webSiteSchema,
+      ...(activeStructuredData
+        ? (Array.isArray(activeStructuredData) ? activeStructuredData : [activeStructuredData])
+        : [])
+    ];
 
     scriptTag.textContent = JSON.stringify(schemasToInject);
 
     return () => {
-      // Cleanup custom schemas on unmount if necessary
+      // Optional cleanup on unmount
     };
-  }, [finalTitle, finalDesc, finalKeywords, canonicalUrl, ogImage, ogType, structuredData]);
+  }, [finalTitle, finalDesc, finalKeywords, finalRobots, finalCanonical, resolvedOgImage, ogType, activeStructuredData]);
 
   return null;
 }

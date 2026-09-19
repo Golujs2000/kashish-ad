@@ -7,42 +7,42 @@ const SERVICE_CATEGORIES = [
     title: 'Digital Printing',
     description: 'Business cards, brochures, flyers, leaflets, posters, bill books and more.',
     image: '/assets/images/hero-showcase-wide-format-printer.png',
-    link: '/services?category=digital'
+    link: '/services/uv-digital'
   },
   {
     id: '3d-letters',
     title: '3D Letter & Signage',
     description: 'Acrylic letters, steel letters, ACP & flex glow sign boards.',
     image: '/assets/images/led-letters-hotel-the-grand.jpg',
-    link: '/services?category=signage'
+    link: '/services/led-acrylic-letters'
   },
   {
     id: 'shop-branding',
     title: 'Shop & Office Branding',
     description: 'Complete branding for shops, showrooms and offices.',
     image: '/assets/images/portfolio-trends-retail-storefront.png',
-    link: '/services?category=branding'
+    link: '/services/solvent-vinyl'
   },
   {
     id: 'cnc-cutting',
     title: 'CNC Cutting',
     description: 'CNC steel design cutting and CNC router cutting.',
     image: '/assets/images/production-cnc-laser-cutting-sparks.png',
-    link: '/machinery'
+    link: '/services/cnc-laser-jali'
   },
   {
     id: 'vehicle-branding',
     title: 'Vehicle Branding',
     description: 'Van and vehicle branding with customized graphics.',
     image: '/assets/images/portfolio-delivery-van-on-the-move.png',
-    link: '/services?category=vehicle'
+    link: '/services/solvent-vinyl'
   },
   {
     id: 'uv-vinyl',
     title: 'UV & Vinyl Printing',
     description: 'UV printing, vinyl printing, wall graphics and more.',
     image: '/assets/images/production-wide-format-wall-graphics.png',
-    link: '/services?category=uv'
+    link: '/services/uv-digital'
   }
 ];
 
@@ -65,19 +65,21 @@ export default function ServiceCategories() {
               key={cat.id}
               className="bg-white rounded-2xl border border-slate-200 overflow-hidden hover:border-[#1346a8]/40 hover:shadow-card-hover transition-all duration-300 flex flex-col group"
             >
-              <div className="aspect-video bg-slate-100 overflow-hidden relative">
+              <Link to={cat.link} className="aspect-video bg-slate-100 overflow-hidden relative block">
                 <img
                   src={cat.image}
                   alt={cat.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-              </div>
+              </Link>
               <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-lg font-bold font-display text-slate-900 group-hover:text-[#1346a8] transition-colors">
-                    {cat.title}
-                  </h3>
+                  <Link to={cat.link} className="block">
+                    <h3 className="text-lg font-bold font-display text-slate-900 group-hover:text-[#1346a8] transition-colors">
+                      {cat.title}
+                    </h3>
+                  </Link>
                   <p className="text-xs text-slate-600 leading-relaxed mt-2">
                     {cat.description}
                   </p>
@@ -86,12 +88,23 @@ export default function ServiceCategories() {
                   to={cat.link}
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1346a8] group-hover:text-[#0f3a8e] mt-4 pt-2 border-t border-slate-100"
                 >
-                  <span>Explore</span>
+                  <span>Explore Service</span>
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Explore All Services CTA button */}
+        <div className="mt-12 text-center">
+          <Link
+            to="/services"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-95 transition-all"
+          >
+            <span>Explore All 22+ Services &amp; Products</span>
+            <span className="text-base">→</span>
+          </Link>
         </div>
       </div>
     </section>
