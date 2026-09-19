@@ -12,7 +12,7 @@ export default function HeroSection() {
           className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-card border border-slate-200/80 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
         >
           {/* Hero Header: 40% text content area on desktop directly over the background */}
-          <div className="relative z-10 w-full lg:w-[44%] xl:w-[42%] p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+          <div className="relative z-10 w-full lg:w-[44%] xl:w-[42%] p-5 sm:p-8 lg:p-10 flex flex-col justify-center min-w-0">
 
             {/* Main Headline (48-54px desktop, 34-40px mobile) */}
             <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] text-slate-900 tracking-tight leading-[1.08]">
@@ -68,7 +68,7 @@ export default function HeroSection() {
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M4 9v6h4l5 4V5L8 9H4zm11-1.17v8.34c1.78-.96 3-2.85 3-5s-1.22-4.04-3-5.34zm0-3.83v1.86c3.48 1.45 6 4.9 6 8.96s-2.52 7.51-6 8.96V20c4.42-1.57 7.5-5.78 7.5-10.72S19.42 5.57 15 4z" />
+                    <path d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.2-.64-1.67-.08-.1-.13-.21-.13-.33 0-.28.22-.5.5-.5H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 8 6.5 8s1.5.67 1.5 1.5S7.33 11 6.5 11zm3-4C8.67 7 8 6.33 8 5.5S8.67 4 9.5 4s1.5.67 1.5 1.5S10.33 7 9.5 7zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 4 14.5 4s1.5.67 1.5 1.5S15.33 7 14.5 7zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 8 17.5 8s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
                   </svg>
                 </div>
                 <span className="mt-1 text-[10px] sm:text-xs font-bold text-slate-700 group-hover:text-[#1346a8] transition-colors leading-tight">
@@ -130,17 +130,18 @@ export default function HeroSection() {
               </a>
             </div>
 
-            {/* Location Pill: 12px radius */}
+            {/* Location Pill: 12px radius with responsive overflow protection */}
             <a
               href={LOCATION_INFO.googleMapsCidUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-xs text-slate-700 font-semibold hover:text-[#1346a8] bg-white/95 px-3 py-1.5 rounded-xl border border-slate-200 shadow-xs w-fit transition-colors"
+              className="mt-4 inline-flex items-center gap-2 text-xs text-slate-700 font-semibold hover:text-[#1346a8] bg-white/95 px-3 py-1.5 rounded-xl border border-slate-200 shadow-xs max-w-full min-w-0 transition-colors"
             >
               <svg className="w-3.5 h-3.5 text-[#1346a8] shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
               </svg>
-              <span className="truncate">{LOCATION_INFO.fullAddress}</span>
+              <span className="sm:hidden truncate min-w-0">{LOCATION_INFO.shortAddress}</span>
+              <span className="hidden sm:inline truncate min-w-0">{LOCATION_INFO.fullAddress}</span>
             </a>
 
           </div>
