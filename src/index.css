@@ -2020,3 +2020,29 @@ ul {
   color: var(--brand-red);
   font-weight: 600;
 }
+
+/* ==========================================================================
+   HERO PANORAMIC BANNER RESPONSIVE BACKGROUND
+   Mobile (< 640px): Clean solid background, NO background image.
+   Tablet & Desktop (>= 640px): High-resolution panoramic showcase image.
+   ========================================================================== */
+.hero-panoramic-container {
+  background-color: #f8fafc;
+  background-image: none !important;
+}
+
+@media (min-width: 640px) {
+  .hero-panoramic-container {
+    background-image: url('/assets/images/kashish-ad-hero-panoramic-showcase.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-panoramic-container {
+    background-size: 100% 100%;
+  }
+}
+

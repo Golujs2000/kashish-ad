@@ -7,12 +7,9 @@ export default function HeroSection() {
     <section className="relative bg-white pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        {/* Panoramic Hero Container - 16px radius, fitted to image with zero overlay layer */}
+        {/* Panoramic Hero Container - 16px radius, fitted to image with zero overlay layer on desktop; clean background on mobile */}
         <div
-          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-card border border-slate-200/80 bg-no-repeat bg-center bg-cover lg:bg-[size:100%_100%] aspect-auto lg:aspect-[1875/839] flex items-center"
-          style={{
-            backgroundImage: "url('/assets/images/kashish-ad-hero-panoramic-showcase.png')"
-          }}
+          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-card border border-slate-200/80 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
         >
           {/* Hero Header: 40% text content area on desktop directly over the background */}
           <div className="relative z-10 w-full lg:w-[44%] xl:w-[42%] p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
