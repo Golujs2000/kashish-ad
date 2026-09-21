@@ -10,6 +10,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import Machinery from './pages/Machinery';
 import Gallery from './pages/Gallery';
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/services/:serviceId" element={<ServiceDetail />} />
           <Route path="/machinery" element={<Machinery />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/calculator" element={<Navigate to="/services" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

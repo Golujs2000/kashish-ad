@@ -8,6 +8,7 @@ import ServiceCategories from '../components/home/ServiceCategories';
 import PortfolioSolutions from '../components/home/PortfolioSolutions';
 import BusinessSolutions from '../components/home/BusinessSolutions';
 import MachineryShowcase from '../components/home/MachineryShowcase';
+import ClientsSection from '../components/home/ClientsSection';
 import CtaBanner from '../components/home/CtaBanner';
 import ContactMapSection from '../components/home/ContactMapSection';
 
@@ -88,6 +89,9 @@ export default function Home() {
 
       {/* 5.5 IN-HOUSE PRODUCTION PLANT & MACHINERY (15+ Machines & Metrics) */}
       <MachineryShowcase />
+
+      {/* 5.8 OUR CLIENTS (Extracted from Official Portfolio PDF) */}
+      <ClientsSection />
 
       {/* 6. HIGH-CONVERSION CTA BANNER */}
       <CtaBanner />

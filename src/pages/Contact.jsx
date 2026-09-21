@@ -201,7 +201,7 @@ export default function Contact() {
                     <h4 className="font-bold text-slate-900 text-sm">GST &amp; Business Credentials</h4>
                     <p className="text-xs text-slate-600 mt-1">
                       <strong>GSTIN:</strong> 10AENPH7809D1ZT<br />
-                      <strong>CEO:</strong> S Haidar • <strong>Est.</strong> 1999
+                      <strong>CEO:</strong> S Haidar • <strong>Est.</strong> 1985 (41+ Years)
                     </p>
                   </div>
                 </div>

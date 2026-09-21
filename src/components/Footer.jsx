@@ -282,6 +282,7 @@ export default function Footer() {
                   { name: 'All Services (38+)', path: '/services' },
                   { name: 'Machinery', path: '/machinery' },
                   { name: 'Gallery', path: '/gallery' },
+                  { name: 'Portfolio PDF', path: '/portfolio' },
                   { name: 'About Us', path: '/about' },
                   { name: 'Contact', path: '/contact' }
                 ].map((item, idx) => (

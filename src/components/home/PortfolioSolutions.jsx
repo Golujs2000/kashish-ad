@@ -2,16 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PORTFOLIO_SOLUTIONS = [
-  { title: 'Shop Branding', image: '/assets/images/portfolio-trends-retail-storefront.png', serviceUrl: '/services/solvent-vinyl' },
-  { title: 'Acrylic 3D Letters', image: '/assets/images/led-letters-hotel-the-grand.jpg', serviceUrl: '/services/led-acrylic-letters' },
-  { title: 'ACP Glow Sign Board', image: '/assets/images/acp-work-architectural-facade.jpg', serviceUrl: '/services/glow-sign-board' },
-  { title: 'Neon Art Sign', image: '/assets/images/neon-sign-good-vibes-rainbow.jpg', serviceUrl: '/services/large-illuminated-signage' },
+  { title: 'In-Shop Retail Branding', image: '/assets/images/portfolio-trends-retail-storefront.png', serviceUrl: '/services/in-shop-branding' },
+  { title: '3D LED Acrylic Letters', image: '/assets/images/led-letters-hotel-the-grand.jpg', serviceUrl: '/services/led-acrylic-letters' },
+  { title: 'ACP Sign Board & Cladding', image: '/assets/images/services/thumb-acp-board.jpg', serviceUrl: '/services/acp-board' },
+  { title: 'LED Glow Sign Board', image: '/assets/images/sign-boards-pizza-zone-blade.jpg', serviceUrl: '/services/glow-sign-board' },
   { title: 'Executive Name Plates', image: '/assets/images/name-plates-acrylic-brass-studs.jpg', serviceUrl: '/services/name-plates' },
-  { title: 'Projecting Lightbox Sign', image: '/assets/images/sign-boards-pizza-zone-blade.jpg', serviceUrl: '/services/led-slim-lightbox' },
-  { title: 'CNC Laser Cutting', image: '/assets/images/production-cnc-laser-cutting-sparks.png', serviceUrl: '/services/cnc-laser-jali' },
-  { title: 'Van & Fleet Branding', image: '/assets/images/portfolio-delivery-van-on-the-move.png', serviceUrl: '/services/solvent-vinyl' },
-  { title: 'Flex & Hoarding Banner', image: '/assets/images/kashish-ad-flex-printing-banner.png', serviceUrl: '/services/frontlit-flex' },
-  { title: 'Customized Wallpapers', image: '/assets/images/production-wide-format-wall-graphics.png', serviceUrl: '/services/3d-wallpaper' }
+  { title: 'Promotional Canopy Tent', image: '/assets/images/services/thumb-promotional-canopy.jpg', serviceUrl: '/services/promotional-canopy' },
+  { title: 'CNC Laser Jali Cutting', image: '/assets/images/production-cnc-laser-cutting-sparks.png', serviceUrl: '/services/cnc-laser-jali' },
+  { title: 'Vehicle Fleet Branding', image: '/assets/images/portfolio-delivery-van-on-the-move.png', serviceUrl: '/services/solvent-vinyl' },
+  { title: 'Flex Banners & Hoardings', image: '/assets/images/kashish-ad-flex-printing-banner.png', serviceUrl: '/services/frontlit-flex' },
+  { title: 'Customized 3D Wallpapers', image: '/assets/images/production-wide-format-wall-graphics.png', serviceUrl: '/services/3d-wallpaper' }
 ];
 
 export default function PortfolioSolutions({ onSelectPhoto }) {

@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { SITE_CONFIG } from '../data/siteData';
+import ClientsSection from '../components/home/ClientsSection';
 
 export default function About() {
   const aboutSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     name: 'About Kashish Ad®',
-    description: 'Learn about Kashish Ad®, Patna\'s foremost digital printing and sign board fabrication company founded by S Haidar in 1999.',
+    description: 'Learn about Kashish Ad®, Patna\'s foremost digital printing and sign board fabrication company founded by S Haidar in 1985 with 41+ years of experience.',
     url: SITE_CONFIG.getProductionUrl('/about')
   };
 
@@ -35,7 +36,7 @@ export default function About() {
     <div className="bg-white min-h-screen">
       <SEO
         title="About Kashish Ad® | Patna Digital Printing & Signage Pioneer"
-        description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1999 by CEO S Haidar. Located at Capital Tower, Fraser Road."
+        description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1985 by CEO S Haidar with 41+ years experience. Located at Capital Tower, Fraser Road."
         keywords="about kashish ad, s haidar patna, printing press fraser road patna, signage manufacturer bihar, sign board maker patna"
         canonicalUrl="/about"
         structuredData={[aboutSchema, breadcrumbSchema]}
@@ -49,7 +50,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
-            Established 1999 • Patna, Bihar
+            Established 1985 • 41+ Years Experience • Patna, Bihar
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
             About <span className="inline-flex items-start text-[#1346a8]"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none text-[#1346a8]">®</span></span>
@@ -85,7 +86,7 @@ export default function About() {
                 Setting the Standard for Commercial Branding in Bihar
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-medium">
-                Since our GST registration in <strong className="text-slate-900">1999</strong>, Kashish Ad® has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
+                Established in <strong className="text-slate-900">1985</strong> with over <strong className="text-slate-900">41+ years</strong> of fabrication excellence, Kashish Ad® has operated with a singular focus: bringing world-class commercial printing, precision laser cutting, and architectural glow signage directly to businesses, institutions, and retailers across Bihar.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Operating from our multi-unit facility at <strong className="text-slate-900">Capital Tower, A-6 &amp; B-16, Fraser Road</strong>, we have invested continuously in cutting-edge machinery — including Japanese Roland print-and-cut plotters, heavy-duty industrial UV flatbeds, fiber metal lasers, and CNC routing centers.
@@ -97,8 +98,8 @@ export default function About() {
               {/* Stats grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
-                  <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">1999</span>
-                  <span className="block text-xs font-bold text-slate-500 mt-1">Year Established</span>
+                  <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">1985</span>
+                  <span className="block text-xs font-bold text-slate-500 mt-1">Estd (41+ Years)</span>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
                   <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">1,00,000+</span>
@@ -163,8 +164,8 @@ export default function About() {
                 <span className="block text-lg font-black font-mono text-[#1346a8] mt-1">10AENPH7809D1ZT</span>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
-                <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">GST Registration Date</span>
-                <span className="block text-base font-bold text-[#1346a8] mt-1">1999</span>
+                <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">Year Established &amp; Experience</span>
+                <span className="block text-base font-bold text-[#1346a8] mt-1">Estd 1985 • 41+ Years</span>
               </div>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-100">
                 <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">Legal Status of Firm</span>
@@ -235,6 +236,12 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Our Esteemed Clients from Portfolio */}
+      <ClientsSection
+        title="Esteemed Corporate & Institutional Clients"
+        subtitle="Trusted Partnerships Across Bihar"
+      />
 
       {/* CTA in Navy #1346a8 */}
       <section className="pb-16 sm:pb-20">

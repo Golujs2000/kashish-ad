@@ -75,14 +75,14 @@ export default function Header() {
   };
 
   const serviceCategories = [
-    { label: 'Outdoor & Flex Printing', path: '/services?category=largeformat', desc: 'Frontlit/Backlit flex, hoardings & frames' },
-    { label: 'Vinyl & Signage', path: '/services?category=signage', desc: 'Clear vinyl, backlit prints, solvent graphics' },
-    { label: '3D Acrylic & LED Letters', path: '/services/led-acrylic-letters', desc: 'Glossy acrylic, neon signs, halo-lit profile letters' },
-    { label: 'Boards & Architectural Cladding', path: '/services/acp-board', desc: 'ACP boards, MDF panels, digital display boards' },
-    { label: 'Wall Branding & Wraps', path: '/services/wall-wraps', desc: 'Architectural wall wraps & digital wall painting' },
-    { label: 'Promotional & Merchandise', path: '/services?category=promotional', desc: 'Canopy tents, standees, umbrellas, caps, mugs, trophies' },
-    { label: 'Corporate & Retail Spaces', path: '/services?category=corporate', desc: 'In-shop branding, reception walls, office elevations' },
-    { label: 'Architectural CNC & Laser', path: '/services/cnc-laser-jali', desc: 'MS jali gates, decorative partitions & cutting' },
+    { label: 'Flex & Outdoor Printing', path: '/services?category=largeformat', desc: 'Frontlit/Backlit flex, Star flex & hoardings' },
+    { label: 'UV Flatbed Digital Printing', path: '/services/uv-digital', desc: 'Direct print on glass, acrylic, wood & ACP' },
+    { label: 'Solvent Vinyl & Fleet Wraps', path: '/services/solvent-vinyl', desc: 'Waterproof vinyl graphics & vehicle branding' },
+    { label: 'Wall Wraps & 3D Wallpaper', path: '/services/wall-wraps', desc: 'Architectural wall decor & digital wall painting' },
+    { label: '3D LED Acrylic Letters', path: '/services/led-acrylic-letters', desc: 'Glossy acrylic, titanium SS & halo letters' },
+    { label: 'ACP Boards & Facade Cladding', path: '/services/acp-board', desc: 'Architectural ACP, video walls & display boards' },
+    { label: 'Promotional Canopy & Standees', path: '/services?category=promotional', desc: 'Canopy tents, rollup standees, flags & umbrellas' },
+    { label: 'In-Shop & Corporate Spaces', path: '/services/in-shop-branding', desc: 'Retail store displays, frosted film & office branding' },
   ];
 
   return (
@@ -114,7 +114,7 @@ export default function Header() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span className="font-medium">Direct In-House Factory • {WORKING_HOURS.summary}</span>
+                <span className="font-medium">Direct In-House Factory • Estd 1985 (41+ Yrs) • {WORKING_HOURS.summary}</span>
               </div>
             </div>
 
@@ -392,31 +392,69 @@ export default function Header() {
                   </NavLink>
 
                   {/* Mega Dropdown Menu */}
+                  {/* Mega Dropdown Menu */}
                   {servicesDropdown && (
-                    <div className="absolute top-full left-0 mt-1 w-80 bg-white rounded-2xl border border-slate-200 shadow-2xl p-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
-                      <div className="px-3 py-2 bg-slate-50 rounded-xl mb-1 flex items-center justify-between text-[11px] font-bold text-slate-500 uppercase tracking-wider">
-                        <span>38+ In-House Services</span>
-                        <Link to="/services" className="text-[#1346a8] hover:underline">
-                          View Full Catalog →
+                    <div className="absolute top-full left-0 mt-1 w-[560px] bg-white rounded-2xl border border-slate-200 shadow-2xl p-3 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                      <div className="px-3 py-2 bg-slate-50 rounded-xl mb-2 flex items-center justify-between text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                        <span>38+ In-House Printing &amp; Signage Services</span>
+                        <Link to="/services" className="text-[#1346a8] hover:underline" onClick={() => setServicesDropdown(false)}>
+                          View All 38+ Services →
                         </Link>
                       </div>
-                      <div className="space-y-0.5">
-                        {serviceCategories.map((cat, idx) => (
-                          <Link
-                            key={idx}
-                            to={cat.path}
-                            className="block p-2 rounded-xl hover:bg-blue-50/80 transition-colors group"
-                            onClick={() => setServicesDropdown(false)}
-                          >
-                            <div className="text-xs font-bold text-slate-900 group-hover:text-[#1346a8] flex items-center justify-between">
-                              <span>{cat.label}</span>
-                              <span className="text-slate-300 group-hover:text-[#1346a8] text-xs">→</span>
-                            </div>
-                            <div className="text-[11px] text-slate-500 truncate mt-0.5">
-                              {cat.desc}
-                            </div>
-                          </Link>
-                        ))}
+
+                      <div className="grid grid-cols-2 gap-2">
+                        {/* Printing Category */}
+                        <div className="space-y-1">
+                          <div className="text-[10px] font-extrabold text-[#1346a8] uppercase tracking-wider px-2 py-0.5 bg-blue-50/70 rounded-md">
+                            Printing &amp; Large Format
+                          </div>
+                          {serviceCategories.slice(0, 4).map((cat, idx) => (
+                            <Link
+                              key={idx}
+                              to={cat.path}
+                              className="block p-2 rounded-xl hover:bg-blue-50/80 transition-colors group"
+                              onClick={() => setServicesDropdown(false)}
+                            >
+                              <div className="text-xs font-bold text-slate-900 group-hover:text-[#1346a8] flex items-center justify-between">
+                                <span>{cat.label}</span>
+                                <span className="text-slate-300 group-hover:text-[#1346a8] text-xs">→</span>
+                              </div>
+                              <div className="text-[11px] text-slate-500 truncate mt-0.5">
+                                {cat.desc}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+
+                        {/* Signage & 3D Category */}
+                        <div className="space-y-1">
+                          <div className="text-[10px] font-extrabold text-[#1346a8] uppercase tracking-wider px-2 py-0.5 bg-blue-50/70 rounded-md">
+                            Signage &amp; 3D Fabrication
+                          </div>
+                          {serviceCategories.slice(4).map((cat, idx) => (
+                            <Link
+                              key={idx}
+                              to={cat.path}
+                              className="block p-2 rounded-xl hover:bg-blue-50/80 transition-colors group"
+                              onClick={() => setServicesDropdown(false)}
+                            >
+                              <div className="text-xs font-bold text-slate-900 group-hover:text-[#1346a8] flex items-center justify-between">
+                                <span>{cat.label}</span>
+                                <span className="text-slate-300 group-hover:text-[#1346a8] text-xs">→</span>
+                              </div>
+                              <div className="text-[11px] text-slate-500 truncate mt-0.5">
+                                {cat.desc}
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mt-2 pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] px-2 text-slate-500">
+                        <span>Direct Factory Production • Fraser Rd, Patna</span>
+                        <Link to="/services?category=largeformat" className="font-bold text-[#1346a8] hover:underline" onClick={() => setServicesDropdown(false)}>
+                          All Print Solutions →
+                        </Link>
                       </div>
                     </div>
                   )}
@@ -426,20 +464,20 @@ export default function Header() {
                 <NavLink
                   to="/services?category=largeformat"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors hidden xl:inline-block ${
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
                       isActive && location.search.includes('largeformat')
                         ? 'text-[#1346a8] bg-blue-100/70 font-black'
                         : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
-                  Outdoor &amp; Flex
+                  Print &amp; Flex
                 </NavLink>
 
                 <NavLink
                   to="/services/led-acrylic-letters"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
                       isActive
                         ? 'text-[#1346a8] bg-blue-100/70 font-black'
                         : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
@@ -452,7 +490,7 @@ export default function Header() {
                 <NavLink
                   to="/services/acp-board"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
                       isActive
                         ? 'text-[#1346a8] bg-blue-100/70 font-black'
                         : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
@@ -465,14 +503,14 @@ export default function Header() {
                 <NavLink
                   to="/services?category=promotional"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors hidden lg:inline-block ${
+                    `px-2.5 py-2 rounded-lg transition-colors hidden xl:inline-block ${
                       isActive && location.search.includes('promotional')
                         ? 'text-[#1346a8] bg-blue-100/70 font-black'
                         : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
-                  Canopy &amp; Merchandise
+                  Canopy &amp; Promo
                 </NavLink>
 
                 {/* Primary Site Sections */}
@@ -500,6 +538,19 @@ export default function Header() {
                   }
                 >
                   Gallery
+                </NavLink>
+
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) =>
+                    `px-2.5 py-2 rounded-lg transition-colors ${
+                      isActive
+                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    }`
+                  }
+                >
+                  Portfolio
                 </NavLink>
 
                 <NavLink
@@ -567,6 +618,13 @@ export default function Header() {
                 onClick={closeMenu}
               >
                 🖼️ Gallery
+              </Link>
+              <Link
+                to="/portfolio"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                📄 Portfolio PDF
               </Link>
               <Link
                 to="/about"

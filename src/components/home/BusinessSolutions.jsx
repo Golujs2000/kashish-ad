@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const BUSINESS_SOLUTIONS = [
   {
     title: 'Retail Stores',
-    description: 'Shop boards, glow signs, vinyl graphics.',
-    link: '/services/glow-sign-board',
+    description: 'In-shop branding, retail displays & storefront graphics.',
+    link: '/services/in-shop-branding',
     icon: (
       <svg className="w-8 h-8 text-[#1346a8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M3 21h18M3 7v14M21 7v14M3 7l9-4 9 4M7 21v-7a2 2 0 012-2h6a2 2 0 012 2v7" />
@@ -14,8 +14,8 @@ const BUSINESS_SOLUTIONS = [
   },
   {
     title: 'Corporate Offices',
-    description: 'Office branding, reception & SS signs.',
-    link: '/services/ss-sign-board',
+    description: 'Turnkey interior branding, frosted glass film & wall graphics.',
+    link: '/services/office-branding',
     icon: (
       <svg className="w-8 h-8 text-[#1346a8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -24,8 +24,8 @@ const BUSINESS_SOLUTIONS = [
   },
   {
     title: 'Showrooms',
-    description: '3D LED acrylic letters and displays.',
-    link: '/services/led-acrylic-letters',
+    description: 'ACP facade cladding, 3D LED letters & display boards.',
+    link: '/services/acp-board',
     icon: (
       <svg className="w-8 h-8 text-[#1346a8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -35,7 +35,7 @@ const BUSINESS_SOLUTIONS = [
   },
   {
     title: 'Businesses on the Move',
-    description: 'Vehicle fleet branding & mobile wraps.',
+    description: 'Vehicle fleet branding & high-tack vinyl mobile wraps.',
     link: '/services/solvent-vinyl',
     icon: (
       <svg className="w-8 h-8 text-[#1346a8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -48,7 +48,7 @@ const BUSINESS_SOLUTIONS = [
   },
   {
     title: 'Events & Expos',
-    description: 'Canopy tents, flex banners, standees.',
+    description: 'Promotional canopy tents, rollup standees & flex banners.',
     link: '/services/promotional-canopy',
     icon: (
       <svg className="w-8 h-8 text-[#1346a8]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
