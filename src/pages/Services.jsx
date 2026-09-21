@@ -10,37 +10,50 @@ export default function Services() {
 
   const categories = [
     { id: 'all', label: 'All Products & Services' },
-    { id: 'largeformat', label: 'UV & Large Format' },
-    { id: 'signage', label: '3D Letters & Sign Boards' },
-    { id: 'promotional', label: 'Promotional & Outdoor' },
-    { id: 'corporate', label: 'Labels & Corporate' }
+    { id: 'largeformat', label: 'Outdoor, Flex & Vinyl' },
+    { id: 'signage', label: '3D Letters & Signboards' },
+    { id: 'promotional', label: 'Promotional & Merchandise' },
+    { id: 'corporate', label: 'Corporate & Retail Spaces' },
+    { id: 'cnc', label: 'Architectural CNC & Laser' }
   ];
 
   const mapCategory = (param) => {
     if (!param) return 'all';
     const map = {
       'digital': 'largeformat',
+      'flex': 'largeformat',
+      'outdoor': 'largeformat',
+      'ooh': 'largeformat',
+      'wall': 'largeformat',
       'uv': 'largeformat',
       'largeformat': 'largeformat',
       'signage': 'signage',
       '3dletters': 'signage',
-      'branding': 'promotional',
+      'boards': 'signage',
+      'branding': 'corporate',
       'promotional': 'promotional',
+      'merchandise': 'promotional',
       'corporate': 'corporate',
+      'retail': 'corporate',
       'vehicle': 'largeformat',
-      'cnc': 'all'
+      'cnc': 'cnc'
     };
     return map[param] || (categories.some(c => c.id === param) ? param : 'all');
   };
 
+  const qParam = searchParams.get('q') || '';
   const [activeCategory, setActiveCategory] = useState(() => mapCategory(categoryParam));
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(qParam);
 
   useEffect(() => {
     if (categoryParam) {
       setActiveCategory(mapCategory(categoryParam));
     }
-  }, [categoryParam]);
+    const q = searchParams.get('q');
+    if (q !== null) {
+      setSearchQuery(q);
+    }
+  }, [categoryParam, searchParams]);
 
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((p) => {
@@ -86,9 +99,9 @@ export default function Services() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-slate-50/70 min-h-screen">
       <SEO
-        title="Printing & Signage Services Catalog Patna (22+ Products)"
+        title="Printing & Signage Services Catalog Patna (38+ Products)"
         description="Browse Kashish Ad's complete digital printing, promotional merchandise, and signage board catalog in Patna. UV printing, solvent vinyl, 3D acrylic LED letters, custom T-shirts, canopies, coffee mugs, trophies. Fraser Road Patna hotline: 09308327111."
         keywords="printing services patna, sign board manufacturer patna, tshirt printing patna, canopy tent patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
         canonicalUrl="/services"
@@ -104,7 +117,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
-            22+ Commercial Printing, Canopy &amp; Merchandise Solutions
+            38+ Commercial Printing, Signage &amp; Branding Solutions
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
             Digital Printing, Signage &amp; <span className="text-[#1346a8]">Merchandise Catalog</span>
@@ -250,7 +263,7 @@ export default function Services() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProducts.map((product) => {
                 const waMessage = encodeURIComponent(
-                  `Hello Kashish Ad®, I want to order / enquire about "${product.title}" (Price: ${product.price} ${product.unit}). Please share details and turnaround time.`
+                  `Hello Kashish Ad®, I want to order / enquire about "${product.title}". Please share details, quotation, and turnaround time.`
                 );
 
                 return (
@@ -260,7 +273,7 @@ export default function Services() {
                     id={`product-${product.id}`}
                   >
                     {/* Media Thumbnail */}
-                    <Link to={`/services/${product.id}`} className="relative h-56 bg-slate-100 overflow-hidden block">
+                    <Link to={`/services/${product.id}`} className="relative aspect-square bg-slate-100 overflow-hidden block">
                       <img
                         src={product.image}
                         alt={product.title}
@@ -272,20 +285,17 @@ export default function Services() {
                           {product.badge}
                         </span>
                       )}
-                      <div className="absolute bottom-3 right-3 px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-md flex items-baseline gap-1">
-                        <span className="text-sm font-black text-[#1346a8] font-display">{product.price}</span>
-                        <span className="text-xs font-semibold text-slate-600">{product.unit}</span>
-                      </div>
                     </Link>
 
                     {/* Card Content */}
                     <div className="p-6 flex-1 flex flex-col justify-between">
                       <div>
                         <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                          {product.category === 'largeformat' && 'Large Format Printing'}
+                          {product.category === 'largeformat' && 'Outdoor, Flex & Vinyl'}
                           {product.category === 'signage' && '3D Signage & Lettering'}
                           {product.category === 'promotional' && 'Outdoor & Promotional'}
-                          {product.category === 'corporate' && 'Labels & Corporate Stationery'}
+                          {product.category === 'corporate' && 'Corporate & Retail Spaces'}
+                          {product.category === 'cnc' && 'Architectural CNC & Laser'}
                         </span>
                         <Link to={`/services/${product.id}`} className="block">
                           <h2 className="mt-1 text-base font-bold font-display text-slate-900 group-hover:text-[#1346a8] transition-colors">
@@ -352,43 +362,120 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Bulk Order Banner in Navy #1346a8 */}
+      {/* High-Contrast Vibrant B2B Trade Discounts Banner */}
       <section className="pb-16 sm:pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1346a8] text-white rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-card">
-            <div className="space-y-3 max-w-2xl text-center lg:text-left">
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/15 border border-white/20 text-white">
-                Special Trade Discounts
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
-                Looking for Wholesale B2B Printing or Corporate Signage?
-              </h2>
-              <p className="text-sm text-slate-200 leading-relaxed">
-                We offer tiered corporate discounts for event agencies, architects, franchise retail chains, and government departments across Patna, Gaya, Muzaffarpur, Bhagalpur, and all Bihar districts.
-              </p>
-              <div className="flex flex-wrap gap-4 pt-2 text-xs font-semibold text-slate-300 justify-center lg:justify-start">
-                <span>✓ Dedicated Account Manager</span>
-                <span>✓ Priority Fabrication Queue</span>
-                <span>✓ Bulk Slab Pricing</span>
-                <span>✓ Official GST Invoicing</span>
-              </div>
-            </div>
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#071428] via-[#0d2757] to-[#091b3a] text-white p-8 sm:p-12 lg:p-14 border border-blue-400/25 shadow-2xl">
+            {/* Ambient Lighting & Glows */}
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#1346a8]/50 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-blue-500/10 rounded-full blur-2xl pointer-events-none" />
 
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 w-full sm:w-auto shrink-0">
-              <a
-                href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20have%20a%20bulk/corporate%20printing%20requirement.%20Please%20connect%20with%20me."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-[#1346a8] bg-white hover:bg-slate-100 shadow-sm text-center transition-all"
-              >
-                Request Corporate Quote
-              </a>
-              <a
-                href="tel:09308327111"
-                className="text-center text-xs font-semibold text-slate-200 hover:text-white py-1"
-              >
-                Or Call Hotline: <strong className="text-white font-bold">09308327111</strong>
-              </a>
+            <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Left Column: Offer Content & Perks */}
+              <div className="lg:col-span-7 space-y-4 text-center lg:text-left">
+                {/* Vibrant Gold Badge */}
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-amber-400/20 text-amber-300 border border-amber-400/40 shadow-xs backdrop-blur-md">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                  <span>✨ Special B2B &amp; Trade Discounts</span>
+                </div>
+
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-white leading-tight tracking-tight">
+                  Looking for Wholesale B2B Printing or{' '}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400">
+                    Corporate Signage?
+                  </span>
+                </h2>
+
+                <p className="text-sm sm:text-base text-blue-100/90 leading-relaxed max-w-xl">
+                  We offer exclusive wholesale slab rates for advertising agencies, architects, interior designers, retail chains, and government departments across Patna and all 38 districts of Bihar.
+                </p>
+
+                {/* 4 Glassmorphic Benefit Badges */}
+                <div className="grid grid-cols-2 sm:grid-cols-2 gap-2.5 pt-2 max-w-lg mx-auto lg:mx-0">
+                  <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm shadow-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold shrink-0">
+                      ✓
+                    </span>
+                    <div className="text-left">
+                      <span className="block text-xs font-bold text-white">Bulk Slab Pricing</span>
+                      <span className="block text-[10px] text-amber-200/80">Save up to 35% on volume</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm shadow-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-400/20 text-emerald-300 text-xs font-bold shrink-0">
+                      ⚡
+                    </span>
+                    <div className="text-left">
+                      <span className="block text-xs font-bold text-white">Priority Queue</span>
+                      <span className="block text-[10px] text-blue-200/80">Same-day rush dispatch</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm shadow-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-blue-400/20 text-blue-300 text-xs font-bold shrink-0">
+                      👔
+                    </span>
+                    <div className="text-left">
+                      <span className="block text-xs font-bold text-white">Dedicated Manager</span>
+                      <span className="block text-[10px] text-blue-200/80">Direct VIP WhatsApp desk</span>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/15 backdrop-blur-sm shadow-xs">
+                    <span className="flex items-center justify-center w-5 h-5 rounded-full bg-purple-400/20 text-purple-300 text-xs font-bold shrink-0">
+                      📄
+                    </span>
+                    <div className="text-left">
+                      <span className="block text-xs font-bold text-white">100% GST Invoicing</span>
+                      <span className="block text-[10px] text-blue-200/80">Claim full corporate tax credit</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column: High-Impact Glassmorphic CTA Card */}
+              <div className="lg:col-span-5">
+                <div className="rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-7 text-center shadow-xl flex flex-col gap-4">
+                  <div>
+                    <span className="text-[11px] font-extrabold uppercase tracking-widest text-amber-300">
+                      Direct B2B Desk
+                    </span>
+                    <h3 className="text-lg sm:text-xl font-bold text-white mt-1">
+                      Get an Instant Wholesale Quote
+                    </h3>
+                    <p className="text-xs text-blue-200/80 mt-1">
+                      Share your bill of quantities (BOQ) or dimensions on WhatsApp for fast rate approval.
+                    </p>
+                  </div>
+
+                  {/* Primary Vibrant Amber/Gold Button */}
+                  <a
+                    href="https://wa.me/919308327111?text=Hello%20Kashish%20Ad,%20I%20have%20a%20bulk/wholesale%20corporate%20printing%20requirement.%20Please%20connect%20with%20me%20for%20B2B%20rates."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-black text-xs sm:text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-[1.02] active:scale-95 transition-all"
+                  >
+                    <span>Request Corporate Quote</span>
+                    <span className="text-base">💬</span>
+                  </a>
+
+                  {/* Secondary Hotline Button */}
+                  <a
+                    href="tel:09308327111"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs text-white bg-white/10 hover:bg-white/20 border border-white/20 active:scale-95 transition-all"
+                  >
+                    <span>📞 Call B2B Desk:</span>
+                    <strong className="text-amber-300 font-extrabold">09308327111</strong>
+                  </a>
+
+                  <div className="pt-1 flex items-center justify-center gap-2 text-[11px] text-blue-200/70">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Average reply within 15 minutes • Fraser Rd, Patna</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

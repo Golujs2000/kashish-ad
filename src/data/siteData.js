@@ -46,7 +46,7 @@ export const COMPANY_INFO = {
   logoIcon: '/assets/logo-icon.png',
   logoFull: '/assets/logo.png',
   storefrontImage: '/assets/images/hero-showcase-storefront-facade.png',
-  priceRange: '₹10 - ₹50000',
+  priceRange: 'Contact for Quote',
   currenciesAccepted: 'INR',
   paymentAccepted: 'Cash, UPI, Google Pay, PhonePe, Paytm, Credit Card, Debit Card, Net Banking, Cheque, NEFT/RTGS'
 };
@@ -144,8 +144,8 @@ export const SOCIAL_LINKS = {
 export const TRUST_METRICS = {
   googleRating: 4.6,
   googleRatingStars: '★★★★★',
-  reviewsCount: 61,
-  reviewsDisplay: '61 Verified Google Reviews',
+  reviewsCount: 62,
+  reviewsDisplay: '62 Verified Google Reviews',
   projectsCount: '1,00,000+',
   projectsLabel: 'Projects Built',
   machineryCount: '15+',
@@ -187,10 +187,10 @@ export const SERVICE_AREAS = [
 export const NAV_CONFIG = {
   mainNav: [
     { label: 'Home', path: '/' },
-    { label: 'Products & Services', path: '/services', badge: '22+ Items' },
+    { label: 'Products & Services', path: '/services', badge: '38+ Services' },
     { label: 'Machinery', path: '/machinery', badge: '8 Units' },
     { label: 'Gallery', path: '/gallery' },
-    { label: 'Price Calculator', path: '/calculator', isHot: true },
+    { label: 'Get a Quote', path: '/contact', isHot: true },
     { label: 'About Us', path: '/about' },
     { label: 'Contact', path: '/contact' }
   ],
@@ -205,10 +205,10 @@ export const NAV_CONFIG = {
   ],
   quickLinks: [
     { label: 'Home Page', path: '/' },
-    { label: 'All 22+ Products & Services', path: '/services' },
+    { label: 'All 38+ Products & Services', path: '/services' },
     { label: 'In-House Machinery (8 Units)', path: '/machinery' },
     { label: 'Executed Projects Portfolio', path: '/gallery' },
-    { label: 'Price Estimator Calculator', path: '/calculator' },
+    { label: 'Request a Quotation', path: '/contact' },
     { label: 'About Us & CEO S Haidar', path: '/about' },
     { label: 'Store Location & Directions', path: '/contact' }
   ]

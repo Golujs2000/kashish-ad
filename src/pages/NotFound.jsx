@@ -22,7 +22,7 @@ export default function NotFound() {
         </h1>
 
         <p className="mt-3 text-slate-600 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-          The requested URL was moved, renamed, or does not exist. You can browse our 22+ printing and signage solutions below or calculate real-time rates.
+          The requested URL was moved, renamed, or does not exist. You can browse our 38+ printing and signage solutions below or request a custom quotation.
         </p>
 
         {/* Suggested Pathways */}
@@ -39,14 +39,14 @@ export default function NotFound() {
           </Link>
 
           <Link
-            to="/calculator"
+            to="/contact"
             className="p-4 rounded-2xl border border-slate-200 hover:border-[#1346a8] hover:bg-blue-50/40 transition-all group"
           >
             <div className="font-bold text-slate-900 text-sm group-hover:text-[#1346a8] flex items-center justify-between">
-              <span>⚡ Price Calculator</span>
+              <span>💬 Request a Quote</span>
               <span className="text-slate-400 group-hover:translate-x-1 transition-transform">→</span>
             </div>
-            <p className="text-xs text-slate-500 mt-1">Instant square-foot &amp; custom unit cost estimator.</p>
+            <p className="text-xs text-slate-500 mt-1">Get fast customized pricing for bulk printing &amp; signage.</p>
           </Link>
 
           <Link

@@ -60,7 +60,7 @@ export default function About() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
-              ⭐ 4.6 Google Rating (61 Reviews)
+              ⭐ 4.6 Google Rating (62 Reviews)
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
               📜 GSTIN: 10AENPH7809D1ZT
@@ -119,8 +119,8 @@ export default function About() {
             <div className="lg:col-span-5">
               <div className="bg-white rounded-2xl border border-slate-200 p-3 shadow-card overflow-hidden">
                 <img
-                  src="/assets/images/hero-showcase-storefront-facade.png"
-                  alt="Kashish Ad Storefront at Capital Tower Patna"
+                  src="/assets/images/production-office-reception-studio.png"
+                  alt="Kashish Ad Primary Workshop & Showroom"
                   className="w-full h-80 object-cover rounded-xl"
                 />
                 <div className="p-4">

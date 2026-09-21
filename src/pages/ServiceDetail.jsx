@@ -56,7 +56,7 @@ export default function ServiceDetail() {
     : relatedProducts;
 
   const waOrderMsg = encodeURIComponent(
-    `Hello Kashish Ad® (Patna), I want to order / enquire about "${product.title}" (${product.price} ${product.unit}). Please share pricing and fabrication turnaround time.`
+    `Hello Kashish Ad® (Patna), I want to order / enquire about "${product.title}". Please share quotation and fabrication turnaround time.`
   );
 
   const handleSubmitInquiry = async (e) => {
@@ -140,8 +140,8 @@ export default function ServiceDetail() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title={`${product.title} in Patna | Best Price & Specs`}
-        description={`${product.title} in Patna by Kashish Ad®: ${product.description} Rate: ${product.price} ${product.unit}. Same-day printing at Fraser Road, Patna. Call 09308327111.`}
+        title={`${product.title} in Patna | Kashish Ad®`}
+        description={`${product.title} in Patna by Kashish Ad®: ${product.description} Same-day printing & in-house manufacturing at Fraser Road, Patna. Call 09308327111.`}
         keywords={`${product.title} patna, ${product.title} bihar, sign board patna, digital printing capital tower fraser road, kashish ad 09308327111`}
         canonicalUrl={`/services/${product.id}`}
         ogImage={product.image}
@@ -216,28 +216,29 @@ export default function ServiceDetail() {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider mb-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#1346a8]"></span>
-                  {product.category === 'largeformat' && 'Large Format Digital Printing'}
+                  {product.category === 'largeformat' && 'Outdoor, Flex & Vinyl'}
                   {product.category === 'signage' && '3D Signage & Architectural Letters'}
                   {product.category === 'promotional' && 'Outdoor & Promotional Media'}
-                  {product.category === 'corporate' && 'Labels & Corporate Branding'}
+                  {product.category === 'corporate' && 'Corporate & Retail Spaces'}
+                  {product.category === 'cnc' && 'Architectural CNC & Laser'}
                 </div>
 
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 tracking-tight leading-tight">
                   {product.title}
                 </h1>
 
-                {/* Price & Turnaround Bar */}
+                {/* Quote Request & Turnaround Bar */}
                 <div className="mt-4 p-4 rounded-2xl bg-[#f0f7ff] border border-blue-100 flex flex-wrap items-center justify-between gap-4">
                   <div>
                     <span className="text-[11px] uppercase tracking-wider text-slate-500 font-bold block">
                       Direct Manufacturer Pricing
                     </span>
-                    <div className="flex items-baseline gap-1.5 mt-0.5">
-                      <span className="text-2xl sm:text-3xl font-black font-display text-[#1346a8]">
-                        {product.price}
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="inline-flex items-center px-3 py-1 rounded-lg bg-blue-100/80 text-[#1346a8] text-xs font-bold">
+                        Custom Quote on Request
                       </span>
-                      <span className="text-sm font-semibold text-slate-600">
-                        {product.unit}
+                      <span className="text-xs text-slate-500 font-medium">
+                        Bulk &amp; Wholesale Slabs Available
                       </span>
                     </div>
                   </div>
@@ -544,9 +545,6 @@ export default function ServiceDetail() {
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-white/95 text-[11px] font-bold text-[#1346a8] shadow-xs">
-                    {rel.price} {rel.unit}
-                  </div>
                 </div>
                 <div className="p-4 flex-1 flex flex-col justify-between">
                   <div>

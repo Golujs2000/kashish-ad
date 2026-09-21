@@ -65,9 +65,9 @@
 
   /* Layout & Elevations */
   --container-max: 1240px;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --radius-sm: 10px;
+  --radius-md: 10px;
+  --radius-lg: 10px;
   --radius-full: 9999px;
 
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
@@ -2028,21 +2028,90 @@ ul {
    ========================================================================== */
 .hero-panoramic-container {
   background-color: #f8fafc;
-  background-image: none !important;
+  background-image: none;
 }
 
 @media (min-width: 640px) {
   .hero-panoramic-container {
     background-image: url('/assets/images/kashish-ad-hero-panoramic-showcase.png') !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center right !important;
+    background-size: cover !important;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-panoramic-container {
-    background-size: 100% 100%;
+    background-size: 100% 100% !important;
   }
+}
+
+/* ==========================================================================
+   PREMIUM GLASSMORPHISM & CLEAN 10PX ROUNDED CORNERS (SITE-WIDE)
+   ========================================================================== */
+
+/* 10px corner curves across the website per user instruction */
+.rounded-md,
+.rounded-lg,
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl {
+  border-radius: 10px !important;
+}
+
+/* Glass Card & Surface Elevation with 10px Corners (Excluding Hero Container) */
+.glass-card,
+.shadow-card:not(.hero-panoramic-container),
+article,
+.service-card,
+.feature-card,
+.portfolio-card,
+.machinery-card {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px !important;
+  box-shadow: 
+    0 10px 30px -5px rgba(15, 23, 42, 0.05),
+    0 2px 6px -1px rgba(15, 23, 42, 0.02),
+    inset 0 1px 0 0 rgba(255, 255, 255, 1) !important;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Hover glass elevation */
+.glass-card:hover,
+.shadow-card:not(.hero-panoramic-container):hover,
+article:hover,
+.service-card:hover,
+.feature-card:hover,
+.portfolio-card:hover,
+.machinery-card:hover,
+[class*="hover:shadow-card-hover"]:hover {
+  background: rgba(255, 255, 255, 0.97) !important;
+  border-color: rgba(19, 70, 168, 0.22) !important;
+  box-shadow: 
+    0 20px 40px -8px rgba(19, 70, 168, 0.12),
+    0 6px 18px -2px rgba(15, 23, 42, 0.04),
+    inset 0 1px 0 0 rgba(255, 255, 255, 1) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Glass Badges & Tags with 10px radius */
+.glass-badge {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* 10px rounded corners on inputs and buttons */
+button:not(.rounded-full):not([class*="rounded-none"]):not([class*="rounded-full"]),
+input:not(.rounded-full):not([class*="rounded-none"]):not([class*="rounded-full"]),
+select:not(.rounded-full):not([class*="rounded-none"]):not([class*="rounded-full"]),
+textarea:not([class*="rounded-none"]) {
+  border-radius: 10px !important;
 }
 

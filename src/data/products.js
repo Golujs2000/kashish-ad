@@ -3,10 +3,10 @@ export const PRODUCTS = [
     id: 'uv-digital',
     title: 'UV Digital Printing Services',
     category: 'largeformat',
-    price: '₹ 40 – ₹ 50',
-    unit: '/ Pc',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Best Seller',
-    image: '/assets/images/hero-showcase-wide-format-printer.png',
+    image: '/assets/images/services/thumb-uv-digital.jpg',
     description: 'Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero fading.',
     features: [
       'Instant UV-LED lamp curing with zero smudging',
@@ -31,10 +31,10 @@ export const PRODUCTS = [
     id: 'solvent-vinyl',
     title: 'Solvent Vinyl Printing Services',
     category: 'largeformat',
-    price: '₹ 40 – ₹ 50',
-    unit: '/ Sq.ft',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Popular',
-    image: '/assets/images/portfolio-delivery-van-on-the-move.png',
+    image: '/assets/images/services/thumb-solvent-vinyl.jpg',
     description: 'High-durability solvent vinyl graphics for storefront branding, showroom wall graphics, vehicle wraps, and high-impact outdoor displays.',
     features: [
       'Gloss / Matte protective lamination available',
@@ -59,10 +59,10 @@ export const PRODUCTS = [
     id: 'led-acrylic-letters',
     title: 'Glossy LED Acrylic 3D Letters',
     category: 'signage',
-    price: 'Custom Built',
-    unit: '120V / 12V LED',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Premium',
-    image: '/assets/images/led-letters-hotel-the-grand.jpg',
+    image: '/assets/images/services/thumb-led-acrylic-letters.jpg',
     description: 'Laser-cut acrylic 3D profile letters with built-in waterproof Samsung/Osram LED modules, front-lit face, and custom painted aluminum returns.',
     features: [
       'Front-lit, Back-lit halo illumination & side-lit variants',
@@ -87,10 +87,10 @@ export const PRODUCTS = [
     id: 'ss-sign-board',
     title: 'Stainless Steel Sign Board (Outdoor)',
     category: 'signage',
-    price: 'SS 304 Grade',
-    unit: 'Mirror / Hairline',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Heavy Duty',
-    image: '/assets/images/name-plates-brushed-gold-office.jpg',
+    image: '/assets/images/services/thumb-ss-sign-board.jpg',
     description: 'Architectural outdoor stainless steel signage boards with laser-cut, acid-etched, or titanium gold 3D letters built for corporate elevations.',
     features: [
       '100% Anti-rust authentic SS 304 / SS 316 stainless steel',
@@ -115,10 +115,10 @@ export const PRODUCTS = [
     id: 'frontlit-flex',
     title: 'Frontlit & Backlit Flex Banner',
     category: 'largeformat',
-    price: '₹ 10 – ₹ 25',
-    unit: '/ Sq.ft',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Fast Turnaround',
-    image: '/assets/images/kashish-ad-flex-printing-banner.png',
+    image: '/assets/images/services/thumb-frontlit-flex.jpg',
     description: 'High-speed industrial digital printing on 240 GSM to 440 GSM Star flex banner material with heat-sealed borders and heavy brass eyelets.',
     features: [
       'Economical bulk solution for promotional outdoor advertising',
@@ -142,10 +142,10 @@ export const PRODUCTS = [
     id: 'rollup-standee',
     title: 'Rollup Banner Standee (6 × 3 ft)',
     category: 'promotional',
-    price: '₹ 1,100 – ₹ 1,400',
-    unit: '/ Pc',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Portable',
-    image: '/assets/images/portfolio-event-stage-standees.png',
+    image: '/assets/images/services/thumb-rollup-standee.jpg',
     description: 'Portable retractable aluminum rollup standee equipped with anti-curl non-tearable synthetic media and padded canvas carry bag.',
     features: [
       'Tool-free setup in under 30 seconds',
@@ -169,10 +169,10 @@ export const PRODUCTS = [
     id: 'label-sticker',
     title: 'Custom Label & Sticker Printing',
     category: 'corporate',
-    price: '₹ 2 – ₹ 5',
-    unit: '/ Pc Sheet',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Japanese Plotter',
-    image: '/assets/images/kashish-ad-client-branding-portfolio.png',
+    image: '/assets/images/services/thumb-label-sticker.jpg',
     description: 'Japanese Roland print-and-cut contour vinyl stickers for packaging labels, product bottles, equipment warning tags, and custom decals.',
     features: [
       'Intricate contour die-cutting around any custom silhouette',
@@ -195,10 +195,10 @@ export const PRODUCTS = [
     id: '3d-wallpaper',
     title: '3D Wallpaper Printing for Interiors',
     category: 'largeformat',
-    price: '₹ 45 – ₹ 65',
-    unit: '/ Sq.ft',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Seamless',
-    image: '/assets/images/production-wide-format-wall-graphics.png',
+    image: '/assets/images/services/thumb-3d-wallpaper.jpg',
     description: 'Custom textured wallpaper printing with embossed 3D visual depth: floral murals, geometric marble motifs, and corporate feature walls.',
     features: [
       'Seamless multi-meter wall coverage with zero visible overlaps',
@@ -221,10 +221,10 @@ export const PRODUCTS = [
     id: 'fabric-banner',
     title: 'Digital Cloth & Satin Fabric Banner',
     category: 'promotional',
-    price: '₹ 35 – ₹ 50',
-    unit: '/ Sq.ft',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Foldable',
-    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
+    image: '/assets/images/services/thumb-fabric-banner.jpg',
     description: 'High-density dye-sublimation textile printing on satin and polyester cloth for lightweight, wrinkle-free, foldable corporate flags and backdrops.',
     features: [
       '100% Foldable & wrinkle-free for hassle-free travel and courier',
@@ -247,10 +247,10 @@ export const PRODUCTS = [
     id: 'uv-glass',
     title: 'UV Direct Printing on Glass Panels',
     category: 'largeformat',
-    price: 'Custom Built',
-    unit: 'Toughened Glass',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Luxury',
-    image: '/assets/images/portfolio-avantek-corporate-reception.png',
+    image: '/assets/images/services/thumb-uv-glass.jpg',
     description: 'Architectural direct UV flatbed printing on clear, frosted, or toughened glass sheets with brilliant backlight transparency and primer bonding.',
     features: [
       'Chemical glass primer pre-treatment for unbreakable pigment adhesion',
@@ -273,10 +273,10 @@ export const PRODUCTS = [
     id: 'cnc-laser-jali',
     title: 'CNC Laser Jali & Gate Cutting',
     category: 'cnc',
-    price: 'Custom Design',
-    unit: 'MS, SS, WPC, MDF',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Architectural',
-    image: '/assets/images/production-cnc-laser-cutting-sparks.png',
+    image: '/assets/images/services/thumb-cnc-laser-jali.jpg',
     description: 'Precision 2D and 3D architectural jali patterns cut on mild steel, stainless steel, aluminum, brass, WPC/PVC foam, and MDF boards.',
     features: [
       'Heavy-gauge laser cutting with razor-smooth slag-free edges',
@@ -299,10 +299,10 @@ export const PRODUCTS = [
     id: 'glow-sign-board',
     title: 'LED Glow Sign Board & Box',
     category: 'signage',
-    price: 'All Dimensions',
-    unit: 'LED Backlit',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Illuminated',
-    image: '/assets/images/sign-boards-fashion-boutique-lightbox.jpg',
+    image: '/assets/images/services/thumb-glow-sign-board.jpg',
     description: 'Heavy-gauge powder coated metal framework with translucent backlit flex or acrylic face and waterproof LED modules for 24/7 store branding.',
     features: [
       'Uniform internal illumination with zero dark spots or tube shadows',
@@ -325,10 +325,10 @@ export const PRODUCTS = [
     id: 'led-slim-lightbox',
     title: 'LED Slim Light Box Poster Panels',
     category: 'signage',
-    price: 'Slim Profile',
-    unit: 'Magnetic / Snap',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Modern Display',
-    image: '/assets/images/sign-boards-pizza-zone-blade.jpg',
+    image: '/assets/images/services/thumb-led-slim-lightbox.jpg',
     description: 'Ultra-thin aluminum snap-frame lightboxes for instant graphic changes. Widely installed in shopping mall corridors, food courts, and showrooms.',
     features: [
       'Super slim 18mm–25mm frame thickness for sleek wall integration',
@@ -351,10 +351,10 @@ export const PRODUCTS = [
     id: 'name-plates',
     title: 'House & Executive Name Plates',
     category: 'corporate',
-    price: 'Custom Engraved',
-    unit: 'Acrylic & Wood',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Personalized',
-    image: '/assets/images/name-plates-acrylic-brass-studs.jpg',
+    image: '/assets/images/services/thumb-name-plates.jpg',
     description: 'Bespoke residential entrance plates, doctor/advocate chamber signs, and luxury wooden-acrylic hybrid desk name plates with golden embossed letters.',
     features: [
       'Golden mirror finish embossed titanium typography',
@@ -377,10 +377,10 @@ export const PRODUCTS = [
     id: 'glass-film',
     title: 'One-Way Vision & Frosted Glass Film',
     category: 'corporate',
-    price: 'Perforated Vinyl',
-    unit: 'Glass Branding',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Retail Privacy',
-    image: '/assets/images/portfolio-samsung-store-branding.png',
+    image: '/assets/images/services/thumb-glass-film.jpg',
     description: 'Perforated vinyl graphics that display high-resolution full-color imagery to exterior passers-by while allowing full visibility from inside the store.',
     features: [
       'Maintains complete exterior visibility and natural daylight from inside',
@@ -402,10 +402,10 @@ export const PRODUCTS = [
     id: 'paper-stationery',
     title: 'Bill Books, Catalogs & Color Prints',
     category: 'corporate',
-    price: 'Bulk Pricing',
-    unit: 'Offset & Digital',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Corporate',
-    image: '/assets/images/production-marketing-brochures.png',
+    image: '/assets/images/services/thumb-paper-stationery.jpg',
     description: 'High-speed business stationery printing: GST tax invoice books with carbonless duplicate sheets, tri-fold catalogs, corporate brochures, and flyers.',
     features: [
       'Carbonless NCR duplicate & triplicate paper sets with crisp impressions',
@@ -427,10 +427,10 @@ export const PRODUCTS = [
     id: 'corporate-gifting',
     title: 'Promotional Merchandise & Keychains',
     category: 'corporate',
-    price: 'Bulk Discounts',
-    unit: 'UV Direct Print',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Merchandise',
-    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
+    image: '/assets/images/services/thumb-corporate-gifting.jpg',
     description: 'Custom laser-cut acrylic keychains, corporate name badges, executive desk accessories, and event giveaways printed with permanent UV inks.',
     features: [
       'Permanent scratch-resistant color printing with direct UV flatbed curing',
@@ -451,10 +451,10 @@ export const PRODUCTS = [
     id: 'tshirt-printing',
     title: 'Custom T-Shirt & Corporate Apparel Printing',
     category: 'promotional',
-    price: '₹ 120 – ₹ 280',
-    unit: '/ Pc',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Custom Apparel',
-    image: '/assets/images/kashish-ad-complete-signage-solution-banner.png',
+    image: '/assets/images/services/thumb-tshirt-printing.jpg',
     description: 'Full-color custom T-shirt printing in Patna: Corporate polo shirts, event t-shirts, dry-fit sports jerseys, staff uniforms, and promotional bulk t-shirts with DTG, sublimation, and vinyl heat transfer.',
     features: [
       '100% Breathable cotton (180–220 GSM), dry-fit sports polyester & polo pique fabric',
@@ -478,10 +478,10 @@ export const PRODUCTS = [
     id: 'promotional-canopy',
     title: 'Promotional Canopy Tent & Gazebo (6×6 & 4×4 ft)',
     category: 'promotional',
-    price: '₹ 2,200 – ₹ 3,800',
-    unit: '/ Set',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Outdoor Promo',
-    image: '/assets/images/bansal-learning-promotional-canopy-tent.jpg',
+    image: '/assets/images/services/thumb-promotional-canopy.jpg',
     description: 'Heavy-duty pop-up promotional canopy tents with 100% waterproof printed flex or Oxford fabric, collapsible scissor frame, 4-sided valance branding, and heavy carry bag for outdoor promotions in Patna.',
     features: [
       'Instant 2-minute scissor fold setup with zero loose tools or assembly required',
@@ -505,10 +505,10 @@ export const PRODUCTS = [
     id: 'cup-mug-printing',
     title: 'Custom Ceramic Coffee Mugs & Cup Printing',
     category: 'corporate',
-    price: '₹ 80 – ₹ 160',
-    unit: '/ Pc',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Corporate Gift',
-    image: '/assets/images/neon-sign-coffee-house-cafe.jpg',
+    image: '/assets/images/services/thumb-cup-mug-printing.jpg',
     description: 'Premium gloss white, color-inside, and magic heat-sensitive ceramic mugs with high-definition permanent sublimation photo printing for corporate gifts and employee kits.',
     features: [
       'Microwave and dishwasher safe with permanent glossy ceramic glaze transfer',
@@ -531,10 +531,10 @@ export const PRODUCTS = [
     id: 'trophy-memento-awards',
     title: 'Custom Trophies, Mementos & Awards',
     category: 'corporate',
-    price: '₹ 250 – ₹ 1,500',
-    unit: '/ Pc',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Recognition',
-    image: '/assets/images/name-plates-brushed-gold-office.jpg',
+    image: '/assets/images/services/thumb-trophy-memento-awards.jpg',
     description: 'Custom laser-cut acrylic, wooden, and crystal mementos with direct UV color printing, golden foil accents, and personalized name engraving for institutions and events in Patna.',
     features: [
       'Intricate fiber laser & CNC router cut contours matching corporate emblems or sports crests',
@@ -557,10 +557,10 @@ export const PRODUCTS = [
     id: 'large-illuminated-signage',
     title: 'Large Outdoor Illuminated Sign Structures',
     category: 'signage',
-    price: 'Custom Quotation',
-    unit: 'Heavy Truss / Backlit',
+    price: 'Custom Quote',
+    unit: '',
     badge: 'Monumental',
-    image: '/assets/images/acp-work-architectural-facade.jpg',
+    image: '/assets/images/services/thumb-large-illuminated-signage.jpg',
     description: 'Turnkey structural engineering and fabrication for large-format outdoor illuminated signs, sports complex elevations, rooftop monoliths, and campus entrance landmarks across Bihar.',
     features: [
       'Heavy-duty welded MS truss framework engineered for certified wind loads and storm resilience',
@@ -577,6 +577,409 @@ export const PRODUCTS = [
       'Lighting': 'High-power IP68 Samsung LED modules with automated dusk-to-dawn sensors',
       'Framework': 'Galvanized & anti-rust primed heavy gauge MS steel tubing',
       'Warranty': '3 Years Comprehensive Warranty on Structure and Electricals'
+    }
+  },
+  {
+    id: 'flex-with-frame',
+    title: 'Flex Banner with MS Iron Frame',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Durable Frame',
+    image: '/assets/images/services/thumb-flex-with-frame.jpg',
+    description: 'Heavy-duty 1-inch and 1.5-inch square MS iron pipe framing with welded corner joints and high-tensile Star flex banner sheet, perfect for retail shopfronts and long-term exterior promotional displays.',
+    features: [
+      '1-inch / 1.5-inch anti-rust painted square iron pipe framework',
+      'High-tension flex stretching with heat-sealed borders and heavy brass eyelets',
+      'Wind-resistant construction built to endure severe Bihar storms and monsoons',
+      'Ready for on-site wall mounting, facade fastening, or terrace installation'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: '2 to 3 Years Outdoor Weatherproof',
+    materials: ['340 GSM Star Flex', 'Heavy Square MS Iron Pipe', 'Anti-Rust Red Oxide Primer & Enamel Paint'],
+    applications: ['Retail Storefront Fascias', 'Commercial Showroom Exteriors', 'School & College Entrance Banners', 'Highway Shop Signage'],
+    specs: {
+      'Frame Gauge': '1-inch or 1.5-inch heavy square MS tubing',
+      'Flex Media': 'Frontlit Star Flex / Blackout Flex',
+      'Joints': 'Full perimeter electric arc welded with diagonal corner gussets',
+      'Mounting Hardware': 'Concealed heavy anchor bolts and MS wall brackets included'
+    }
+  },
+  {
+    id: 'flex-mounting',
+    title: 'Flex Printing & On-Site Mounting Installation',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Turnkey Service',
+    image: '/assets/images/services/thumb-flex-mounting.jpg',
+    description: 'Complete turnkey outdoor flex solution: from high-speed digital printing to on-site scaffolding, crane support, iron frame fabrication, and civil fastener mounting across Patna and Bihar.',
+    features: [
+      'Complete end-to-end service including site survey and precise laser measurement',
+      'Experienced installation teams with safety harnesses, ladders, and scaffolding',
+      'Fast overnight / off-hours mounting to comply with city municipal guidelines',
+      'Turnkey maintenance, re-skinning, and existing frame refurbishment options'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: 'Engineered for High-Wind Stability',
+    materials: ['High-Tensile Flex Media', 'MS Framework', 'Heavy Chemical Anchors & Fasteners'],
+    applications: ['Multi-Story Commercial Elevations', 'Patna Main Road Retailers', 'Event Venues & Exhibition Halls', 'Government Department Buildings'],
+    specs: {
+      'Coverage': 'All Patna localities (Fraser Rd, Boring Rd, Kankarbagh, Bailey Rd) & Bihar statewide',
+      'Equipment': 'Scaffolding, safety harnesses, boom lifts & cranes on demand',
+      'Team': 'Certified in-house riggers and structural fabricators'
+    }
+  },
+  {
+    id: 'hoarding-printing',
+    title: 'Outdoor Flex Hoardings & Billboards (OOH)',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Mass Reach',
+    image: '/assets/images/services/thumb-hoarding-printing.jpg',
+    description: 'Monumental outdoor hoarding printing on heavy blackout flex, engineered for highway gantries, major Patna traffic intersections, commercial elevations, and high-impact OOH ad campaigns.',
+    features: [
+      'High-density UV and heavy solvent inks with zero fading under harsh sunlight',
+      'Seamless wide-format printing up to 10.5 ft width and limitless length panels',
+      'Heavy 440+ GSM Star blackout substrate preventing structural shadow show-through',
+      'Engineered wind-load relief pockets and reinforced double-stitched perimeter hems'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '1 to 3 Years Heavy Outdoor Durability',
+    materials: ['440 GSM Blackout Flex', 'Reinforced Heavy PVC Webbing', 'Industrial Brass Eyelets'],
+    applications: ['Highway OOH Gantries & Billboards', 'Patna Junction & Flyover Hoardings', 'Real Estate Project Launches', 'Political & State Government Campaigns'],
+    specs: {
+      'Max Width': '10.5 ft seamless width (any custom length with RF thermal welding)',
+      'Resolution': 'Up to 1200 DPI high-speed industrial printheads',
+      'Blackout Quality': '100% Light-blocking black rear layer',
+      'Reinforcement': 'Double-fold thermal welded edges every 18 inches'
+    }
+  },
+  {
+    id: 'clear-vinyl',
+    title: 'Clear & Transparent Vinyl Graphics',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Optical Clarity',
+    image: '/assets/images/services/thumb-clear-vinyl.jpg',
+    description: 'Ultra-clear transparent adhesive vinyl printing with high-opacity white ink underlay and vibrant CMYK color layers for glass doors, display windows, and luxury product packaging decals.',
+    features: [
+      'Crystal-clear optical transparency matching architectural glass',
+      'Selective white ink backing for vivid colors with zero wash-out on dark backgrounds',
+      'Reverse-printed inside-glass application protecting graphics from vandalism and weather',
+      'Clean residue-free removal with zero adhesive stains upon campaign conclusion'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: '3+ Years Indoor / 2+ Years Outdoor',
+    materials: ['Optically Clear PET / Cast Vinyl Film', 'UV-Curable Pigment Inks', 'Removable Clear Solvent Adhesive'],
+    applications: ['Mall Storefront Glass Partitions', 'Showroom Entrance Display Windows', 'Cosmetic & Beverage Clear Bottle Labels', 'Corporate Conference Room Glass Branding'],
+    specs: {
+      'Transparency': '99% Optically clear substrate',
+      'Printing Tech': 'CMYK + High-Density White Underlay + Clear Gloss Topcoat',
+      'Max Width': 'Up to 60 inches seamless roll width',
+      'Adhesion': 'Wet-apply bubble-free micro-channel adhesive'
+    }
+  },
+  {
+    id: 'backlit-vinyl',
+    title: 'Backlit Translucent Vinyl & Fabric Printing',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Vibrant Glow',
+    image: '/assets/images/services/thumb-backlit-vinyl.jpg',
+    description: 'High-density translucent vinyl and tension fabric printing specially calibrated for backlit lightboxes, retail pillars, airport display boards, and illuminated showroom fascias.',
+    features: [
+      'Dual-strike high pigment density ensuring rich colors when backlit without fading',
+      'Light-diffusing matte finish eliminating LED hotspot glare and reflections',
+      'Silicone edge graphic (SEG) keder finishing available for fabric lightboxes',
+      'Compatible with both flat acrylic panels and flexible tension lightbox profiles'
+    ],
+    turnaround: '24 Hours',
+    lifespan: '3 to 5 Years Outdoor Glow Stability',
+    materials: ['Translucent Cast Diffuser Vinyl', 'Tension Backlit Polyester Textile', 'UV & Latex High-Density Inks'],
+    applications: ['Airport & Metro Corridor Lightboxes', 'Shopping Mall Pillar Wraps', 'Fast Food Menu Displays', 'Retail Showroom Backlit Walls'],
+    specs: {
+      'Light Transmission': 'Specially calibrated 30%–45% balanced transmission',
+      'Ink Layers': 'Double-strike CMYK for deep contrast when illuminated',
+      'Fire Rating': 'B1 flame retardant compliant fabric options available'
+    }
+  },
+  {
+    id: 'wall-wraps',
+    title: 'High-Tack Vinyl Wall Wraps & Media Fabrication',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Interior & Exterior',
+    image: '/assets/images/services/thumb-wall-wraps.jpg',
+    description: 'Full-coverage high-tack architectural vinyl wall wraps mounted directly on primed concrete walls or fabricated over raised ACP/MDF framework for showrooms, clinics, and offices.',
+    features: [
+      'Aggressive high-tack adhesive that bonds permanently to textured or painted walls',
+      'Scratch-resistant velvet matte or gloss thermal lamination shielding against scuffs',
+      'Fabricated sub-frame mounting on ACP/MDF panels for perfectly flat feature walls',
+      'Odorless Greenguard-certified inks safe for hospitals, schools, and corporate suites'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '5+ Years Indoor Permanence',
+    materials: ['Avery / 3M High-Tack Vinyl', 'Velvet Matte Anti-Scratch Lamination Film', 'Sub-Frame Mounting ACP / MDF'],
+    applications: ['Automobile Showroom Feature Walls', 'Gyms, Fitness Studios & Cafes', 'Hospital Pediatric & OPD Corridors', 'Commercial Office Passages'],
+    specs: {
+      'Adhesive': 'High-tack permanent solvent acrylic',
+      'Lamination': 'Thermal matte / luster texture shield (wipeable with damp cloth)',
+      'Substrate Compatibility': 'Smooth drywall, painted plaster, concrete, ACP, wood'
+    }
+  },
+  {
+    id: 'digital-wall-painting',
+    title: 'Outdoor Digital Wall Painting & Stencil Signage',
+    category: 'largeformat',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Rural & Urban',
+    image: '/assets/images/services/thumb-digital-wall-painting.jpg',
+    description: 'Large-scale outdoor digital wall painting and high-speed stencil branding across high-traffic city junctions, highway walls, dealer networks, and rural market routes throughout Bihar.',
+    features: [
+      'Weatherproof, fade-resistant exterior acrylic paint formulations lasting 3+ years',
+      'Standardized corporate stencil layouts ensuring 100% brand consistency across 100s of sites',
+      'Wide geographic outreach across Patna, Muzaffarpur, Gaya, Bhagalpur, and all 38 Bihar districts',
+      'Cost-effective high-frequency rural brand activation and retail dealer network branding'
+    ],
+    turnaround: 'Bulk Project Scheduling (10+ sites daily)',
+    lifespan: '3+ Years All-Weather Resistance',
+    materials: ['Heavy Exterior Acrylic Emulsion', 'Zinc Primer Basecoat', 'Precision Laser Stencil Templates'],
+    applications: ['Fertilizer, Cement & Agri-Brand Campaigns', 'Telecom & Banking Rural Outreach', 'Automobile & Two-Wheeler Dealer Networks', 'Highway Commercial Boundary Walls'],
+    specs: {
+      'Site Dimensions': 'Typically 200 sq. ft. to 2,000 sq. ft. per location',
+      'Quality Control': 'GPS photo-tagged site audit reporting provided for every wall',
+      'Paint Grade': 'Weather-shield exterior grade with anti-fungal formulation'
+    }
+  },
+  {
+    id: 'acp-board',
+    title: 'ACP Sign Board & Architectural Cladding',
+    category: 'signage',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Architectural',
+    image: '/assets/images/services/thumb-acp-board.jpg',
+    description: 'Precision CNC router-cut Aluminum Composite Panel (ACP) sign boards with embedded 3D acrylic LED letters, metallic finishes, and seamless architectural building cladding.',
+    features: [
+      'Premium 3mm / 4mm ACP sheet with PVDF coating resistant to extreme weather',
+      'Concealed heavy tubular iron frame ensuring structural stability and straight alignment',
+      'Seamless CNC groove routing and folding for razor-sharp corners and return edges',
+      'Integrated warm white / cool white LED modules with automated dusk-to-dawn sensors'
+    ],
+    turnaround: '3 to 5 Days',
+    lifespan: '10+ Years Architectural Grade',
+    materials: ['Aludecor / Eurobond 3mm or 4mm ACP Sheets', 'Heavy MS Tubular Framework', 'Cast Acrylic 3D Letters', 'IP68 Waterproof Samsung LEDs'],
+    applications: ['Retail Showroom Frontages', 'Hospital & Diagnostics Facades', 'Jewelry & Watch Boutique Elevations', 'Hotel Main Entrances'],
+    specs: {
+      'Colors': 'Solid Royal Blue, Charcoal Grey, Wooden Teak, Brushed Silver, Champagne Gold',
+      'Cutting Precision': '±0.05 mm CNC router groove carving',
+      'Warranty': '5 Years Sheet Coating Warranty & 2 Years LED Driver Warranty'
+    }
+  },
+  {
+    id: 'mdf-board',
+    title: 'Laser-Cut MDF & WPC Display Panels',
+    category: 'cnc',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Custom Carved',
+    image: '/assets/images/services/thumb-mdf-board.jpg',
+    description: 'Intricate CNC router and laser-cut high-density MDF and waterproof WPC foam board decorative display panels, reception feature screens, and backlit ceiling jali installations.',
+    features: [
+      'High-density pine MDF (12mm to 25mm) and 100% waterproof WPC composite foam sheets',
+      'Custom geometric, Islamic, floral, and contemporary architectural CAD cutting',
+      'Satin PU painted or raw sanded ready for interior polish and designer finishing',
+      'Concealed rear LED light channel integration for striking 3D silhouette glow'
+    ],
+    turnaround: '2 to 4 Working Days',
+    lifespan: 'Decades of Interior Elegance',
+    materials: ['Greenpanel High Density Pine MDF', 'Waterproof WPC Board', 'Polyurethane (PU) Paint'],
+    applications: ['Mandir & Prayer Room Backdrops', 'Corporate Reception Partition Screens', 'Designer False Ceiling Jali', 'Luxury Restaurant Ambient Dividers'],
+    specs: {
+      'Thicknesses': '8mm, 12mm, 18mm, 25mm solid sheet carving',
+      'Laser Kerf': 'High-precision zero-burn edge profiling',
+      'Finish Options': 'Raw Sanded, PU Gloss, Matte White, Metallic Gold Duco'
+    }
+  },
+  {
+    id: 'digital-display-board',
+    title: 'Digital LED Video Walls & Electronic Displays (DOOH)',
+    category: 'signage',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Dynamic DOOH',
+    image: '/assets/images/services/thumb-digital-display-board.jpg',
+    description: 'High-brightness programmable indoor and outdoor LED display video walls (P2.5, P4, P6, P10) for commercial showrooms, conference rooms, public plazas, and digital OOH advertising.',
+    features: [
+      'Ultra-high refresh rate with seamless die-cast aluminum cabinet modular assembly',
+      'IP65 waterproof outdoor modules with 6,500+ nits brightness visible under direct sunlight',
+      'Cloud-controlled content management via Wi-Fi, 4G, or HDMI input for remote ad scheduling',
+      'Energy-efficient driving ICs with ultra-low thermal dissipation and 100,000-hour lifespan'
+    ],
+    turnaround: '5 to 7 Days',
+    lifespan: '100,000 Operating Hours (10+ Years)',
+    materials: ['Die-Cast Aluminum Modular Cabinets', 'Gold-Wire SMD LED Lamps', 'MeanWell Power Supplies', 'Novastar Video Controllers'],
+    applications: ['Showroom Dynamic Video Walls', 'Highway Electronic Billboards', 'Auditorium & Stage Backdrops', 'Mall Walkways & Traffic Junctions'],
+    specs: {
+      'Pitch Options': 'P2.5 (Indoor Fine Pitch), P4 (Showroom), P6 & P10 (Outdoor Giant Screens)',
+      'Brightness': 'Up to 7,000 cd/m² for direct sun outdoor readability',
+      'Control System': 'Novastar synchronous/asynchronous cloud software'
+    }
+  },
+  {
+    id: 'umbrella-branding',
+    title: 'Branded Promotional Market Umbrellas',
+    category: 'promotional',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Outdoor Promo',
+    image: '/assets/images/services/thumb-umbrella-branding.jpg',
+    description: 'Heavy-duty 6-ft and 8-ft diameter promotional market/garden umbrellas featuring 100% waterproof printed canopy fabric, heavy powder-coated steel rib frame, and sturdy weighted base.',
+    features: [
+      'Waterproof 600D Oxford polyester canopy with UV sun protection coating',
+      'Vivid 4-panel or 8-panel digital sublimation printing matching your corporate color palette',
+      'Heavy 2-piece powder-coated steel central mast with multi-spoke wind-defying frame',
+      'Includes heavy water/sand-fillable plastic base or heavy cross-iron base for wind stability'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: '2+ Years Heavy Outdoor Use',
+    materials: ['600D Heavy Oxford Fabric', 'Powder-Coated MS Ribs', 'Heavy 20L Water/Sand Fill Base'],
+    applications: ['Outdoor Cafe & Restaurant Seating', 'Street Food & Beverage Vendors', 'Automobile Dealership Forecourts', 'Event Ticketing & Security Booths'],
+    specs: {
+      'Diameter Choices': '6 ft diameter (Compact) & 8 ft diameter (Jumbo)',
+      'Panel Options': '4-panel or 8-panel full wrap dye-sublimation print',
+      'Base Weight': 'Approx 20 kg when filled with water or sand'
+    }
+  },
+  {
+    id: 'cap-printing',
+    title: 'Custom Branded Corporate & Event Caps',
+    category: 'promotional',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Merchandise',
+    image: '/assets/images/services/thumb-cap-printing.jpg',
+    description: 'Structured 6-panel twill and breathable sports dry-fit caps with high-density 3D embroidery, precision vinyl heat seal, and vibrant full-color printing for corporate uniforms and events.',
+    features: [
+      'Heavy 100% cotton brushed twill, poly-cotton, and athletic moisture-wicking dry-fit fabrics',
+      'High-density 3D puff embroidery, metallic badges, or silicone heat-transfer logos',
+      'Adjustable velcro, brass buckle, or snapback rear strap for universal one-size-fits-all comfort',
+      'Available in royal blue, navy, black, white, red, and custom dual-tone brand themes'
+    ],
+    turnaround: '24 to 48 Hours',
+    lifespan: 'Fade-Proof & Washable Fabric',
+    materials: ['100% Heavy Brushed Cotton Twill', 'Dri-FIT Breathable Sports Mesh', 'Embroidered Thread / Silicone Relief'],
+    applications: ['Corporate Staff & Factory Field Uniforms', 'Political Rallies & Marathon Events', 'College Sports Meets & Tournaments', 'Customer Promotional Merchandise Giveaways'],
+    specs: {
+      'Style': 'Structured 6-Panel baseball cap profile',
+      'Closure': 'Adjustable velcro strap / brass buckle closure',
+      'Colors': 'Navy Blue, Jet Black, Bright White, Royal Blue, Signal Red, Khaki'
+    }
+  },
+  {
+    id: 'promotional-flags',
+    title: 'Teardrop, Feather & Table Promotional Flags',
+    category: 'promotional',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Dynamic Movement',
+    image: '/assets/images/services/thumb-promotional-flags.jpg',
+    description: 'High-visibility outdoor teardrop and feather flags, conference room satin flags, and corporate event buntings with 100% warp-knit polyester fabric and flexible carbon-fiber poles.',
+    features: [
+      'Double-sided mirror penetration printing with vivid fade-proof dye-sublimation inks',
+      'Wind-rotating 360-degree bearing pole mechanism preventing flag entanglement',
+      'Complete kit including flexible telescopic pole, heavy ground spike, or weighted cross base',
+      'Washable, wrinkle-resistant polyester textile media designed for years of mobile roadshows'
+    ],
+    turnaround: 'Same Day / 24 Hours',
+    lifespan: 'Reusable for Multiple Campaign Seasons',
+    materials: ['110 GSM Warp-Knit Polyester Fabric', 'Carbon Fiber Composite Pole', 'Steel Bearing Rotor & Ground Stake'],
+    applications: ['Automobile Dealership Frontages', 'Marathon & Sports Race Corridors', 'Exhibition Fairground Entrances', 'Real Estate Open House Promotions'],
+    specs: {
+      'Flag Heights': '8 ft, 11 ft, and 14 ft standing heights',
+      'Shapes': 'Teardrop, Feather, Blade & Rectangular flag profiles',
+      'Accessories': 'Ground spike, cross base with water weight donut ring, carry case'
+    }
+  },
+  {
+    id: 'in-shop-branding',
+    title: 'In-Shop & Retail Store Branding',
+    category: 'corporate',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Retail POS',
+    image: '/assets/images/services/thumb-in-shop-branding.jpg',
+    description: 'Comprehensive in-shop visual merchandising and POS store transformations: cash counter wraps, pillar branding, retail shelf danglers, end-cap displays, and illuminated product alcoves.',
+    features: [
+      'Premium scratch-resistant vinyl wraps applied directly to retail display fixtures and counters',
+      'Flange signs, rotating blade lightboxes, and branded acrylic display stands',
+      'Standardized multi-store retail rollout execution across dealership networks in Bihar',
+      'Durable edge-sealed vinyl with scuff-proof matte lamination built for heavy daily footfall'
+    ],
+    turnaround: '2 to 3 Days per Storefront',
+    lifespan: '3+ Years Commercial Retail Durability',
+    materials: ['Avery High-Tack Vinyl', 'Cast Acrylic Display Units', 'Slim Aluminum Lightbox Profiles', 'Floor Graphics Vinyl'],
+    applications: ['Electronics & Mobile Phone Retail Outlets', 'FMCG Supermarkets & Grocery Chains', 'Footwear & Fashion Boutiques', 'Pharmacy & Diagnostic Sample Centers'],
+    specs: {
+      'Elements': 'Pillars, Cash Desks, Glass Partitions, Gondola Headers, Floor Decals',
+      'Finishing': 'High-gloss / velvet matte scuff-proof protective shield',
+      'Execution': 'Overnight installation to ensure zero showroom sales downtime'
+    }
+  },
+  {
+    id: 'office-branding',
+    title: 'Corporate Office & Interior Space Branding',
+    category: 'corporate',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Executive',
+    image: '/assets/images/services/thumb-office-branding.jpg',
+    description: 'End-to-end corporate interior branding: reception 3D acrylic logo elevations, frosted glass wayfinding patterns, inspirational boardroom graphics, timeline murals, and executive cabin nameplates.',
+    features: [
+      'Pre-spaced laser-cut 3D acrylic and metal corporate crests with concealed stud mounting',
+      'Dusted crystal frosted vinyl privacy film with precision plotter-cut logos for glass cabins',
+      'Acoustic felt, canvas wrap, and wooden panel integration for premium acoustic boardrooms',
+      'Turnkey architectural delivery with zero disruption to active business office hours'
+    ],
+    turnaround: '3 to 5 Days',
+    lifespan: '10+ Years Interior Pristine Quality',
+    materials: ['Cast Mirror Acrylic', 'Brushed Titanium Metal Sheet', '3M Frosted Crystal Glass Film', 'Textured Architectural Canvas'],
+    applications: ['Corporate Headquarters & Tech Hubs', 'Chartered Accountant & Legal Chambers', 'Hospital Management Cabins', 'Architectural & Design Studio Offices'],
+    specs: {
+      'Components': 'Reception Backsplash, Cabin Door Glass, Conference Murals, Wayfinding Totems',
+      'Mounting': 'Concealed spacers, brass standoffs, chemical bond adhesives',
+      'Design': 'Custom 3D architectural mockups provided before site production'
+    }
+  },
+  {
+    id: 'branding-fabrication',
+    title: 'Turnkey Commercial Branding Fabrication',
+    category: 'corporate',
+    price: 'Custom Quote',
+    unit: '',
+    badge: 'Custom Engineering',
+    image: '/assets/images/services/thumb-branding-fabrication.jpg',
+    description: 'Custom structural engineering and architectural fabrication: metal frameworks, promotional kiosks, outdoor entrance arches, exhibition booth installations, and complex signage structures.',
+    features: [
+      'In-house heavy argon welding, fiber laser metal profiling, and automated channel bending',
+      'Structural calculation for wind-load safety, seismic resistance, and municipal stability codes',
+      'Powder-coated anti-rust industrial finishes with epoxy undercoat for decades of lifespan',
+      'Turnkey crane, boom lift, and certified civil anchor bolt on-site engineering team'
+    ],
+    turnaround: '5 to 7 Days',
+    lifespan: '15+ Years Structural Guarantee',
+    materials: ['Structural Heavy MS Tubing', 'Hot-Dip Galvanized Iron', 'Polycarbonate & Cast Acrylic', 'Heavy Base Plates & J-Bolts'],
+    applications: ['Commercial Plaza Entrance Arches', 'Mall Kiosks & Retail Island Booths', 'Exhibition Pavilion Stalls', 'Industrial Plant Wayfinding Gantries'],
+    specs: {
+      'Engineering': 'CAD structural shop drawings and anchor load certifications',
+      'Coating': 'Zinc chromate anti-rust primer + dual PU powder coat',
+      'Safety': 'Compliant with Indian structural wind load standards'
     }
   }
 ];

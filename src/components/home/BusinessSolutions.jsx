@@ -76,7 +76,7 @@ export default function BusinessSolutions() {
             to="/services"
             className="text-xs sm:text-sm font-bold text-[#1346a8] hover:underline inline-flex items-center gap-1 shrink-0"
           >
-            <span>Explore All 22+ Services</span>
+            <span>Explore All 38+ Services</span>
             <span>→</span>
           </Link>
         </div>

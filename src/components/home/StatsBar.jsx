@@ -12,7 +12,7 @@ export default function StatsBar() {
               <span className="font-display font-black text-3xl sm:text-4xl text-[#1346a8]">4.6</span>
               <span className="text-amber-500 text-2xl font-bold">★</span>
             </div>
-            <div className="text-sm font-bold text-slate-800 mt-1">61 Google Reviews</div>
+            <div className="text-sm font-bold text-slate-800 mt-1">62 Google Reviews</div>
             <div className="text-xs text-slate-500 font-medium">Top-Rated in Patna</div>
           </div>
 

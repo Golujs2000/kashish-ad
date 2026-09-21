@@ -68,7 +68,7 @@ export default function Gallery() {
               📍 1,00,000+ Installed Sites Across Bihar
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
-              ⭐ 4.6 Google Rating (61+ Reviews)
+              ⭐ 4.6 Google Rating (62+ Reviews)
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
               📸 100% Real Workshop &amp; Site Photos

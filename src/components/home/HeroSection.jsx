@@ -9,7 +9,7 @@ export default function HeroSection() {
         
         {/* Panoramic Hero Container - 16px radius, fitted to image with zero overlay layer on desktop; clean background on mobile */}
         <div
-          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-card border border-slate-200/80 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
+          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-md border border-slate-200/80 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
         >
           {/* Hero Header: 40% text content area on desktop directly over the background */}
           <div className="relative z-10 w-full lg:w-[44%] xl:w-[42%] p-5 sm:p-8 lg:p-10 flex flex-col justify-center min-w-0">
@@ -130,18 +130,25 @@ export default function HeroSection() {
               </a>
             </div>
 
-            {/* Location Pill: 12px radius with responsive overflow protection */}
+            {/* Full Location Address Badge */}
             <a
               href={LOCATION_INFO.googleMapsCidUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-xs text-slate-700 font-semibold hover:text-[#1346a8] bg-white/95 px-3 py-1.5 rounded-xl border border-slate-200 shadow-xs max-w-full min-w-0 transition-colors"
+              className="mt-4 inline-flex items-start gap-2.5 text-xs text-slate-700 font-medium hover:text-[#1346a8] bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-200/90 shadow-xs max-w-full transition-colors group"
+              title="Open Kashish Ad on Google Maps"
             >
-              <svg className="w-3.5 h-3.5 text-[#1346a8] shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-[#1346a8] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
               </svg>
-              <span className="sm:hidden truncate min-w-0">{LOCATION_INFO.shortAddress}</span>
-              <span className="hidden sm:inline truncate min-w-0">{LOCATION_INFO.fullAddress}</span>
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">
+                  Factory &amp; Office Location
+                </span>
+                <span className="text-xs font-semibold text-slate-800 group-hover:text-[#1346a8] transition-colors leading-snug mt-0.5">
+                  {LOCATION_INFO.fullAddress}
+                </span>
+              </div>
             </a>
 
           </div>
