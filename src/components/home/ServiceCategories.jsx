@@ -201,35 +201,34 @@ export default function ServiceCategories() {
   }, [activeTab]);
 
   return (
-    <section className="py-16 sm:py-20 bg-slate-50/60 border-b border-slate-100">
+    <section className="py-20 sm:py-28 bg-slate-50/50 border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-3">
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 sm:px-6 sm:py-2.5 rounded-full bg-blue-50 border border-blue-200/80 mb-4 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
-            <span className="text-[11px] font-bold text-[#1346a8] uppercase tracking-wider">
+            <span className="text-xs font-bold text-[#1346a8] uppercase tracking-wider">
               Our Core Services &amp; Products
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-display font-black text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight">
             Everything You Need to Build Your Brand
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2.5">
+          <p className="text-slate-600 text-sm sm:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
             Patna&apos;s widest range of in-house digital printing, 3D architectural signage, ACP facades &amp; turnkey promotional solutions.
           </p>
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex items-center justify-center flex-wrap gap-2 mb-10">
+        <div className="flex items-center justify-center flex-wrap gap-2.5 mb-12">
           {CATEGORY_TABS.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all ${
-                activeTab === tab.id
+              className={`px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all ${activeTab === tab.id
                   ? 'bg-[#1346a8] text-white shadow-md shadow-blue-900/15 scale-[1.02]'
-                  : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200'
-              }`}
+                  : 'bg-white text-slate-700 hover:bg-slate-100 hover:text-slate-900 border border-slate-200/80 shadow-2xs'
+                }`}
             >
               {tab.label}
             </button>
@@ -237,11 +236,11 @@ export default function ServiceCategories() {
         </div>
 
         {/* 4 Services in One Row Responsive Grid (12 services minimum) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
           {displayedServices.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden hover:border-[#1346a8]/50 hover:shadow-card-hover transition-all duration-300 flex flex-col group hover:-translate-y-1"
+              className="bg-white rounded-2xl border border-slate-100 hover:border-blue-200/80 shadow-2xs hover:shadow-card-hover transition-all duration-300 flex flex-col group hover:-translate-y-1 overflow-hidden"
             >
               {/* Image thumbnail with badges */}
               <Link
@@ -255,13 +254,13 @@ export default function ServiceCategories() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 flex-wrap">
-                  <span className="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold uppercase tracking-wider bg-white/95 text-[#1346a8] shadow-xs backdrop-blur-xs">
+                <div className="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
+                  <span className="px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider bg-white/95 text-[#1346a8] shadow-xs backdrop-blur-xs">
                     {service.badge}
                   </span>
                 </div>
                 {service.turnaround && (
-                  <div className="absolute bottom-2.5 right-2.5">
+                  <div className="absolute bottom-3 right-3">
                     <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-slate-900/80 text-white backdrop-blur-xs flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
                       {service.turnaround}
@@ -270,10 +269,10 @@ export default function ServiceCategories() {
                 )}
               </Link>
 
-              {/* Card Body */}
-              <div className="p-5 flex-1 flex flex-col justify-between">
+              {/* Card Body with spacious internal padding */}
+              <div className="p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <div className="flex items-center justify-between mb-1">
+                  <div className="flex items-center justify-between mb-1.5">
                     <span className="text-[10px] font-bold text-[#1346a8] uppercase tracking-wider">
                       {service.categoryName}
                     </span>
@@ -283,13 +282,13 @@ export default function ServiceCategories() {
                       {service.title}
                     </h3>
                   </Link>
-                  <p className="text-xs text-slate-600 leading-relaxed mt-2 line-clamp-2">
+                  <p className="text-xs text-slate-500 leading-relaxed mt-2 line-clamp-2">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Card Footer with Explore & WhatsApp links */}
-                <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
                   <Link
                     to={service.link}
                     className="inline-flex items-center gap-1 text-xs font-bold text-[#1346a8] group-hover:text-[#0f3a8e]"
@@ -315,7 +314,7 @@ export default function ServiceCategories() {
         </div>
 
         {/* Explore All 38+ Services & Products CTA Button */}
-        <div className="mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-16 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-xs sm:text-sm uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-95 transition-all"
@@ -327,7 +326,7 @@ export default function ServiceCategories() {
             href="https://wa.me/919308327111?text=Hi%20Kashish%20Ad,%20I%20need%20a%20custom%20branding%20quote%20for%20my%20business."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 shadow-xs transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-bold text-xs sm:text-sm text-slate-700 bg-white hover:bg-slate-100 border border-slate-200/80 shadow-2xs transition-all"
           >
             <span>💬 WhatsApp Direct Inquiry</span>
           </a>

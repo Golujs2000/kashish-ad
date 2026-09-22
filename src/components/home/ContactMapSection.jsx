@@ -31,12 +31,12 @@ export default function ContactMapSection() {
   };
 
   return (
-    <section id="home-contact" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
+    <section id="home-contact" className="py-20 sm:py-28 bg-slate-50/50 border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Direct Workshop &amp; Showroom Access
           </div>
@@ -54,7 +54,7 @@ export default function ContactMapSection() {
           <div className="lg:col-span-5 flex flex-col justify-between space-y-4">
             
             {/* Address Card */}
-            <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-2xs flex items-start gap-4">
+            <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-100 shadow-2xs flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 text-[#1346a8] flex items-center justify-center text-lg shrink-0">
                 📍
               </div>
@@ -72,7 +72,7 @@ export default function ContactMapSection() {
             </div>
 
             {/* Direct Hotline & WhatsApp Card */}
-            <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-2xs flex items-start gap-4">
+            <div className="bg-white p-5 sm:p-6 rounded-2xl border border-slate-100 shadow-2xs flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 text-[#1346a8] flex items-center justify-center text-lg shrink-0">
                 📞
               </div>
@@ -95,7 +95,7 @@ export default function ContactMapSection() {
                   </a>
                   <a
                     href="tel:09308327111"
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-blue-50 hover:bg-blue-100 border border-blue-200 active:scale-95 transition-all"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-blue-50 hover:bg-blue-100 border border-blue-200/80 active:scale-95 transition-all"
                   >
                     📞 Call 09308327111
                   </a>
@@ -105,7 +105,7 @@ export default function ContactMapSection() {
 
             {/* Hours & Email Card */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-2xs">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-100 shadow-2xs">
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="text-base">🕒</span>
                   <h3 className="font-bold text-[#1346a8] text-xs uppercase tracking-wider">Working Hours</h3>
@@ -116,7 +116,7 @@ export default function ContactMapSection() {
                 </p>
               </div>
 
-              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-2xs">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-100 shadow-2xs">
                 <div className="flex items-center gap-2 mb-1.5">
                   <span className="text-base">✉️</span>
                   <h3 className="font-bold text-[#1346a8] text-xs uppercase tracking-wider">Official Email</h3>

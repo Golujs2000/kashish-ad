@@ -3,9 +3,9 @@ import { CONTACT_INFO } from '../../data/siteData';
 
 export default function CtaBanner() {
   return (
-    <section className="pb-16 sm:pb-20 bg-white">
+    <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-2xl bg-[#f0f7ff] border border-blue-200/80 p-8 sm:p-10 lg:p-12 shadow-sm overflow-hidden relative">
+        <div className="rounded-3xl bg-[#f0f7ff]/80 border border-blue-100 p-8 sm:p-12 lg:p-14 shadow-2xs overflow-hidden relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left Graphic: Printed Collateral Stack */}

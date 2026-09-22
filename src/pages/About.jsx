@@ -42,13 +42,13 @@ export default function About() {
         structuredData={[aboutSchema, breadcrumbSchema]}
       />
       {/* Page Hero */}
-      <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
+      <section className="relative overflow-hidden bg-slate-50/60 border-b border-slate-100 py-20 sm:py-28">
         {/* Architectural Blueprint Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.6] bg-grid-pattern" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Established 1985 • 41+ Years Experience • Patna, Bihar
           </div>
@@ -59,17 +59,17 @@ export default function About() {
             Founded under the visionary leadership of <strong className="text-slate-900">CEO S Haidar</strong>, Kashish Ad® has grown into Patna's premier digital printing and architectural 3D signage manufacturing enterprise, combining industrial-grade technology with handcrafted precision.
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <span className="px-4 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               ⭐ 4.6 Google Rating (62 Reviews)
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-4 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               📜 GSTIN: 10AENPH7809D1ZT
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-4 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               👥 Dedicated In-House Team of 10
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-4 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               📍 Capital Tower, Fraser Road
             </span>
           </div>
@@ -77,10 +77,10 @@ export default function About() {
       </section>
 
       {/* Story & Facility Overview */}
-      <section className="py-16 sm:py-20">
+      <section className="py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-7 space-y-5">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            <div className="lg:col-span-7 space-y-6">
               <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">Our Journey</span>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-slate-900 leading-tight">
                 Setting the Standard for Commercial Branding in Bihar
@@ -97,19 +97,19 @@ export default function About() {
 
               {/* Stats grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-100 shadow-2xs text-center">
                   <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">1985</span>
                   <span className="block text-xs font-bold text-slate-500 mt-1">Estd (41+ Years)</span>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-100 shadow-2xs text-center">
                   <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">1,00,000+</span>
                   <span className="block text-xs font-bold text-slate-500 mt-1">Projects Built</span>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-100 shadow-2xs text-center">
                   <span className="block font-display font-black text-2xl sm:text-3xl text-[#1346a8]">15+</span>
                   <span className="block text-xs font-bold text-slate-500 mt-1">Industrial Machines</span>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200 text-center">
+                <div className="bg-slate-50/80 p-5 rounded-2xl border border-slate-100 shadow-2xs text-center">
                   <span className="block font-display font-black text-2xl sm:text-3xl text-emerald-600">4.6★</span>
                   <span className="block text-xs font-bold text-slate-500 mt-1">Google Rating</span>
                 </div>

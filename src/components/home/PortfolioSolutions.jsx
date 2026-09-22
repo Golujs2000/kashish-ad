@@ -16,27 +16,27 @@ const PORTFOLIO_SOLUTIONS = [
 
 export default function PortfolioSolutions({ onSelectPhoto }) {
   return (
-    <section className="bg-[#0b1c36] text-white py-16 sm:py-20">
+    <section className="bg-[#0b1c36] text-white py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-12 gap-6">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-black text-white tracking-tight">
               Our Printing &amp; Branding Solutions
             </h2>
-            <p className="text-blue-200/70 text-xs sm:text-sm mt-1">
+            <p className="text-blue-200/70 text-xs sm:text-sm mt-2 max-w-xl">
               Real executed signage installations, 3D letters, and commercial banners across Patna.
             </p>
           </div>
           <div className="flex items-center gap-3 shrink-0">
             <Link
               to="/services"
-              className="text-xs font-bold text-white bg-[#1346a8] hover:bg-[#0f3a8e] px-4 py-2 rounded-xl transition-all shadow-sm"
+              className="text-xs font-bold text-white bg-[#1346a8] hover:bg-[#0f3a8e] px-4.5 py-2.5 rounded-xl transition-all shadow-sm"
             >
               Explore All Services →
             </Link>
             <Link
               to="/gallery"
-              className="text-xs font-bold text-blue-300 hover:text-white flex items-center gap-1 transition-colors"
+              className="text-xs font-bold text-blue-300 hover:text-white flex items-center gap-1.5 transition-colors px-2 py-1"
             >
               <span>View Gallery</span>
               <span>→</span>
@@ -44,8 +44,8 @@ export default function PortfolioSolutions({ onSelectPhoto }) {
           </div>
         </div>
 
-        {/* Thumbnail Cards Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
+        {/* Thumbnail Cards Grid with spacious gaps */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6">
           {PORTFOLIO_SOLUTIONS.map((item, idx) => (
             <Link
               key={idx}
@@ -53,20 +53,20 @@ export default function PortfolioSolutions({ onSelectPhoto }) {
               className="flex flex-col items-center group cursor-pointer"
               title={`View ${item.title} service details`}
             >
-              <div className="w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 bg-white/5 shadow-md group-hover:border-blue-400 group-hover:scale-105 transition-all duration-300 relative">
+              <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-white/5 shadow-md group-hover:border-blue-400/80 group-hover:scale-[1.03] transition-all duration-300 relative">
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-blue-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="text-[10px] font-bold text-white bg-[#1346a8] px-2 py-1 rounded-md shadow-xs">
+                <div className="absolute inset-0 bg-blue-950/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-2xs">
+                  <span className="text-[10px] font-bold text-white bg-[#1346a8] px-2.5 py-1 rounded-md shadow-xs">
                     View Specs →
                   </span>
                 </div>
               </div>
-              <span className="text-[11px] font-bold text-slate-300 text-center mt-2 group-hover:text-white transition-colors line-clamp-1">
+              <span className="text-[11.5px] font-semibold text-slate-300 text-center mt-2.5 group-hover:text-white transition-colors line-clamp-1">
                 {item.title}
               </span>
             </Link>
@@ -74,10 +74,10 @@ export default function PortfolioSolutions({ onSelectPhoto }) {
         </div>
 
         {/* Bottom CTA to explore all solutions */}
-        <div className="mt-10 text-center">
+        <div className="mt-14 text-center">
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-900 bg-white hover:bg-slate-100 shadow-sm active:scale-95 transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-900 bg-white hover:bg-slate-100 shadow-sm active:scale-95 transition-all"
           >
             <span>View All Printing &amp; Branding Solutions</span>
             <span>→</span>

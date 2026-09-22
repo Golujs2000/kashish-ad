@@ -19,6 +19,7 @@ export default function Services() {
 
   const mapCategory = (param) => {
     if (!param) return 'all';
+    const cleanParam = param.toLowerCase().trim();
     const map = {
       'digital': 'largeformat',
       'flex': 'largeformat',
@@ -30,15 +31,25 @@ export default function Services() {
       'signage': 'signage',
       '3dletters': 'signage',
       'boards': 'signage',
+      'showrooms': 'signage',
+      'showroom': 'signage',
       'branding': 'corporate',
       'promotional': 'promotional',
       'merchandise': 'promotional',
+      'events': 'promotional',
+      'expo': 'promotional',
+      'expos': 'promotional',
       'corporate': 'corporate',
       'retail': 'corporate',
+      'offices': 'corporate',
+      'office': 'corporate',
+      'store': 'corporate',
+      'stores': 'corporate',
       'vehicle': 'largeformat',
+      'fleet': 'largeformat',
       'cnc': 'cnc'
     };
-    return map[param] || (categories.some(c => c.id === param) ? param : 'all');
+    return map[cleanParam] || (categories.some(c => c.id === cleanParam) ? cleanParam : 'all');
   };
 
   const qParam = searchParams.get('q') || '';
@@ -46,13 +57,8 @@ export default function Services() {
   const [searchQuery, setSearchQuery] = useState(qParam);
 
   useEffect(() => {
-    if (categoryParam) {
-      setActiveCategory(mapCategory(categoryParam));
-    }
-    const q = searchParams.get('q');
-    if (q !== null) {
-      setSearchQuery(q);
-    }
+    setActiveCategory(categoryParam ? mapCategory(categoryParam) : 'all');
+    setSearchQuery(searchParams.get('q') || '');
   }, [categoryParam, searchParams]);
 
   const filteredProducts = useMemo(() => {
@@ -109,34 +115,34 @@ export default function Services() {
       />
 
       {/* Services Hero */}
-      <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-16 sm:py-20">
+      <section className="relative overflow-hidden bg-slate-50/60 border-b border-slate-100 py-16 sm:py-24">
         {/* Architectural Blueprint Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.6] bg-grid-pattern" />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-50 via-transparent to-slate-50 pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 sm:px-6 sm:py-2.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
-            38+ Commercial Printing, Signage &amp; Branding Solutions
+            Direct In-House Factory Production • 38+ Services
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-display font-black text-slate-900 tracking-tight max-w-3xl mx-auto">
-            Digital Printing, Signage &amp; <span className="text-[#1346a8]">Merchandise Catalog</span>
+            Complete Digital Printing &amp; 3D Signage Catalogue
           </h1>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-            Explore our complete industrial printing range — from instant UV flatbed curing to architectural SS 3D letters, solvent vinyl banners, and custom corporate labels. Manufactured in-house at Fraser Road, Patna.
+            From UV flatbed printing and solvent vinyl to 3D LED acrylic letters and architectural ACP facades — manufactured in-house with zero outsourcing.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               ⚡ Same Day Printing Available
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               🛡️ ISO &amp; Greenguard Certified Inks
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               🏭 100% In-House Machine Fabrication
             </span>
-            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 text-slate-700 text-xs font-semibold shadow-2xs">
               📦 Free Delivery Across Patna on Bulk Orders
             </span>
           </div>
@@ -144,23 +150,22 @@ export default function Services() {
       </section>
 
       {/* Catalog Section */}
-      <section className="py-12 sm:py-16">
+      <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Controls Bar: Category Tabs & Search */}
-          <div className="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4 mb-8">
-            <div className="flex flex-wrap gap-2">
+          <div className="flex flex-col lg:flex-row justify-between items-stretch lg:items-center gap-4 mb-10">
+            <div className="flex flex-wrap gap-2.5">
               {categories.map((cat) => {
-                const count = cat.id === 'all' 
-                  ? PRODUCTS.length 
+                const count = cat.id === 'all'
+                  ? PRODUCTS.length
                   : PRODUCTS.filter(p => p.category === cat.id).length;
                 return (
                   <button
                     key={cat.id}
-                    className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
-                      activeCategory === cat.id
+                    className={`px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${activeCategory === cat.id
                         ? 'bg-[#1346a8] text-white shadow-md'
-                        : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                    }`}
+                        : 'bg-slate-100/90 hover:bg-slate-200 text-slate-700'
+                      }`}
                     onClick={() => {
                       setActiveCategory(cat.id);
                       if (cat.id === 'all') {
@@ -172,11 +177,10 @@ export default function Services() {
                   >
                     <span>{cat.label}</span>
                     <span
-                      className={`text-[11px] px-2 py-0.5 rounded-full font-mono ${
-                        activeCategory === cat.id
+                      className={`text-[11px] px-2 py-0.5 rounded-full font-mono ${activeCategory === cat.id
                           ? 'bg-[#1346a8] text-white'
                           : 'bg-slate-200 text-slate-700'
-                      }`}
+                        }`}
                     >
                       {count}
                     </span>
@@ -209,14 +213,14 @@ export default function Services() {
           </div>
 
           {/* Results Summary */}
-          <div className="text-xs text-slate-500 mb-6 font-medium">
+          <div className="text-xs text-slate-500 mb-8 font-medium">
             Showing <strong className="text-slate-900">{filteredProducts.length}</strong> of {PRODUCTS.length} products
             {searchQuery && <span> matching "<em>{searchQuery}</em>"</span>}
           </div>
 
           {/* Quick Services Showcase Banner */}
           {!searchQuery && activeCategory === 'all' && (
-            <div className="mb-10 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 p-1">
+            <div className="mb-12 rounded-2xl overflow-hidden border border-slate-100 shadow-2xs bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 p-1">
               <img
                 src="/assets/images/kashish-ad-header-branding-strip.jpg"
                 alt="Kashish Ad Complete Signage & Printing Solutions Banner"
@@ -260,7 +264,7 @@ export default function Services() {
 
           {/* Products Grid */}
           {filteredProducts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-9">
               {filteredProducts.map((product) => {
                 const waMessage = encodeURIComponent(
                   `Hello Kashish Ad®, I want to order / enquire about "${product.title}". Please share details, quotation, and turnaround time.`
@@ -269,7 +273,7 @@ export default function Services() {
                 return (
                   <article
                     key={product.id}
-                    className="bg-white rounded-2xl border border-slate-200 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col overflow-hidden group"
+                    className="bg-white rounded-2xl border border-slate-100 hover:border-blue-200/80 shadow-2xs hover:shadow-card-hover transition-all duration-300 flex flex-col overflow-hidden group"
                     id={`product-${product.id}`}
                   >
                     {/* Media Thumbnail */}

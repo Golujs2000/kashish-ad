@@ -351,10 +351,9 @@ export default function Header() {
                   to="/"
                   end
                   className={({ isActive }) =>
-                    `px-3 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-3 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -370,10 +369,9 @@ export default function Header() {
                   <NavLink
                     to="/services"
                     className={({ isActive }) =>
-                      `px-3 py-2 rounded-lg transition-colors inline-flex items-center gap-1.5 ${
-                        isActive
-                          ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                          : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                      `px-3 py-2 rounded-lg transition-colors inline-flex items-center gap-1.5 ${isActive
+                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                       }`
                     }
                   >
@@ -464,10 +462,9 @@ export default function Header() {
                 <NavLink
                   to="/services?category=largeformat"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
-                      isActive && location.search.includes('largeformat')
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${isActive && location.search.includes('largeformat')
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -477,10 +474,9 @@ export default function Header() {
                 <NavLink
                   to="/services/led-acrylic-letters"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -490,10 +486,9 @@ export default function Header() {
                 <NavLink
                   to="/services/acp-board"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors inline-block ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -503,10 +498,9 @@ export default function Header() {
                 <NavLink
                   to="/services?category=promotional"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors hidden xl:inline-block ${
-                      isActive && location.search.includes('promotional')
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors hidden xl:inline-block ${isActive && location.search.includes('promotional')
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -517,10 +511,9 @@ export default function Header() {
                 <NavLink
                   to="/machinery"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -530,10 +523,9 @@ export default function Header() {
                 <NavLink
                   to="/gallery"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -543,10 +535,9 @@ export default function Header() {
                 <NavLink
                   to="/portfolio"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -556,10 +547,9 @@ export default function Header() {
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >
@@ -569,10 +559,9 @@ export default function Header() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                        : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
                     }`
                   }
                 >

@@ -4,44 +4,44 @@ import { CONTACT_INFO, LOCATION_INFO } from '../../data/siteData';
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-white pt-6 sm:pt-8 lg:pt-10 pb-12 sm:pb-16 overflow-hidden w-full">
+    <section className="relative bg-white pt-6 sm:pt-8 lg:pt-10 pb-16 sm:pb-24 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        {/* Panoramic Hero Container - 16px radius, fitted to image with zero overlay layer on desktop; clean background on mobile */}
+        {/* Panoramic Hero Container */}
         <div
-          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-md border border-slate-200/80 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
+          className="relative w-full max-w-full rounded-2xl overflow-hidden shadow-sm border border-slate-100 hero-panoramic-container aspect-auto lg:aspect-[1875/839] flex items-center"
         >
           {/* Hero Header: 40% text content area on desktop directly over the background */}
-          <div className="relative z-10 w-full lg:w-[44%] xl:w-[42%] p-5 sm:p-8 lg:p-10 flex flex-col justify-center min-w-0">
+          <div className="relative z-10 w-full lg:w-[45%] xl:w-[43%] p-6 sm:p-10 lg:p-12 flex flex-col justify-center min-w-0">
 
             {/* Main Headline (48-54px desktop, 34-40px mobile) */}
-            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] text-slate-900 tracking-tight leading-[1.08]">
+            <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] text-slate-900 tracking-tight leading-[1.1]">
               Print. Brand. <span className="text-[#1346a8]">Grow.</span>
             </h1>
 
             {/* Subheading (28-36px desktop) */}
-            <h2 className="mt-2 text-lg sm:text-xl lg:text-2xl font-extrabold text-slate-800 tracking-tight leading-snug">
+            <h2 className="mt-2.5 text-lg sm:text-xl lg:text-2xl font-extrabold text-slate-800 tracking-tight leading-snug">
               Complete Printing &amp; Branding Solutions <span className="text-[#1346a8]">in Patna</span>
             </h2>
 
             {/* Paragraph (max-width ~600px, 15-17px) */}
-            <p className="mt-2.5 text-xs sm:text-sm lg:text-[15px] text-slate-600 font-medium leading-relaxed max-w-lg">
+            <p className="mt-3 text-xs sm:text-sm lg:text-[15px] text-slate-600 font-medium leading-relaxed max-w-lg">
               From digital printing and promotional materials to 3D letters, glow sign boards, CNC cutting, ACP cladding and vehicle branding.
             </p>
 
             {/* 5 Circular Service Categories */}
-            <div className="mt-4 sm:mt-5 grid grid-cols-5 gap-2 sm:gap-3 max-w-md">
+            <div className="mt-6 sm:mt-7 grid grid-cols-5 gap-2.5 sm:gap-3.5 max-w-md">
               <Link
                 to="/services/uv-digital"
                 className="flex flex-col items-center group text-center"
                 title="Digital & Large Format UV Printing"
               >
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-[#1346a8] bg-white shadow-2xs flex items-center justify-center text-[#1346a8] group-hover:bg-[#1346a8] group-hover:text-white group-hover:scale-105 transition-all">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 14H8v-5h8v5zm2-7.5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z" />
                   </svg>
                 </div>
-                <span className="mt-1 text-[10px] sm:text-xs font-bold text-slate-700 group-hover:text-[#1346a8] transition-colors leading-tight">
+                <span className="mt-1.5 text-[10px] sm:text-xs font-bold text-slate-700 group-hover:text-[#1346a8] transition-colors leading-tight">
                   Printing
                 </span>
               </Link>
@@ -108,7 +108,7 @@ export default function HeroSection() {
             </div>
 
             {/* Action Buttons: 12px radius, conversion-focused */}
-            <div className="mt-5 sm:mt-6 flex flex-wrap items-center gap-3">
+            <div className="mt-6 sm:mt-7 flex flex-wrap items-center gap-3.5">
               <a
                 href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I would like to get a quote.')}
                 target="_blank"
@@ -121,7 +121,7 @@ export default function HeroSection() {
 
               <a
                 href="tel:9308327111"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs sm:text-sm text-[#1346a8] bg-white border border-[#1346a8]/30 hover:border-[#1346a8] hover:bg-slate-50 shadow-xs active:scale-95 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-xs sm:text-sm text-[#1346a8] bg-white border border-[#1346a8]/20 hover:border-[#1346a8] hover:bg-slate-50 shadow-2xs active:scale-95 transition-all"
               >
                 <svg className="w-4 h-4 text-[#1346a8]" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.4 11.4 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.58 1 1 0 01-.25 1.02l-2.2 2.19z" />
@@ -135,7 +135,7 @@ export default function HeroSection() {
               href={LOCATION_INFO.googleMapsCidUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-start gap-2.5 text-xs text-slate-700 font-medium hover:text-[#1346a8] bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl border border-slate-200/90 shadow-xs max-w-full transition-colors group"
+              className="mt-5 inline-flex items-start gap-3 text-xs text-slate-700 font-medium hover:text-[#1346a8] bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-xl border border-slate-100 shadow-2xs max-w-full transition-colors group"
               title="Open Kashish Ad on Google Maps"
             >
               <svg className="w-4 h-4 text-[#1346a8] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">

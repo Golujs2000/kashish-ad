@@ -70,9 +70,9 @@ export default function Portfolio() {
       />
 
       {/* Hero Header */}
-      <section className="relative overflow-hidden bg-slate-50 border-b border-slate-200 py-12 sm:py-16">
+      <section className="relative overflow-hidden bg-slate-50/60 border-b border-slate-100 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-5">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-[#1346a8] text-xs font-bold uppercase tracking-wider mb-6">
             <span className="w-2 h-2 rounded-full bg-[#1346a8] animate-pulse"></span>
             Estd 1985 • 41+ Years of Fabrication Excellence
           </div>
@@ -81,7 +81,7 @@ export default function Portfolio() {
             Official <span className="inline-flex items-start text-[#1346a8]"><span className="font-raphtalia tracking-[0]">Kashish Ad</span><span className="font-sans text-base sm:text-lg font-black ml-0.5 leading-none text-[#1346a8]">®</span></span> Portfolio
           </h1>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-medium">
+          <p className="mt-4 text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
             Explore our comprehensive company credentials, completed landmark branding projects, industrial machinery capabilities, and premium signage fabrication catalogue across Bihar.
           </p>
 
@@ -102,7 +102,7 @@ export default function Portfolio() {
               href={pdfUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-bold text-sm text-slate-800 bg-white border border-slate-300 hover:border-[#1346a8] hover:text-[#1346a8] shadow-xs transition-all active:scale-95"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-bold text-sm text-slate-800 bg-white border border-slate-200 hover:border-[#1346a8] hover:text-[#1346a8] shadow-2xs transition-all active:scale-95"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -114,7 +114,7 @@ export default function Portfolio() {
               href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I reviewed your official Portfolio PDF and would like to discuss a project.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-bold text-sm text-[#25D366] bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-all active:scale-95"
+              className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl font-bold text-sm text-[#25D366] bg-emerald-50 border border-emerald-200/80 hover:bg-emerald-100 transition-all active:scale-95 shadow-2xs"
             >
               <span className="text-base">💬</span>
               <span>Inquire on WhatsApp</span>
@@ -123,16 +123,16 @@ export default function Portfolio() {
 
           {/* Key Specs Pill */}
           <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs font-semibold text-slate-600">
-            <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 shadow-2xs">
               📄 Official Company Dossier
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 shadow-2xs">
               🏭 Direct In-House Production
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 shadow-2xs">
               🏢 Capital Tower, Fraser Road, Patna
             </span>
-            <span className="px-3 py-1.5 rounded-full bg-white border border-slate-200 shadow-2xs">
+            <span className="px-3.5 py-1.5 rounded-full bg-white border border-slate-100 shadow-2xs">
               📜 GST: 10AENPH7809D1ZT
             </span>
           </div>
@@ -213,28 +213,28 @@ export default function Portfolio() {
       </section>
 
       {/* Highlights Section */}
-      <section className="py-14 sm:py-18 bg-slate-50 border-t border-slate-200">
+      <section className="py-20 sm:py-28 bg-slate-50/50 border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-10">
+          <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-xs font-black uppercase tracking-widest text-[#1346a8]">
               Fabrication Highlights
             </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-1">
+            <h2 className="text-2xl sm:text-3xl font-display font-black text-slate-900 mt-2">
               What You Will Discover Inside
             </h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-600">
+            <p className="mt-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
               A curated look into our turnkey signage fabrication and large-format printing capabilities executed across Bihar.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {portfolioFeatures.map((item, idx) => (
-              <div key={idx} className="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-2xs hover:shadow-md transition-shadow">
+              <div key={idx} className="bg-white rounded-2xl p-7 border border-slate-100 shadow-2xs hover:shadow-card-hover transition-all">
                 <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#1346a8] font-black flex items-center justify-center text-base mb-4 border border-blue-100">
                   0{idx + 1}
                 </div>
-                <h3 className="font-bold text-slate-900 text-base mb-1.5">{item.title}</h3>
-                <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
+                <h3 className="font-bold text-slate-900 text-base mb-2">{item.title}</h3>
+                <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -249,24 +249,24 @@ export default function Portfolio() {
       />
 
       {/* Call to Action Bar */}
-      <section className="bg-[#081a3e] py-14 text-white">
+      <section className="bg-[#081a3e] py-20 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-display font-black">
             Ready to Fabricate Your Brand's Next Milestone?
           </h2>
-          <p className="mt-3 text-sm text-slate-300 max-w-xl mx-auto">
+          <p className="mt-3.5 text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
             From single retail store elevations to state-wide corporate campaigns, consult directly with our master fabricators at Fraser Road, Patna.
           </p>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
             <Link
               to="/contact"
-              className="px-6 py-3 rounded-xl bg-[#1346a8] hover:bg-[#0f3a8e] font-bold text-sm text-white shadow-md transition-all active:scale-95"
+              className="px-6 py-3.5 rounded-xl bg-[#1346a8] hover:bg-[#0f3a8e] font-bold text-sm text-white shadow-md transition-all active:scale-95"
             >
               Get In Touch
             </Link>
             <a
               href="tel:09308327111"
-              className="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 font-bold text-sm text-white transition-all active:scale-95"
+              className="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 font-bold text-sm text-white transition-all active:scale-95"
             >
               Call 09308327111
             </a>
