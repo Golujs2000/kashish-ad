@@ -6,7 +6,7 @@ import { SITE_CONFIG } from '../data/siteData';
 
 export default function ServiceDetail() {
   const { serviceId } = useParams();
-  const product = PRODUCTS.find((p) => p.id === serviceId);
+  const product = PRODUCTS.find((p) => p.id === serviceId || (serviceId === 'clipon-board-works' && p.id === 'led-slim-lightbox') || (serviceId === 'led-slim-lightbox' && p.id === 'clipon-board-works'));
 
   // Inquiry form state
   const [formData, setFormData] = useState({

@@ -193,16 +193,17 @@ export const PRODUCTS = [
   },
   {
     id: '3d-wallpaper',
-    title: '3D Wallpaper Printing for Interiors',
+    title: 'Customize Wallpapers Design & Printing',
     category: 'largeformat',
     price: 'Custom Quote',
     unit: '',
-    badge: 'Seamless',
+    badge: 'Custom Design',
     image: '/assets/images/services/thumb-3d-wallpaper.jpg',
-    description: 'Custom textured wallpaper printing with embossed 3D visual depth: floral murals, geometric marble motifs, and corporate feature walls.',
+    description: 'Bespoke custom wallpaper design, textured 3D printing, and seamless wall murals tailored to your interior theme for luxury residences, hotels, and corporate offices.',
     features: [
+      '100% Custom graphic design tailored to interior theme and dimensions',
       'Seamless multi-meter wall coverage with zero visible overlaps',
-      'Odorless, non-toxic, eco-friendly water-based Latex inks',
+      'Odorless, non-toxic, eco-friendly water-based Latex & UV printing',
       'Textured canvas, leather-grain, and silk fabric media options',
       'Wipeable surface resistant to moisture and dust accumulation'
     ],
@@ -322,29 +323,29 @@ export const PRODUCTS = [
     }
   },
   {
-    id: 'led-slim-lightbox',
-    title: 'LED Slim Light Box Poster Panels',
+    id: 'clipon-board-works',
+    title: 'Clipon Board Works & LED Slim Lightboxes',
     category: 'signage',
     price: 'Custom Quote',
     unit: '',
-    badge: 'Modern Display',
+    badge: 'Clip-On Snap Frame',
     image: '/assets/images/services/thumb-led-slim-lightbox.jpg',
-    description: 'Ultra-thin aluminum snap-frame lightboxes for instant graphic changes. Widely installed in shopping mall corridors, food courts, and showrooms.',
+    description: 'Custom Clipon Board Works and ultra-thin aluminum snap-frame LED lightboxes for rapid poster changes. Engineered for showroom walls, QSR restaurant menu displays, hospital corridors, and shopping mall kiosks.',
     features: [
-      'Super slim 18mm–25mm frame thickness for sleek wall integration',
-      'Laser dot-matrix acrylic light guide plate (LGP) for 95% uniform glow',
-      'Quick snap mechanism allowing poster replacement in under 60 seconds',
-      'Crystal clear protective front acrylic sheet with UV filter'
+      'Anodized 4-side spring clipon aluminum profile for tool-free 30-second poster updates',
+      'Ultra-thin 18mm–25mm profile for sleek flush wall integration',
+      'Optical laser dot-matrix cast acrylic LGP for 95%+ uniform edge-lit brilliance',
+      'Supplied with transparent non-glare UV protective front sheet and 12V power adapter'
     ],
     turnaround: '24 to 48 Hours',
     lifespan: '50,000 Operating Hours',
-    materials: ['Anodized Extruded Aluminum', 'Optical Cast Acrylic LGP', 'High Density Edge LED Strips'],
-    applications: ['Multiplex & Cineplex Movie Posters', 'QSR Restaurant Menu Boards', 'Shopping Mall Walkways', 'Luxury Retail Showrooms'],
+    materials: ['Extruded Anodized Clipon Aluminum Frame', 'Optical Dot-Matrix Cast Acrylic LGP', 'High-Lumen 2835 Edge LED Modules'],
+    applications: ['Restaurant & Cafe Menu Displays', 'Retail Showroom Posters', 'Multiplex Cinema Lobbies', 'Hospital & Clinic Wayfinding Signs'],
     specs: {
-      'Standard Poster Sizes': 'A4, A3, A2, A1, A0, 2x3 ft, 3x4 ft, 4x6 ft',
-      'Depth': 'Ultra-thin 18 mm to 24 mm profile',
-      'Power': '12V DC external adaptor supplied',
-      'Print Media': 'High-resolution backlit photographic film'
+      'Sizes Available': 'A4, A3, A2, A1, A0, 2x3 ft, 2.5x4 ft, 3x4 ft, 4x6 ft (Custom Sizes Available)',
+      'Frame Profile': 'Snap Clip-on Extrusion (18mm, 25mm, or 32mm profile)',
+      'Lighting System': 'Energy-efficient 12V DC Edge LED with heavy-duty adaptor',
+      'Print Media': 'Ultra-vivid high-density backlit film'
     }
   },
   {

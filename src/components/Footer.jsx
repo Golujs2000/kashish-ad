@@ -78,11 +78,11 @@ export default function Footer() {
               <img
                 src={COMPANY_INFO.logoIcon}
                 alt="Kashish Ad Monogram"
-                className="h-12 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
+                className="h-14 sm:h-18 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
               />
               <div className="flex flex-col justify-center">
                 <div className="inline-flex items-start">
-                  <span className="font-raphtalia text-2xl sm:text-[2.75rem] font-bold tracking-[0] text-[#dc2626] leading-tight">
+                  <span className="font-raphtalia text-2xl sm:text-[2.75rem] font-semibold tracking-[0] text-[#dc2626] leading-tight">
                     {COMPANY_INFO.name}
                   </span>
                   <span className="font-sans text-xs sm:text-sm font-black text-[#dc2626] ml-1 leading-none">

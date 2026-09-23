@@ -60,7 +60,7 @@ export const MACHINERY = [
     name: 'CO2 Laser Machine (4×8 & 3×4 Beds)',
     type: 'Industrial Laser Cutting & Engraving',
     badge: 'Dual Bed Laser',
-    image: '/assets/images/machinery/co2-laser-machine.jpg',
+    image: '/assets/images/machinery/co2-laser-machine.jfif',
     specs: {
       'Bed Sizes': 'Dual formats: 4 ft × 8 ft & 3 ft × 4 ft',
       'Laser Tube Power': '150W / 180W high-power CO2 sealed tube',
@@ -110,6 +110,20 @@ export const MACHINERY = [
       'Ink Layers': 'CMYK + White + Varnish (Embossed 3D)'
     },
     description: 'Prints directly on rigid substrates up to 100mm thick. The UV-LED lamps instantly cure the pigment, resulting in waterproof, scratch-proof, and fade-resistant surfaces.'
+  },
+  {
+    id: 'uv-roll-to-roll',
+    name: 'Industrial UV Roll to Roll Machine',
+    type: 'Next-Gen UV LED Roll-Fed Production',
+    badge: '3.2M UV Roll-to-Roll',
+    image: '/assets/images/machinery/uv-roll-to-roll.jpg',
+    specs: {
+      'Print Width': '3.2 Meter (10.5 ft) Super-Wide Roll',
+      'Curing Technology': 'Dual Cold UV-LED Instant Curing Lamps',
+      'Inks & Layers': 'CMYK + White + Varnish (Multi-Layer Embossed)',
+      'Substrates': 'Backlit Fabric, Clear Vinyl, Wallpaper, Canvas, Flex'
+    },
+    description: 'Industrial 3.2-meter UV Roll-to-Roll printing machine engineered for high-precision, roll-fed continuous production. Delivers ultra-vivid, scratch-resistant prints with instant UV curing and multi-layer opaque white ink for premium lightboxes, backlit signage, textured wallpapers, and architectural interior films.'
   },
   {
     id: 'cnc-router',

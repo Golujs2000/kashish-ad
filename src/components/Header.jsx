@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import {
+  COMPANY_INFO,
   CONTACT_INFO,
   LOCATION_INFO,
   WORKING_HOURS
@@ -118,6 +119,13 @@ export default function Header() {
               </div>
             </div>
 
+            {/* Center / GSTIN Trust Badge */}
+            <div className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 rounded bg-emerald-950/70 border border-emerald-400/40 text-emerald-300 font-mono text-[10px] sm:text-[11px] font-semibold tracking-wide shrink-0">
+              <span className="text-emerald-400 font-bold">✓</span>
+              <span>GSTIN: <span className="text-white font-extrabold">{COMPANY_INFO.gstin}</span></span>
+              <span className="hidden lg:inline text-emerald-400/80 font-sans text-[10px]">• 100% Tax Invoicing</span>
+            </div>
+
             {/* Right: Phone & Rating */}
             <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0 whitespace-nowrap ml-auto">
               <div className="hidden sm:inline-flex items-center gap-1 text-slate-300">
@@ -154,11 +162,11 @@ export default function Header() {
               <img
                 src="/assets/logo-icon.png"
                 alt="Kashish Ad Monogram"
-                className="h-10 sm:h-13 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
+                className="h-14 sm:h-18 md:h-20 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
               />
               <div className="flex flex-col justify-center">
                 <div className="inline-flex items-start">
-                  <span className="font-raphtalia text-3xl sm:text-[3rem] font-bold tracking-[0] text-[#dc2626] leading-none">
+                  <span className="font-raphtalia text-3xl sm:text-[3rem] font-semibold tracking-[0] text-[#dc2626] leading-none">
                     Kashish Ad
                   </span>
                   <span className="font-sans text-xs sm:text-sm font-black text-[#dc2626] ml-1 leading-none">
@@ -183,7 +191,7 @@ export default function Header() {
                       setIsSearchOpen(true);
                     }}
                     onFocus={() => setIsSearchOpen(true)}
-                    placeholder="Search 38+ services: Flex, 3D Letters, Signage..."
+                    placeholder="Search Patna Signage, Flex, 3D Letters, UV Printing..."
                     className="w-full text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-transparent border-none outline-none focus:outline-none focus:ring-0 truncate"
                     style={{ outline: 'none', border: 'none', boxShadow: 'none' }}
                   />
@@ -344,8 +352,8 @@ export default function Header() {
         {/* 3. PROMINENT NAVIGATION MENU BAR (100% VISIBLE WITH ZERO OVERFLOW SCROLLBAR) */}
         <div className="hidden md:block bg-slate-50 border-b border-slate-200">
           <div className="w-full max-w-[1720px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <nav className="flex items-center justify-between text-xs lg:text-[13.5px] font-bold" aria-label="Main Website Navigation">
-              <div className="flex items-center space-x-1 lg:space-x-1.5 py-1">
+            <nav className="flex items-center justify-center text-xs lg:text-[13.5px] font-bold" aria-label="Main Website Navigation">
+              <div className="flex items-center justify-center flex-wrap gap-1 lg:gap-1.5 py-1">
                 {/* Home Link */}
                 <NavLink
                   to="/"

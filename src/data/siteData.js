@@ -148,9 +148,9 @@ export const TRUST_METRICS = {
   reviewsDisplay: '62 Verified Google Reviews',
   projectsCount: '1,00,000+',
   projectsLabel: 'Projects Built',
-  machineryCount: '15+',
+  machineryCount: '16+',
   machineryLabel: 'Industrial Machines',
-  featuredMachineryCount: 8,
+  featuredMachineryCount: 9,
   teamMembers: 10,
   teamDisplay: 'Dedicated In-House Team of 10'
 };
@@ -188,14 +188,15 @@ export const NAV_CONFIG = {
   mainNav: [
     { label: 'Home', path: '/' },
     { label: 'Products & Services', path: '/services', badge: '38+ Services' },
-    { label: 'Machinery', path: '/machinery', badge: '8 Units' },
+    { label: 'Machinery', path: '/machinery', badge: '16+ Units' },
     { label: 'Gallery', path: '/gallery' },
     { label: 'Get a Quote', path: '/contact', isHot: true },
     { label: 'About Us', path: '/about' },
     { label: 'Contact', path: '/contact' }
   ],
   coreServices: [
-    { label: 'UV Flatbed Digital Printing', path: '/services/uv-digital' },
+    { label: 'Patna Signage & LED Boards', path: '/services/led-acrylic-letters' },
+    { label: 'UV Roll-to-Roll & Flatbed', path: '/services/uv-digital' },
     { label: 'Solvent Vinyl & Store Graphics', path: '/services/solvent-vinyl' },
     { label: '3D LED Acrylic Letters (12V)', path: '/services/led-acrylic-letters' },
     { label: 'Stainless Steel 304 Signboards', path: '/services/ss-sign-board' },
@@ -206,7 +207,7 @@ export const NAV_CONFIG = {
   quickLinks: [
     { label: 'Home Page', path: '/' },
     { label: 'All 38+ Products & Services', path: '/services' },
-    { label: 'In-House Machinery (8 Units)', path: '/machinery' },
+    { label: 'In-House Machinery (16+ Units)', path: '/machinery' },
     { label: 'Executed Projects Portfolio', path: '/gallery' },
     { label: 'Request a Quotation', path: '/contact' },
     { label: 'About Us & CEO S Haidar', path: '/about' },
@@ -216,9 +217,9 @@ export const NAV_CONFIG = {
 
 export const SEO_DEFAULTS = {
   siteName: 'Kashish Ad®',
-  title: "Kashish Ad® | Patna's Leading Digital Printing & LED Sign Board Manufacturer",
-  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier digital printing and architectural sign board manufacturer. UV flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 09308327111.",
-  keywords: 'digital printing patna, signage board patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing, sign board manufacturer patna',
+  title: "Kashish Ad® | Patna Signage, Digital Printing & LED Glow Sign Board Manufacturer",
+  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier Patna signage and digital printing manufacturer. UV roll-to-roll & flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 09308327111.",
+  keywords: 'patna signage, signage patna, digital printing patna, signage board patna, uv roll to roll printer patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing, sign board manufacturer patna',
   ogImage: '/assets/images/hero-showcase-storefront-facade.png',
   author: 'Kashish Ad® (S Haidar)'
 };

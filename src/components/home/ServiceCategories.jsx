@@ -114,11 +114,11 @@ const ALL_SERVICES = [
   },
   {
     id: '3d-wallpaper',
-    title: '3D Wallpaper & Interior Murals',
+    title: 'Customize Wallpapers Design & Printing',
     category: 'largeformat',
     categoryName: 'Wall Graphics',
-    description: 'Seamless custom textured, odorless eco-latex wallpaper printing with stunning visual depth for home and office.',
-    badge: 'Interior Decor',
+    description: 'Bespoke custom wallpaper design, textured 3D printing and odorless eco-latex seamless murals for home and office.',
+    badge: 'Custom Design',
     turnaround: '24-48 Hours',
     image: '/assets/images/services/thumb-3d-wallpaper.jpg',
     link: '/services/3d-wallpaper'
@@ -135,15 +135,15 @@ const ALL_SERVICES = [
     link: '/services/promotional-canopy'
   },
   {
-    id: 'led-slim-lightbox',
-    title: 'LED Slim Light Box Poster Panels',
+    id: 'clipon-board-works',
+    title: 'Clipon Board Works (LED Slim Lightbox)',
     category: 'signage',
-    categoryName: 'Lightboxes',
-    description: 'Ultra-thin snap-frame acrylic LED lightboxes for menu boards, airport corridors and luxury retail storefronts.',
-    badge: 'Ultra Thin',
-    turnaround: '2-3 Days',
+    categoryName: 'Clipon Boards',
+    description: 'Custom Clipon Board Works and ultra-thin aluminum snap-frame LED lightboxes for instant poster and menu changes.',
+    badge: 'Clipon Snap',
+    turnaround: '24-48 Hours',
     image: '/assets/images/services/thumb-led-slim-lightbox.jpg',
-    link: '/services/led-slim-lightbox'
+    link: '/services/clipon-board-works'
   },
   {
     id: 'name-plates',

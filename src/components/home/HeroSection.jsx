@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CONTACT_INFO, LOCATION_INFO } from '../../data/siteData';
+import { COMPANY_INFO, CONTACT_INFO, LOCATION_INFO } from '../../data/siteData';
 
 export default function HeroSection() {
   return (
@@ -10,28 +10,40 @@ export default function HeroSection() {
       <div className="w-full max-w-[1720px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8 sm:py-10 lg:py-14 flex items-center">
         {/* Hero Header: text content area on desktop directly over the background */}
         <div className="relative z-10 w-full lg:w-[48%] xl:w-[45%] 2xl:w-[42%] min-w-0">
-          {/* Top Inspirational Community Quote */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-2xs mb-4 text-slate-700 group hover:border-red-200 transition-colors">
-            <svg className="w-4 h-4 text-red-500 shrink-0 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-            </svg>
-            <span className="text-xs sm:text-[13px] font-semibold tracking-wide italic">
-              &ldquo;When you support small business, you&apos;re supporting a dream&rdquo;
-            </span>
+          {/* Top Community Quote & GSTIN Verification */}
+          <div className="flex flex-wrap items-center gap-2.5 mb-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-2xs text-slate-700 group hover:border-red-200 transition-colors">
+              <svg className="w-4 h-4 text-red-500 shrink-0 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              </svg>
+              <span className="text-xs sm:text-[13px] font-semibold tracking-wide italic">
+                &ldquo;When you support small business, you&apos;re supporting a dream&rdquo;
+              </span>
+            </div>
+
+            {/* GST Verified Badge in Hero */}
+            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50/95 backdrop-blur-md border border-emerald-300/80 text-emerald-900 text-xs font-bold shadow-2xs">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
+              </span>
+              <span>GST: <span className="font-mono text-emerald-950 font-black">{COMPANY_INFO.gstin}</span></span>
+            </div>
           </div>
+
           {/* Main Headline (48-54px desktop, 34-40px mobile) */}
           <h1 className="font-display font-black text-3xl sm:text-4xl lg:text-[42px] xl:text-[48px] 2xl:text-[52px] text-slate-900 tracking-tight leading-[1.15]">
             Print. Brand. <span className="text-[#1346a8]">Grow.</span>
           </h1>
 
-          {/* Subheading (28-36px desktop) */}
+          {/* Subheading emphasizing Patna Signage */}
           <h2 className="mt-2.5 text-lg sm:text-xl lg:text-2xl font-extrabold text-slate-800 tracking-tight leading-snug">
-            Complete Printing &amp; Branding Solutions <span className="text-[#1346a8]">in Patna</span>
+            Patna Signage, Digital Printing &amp; Branding <span className="text-[#1346a8]">Leader</span>
           </h2>
 
           {/* Paragraph (max-width ~600px, 15-17px) */}
           <p className="mt-3 text-xs sm:text-sm lg:text-[15px] text-slate-600 font-medium leading-relaxed max-w-lg">
-            From digital printing and promotional materials to 3D letters, glow sign boards, CNC cutting, ACP cladding and vehicle branding.
+            Bihar&apos;s premier manufacturing plant for Patna signage boards, 3D LED acrylic letters, glow signs, UV roll-to-roll &amp; flatbed printing, CNC cutting, ACP cladding, and fleet branding.
           </p>
 
           {/* 5 Circular Service Categories */}
@@ -62,7 +74,7 @@ export default function HeroSection() {
                 </svg>
               </div>
               <span className="mt-1 text-[10px] sm:text-xs font-bold text-slate-700 group-hover:text-[#1346a8] transition-colors leading-tight">
-                Signage
+                Patna Signage
               </span>
             </Link>
 
@@ -118,9 +130,12 @@ export default function HeroSection() {
               href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I would like to get a quote.')}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-sm active:scale-95 transition-all"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-xs sm:text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-sm shadow-emerald-600/20 active:scale-95 transition-all"
             >
-              <span>Get a Quote</span>
+              <svg className="w-4 h-4 fill-white shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.158.571 4.183 1.564 5.934l-1.663 6.079 6.257-1.636c1.684.918 3.609 1.443 5.659 1.443 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z" />
+              </svg>
+              <span>WhatsApp Quote</span>
               <span className="text-base">→</span>
             </a>
 
@@ -147,9 +162,14 @@ export default function HeroSection() {
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
             </svg>
             <div className="flex flex-col text-left">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">
-                Factory &amp; Office Location
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">
+                  Factory &amp; Office Location
+                </span>
+                <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                  GSTIN: {COMPANY_INFO.gstin}
+                </span>
+              </div>
               <span className="text-xs font-semibold text-slate-800 group-hover:text-[#1346a8] transition-colors leading-snug mt-0.5">
                 {LOCATION_INFO.fullAddress}
               </span>
