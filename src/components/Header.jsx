@@ -89,15 +89,15 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-50 bg-white shadow-xs">
         {/* 1. Slim Top Utility Strip */}
-        <div className="bg-[#081a3e] text-slate-200 border-b border-blue-900/40 text-[11px] sm:text-xs">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5 flex items-center justify-between gap-4">
+        <div className="bg-[#081a3e] text-slate-200 border-b border-blue-900/40 text-[11px] sm:text-xs overflow-hidden">
+          <div className="w-full max-w-[1720px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-1.5 flex items-center justify-between gap-2 sm:gap-4">
             {/* Left: Location & In-House Production Notice */}
-            <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+            <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0 min-w-0">
               <a
                 href={LOCATION_INFO.googleMapsCidUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors"
+                className="inline-flex items-center gap-1.5 text-slate-300 hover:text-white transition-colors shrink-0"
                 title="View Kashish Ad on Google Maps"
               >
                 <svg className="w-3.5 h-3.5 text-[#38bdf8] shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -107,30 +107,30 @@ export default function Header() {
                 <span className="font-medium sm:hidden">Fraser Rd, Patna</span>
               </a>
 
-              <span className="hidden md:inline-block w-1 h-1 rounded-full bg-slate-500" />
+              <span className="hidden xl:inline-block w-1 h-1 rounded-full bg-slate-500" />
 
-              <div className="hidden md:inline-flex items-center gap-1.5 text-slate-300">
-                <span className="relative flex h-2 w-2">
+              <div className="hidden xl:inline-flex items-center gap-1.5 text-slate-300 min-w-0 truncate">
+                <span className="relative flex h-2 w-2 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span className="font-medium">Direct In-House Factory • Estd 1985 (41+ Yrs) • {WORKING_HOURS.summary}</span>
+                <span className="font-medium truncate">Direct In-House Factory • Estd 1985 (41+ Yrs) • {WORKING_HOURS.summary}</span>
               </div>
             </div>
 
             {/* Right: Phone & Rating */}
-            <div className="flex items-center gap-4 shrink-0">
-              <div className="hidden sm:inline-flex items-center gap-1.5 text-slate-300">
+            <div className="flex items-center gap-2.5 sm:gap-3.5 shrink-0 whitespace-nowrap ml-auto">
+              <div className="hidden sm:inline-flex items-center gap-1 text-slate-300">
                 <span className="text-amber-400 text-xs">★</span>
                 <span className="font-semibold text-slate-200">4.6</span>
-                <span className="text-slate-400 text-[11px]">(62 Google Reviews)</span>
+                <span className="text-slate-400 text-[11px]">(62 Reviews)</span>
               </div>
 
               <span className="w-px h-3 bg-blue-800/80 hidden sm:block" />
 
               <a
                 href={CONTACT_INFO.phoneTel}
-                className="inline-flex items-center gap-1.5 text-slate-200 hover:text-white font-bold transition-colors"
+                className="inline-flex items-center gap-1.5 text-slate-200 hover:text-white font-bold transition-colors whitespace-nowrap text-xs"
               >
                 <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24 11.4 11.4 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.58 1 1 0 01-.25 1.02l-2.2 2.19z" />
@@ -143,36 +143,36 @@ export default function Header() {
 
         {/* 2. Main Header Row: Logo | Centered Sleek Search Bar | Quick WhatsApp */}
         <div className="border-b border-slate-100 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4 lg:gap-8">
+          <div className="w-full max-w-[1720px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3 flex items-center justify-between gap-4 lg:gap-8">
             {/* Left: Brand Logo */}
             <Link
               to="/"
-              className="flex items-center gap-2.5 sm:gap-3 group shrink-0"
+              className="flex items-center gap-2.5 sm:gap-3.5 group shrink-0"
               onClick={closeMenu}
               aria-label="Kashish Ad Home"
             >
               <img
                 src="/assets/logo-icon.png"
                 alt="Kashish Ad Monogram"
-                className="h-9 sm:h-11 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
+                className="h-10 sm:h-13 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
               />
               <div className="flex flex-col justify-center">
                 <div className="inline-flex items-start">
-                  <span className="font-raphtalia text-xl sm:text-2xl font-bold tracking-[0] text-[#1346a8] leading-none">
+                  <span className="font-raphtalia text-3xl sm:text-[3rem] font-bold tracking-[0] text-[#dc2626] leading-none">
                     Kashish Ad
                   </span>
-                  <span className="font-sans text-[10px] sm:text-xs font-black text-[#1346a8] ml-0.5 leading-none">
+                  <span className="font-sans text-xs sm:text-sm font-black text-[#dc2626] ml-1 leading-none">
                     ®
                   </span>
                 </div>
-                <span className="text-[7.5px] sm:text-[9px] font-bold tracking-[0.12em] text-[#475569] uppercase leading-tight mt-0.5">
-                  — LET'S PRINT BRANDING —
+                <span className="text-[9px] sm:text-[11px] font-bold tracking-[0.2em] text-[#475569] uppercase leading-tight mt-1">
+                  LET'S PRINT BRANDING
                 </span>
               </div>
             </Link>
 
             {/* Center: Sleek Search Bar Matching Reference (Rounded with circular blue search icon button) */}
-            <div className="hidden md:block flex-1 max-w-xl relative" ref={searchContainerRef}>
+            <div className="hidden md:block flex-1 max-w-xl lg:max-w-2xl 2xl:max-w-3xl relative" ref={searchContainerRef}>
               <form onSubmit={handleSearchSubmit} className="relative">
                 <div className="relative w-full flex items-center rounded-full border border-slate-300 bg-white pl-4 pr-1.5 py-1.5 shadow-2xs">
                   <input
@@ -183,8 +183,8 @@ export default function Header() {
                       setIsSearchOpen(true);
                     }}
                     onFocus={() => setIsSearchOpen(true)}
-                    placeholder="Search 38+ services: Flex, 3D Letters, Canopy, ACP, Wall Wraps..."
-                    className="w-full text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-transparent border-none outline-none focus:outline-none focus:ring-0"
+                    placeholder="Search 38+ services: Flex, 3D Letters, Signage..."
+                    className="w-full text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 bg-transparent border-none outline-none focus:outline-none focus:ring-0 truncate"
                     style={{ outline: 'none', border: 'none', boxShadow: 'none' }}
                   />
                   {searchQuery && (
@@ -343,7 +343,7 @@ export default function Header() {
 
         {/* 3. PROMINENT NAVIGATION MENU BAR (100% VISIBLE WITH ZERO OVERFLOW SCROLLBAR) */}
         <div className="hidden md:block bg-slate-50 border-b border-slate-200">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-full max-w-[1720px] 2xl:max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
             <nav className="flex items-center justify-between text-xs lg:text-[13.5px] font-bold" aria-label="Main Website Navigation">
               <div className="flex items-center space-x-1 lg:space-x-1.5 py-1">
                 {/* Home Link */}

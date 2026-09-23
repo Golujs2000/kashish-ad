@@ -13,32 +13,44 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const [lastWaUrl, setLastWaUrl] = useState('');
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const waText = encodeURIComponent(
+`*Inquiry from Kashish Ad® Website*
+------------------------------------------
+👤 *Client Name:* ${formData.name}
+📞 *Phone / WhatsApp:* ${formData.phone}
+📦 *Service Interested:* ${formData.service}
+📍 *City / Location:* ${formData.city || 'Patna'}
+📝 *Requirement Details:* ${formData.message || 'General inquiry'}
+------------------------------------------
+Please connect with quotation and turnaround details.`
+    );
+    const whatsappUrl = `https://wa.me/919308327111?text=${waText}`;
+    setLastWaUrl(whatsappUrl);
+
+    // Register inquiry in backend asynchronously without blocking user navigation
     try {
-      // Post to Express backend API
-      const res = await fetch('/api/inquiry', {
+      fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-      if (res.ok) {
-        setSubmitted(true);
-      }
-    } catch (err) {
-      console.warn('Backend API offline, proceeding with client confirmation', err);
-      setSubmitted(true);
-    } finally {
-      setIsSubmitting(false);
+        body: JSON.stringify(formData),
+        keepalive: true
+      }).catch((err) => console.warn('Inquiry sync notice:', err));
+    } catch (_) {}
+
+    // Immediate direct WhatsApp launch
+    const newWindow = window.open(whatsappUrl, '_blank');
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      window.location.href = whatsappUrl;
     }
 
-    // Also trigger WhatsApp redirect for immediate attention
-    const waText = encodeURIComponent(
-      `Hello Kashish Ad®, I am submitting an inquiry from your website:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nCity: ${formData.city}\nRequirement: ${formData.message}`
-    );
-    window.open(`https://wa.me/919308327111?text=${waText}`, '_blank');
+    setSubmitted(true);
+    setIsSubmitting(false);
   };
 
   const contactSchema = {
@@ -139,8 +151,12 @@ export default function Contact() {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-bold text-slate-900 text-sm">Phone Hotline &amp; WhatsApp</h4>
-                    <p className="mt-1">
-                      <a href="tel:09308327111" className="text-lg font-display font-black text-[#1346a8] hover:underline">
+                    <p className="mt-1 flex flex-wrap items-center gap-2">
+                      <a href="tel:07488984637" className="text-lg font-display font-black text-[#1346a8] hover:underline">
+                        07488984637
+                      </a>
+                      <span className="text-slate-300">/</span>
+                      <a href="tel:09308327111" className="text-lg font-display font-black text-slate-700 hover:text-[#1346a8] hover:underline">
                         09308327111
                       </a>
                     </p>
@@ -258,17 +274,18 @@ export default function Contact() {
                 {submitted ? (
                   <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 text-center space-y-3">
                     <div className="text-3xl">✅</div>
-                    <h4 className="font-bold text-slate-900 text-base">Inquiry Received!</h4>
+                    <h4 className="font-bold text-slate-900 text-base">Inquiry Launched to WhatsApp!</h4>
                     <p className="text-xs text-slate-600 max-w-sm mx-auto">
-                      Thank you for contacting Kashish Ad®. A representative is reviewing your details. You can also chat directly on WhatsApp.
+                      Thank you, <strong>{formData.name}</strong>. Your inquiry details have been forwarded to the Kashish Ad® production desk.
                     </p>
                     <a
-                      href="https://wa.me/919308327111"
+                      href={lastWaUrl || 'https://wa.me/919308327111'}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-5 py-2.5 rounded-xl font-bold text-xs text-white bg-brand-whatsapp hover:bg-brand-whatsapp-hover"
+                      className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-bold text-xs text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-sm"
                     >
-                      Continue in WhatsApp
+                      <span>💬</span>
+                      <span>Re-open in WhatsApp</span>
                     </a>
                   </div>
                 ) : (
@@ -358,9 +375,10 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-98 transition-all text-center"
+                      className="w-full py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-98 transition-all flex items-center justify-center gap-2"
                     >
-                      {isSubmitting ? 'Submitting...' : 'Submit & Connect on WhatsApp →'}
+                      <span className="text-base leading-none">💬</span>
+                      <span>{isSubmitting ? 'Opening WhatsApp...' : 'Direct WhatsApp Submit →'}</span>
                     </button>
                     <p className="text-[11px] text-slate-400 text-center">
                       🔒 Your contact details are kept strictly confidential for quotation only.

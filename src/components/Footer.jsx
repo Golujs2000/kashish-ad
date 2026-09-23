@@ -78,18 +78,18 @@ export default function Footer() {
               <img
                 src={COMPANY_INFO.logoIcon}
                 alt="Kashish Ad Monogram"
-                className="h-11 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
+                className="h-12 w-auto object-contain group-hover:scale-105 transition-transform shrink-0"
               />
               <div className="flex flex-col justify-center">
                 <div className="inline-flex items-start">
-                  <span className="font-raphtalia text-2xl font-bold tracking-[0] text-[#1346a8] leading-tight">
+                  <span className="font-raphtalia text-2xl sm:text-[2.75rem] font-bold tracking-[0] text-[#dc2626] leading-tight">
                     {COMPANY_INFO.name}
                   </span>
-                  <span className="font-sans text-[11px] font-black text-[#1346a8] ml-0.5 leading-none">
+                  <span className="font-sans text-xs sm:text-sm font-black text-[#dc2626] ml-1 leading-none">
                     {COMPANY_INFO.registeredSymbol}
                   </span>
                 </div>
-                <span className="text-[9px] font-bold tracking-widest text-[#475569] uppercase leading-tight mt-0.5">
+                <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-[#475569] uppercase leading-tight mt-1">
                   — {COMPANY_INFO.tagline} —
                 </span>
               </div>

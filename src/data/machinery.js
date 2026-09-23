@@ -1,5 +1,75 @@
 export const MACHINERY = [
   {
+    id: 'hp-latex-730',
+    name: 'HP Latex 730 Printer',
+    type: 'Next-Gen Eco Large Format',
+    badge: 'High Speed Latex',
+    image: '/assets/images/machinery/hp-latex-730.jpg',
+    specs: {
+      'Print Width': 'Up to 64 inches (1.63 m)',
+      'Ink Technology': 'HP Gen 4 Water-based Latex (Odorless)',
+      'Production Speed': 'Up to 1,130 sq.ft/hr',
+      'Resolution': 'Up to 1200 x 1200 DPI vibrant color'
+    },
+    description: 'State-of-the-art HP Latex 730 delivering ultra-sharp graphics with odorless, instant-dry, scratch-resistant water-based inks. Perfect for premium retail displays, vehicle wraps, and healthcare interior graphics.'
+  },
+  {
+    id: 'konica-512i-flex',
+    name: 'Konica 512i (8 Heads) Flex Printing Machine',
+    type: 'Heavy-Duty Industrial Flex Printing',
+    badge: '8-Head High Volume',
+    image: '/assets/images/machinery/konica-512i-flex.jpg',
+    specs: {
+      'Print Heads': '8 High-Speed Konica Minolta 512i Heads',
+      'Print Width': '10.5 ft (3.2 Meter) Super-Wide',
+      'Speed': 'Up to 2,800 sq.ft/hr mass output',
+      'Applications': 'Hoardings, Frontlit Flex, Backlit & Star Flex'
+    },
+    description: 'Heavy-duty 8-head Konica 512i solvent printer designed for continuous mass production of outdoor hoardings, roadside billboards, commercial banners, and exhibition graphics with rich color density.'
+  },
+  {
+    id: 'roland-642',
+    name: 'Roland VersaArt RS-642 (Latest)',
+    type: 'Japanese High-Precision Eco-Solvent',
+    badge: 'Photographic Precision',
+    image: '/assets/images/machinery/roland-642.jpg',
+    specs: {
+      'Print Width': '64 inches (1.62 m)',
+      'Resolution': '1440 DPI true photo-realistic resolution',
+      'Head Technology': 'Gold-plated piezo print heads with variable droplet',
+      'Media': 'Cast vinyl, canvas, backlit film, photo paper'
+    },
+    description: 'The latest Roland 642 high-performance wide-format printer engineered for museum-grade wall art, photo prints, transit graphics, and ultra-vivid promotional backlit displays.'
+  },
+  {
+    id: 'konica-minolta-12x18',
+    name: '12 × 18 Digital Konica Minolta Press',
+    type: 'High-Speed Commercial Digital Press',
+    badge: 'Digital Color Press',
+    image: '/assets/images/machinery/konica-minolta-12x18.jpg',
+    specs: {
+      'Max Sheet Size': '12 × 18 inches / 13 × 19 inches SRA3',
+      'Paper GSM': '64 GSM to 350 GSM heavy cardstock',
+      'Resolution': '3600 × 1200 DPI laser electrostatic',
+      'Applications': 'Brochures, catalogs, visiting cards, stickers, flyers'
+    },
+    description: 'Industrial Konica Minolta digital color production press handling 12×18 inch sheets up to 350 GSM. Delivers same-day turnaround on high-definition catalogs, corporate brochures, business cards, and product packaging.'
+  },
+  {
+    id: 'co2-laser-machine',
+    name: 'CO2 Laser Machine (4×8 & 3×4 Beds)',
+    type: 'Industrial Laser Cutting & Engraving',
+    badge: 'Dual Bed Laser',
+    image: '/assets/images/machinery/co2-laser-machine.jpg',
+    specs: {
+      'Bed Sizes': 'Dual formats: 4 ft × 8 ft & 3 ft × 4 ft',
+      'Laser Tube Power': '150W / 180W high-power CO2 sealed tube',
+      'Materials': 'Cast Acrylic, MDF, Wood, Leather, Fabric, Silicone',
+      'Accuracy': '±0.01 mm hairline edge cutting & 3D engraving'
+    },
+    description: 'Dual-bed industrial CO2 laser cutters equipped with 4×8 ft and 3×4 ft cutting areas for crystal-clear acrylic letters, intricate wooden architectural jali, trophies, stencils, and illuminated signs.'
+  },
+  {
     id: 'hp-latex-570',
     name: 'HP Latex 570 Press',
     type: 'Eco-Friendly Large Format',

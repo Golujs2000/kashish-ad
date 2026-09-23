@@ -9,25 +9,42 @@ export default function ContactMapSection() {
   });
   const [contactSubmitted, setContactSubmitted] = useState(false);
   const [isSubmittingContact, setIsSubmittingContact] = useState(false);
+  const [lastWaUrl, setLastWaUrl] = useState('');
 
-  const handleContactSubmit = async (e) => {
+  const handleContactSubmit = (e) => {
     e.preventDefault();
     setIsSubmittingContact(true);
+
+    const waText = encodeURIComponent(
+`*Quick Inquiry from Kashish Ad® Website*
+------------------------------------------
+👤 *Client Name:* ${contactForm.name}
+📞 *Mobile / WhatsApp:* ${contactForm.phone}
+📝 *Requirement:* ${contactForm.message || 'Custom signage & printing requirement'}
+------------------------------------------
+Please share quotation and turnaround details.`
+    );
+    const whatsappUrl = `https://wa.me/919308327111?text=${waText}`;
+    setLastWaUrl(whatsappUrl);
+
+    // Register in backend asynchronously without blocking
     try {
-      await fetch('/api/inquiry', {
+      fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(contactForm)
-      });
-    } catch (err) {
-      console.warn('Inquiry API Notice:', err);
+        body: JSON.stringify(contactForm),
+        keepalive: true
+      }).catch((err) => console.warn('Inquiry background sync:', err));
+    } catch (_) {}
+
+    // Immediate direct WhatsApp launch
+    const newWindow = window.open(whatsappUrl, '_blank');
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      window.location.href = whatsappUrl;
     }
+
     setContactSubmitted(true);
     setIsSubmittingContact(false);
-    const waText = encodeURIComponent(
-      `Hello Kashish Ad®, I am submitting an inquiry from the homepage:\nName: ${contactForm.name}\nPhone: ${contactForm.phone}\nRequirement: ${contactForm.message}`
-    );
-    window.open(`https://wa.me/919308327111?text=${waText}`, '_blank');
   };
 
   return (
@@ -78,8 +95,12 @@ export default function ContactMapSection() {
               </div>
               <div className="flex-1">
                 <h3 className="font-bold text-[#1346a8] text-sm">Direct Phone &amp; WhatsApp Hotline</h3>
-                <p className="mt-1">
-                  <a href="tel:09308327111" className="text-lg font-display font-black text-[#1346a8] hover:underline">
+                <p className="mt-1 flex flex-wrap items-center gap-2">
+                  <a href="tel:07488984637" className="text-lg font-display font-black text-[#1346a8] hover:underline">
+                    07488984637
+                  </a>
+                  <span className="text-slate-300">/</span>
+                  <a href="tel:09308327111" className="text-lg font-display font-black text-slate-700 hover:text-[#1346a8] hover:underline">
                     09308327111
                   </a>
                 </p>
@@ -94,10 +115,10 @@ export default function ContactMapSection() {
                     💬 Chat on WhatsApp
                   </a>
                   <a
-                    href="tel:09308327111"
+                    href="tel:07488984637"
                     className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-blue-50 hover:bg-blue-100 border border-blue-200/80 active:scale-95 transition-all"
                   >
-                    📞 Call 09308327111
+                    📞 Call 07488984637
                   </a>
                 </div>
               </div>
@@ -136,8 +157,22 @@ export default function ContactMapSection() {
               <h3 className="font-bold text-sm text-[#1346a8] mb-0.5">Quick Project Inquiry</h3>
               <p className="text-xs text-slate-500 mb-3">Leave your details below — our desk replies on WhatsApp in 10 mins.</p>
               {contactSubmitted ? (
-                <div className="bg-emerald-50 border border-emerald-200 p-3.5 rounded-xl text-xs text-emerald-800 text-center font-bold">
-                  ✅ Thank you! Inquiry launched in WhatsApp.
+                <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl text-center space-y-2">
+                  <div className="text-xs text-emerald-800 font-bold">
+                    ✅ Inquiry Launched to WhatsApp!
+                  </div>
+                  <p className="text-[11px] text-emerald-700">
+                    Thank you, <strong>{contactForm.name}</strong>. If WhatsApp didn't open automatically:
+                  </p>
+                  <a
+                    href={lastWaUrl || 'https://wa.me/919308327111'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#1346a8] hover:bg-[#0f3a8e] text-white text-[11px] font-bold shadow-xs transition-colors"
+                  >
+                    <span>💬</span>
+                    <span>Re-open in WhatsApp</span>
+                  </a>
                 </div>
               ) : (
                 <form onSubmit={handleContactSubmit} className="space-y-2.5">
@@ -169,9 +204,10 @@ export default function ContactMapSection() {
                   <button
                     type="submit"
                     disabled={isSubmittingContact}
-                    className="w-full py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] active:scale-98 transition-all shadow-sm"
+                    className="w-full py-2.5 rounded-xl text-xs font-black uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] active:scale-98 transition-all shadow-sm flex items-center justify-center gap-2"
                   >
-                    {isSubmittingContact ? 'Connecting...' : 'Submit & Connect on WhatsApp →'}
+                    <span className="text-sm leading-none">💬</span>
+                    <span>{isSubmittingContact ? 'Opening WhatsApp...' : 'Direct WhatsApp Submit →'}</span>
                   </button>
                 </form>
               )}

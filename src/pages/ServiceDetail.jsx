@@ -59,29 +59,52 @@ export default function ServiceDetail() {
     `Hello Kashish Ad® (Patna), I want to order / enquire about "${product.title}". Please share quotation and fabrication turnaround time.`
   );
 
-  const handleSubmitInquiry = async (e) => {
+  const [lastWaUrl, setLastWaUrl] = useState('');
+
+  const handleSubmitInquiry = (e) => {
     e.preventDefault();
     setLoading(true);
+
+    const waMsg = 
+`*Direct Work Order - Kashish Ad®*
+------------------------------------------
+📦 *Service:* ${product.title}
+👤 *Client Name:* ${formData.name}
+📞 *Phone / WhatsApp:* ${formData.phone}
+📍 *Delivery Location / City:* ${formData.city || 'Patna'}
+📏 *Dimensions (W × H):* ${formData.dimensions || 'Not specified'}
+🔢 *Quantity:* ${formData.quantity || 'Not specified'}
+📝 *Project Details:* ${formData.message || 'Standard production'}
+------------------------------------------
+Please share the best factory-direct quotation and fabrication timeline.`;
+
+    const whatsappUrl = `https://wa.me/919308327111?text=${encodeURIComponent(waMsg)}`;
+    setLastWaUrl(whatsappUrl);
+
+    // Register inquiry in backend asynchronously without blocking user navigation
     try {
-      await fetch('/api/inquiry', {
+      fetch('/api/inquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: formData.name,
           phone: formData.phone,
-          service: `${product.title} (Qty: ${formData.quantity}, Dim: ${formData.dimensions || 'N/A'})`,
+          service: `${product.title} (Qty: ${formData.quantity || 'N/A'}, Dim: ${formData.dimensions || 'N/A'})`,
           city: formData.city,
           message: formData.message
-        })
-      });
-      setFormSubmitted(true);
-    } catch (err) {
-      console.error('Inquiry error:', err);
-      // Even if network glitch, treat as submitted
-      setFormSubmitted(true);
-    } finally {
-      setLoading(false);
+        }),
+        keepalive: true
+      }).catch((err) => console.warn('Inquiry background sync:', err));
+    } catch (_) {}
+
+    // Direct WhatsApp launch
+    const newWindow = window.open(whatsappUrl, '_blank');
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      window.location.href = whatsappUrl;
     }
+
+    setFormSubmitted(true);
+    setLoading(false);
   };
 
   // Structured Data Schemas for Local & Technical SEO
@@ -412,12 +435,13 @@ export default function ServiceDetail() {
                 </p>
                 <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href={`https://wa.me/919308327111?text=${encodeURIComponent(`Hi Kashish Ad, I just submitted an inquiry on the website for ${product.title} under name ${formData.name} (${formData.phone}).`)}`}
+                    href={lastWaUrl || `https://wa.me/919308327111?text=${encodeURIComponent(`Hi Kashish Ad, I submitted a direct work order for ${product.title} under name ${formData.name} (${formData.phone}).`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2.5 rounded-xl bg-[#1346a8] text-white font-bold text-xs"
+                    className="px-5 py-2.5 rounded-xl bg-[#1346a8] text-white font-bold text-xs inline-flex items-center justify-center gap-2"
                   >
-                    Open in WhatsApp for Instant Follow-up
+                    <span>💬</span>
+                    <span>Re-open in WhatsApp</span>
                   </a>
                   <button
                     onClick={() => setFormSubmitted(false)}
@@ -502,9 +526,10 @@ export default function ServiceDetail() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full py-3.5 px-6 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] transition-colors shadow-md shadow-blue-900/20"
+                    className="w-full py-3.5 px-6 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] active:scale-98 transition-all shadow-md shadow-blue-900/20 flex items-center justify-center gap-2"
                   >
-                    {loading ? 'Submitting Inquiry...' : `Submit Quote Request for ${product.title}`}
+                    <span className="text-base leading-none">💬</span>
+                    <span>{loading ? 'Opening WhatsApp...' : `Direct WhatsApp Submit for ${product.title} →`}</span>
                   </button>
                 </div>
               </form>

@@ -66,11 +66,11 @@ export default function Home() {
       />
 
       {/* 0. HERO BANNER CAROUSEL (Desktop & Tablet only - Hidden on Mobile View) */}
-      <section className="hidden sm:block bg-white pt-8 pb-10 sm:pt-10 sm:pb-12 lg:pt-12 lg:pb-14 border-b border-slate-100">
+      {/* <section className="hidden sm:block bg-white pt-8 pb-10 sm:pt-10 sm:pb-12 lg:pt-12 lg:pb-14 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <HeroBannerCarousel />
         </div>
-      </section>
+      </section> */}
 
       {/* 1. HERO SECTION (Typography, Service Icons, CTAs & 3D Showcase) */}
       <HeroSection />

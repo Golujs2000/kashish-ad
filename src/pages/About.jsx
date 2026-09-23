@@ -248,10 +248,10 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-[#1346a8] text-white rounded-2xl p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-card">
             <div className="space-y-2 max-w-xl text-center md:text-left">
-              <h2 className="text-2xl sm:text-3xl font-display font-black text-white">
+              <h2 className="text-2xl sm:text-3xl font-display font-black text-black">
                 Ready to Elevate Your Business Identity?
               </h2>
-              <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
+              <p className="text-xs sm:text-sm text-black leading-relaxed">
                 Whether you need a single illuminated glow sign board or a statewide rollout across Bihar, CEO S Haidar and the Kashish Ad® team are ready to assist you.
               </p>
             </div>

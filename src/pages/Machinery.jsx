@@ -6,6 +6,11 @@ import { SITE_CONFIG } from '../data/siteData';
 
 export default function Machinery() {
   const machineImages = {
+    'hp-latex-730': '/assets/images/machinery/hp-latex-730.jpg',
+    'konica-512i-flex': '/assets/images/machinery/konica-512i-flex.jpg',
+    'roland-642': '/assets/images/machinery/roland-642.jpg',
+    'konica-minolta-12x18': '/assets/images/machinery/konica-minolta-12x18.jpg',
+    'co2-laser-machine': '/assets/images/machinery/co2-laser-machine.jpg',
     'hp-latex-570': '/assets/images/machinery/hp-latex-570.jpg',
     'roland-print-cut': '/assets/images/machinery/roland-print-cut.jpg',
     'uv-flatbed': '/assets/images/machinery/uv-flatbed.jpg',
