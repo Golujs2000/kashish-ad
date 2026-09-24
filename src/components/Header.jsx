@@ -119,8 +119,8 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Center / GSTIN Trust Badge */}
-            <div className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 rounded bg-emerald-950/70 border border-emerald-400/40 text-emerald-300 font-mono text-[10px] sm:text-[11px] font-semibold tracking-wide shrink-0">
+            {/* Center / GSTIN Trust Badge (Hidden on mobile view) */}
+            <div className="hidden md:inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-0.5 rounded bg-emerald-950/70 border border-emerald-400/40 text-emerald-300 font-mono text-[10px] sm:text-[11px] font-semibold tracking-wide shrink-0">
               <span className="text-emerald-400 font-bold">✓</span>
               <span>GSTIN: <span className="text-white font-extrabold">{COMPANY_INFO.gstin}</span></span>
               <span className="hidden lg:inline text-emerald-400/80 font-sans text-[10px]">• 100% Tax Invoicing</span>
@@ -515,6 +515,7 @@ export default function Header() {
                   Canopy &amp; Promo
                 </NavLink>
 
+
                 {/* Primary Site Sections */}
                 <NavLink
                   to="/machinery"
@@ -528,17 +529,6 @@ export default function Header() {
                   Machinery
                 </NavLink>
 
-                <NavLink
-                  to="/gallery"
-                  className={({ isActive }) =>
-                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
-                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
-                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
-                    }`
-                  }
-                >
-                  Gallery
-                </NavLink>
 
                 <NavLink
                   to="/portfolio"
@@ -608,13 +598,6 @@ export default function Header() {
                 onClick={closeMenu}
               >
                 🏭 Machinery
-              </Link>
-              <Link
-                to="/gallery"
-                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
-                onClick={closeMenu}
-              >
-                🖼️ Gallery
               </Link>
               <Link
                 to="/portfolio"

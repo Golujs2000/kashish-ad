@@ -3,5 +3,5 @@ Allow: /
 Disallow: /api/
 
 # Host & Sitemap Definition
-Host: https://kashishad.web.app
-Sitemap: https://kashishad.web.app/sitemap.xml
+Host: https://kashishad.in
+Sitemap: https://kashishad.in/sitemap.xml

@@ -162,14 +162,9 @@ export default function HeroSection() {
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
             </svg>
             <div className="flex flex-col text-left">
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">
-                  Factory &amp; Office Location
-                </span>
-                <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800">
-                  GSTIN: {COMPANY_INFO.gstin}
-                </span>
-              </div>
+              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 leading-tight">
+                Factory &amp; Office Location
+              </span>
               <span className="text-xs font-semibold text-slate-800 group-hover:text-[#1346a8] transition-colors leading-snug mt-0.5">
                 {LOCATION_INFO.fullAddress}
               </span>

@@ -42,6 +42,7 @@ export default function Footer() {
     { name: 'Custom Branded Caps', path: '/services/cap-printing' },
     { name: 'Custom Ceramic Coffee Mugs', path: '/services/cup-mug-printing' },
     { name: 'Trophies, Mementos & Awards', path: '/services/trophy-memento-awards' },
+    { name: 'Kashish Ad Digital Business Card', path: '/card' },
     { name: 'Corporate Merchandise & Gifts', path: '/services/corporate-gifting' },
     { name: 'Bill Books & Corporate Catalogs', path: '/services/paper-stationery' },
   ];

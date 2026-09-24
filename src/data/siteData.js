@@ -5,7 +5,7 @@
  */
 
 export const SITE_CONFIG = {
-  baseUrl: 'https://kashishad.web.app',
+  baseUrl: 'https://kashishad.in',
   /**
    * Resolves an absolute canonical URL using current origin in browser or production baseUrl
    */

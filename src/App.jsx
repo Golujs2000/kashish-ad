@@ -13,6 +13,7 @@ import Gallery from './pages/Gallery';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NfcVisitingCard from './pages/NfcVisitingCard';
 import NotFound from './pages/NotFound';
 
 // Scroll to top automatically on route change
@@ -39,6 +40,12 @@ export default function App() {
           <Route path="/machinery" element={<Machinery />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/card" element={<NfcVisitingCard />} />
+          <Route path="/nfc" element={<Navigate to="/card" replace />} />
+          <Route path="/vcard" element={<Navigate to="/card" replace />} />
+          <Route path="/nfc-visiting-card" element={<Navigate to="/card" replace />} />
+          <Route path="/nfc-card" element={<Navigate to="/card" replace />} />
+          <Route path="/services/nfc-visiting-card" element={<Navigate to="/card" replace />} />
           <Route path="/calculator" element={<Navigate to="/services" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
