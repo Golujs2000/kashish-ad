@@ -43,7 +43,7 @@ app.get('/api/info', (req, res) => {
     whatsapp: '917488984637',
     rating: 4.6,
     reviewsCount: 61,
-    googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.5510078491084!2d85.13891387416965!3d25.612511514756072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1788667065067!5m2!1sen!2sin'
+    googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.79281733723!2d85.13890925243263!3d25.612510435198413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1790236050239!5m2!1sen!2sin'
   });
 });
 

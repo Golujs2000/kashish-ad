@@ -42,7 +42,7 @@ export default function Footer() {
     { name: 'Custom Branded Caps', path: '/services/cap-printing' },
     { name: 'Custom Ceramic Coffee Mugs', path: '/services/cup-mug-printing' },
     { name: 'Trophies, Mementos & Awards', path: '/services/trophy-memento-awards' },
-    { name: 'Kashish Ad Digital Business Card', path: '/card' },
+    { name: 'Kashish Ad Digital Business Card (NFC)', path: '/card' },
     { name: 'Corporate Merchandise & Gifts', path: '/services/corporate-gifting' },
     { name: 'Bill Books & Corporate Catalogs', path: '/services/paper-stationery' },
   ];
@@ -281,6 +281,7 @@ export default function Footer() {
                 {[
                   { name: 'Home', path: '/' },
                   { name: 'All Services (38+)', path: '/services' },
+                  { name: 'Digital Card', path: '/card' },
                   { name: 'Machinery', path: '/machinery' },
                   { name: 'Gallery', path: '/gallery' },
                   { name: 'Portfolio PDF', path: '/portfolio' },
@@ -295,6 +296,45 @@ export default function Footer() {
             </div>
           </div>
 
+        </div>
+
+        {/* Feature Card: Official NFC Smart Visiting Card / Digital Profile */}
+        <div className="my-8 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-[#0a2351] to-slate-950 text-white border border-blue-900/60 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3.5 text-left w-full md:w-auto">
+            <div className="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 text-slate-950 flex items-center justify-center font-black text-2xl shadow-md shrink-0">
+              📇
+            </div>
+            <div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h4 className="text-sm sm:text-base font-bold text-white tracking-tight">
+                  Kashish Ad&reg; Smart NFC Digital Visiting Card
+                </h4>
+                <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40">
+                  Instant vCard &bull; 1-Tap Save
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 mt-0.5">
+                Connect directly via 1-tap phonebook save, live QR code scanning, and direct contact hotline.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2.5 shrink-0 w-full md:w-auto justify-start md:justify-end flex-wrap">
+            <Link
+              to="/card"
+              className="px-4 py-2 rounded-xl bg-[#1346a8] hover:bg-blue-600 text-white text-xs font-bold transition-all shadow-md flex items-center gap-1.5"
+            >
+              <span>View Digital Card</span>
+              <span>&rarr;</span>
+            </Link>
+            <Link
+              to="/card"
+              className="px-3.5 py-2 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 text-xs font-semibold transition-colors flex items-center gap-1.5"
+            >
+              <span>Scan QR Code</span>
+              <span className="text-amber-400 font-mono">&#9638;</span>
+            </Link>
+          </div>
         </div>
 
         {/* Bihar Service Areas Strip (SEO Chips) */}
@@ -316,12 +356,24 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Direct Hotline */}
+        {/* Bottom Bar: Copyright, Design Attribution & Direct Hotline */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             &copy; {new Date().getFullYear()} {COMPANY_INFO.name}&reg;. All Rights Reserved. • Capital Tower, Fraser Road, Patna, Bihar.
           </div>
-          <div className="flex items-center gap-4 text-slate-600">
+          <div className="flex items-center gap-3 text-slate-600 flex-wrap justify-center sm:justify-end">
+            <span>
+              Design by{' '}
+              <a
+                href="https://nirviai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#1346a8] hover:text-blue-700 hover:underline transition-colors"
+              >
+                nirviai.com
+              </a>
+            </span>
+            <span>•</span>
             <span className="font-semibold text-slate-700">Design | Print | Brand | Grow</span>
             <span>•</span>
             <a href={CONTACT_INFO.phoneTel} className="font-bold text-[#1346a8] hover:underline">

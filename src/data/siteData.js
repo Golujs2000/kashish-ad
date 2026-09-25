@@ -94,13 +94,14 @@ export const LOCATION_INFO = {
   shortAddress: 'Capital Tower, Fraser Rd, Patna',
   cityState: 'Patna, Bihar',
   coordinates: {
-    latitude: 25.612512,
-    longitude: 85.138914
+    latitude: 25.6125104,
+    longitude: 85.1389093
   },
   geoRegion: 'IN-BR',
   geoPlacename: 'Patna, Bihar, India',
   googleMapsCidUrl: 'https://maps.google.com/?cid=13267980838971487477',
-  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.876316260799!2d85.13633907599026!3d25.61251671424103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585d7b5bf3b3%3A0xb83d95b58ee11235!2sKashish%20Ad!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'
+  googleMapsDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Kashish+Ad%C2%AE,+Capital+Tower,+Fraser+Road,+Patna&destination_place_id=0x39ed585b8e0da1c9:0xb8215c141ed214f5',
+  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.79281733723!2d85.13890925243263!3d25.612510435198413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1790236050239!5m2!1sen!2sin'
 };
 
 export const WORKING_HOURS = {

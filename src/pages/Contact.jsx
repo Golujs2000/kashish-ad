@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SEO from '../components/SEO';
-import { SITE_CONFIG, CONTACT_INFO } from '../data/siteData';
+import { SITE_CONFIG, CONTACT_INFO, LOCATION_INFO } from '../data/siteData';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -401,26 +401,37 @@ Please connect with quotation and turnaround details.`
                 Visit Kashish Ad® on Google Maps
               </h2>
             </div>
-            <a
-              href="https://maps.google.com/?cid=13267923724395025653"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-slate-100 hover:bg-[#f0f7ff] border border-slate-200 transition-colors"
-            >
-              Open in Google Maps App ↗
-            </a>
+            <div className="flex flex-wrap items-center gap-2">
+              <a
+                href={LOCATION_INFO.googleMapsDirectionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-[#1346a8] hover:bg-[#0f3a8e] transition-colors shadow-sm flex items-center gap-1.5"
+              >
+                <span>Get Directions</span>
+                <span>🧭</span>
+              </a>
+              <a
+                href={LOCATION_INFO.googleMapsCidUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 rounded-xl text-xs font-bold text-[#1346a8] bg-slate-100 hover:bg-[#f0f7ff] border border-slate-200 transition-colors"
+              >
+                Open in Google Maps App ↗
+              </a>
+            </div>
           </div>
 
           <div className="rounded-2xl border border-slate-200 overflow-hidden shadow-card">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.5510078491084!2d85.13891387416965!3d25.612511514756072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585b8e0da1c9%3A0xb8215c141ed214f5!2sKashish%20Ad%C2%AE!5e1!3m2!1sen!2sin!4v1788667065067!5m2!1sen!2sin"
+              src={LOCATION_INFO.googleMapsEmbedUrl}
               width="100%"
               height="480"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
-              title="Kashish Ad Google Maps Location"
+              title="Kashish Ad® Google Maps Location"
             ></iframe>
           </div>
         </div>

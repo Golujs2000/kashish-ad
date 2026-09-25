@@ -262,13 +262,13 @@ END:VCARD`;
               <span className="text-[11px] font-bold text-emerald-300">WhatsApp</span>
             </a>
 
-            {/* Google Maps Location */}
+            {/* Google Maps Directions */}
             <a
-              href={LOCATION_INFO.googleMapsCidUrl}
+              href={LOCATION_INFO.googleMapsDirectionsUrl || LOCATION_INFO.googleMapsCidUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-2xl bg-slate-900 hover:bg-slate-800 border border-slate-800/80 flex flex-col items-center justify-center gap-1.5 transition-colors group"
-              title="Navigate to Capital Tower, Fraser Road on Google Maps"
+              title="Get Turn-by-Turn GPS Directions to Kashish Ad® on Google Maps"
             >
               <div className="w-10 h-10 rounded-xl bg-red-500/20 text-red-400 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
                 📍
@@ -306,7 +306,7 @@ END:VCARD`;
             {/* Card Graphic */}
             <div
               onClick={() => setCardSide(cardSide === 'front' ? 'back' : 'front')}
-              className="w-full aspect-[1.586/1] rounded-2xl p-5 sm:p-6 bg-gradient-to-br from-zinc-900 via-neutral-900 to-black border border-amber-500/40 shadow-2xl flex flex-col justify-between text-left cursor-pointer transition-all duration-300 hover:scale-[1.01]"
+              className="w-full min-h-[220px] sm:min-h-[240px] aspect-auto sm:aspect-[1.586/1] rounded-2xl p-4 sm:p-6 bg-gradient-to-br from-zinc-900 via-neutral-900 to-black border border-amber-500/40 shadow-2xl flex flex-col justify-between text-left cursor-pointer transition-all duration-300 hover:scale-[1.01] overflow-hidden relative select-none"
             >
               {cardSide === 'front' ? (
                 <>
@@ -354,15 +354,15 @@ END:VCARD`;
                     <p className="text-[11px] font-semibold text-amber-400">
                       Founder &amp; CEO
                     </p>
-                    <p className="text-[10px] text-slate-300">
+                    <p className="text-[10px] text-slate-300 truncate">
                       Capital Tower, A-6 &amp; B-16, Fraser Rd, Patna
                     </p>
                   </div>
                 </>
               ) : (
-                <>
-                  <div className="flex items-center justify-between text-[10px] text-slate-400 font-mono">
-                    <span>SCAN OR TAP</span>
+                <div className="flex flex-col justify-between h-full w-full gap-2">
+                  <div className="flex items-center justify-between text-[10px] text-slate-400 font-mono shrink-0">
+                    <span className="tracking-wider">SCAN OR TAP</span>
                     <div className="inline-flex items-start">
                       <span className="font-raphtalia text-base sm:text-lg font-bold tracking-tight text-amber-300 leading-none">
                         Kashish Ad
@@ -373,29 +373,33 @@ END:VCARD`;
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between gap-3 my-auto">
-                    <div className="text-left text-xs space-y-1">
-                      <p className="font-bold text-white tracking-wide">07488984637</p>
-                      <p className="font-bold text-emerald-400 tracking-wide">09308327111</p>
-                      <p className="text-[10px] text-slate-300">kashishadpatna@gmail.com</p>
-                      <p className="text-[10px] font-mono text-amber-300 font-bold">kashishad.in</p>
+                  <div className="flex items-center justify-between gap-2.5 sm:gap-4 my-auto py-1">
+                    <div className="text-left text-[11px] sm:text-xs space-y-1 min-w-0 flex-1">
+                      <p className="font-bold text-white tracking-wide truncate">📞 07488984637</p>
+                      <p className="font-bold text-emerald-400 tracking-wide truncate">💬 09308327111</p>
+                      <p className="text-[10px] sm:text-[11px] text-slate-300 truncate" title="kashishadpatna@gmail.com">
+                        ✉️ kashishadpatna@gmail.com
+                      </p>
+                      <p className="text-[10px] sm:text-[11px] font-mono text-amber-300 font-bold truncate">
+                        🌐 kashishad.in
+                      </p>
                     </div>
 
                     {/* REAL HIGH-PRECISION SCANNABLE QR CODE */}
-                    <div className="w-18 h-18 sm:w-20 sm:h-20 p-1 bg-white rounded-xl shadow-lg flex items-center justify-center shrink-0">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 p-1 sm:p-1.5 bg-white rounded-xl shadow-lg flex items-center justify-center shrink-0 aspect-square">
                       <img
                         src={qrCodeUrl}
-                        alt="Scan to open Kashish Ad Digital Card (https://kashishad.in/card)"
-                        className="w-full h-full object-contain"
+                        alt="Scan to open Kashish Ad Digital Card"
+                        className="w-full h-full max-w-full max-h-full object-contain block"
                       />
                     </div>
                   </div>
 
-                  <div className="text-[9px] text-slate-400 border-t border-slate-800 pt-1.5 flex justify-between">
-                    <span>Direct Manufacturing Plant</span>
-                    <span>Fraser Rd, Patna</span>
+                  <div className="text-[9px] text-slate-400 border-t border-slate-800/80 pt-1.5 flex justify-between shrink-0 font-mono">
+                    <span className="truncate">Direct Manufacturing Plant</span>
+                    <span className="shrink-0 text-amber-300/80">Fraser Rd, Patna</span>
                   </div>
-                </>
+                </div>
               )}
             </div>
             <p className="text-[10px] text-slate-500 mt-2">
@@ -550,15 +554,39 @@ END:VCARD`;
                 Landmark: Near Canara Bank / Chhabra Sports (Opposite Patna Junction Corridor)
               </p>
 
+              {/* Interactive Live Google Map Embed */}
+              <div className="mt-3 rounded-xl overflow-hidden border border-slate-800 shadow-inner h-[220px] w-full">
+                <iframe
+                  src={LOCATION_INFO.googleMapsEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title="Kashish Ad® Live Google Maps Location"
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+
               <div className="mt-3 flex gap-2">
+                <a
+                  href={LOCATION_INFO.googleMapsDirectionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 py-2.5 rounded-xl bg-[#1346a8] hover:bg-blue-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors shadow-sm"
+                >
+                  <span>Get Driving Directions</span>
+                  <span>🧭</span>
+                </a>
                 <a
                   href={LOCATION_INFO.googleMapsCidUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2 rounded-xl bg-[#1346a8] hover:bg-blue-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-colors"
+                  className="px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs flex items-center justify-center gap-1.5 transition-colors border border-slate-700"
                 >
-                  <span>Open on Google Maps</span>
-                  <span>📍</span>
+                  <span>Open Profile</span>
+                  <span>↗</span>
                 </a>
               </div>
             </div>
@@ -629,23 +657,23 @@ END:VCARD`;
 
       {/* QR Code Modal for In-Person Camera Scanning */}
       {showQrModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md animate-in fade-in">
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-6 max-w-xs w-full text-center space-y-4 shadow-2xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md animate-in fade-in">
+          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-5 sm:p-6 max-w-[340px] w-full text-center space-y-3.5 sm:space-y-4 shadow-2xl max-h-[90vh] overflow-y-auto">
             <div className="flex justify-between items-center">
               <h3 className="text-sm font-bold text-white">Scan with Camera</h3>
               <button
                 onClick={() => setShowQrModal(false)}
-                className="text-slate-400 hover:text-white text-base cursor-pointer"
+                className="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white text-base flex items-center justify-center transition-colors cursor-pointer"
               >
                 ✕
               </button>
             </div>
 
-            <div className="p-3 bg-white rounded-2xl inline-block shadow-xl">
+            <div className="p-2.5 sm:p-3 bg-white rounded-2xl inline-block shadow-xl max-w-full">
               <img
                 src={qrCodeUrl}
                 alt="Kashish Ad Digital Business Card QR"
-                className="w-52 h-52 mx-auto object-contain"
+                className="w-44 h-44 sm:w-52 sm:h-52 max-w-full aspect-square mx-auto object-contain block"
               />
             </div>
 
