@@ -218,29 +218,37 @@ export const NAV_CONFIG = {
 
 export const SEO_DEFAULTS = {
   siteName: 'Kashish Ad®',
-  title: "Kashish Ad® | Patna Signage, Digital Printing & LED Glow Sign Board Manufacturer",
-  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier Patna signage and digital printing manufacturer. UV roll-to-roll & flatbed printing, solvent vinyl, 3D acrylic LED letters, glow signs, CNC jali gates. Call 09308327111.",
-  keywords: 'patna signage, signage patna, digital printing patna, signage board patna, uv roll to roll printer patna, uv printing patna, led acrylic letters patna, vinyl printing bihar, glow sign board patna, kashish ad fraser road, capital tower printing, sign board manufacturer patna',
+  title: "Kashish Ad® | Patna Signage & LED Sign Board Manufacturer",
+  description: "Kashish Ad® (Capital Tower, Fraser Road, Patna) is Bihar's premier sign board manufacturer & digital printing house. UV roll-to-roll & flatbed printing, 3D acrylic LED letters, glow signs, CNC jali gates. 4.6★ (62 Google Reviews). Call 09308327111.",
+  keywords: 'patna signage, signage in patna, sign board manufacturer in patna, led sign board maker patna, digital printing patna, glow sign board patna, 3d acrylic letters patna, uv printing in patna, uv roll to roll printer patna, flex printing patna fraser road, capital tower printing, ss sign board patna, cnc jali cutting patna, kashish ad fraser road',
   ogImage: '/assets/images/hero-showcase-storefront-facade.png',
   author: 'Kashish Ad® (S Haidar)'
 };
 
 export const FAQ_DATA = [
   {
+    question: 'Who is the leading sign board manufacturer in Patna?',
+    answer: 'Kashish Ad® (established in 1985 by CEO S Haidar) is recognized as Patna’s leading commercial sign board manufacturer and digital printing house. Located at Capital Tower, Fraser Road, Kashish Ad operates 16+ industrial machines in-house including 3.2m UV Roll-to-Roll printers, Flatbed UV systems, Roland Eco-Solvent plotters, fiber lasers, and CNC router machines.'
+  },
+  {
     question: 'Where is Kashish Ad located in Patna?',
-    answer: 'Kashish Ad is located at Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001 (Near Canara Bank / Chhabra Sports, close to Dak Bunglow & Patna Junction).'
+    answer: 'Kashish Ad is located at Capital Tower, A-6 & B-16, Fraser Rd, Old Jakkanpur, Lodipur, Patna, Bihar 800001 (Near Canara Bank / Chhabra Sports, directly opposite the Patna Junction commercial corridor).'
+  },
+  {
+    question: 'What is the cost of 3D LED acrylic letter sign boards in Patna?',
+    answer: 'At Kashish Ad, sign board prices are factory-direct without middleman markups. Standard glow sign boxes start from ₹120–₹160 per sq. ft, 3D LED acrylic letters range from ₹90–₹160 per running inch (including branded Samsung/LG LED modules), and heavy SS 304 titanium letter signs range from ₹140–₹220 per inch. Use our online Price Calculator for real-time estimates.'
   },
   {
     question: 'What services does Kashish Ad specialize in?',
-    answer: 'Kashish Ad specializes in UV Digital Flatbed Printing, Solvent Vinyl Printing, 3D Acrylic LED Letters, Stainless Steel Sign Boards, Frontlit Flex, Glow Sign Boards, Roll-up Standees, CNC Laser Jali Cutting, Custom T-Shirts, Promotional Canopies, and Corporate Mementos.'
+    answer: 'Kashish Ad specializes in UV Digital Flatbed Printing, 3.2m UV Roll-to-Roll Printing, Solvent Vinyl Storefront Graphics, 3D Acrylic LED Letters, Stainless Steel 304 Sign Boards, Frontlit & Backlit Flex, Glow Sign Boxes, Roll-up Standees, CNC Laser Jali Gate Cutting, Custom T-Shirts, and Corporate Branding Displays.'
   },
   {
     question: 'How can I place an urgent printing order at Kashish Ad?',
-    answer: 'You can directly call our primary hotline at 09308327111 or WhatsApp us at 919308327111 / 917488984637 for immediate quotation, artwork review, same-day fabrication, and dispatch.'
+    answer: 'You can directly call our primary hotline at 09308327111 or WhatsApp us at 919308327111 / 917488984637 for immediate quotation, artwork review, same-day fabrication, and 4-hour express dispatch.'
   },
   {
-    question: 'Does Kashish Ad offer delivery outside Patna across Bihar?',
-    answer: 'Yes, we manufacture in-house at Fraser Road, Patna and supply signage, promotional canopies, banners, and digital prints across all districts of Bihar including Muzaffarpur, Gaya, Bhagalpur, Darbhanga, Begusarai, Ara, and Purnia.'
+    question: 'Does Kashish Ad offer delivery and installation outside Patna across Bihar?',
+    answer: 'Yes! We manufacture in-house at Fraser Road, Patna and provide structural installation and express delivery across all 38 districts of Bihar including Muzaffarpur, Gaya, Bhagalpur, Darbhanga, Begusarai, Ara, Purnia, Chapra, and Bihar Sharif.'
   }
 ];
 

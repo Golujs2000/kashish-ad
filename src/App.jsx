@@ -13,6 +13,7 @@ import Gallery from './pages/Gallery';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Calculator from './pages/Calculator';
 import NfcVisitingCard from './pages/NfcVisitingCard';
 import NotFound from './pages/NotFound';
 
@@ -46,7 +47,7 @@ export default function App() {
           <Route path="/nfc-visiting-card" element={<Navigate to="/card" replace />} />
           <Route path="/nfc-card" element={<Navigate to="/card" replace />} />
           <Route path="/services/nfc-visiting-card" element={<Navigate to="/card" replace />} />
-          <Route path="/calculator" element={<Navigate to="/services" replace />} />
+          <Route path="/calculator" element={<Calculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

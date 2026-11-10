@@ -83,9 +83,9 @@ Please connect with quotation and turnaround details.`
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Contact & Workshop Location in Patna | Call 09308327111"
-        description="Visit or contact Kashish Ad® at Capital Tower, Fraser Road, Patna. Hotline: 09308327111 / 07488984637. Near Canara Bank & Chhabra Sports. Live Google Maps directions & WhatsApp support."
-        keywords="contact kashish ad, kashish ad phone number 09308327111, capital tower fraser road patna, print shop near me patna, sign board maker patna contact"
+        title="Contact Kashish Ad® Patna | Capital Tower Fraser Road Workshop"
+        description="Visit Kashish Ad at Capital Tower, Fraser Road, Patna (Opp. Patna Junction Corridor) or call 09308327111 / 07488984637. Free signboard quotes, site survey &amp; Bihar delivery."
+        keywords="contact kashish ad, kashish ad phone number 09308327111, sign board manufacturer patna contact, printing press fraser road patna, capital tower patna"
         canonicalUrl="/contact"
         structuredData={[contactSchema, breadcrumbSchema]}
       />

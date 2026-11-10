@@ -35,9 +35,9 @@ export default function About() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="About Kashish Ad® | Patna Digital Printing & Signage Pioneer"
-        description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1985 by CEO S Haidar with 41+ years experience. Located at Capital Tower, Fraser Road."
-        keywords="about kashish ad, s haidar patna, printing press fraser road patna, signage manufacturer bihar, sign board maker patna"
+        title="About Kashish Ad® Patna | Signage Pioneer Since 1985 (41+ Years)"
+        description="Learn about Kashish Ad® - Patna's premier digital printing and architectural sign board manufacturer founded in 1985 by CEO S Haidar. Located at Capital Tower, Fraser Road."
+        keywords="about kashish ad, sign board manufacturer in patna, s haidar patna, printing press fraser road patna, signage manufacturer bihar"
         canonicalUrl="/about"
         structuredData={[aboutSchema, breadcrumbSchema]}
       />

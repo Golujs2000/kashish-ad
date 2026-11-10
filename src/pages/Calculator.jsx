@@ -318,14 +318,45 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
     ]
   };
 
+  const calculatorFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the sign board price per square foot in Patna?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'In Patna, frontlit flex boards start from ₹10–₹15/sq.ft, backlit LED glow sign boards start from ₹120–₹160/sq.ft, and solvent vinyl with protective lamination costs ₹40–₹50/sq.ft at factory-direct rates from Kashish Ad.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How is 3D LED acrylic letter board cost calculated in Patna?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '3D LED acrylic letters are charged per running inch of letter height (typically ₹90–₹160 per inch), plus the ACP sheet background base per sq.ft. The final estimate includes waterproof Samsung/LG LED modules and heavy-duty 12V transformers.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the UV flatbed printing cost in Patna?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'UV flatbed printing directly on rigid acrylic, glass, sunboard, or wood starts from ₹65–₹85/sq.ft for direct CMYK, with optional white undercoat and 3D embossed varnish available.'
+        }
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Digital Printing & Sign Board Price Calculator Patna"
-        description="Calculate instant factory-direct costs for 3D LED acrylic letters, UV flatbed printing, solvent vinyl, glow signs, and flex banners in Patna. Real-time rates by Kashish Ad®."
-        keywords="sign board price calculator patna, flex printing cost estimator bihar, led acrylic letters rate per sq ft, uv printing cost calculator patna, glow sign board quotation"
+        title="Sign Board Price Calculator Patna (Per Sq Ft Rates 2026) | Kashish Ad®"
+        description="Calculate instant factory-direct costs for 3D LED letters, UV flatbed printing, glow signs, solvent vinyl & flex banner cost per sq ft in Patna by Kashish Ad®."
+        keywords="sign board price calculator patna, sign board price per square foot in patna, flex printing cost estimator bihar, led acrylic letters rate per sq ft, uv printing cost calculator patna, glow sign board quotation"
         canonicalUrl="/calculator"
-        structuredData={[calculatorSchema, breadcrumbSchema]}
+        structuredData={[calculatorSchema, breadcrumbSchema, calculatorFaqSchema]}
       />
 
       {/* Page Hero */}

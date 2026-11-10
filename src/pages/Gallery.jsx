@@ -43,9 +43,9 @@ export default function Gallery() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Project Portfolio & Signage Gallery Patna"
-        description="View real photographs of completed signage installations, 3D acrylic LED boards, CNC gates, and UV prints manufactured by Kashish Ad® across Bihar."
-        keywords="signage gallery patna, sign board photos bihar, 3d led letter work patna, kashish ad portfolio"
+        title="Signage &amp; Digital Printing Project Gallery Patna | Kashish Ad®"
+        description="View real photos of completed 3D LED acrylic letters, glow sign boards, UV prints, and CNC architectural elevations installed by Kashish Ad® across Patna &amp; Bihar."
+        keywords="signage gallery patna, patna signage, sign board photos bihar, 3d led letter work patna, kashish ad portfolio"
         canonicalUrl="/gallery"
         structuredData={[breadcrumbSchema]}
       />

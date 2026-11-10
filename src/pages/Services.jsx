@@ -107,9 +107,9 @@ export default function Services() {
   return (
     <div className="bg-slate-50/70 min-h-screen">
       <SEO
-        title="Printing & Signage Services Catalog Patna (38+ Products)"
-        description="Browse Kashish Ad's complete digital printing, promotional merchandise, and signage board catalog in Patna. UV printing, solvent vinyl, 3D acrylic LED letters, custom T-shirts, canopies, coffee mugs, trophies. Fraser Road Patna hotline: 09308327111."
-        keywords="printing services patna, sign board manufacturer patna, tshirt printing patna, canopy tent patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
+        title="Patna Signage &amp; Digital Printing Catalog (38+ Products) | Kashish Ad®"
+        description="Browse Patna's most complete sign board &amp; digital printing catalog: 3D LED letters, UV roll-to-roll, glow signs, stainless steel boards, CNC jali &amp; flex banners. Call 09308327111."
+        keywords="patna signage, signage in patna, printing services patna, sign board manufacturer patna, 3d led letters patna, uv printing services patna, solvent vinyl banner patna, led acrylic sign patna, kashish ad fraser road"
         canonicalUrl="/services"
         structuredData={[breadcrumbSchema, itemListSchema]}
       />

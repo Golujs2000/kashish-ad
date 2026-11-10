@@ -120,6 +120,13 @@ Please share the best factory-direct quotation and fabrication timeline.`;
       '@type': 'Brand',
       name: 'Kashish Ad®'
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.6',
+      reviewCount: '62',
+      bestRating: '5',
+      worstRating: '1'
+    },
     offers: {
       '@type': 'Offer',
       url: SITE_CONFIG.getProductionUrl(`/services/${product.id}`),
@@ -160,16 +167,47 @@ Please share the best factory-direct quotation and fabrication timeline.`;
     ]
   };
 
+  const serviceFaqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: `Where can I get ${product.title} manufactured in Patna?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Kashish Ad® manufactures ${product.title} in-house at Capital Tower, Fraser Road, Patna with commercial-grade machinery and fast delivery across Bihar.`
+        }
+      },
+      {
+        '@type': 'Question',
+        name: `What is the turnaround time for ${product.title} at Kashish Ad?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `Standard turnaround for ${product.title} is ${product.turnaround || '24 to 48 hours'}, with express rush orders dispatched in 4 to 6 hours.`
+        }
+      },
+      {
+        '@type': 'Question',
+        name: `How do I request a quotation for ${product.title} in Patna?`,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: `You can submit your required dimensions directly through our online quote form or WhatsApp our Fraser Road workshop directly at 09308327111 / 07488984637 for instant estimates.`
+        }
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title={`${product.title} in Patna | Kashish Ad®`}
-        description={`${product.title} in Patna by Kashish Ad®: ${product.description} Same-day printing & in-house manufacturing at Fraser Road, Patna. Call 09308327111.`}
-        keywords={`${product.title} patna, ${product.title} bihar, sign board patna, digital printing capital tower fraser road, kashish ad 09308327111`}
+        title={`${product.title} in Patna | Kashish Ad® Signage & Printing`}
+        description={`${product.title} in Patna by Kashish Ad®: ${product.description} Factory-direct rates & same-day turnaround at Fraser Road. 4.6★ (62 Reviews). Call 09308327111.`}
+        keywords={`${product.title.toLowerCase()} in patna, ${product.title.toLowerCase()} maker patna, sign board manufacturer patna, patna signage, digital printing capital tower fraser road, kashish ad 09308327111`}
         canonicalUrl={`/services/${product.id}`}
         ogImage={product.image}
         ogType="product"
-        structuredData={[productSchema, breadcrumbSchema]}
+        structuredData={[productSchema, breadcrumbSchema, serviceFaqSchema]}
       />
 
       {/* Breadcrumb Navigation */}

@@ -44,9 +44,9 @@ export default function Machinery() {
   return (
     <div className="bg-white min-h-screen">
       <SEO
-        title="Industrial Printing & CNC Machinery Plant in Patna"
-        description="Explore Kashish Ad's in-house machinery in Patna: UV Flatbeds, Roland Eco-Solvent plotters, Fiber Laser metal cutters, and automated CNC routers at Fraser Road."
-        keywords="printing machinery patna, uv flatbed printer patna, roland eco solvent bihar, laser cutting sign board patna, kashish ad plant"
+        title="Signage &amp; UV Printing Machinery Plant Patna (16+ Units) | Kashish Ad®"
+        description="Explore Kashish Ad's 16+ industrial printing &amp; CNC machines in Fraser Road, Patna: 3.2m UV Roll-to-Roll, Flatbed, Roland Eco-Solvent, Fiber Laser &amp; CNC Routers."
+        keywords="printing machinery patna, uv roll to roll printer patna, uv flatbed printer patna, roland eco solvent bihar, laser cutting sign board patna, kashish ad plant"
         canonicalUrl="/machinery"
         structuredData={[breadcrumbSchema]}
       />

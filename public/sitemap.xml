@@ -5,294 +5,470 @@
   <!-- Core Main Pages -->
   <url>
     <loc>https://kashishad.in/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://kashishad.in/services</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://kashishad.in/calculator</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://kashishad.in/machinery</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://kashishad.in/gallery</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/contact</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://kashishad.in/about</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://kashishad.in/contact</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kashishad.in/card</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Individual Service & Product Detail Pages (22 Products) -->
+  <!-- Individual Service & Product Detail Pages (38 Products) -->
   <url>
     <loc>https://kashishad.in/services/uv-digital</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/hero-showcase-wide-format-printer.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-uv-digital.jpg</image:loc>
       <image:title>UV Digital Printing Services in Patna</image:title>
-      <image:caption>Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero </image:caption>
+      <image:caption>Instant UV-cured direct-to-surface printing on acrylic sheets, wood panels, glass, leather, and metal plates with exceptional color accuracy and zero fading.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/solvent-vinyl</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/portfolio-delivery-van-on-the-move.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-solvent-vinyl.jpg</image:loc>
       <image:title>Solvent Vinyl Printing Services in Patna</image:title>
       <image:caption>High-durability solvent vinyl graphics for storefront branding, showroom wall graphics, vehicle wraps, and high-impact outdoor displays.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/led-acrylic-letters</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/led-letters-hotel-the-grand.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-led-acrylic-letters.jpg</image:loc>
       <image:title>Glossy LED Acrylic 3D Letters in Patna</image:title>
       <image:caption>Laser-cut acrylic 3D profile letters with built-in waterproof Samsung/Osram LED modules, front-lit face, and custom painted aluminum returns.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/ss-sign-board</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/name-plates-brushed-gold-office.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-ss-sign-board.jpg</image:loc>
       <image:title>Stainless Steel Sign Board (Outdoor) in Patna</image:title>
       <image:caption>Architectural outdoor stainless steel signage boards with laser-cut, acid-etched, or titanium gold 3D letters built for corporate elevations.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/frontlit-flex</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/kashish-ad-flex-printing-banner.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-frontlit-flex.jpg</image:loc>
       <image:title>Frontlit &amp; Backlit Flex Banner in Patna</image:title>
       <image:caption>High-speed industrial digital printing on 240 GSM to 440 GSM Star flex banner material with heat-sealed borders and heavy brass eyelets.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/rollup-standee</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/portfolio-event-stage-standees.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-rollup-standee.jpg</image:loc>
       <image:title>Rollup Banner Standee (6 × 3 ft) in Patna</image:title>
       <image:caption>Portable retractable aluminum rollup standee equipped with anti-curl non-tearable synthetic media and padded canvas carry bag.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/label-sticker</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/kashish-ad-client-branding-portfolio.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-label-sticker.jpg</image:loc>
       <image:title>Custom Label &amp; Sticker Printing in Patna</image:title>
       <image:caption>Japanese Roland print-and-cut contour vinyl stickers for packaging labels, product bottles, equipment warning tags, and custom decals.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/3d-wallpaper</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/production-wide-format-wall-graphics.png</image:loc>
-      <image:title>3D Wallpaper Printing for Interiors in Patna</image:title>
-      <image:caption>Custom textured wallpaper printing with embossed 3D visual depth: floral murals, geometric marble motifs, and corporate feature walls.</image:caption>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-3d-wallpaper.jpg</image:loc>
+      <image:title>Customize Wallpapers Design &amp; Printing in Patna</image:title>
+      <image:caption>Bespoke custom wallpaper design, textured 3D printing, and seamless wall murals tailored to your interior theme for luxury residences, hotels, and corporate offices.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/fabric-banner</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/kashish-ad-complete-signage-solution-banner.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-fabric-banner.jpg</image:loc>
       <image:title>Digital Cloth &amp; Satin Fabric Banner in Patna</image:title>
       <image:caption>High-density dye-sublimation textile printing on satin and polyester cloth for lightweight, wrinkle-free, foldable corporate flags and backdrops.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/uv-glass</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/portfolio-avantek-corporate-reception.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-uv-glass.jpg</image:loc>
       <image:title>UV Direct Printing on Glass Panels in Patna</image:title>
       <image:caption>Architectural direct UV flatbed printing on clear, frosted, or toughened glass sheets with brilliant backlight transparency and primer bonding.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/cnc-laser-jali</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/production-cnc-laser-cutting-sparks.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-cnc-laser-jali.jpg</image:loc>
       <image:title>CNC Laser Jali &amp; Gate Cutting in Patna</image:title>
       <image:caption>Precision 2D and 3D architectural jali patterns cut on mild steel, stainless steel, aluminum, brass, WPC/PVC foam, and MDF boards.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/glow-sign-board</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/sign-boards-fashion-boutique-lightbox.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-glow-sign-board.jpg</image:loc>
       <image:title>LED Glow Sign Board &amp; Box in Patna</image:title>
       <image:caption>Heavy-gauge powder coated metal framework with translucent backlit flex or acrylic face and waterproof LED modules for 24/7 store branding.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kashishad.in/services/led-slim-lightbox</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://kashishad.in/services/clipon-board-works</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/sign-boards-pizza-zone-blade.jpg</image:loc>
-      <image:title>LED Slim Light Box Poster Panels in Patna</image:title>
-      <image:caption>Ultra-thin aluminum snap-frame lightboxes for instant graphic changes. Widely installed in shopping mall corridors, food courts, and showrooms.</image:caption>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-led-slim-lightbox.jpg</image:loc>
+      <image:title>Clipon Board Works &amp; LED Slim Lightboxes in Patna</image:title>
+      <image:caption>Custom Clipon Board Works and ultra-thin aluminum snap-frame LED lightboxes for rapid poster changes. Engineered for showroom walls, QSR restaurant menu displays, hospital corridors, and shopping mall kiosks.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/name-plates</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/name-plates-acrylic-brass-studs.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-name-plates.jpg</image:loc>
       <image:title>House &amp; Executive Name Plates in Patna</image:title>
       <image:caption>Bespoke residential entrance plates, doctor/advocate chamber signs, and luxury wooden-acrylic hybrid desk name plates with golden embossed letters.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/glass-film</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/portfolio-samsung-store-branding.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-glass-film.jpg</image:loc>
       <image:title>One-Way Vision &amp; Frosted Glass Film in Patna</image:title>
       <image:caption>Perforated vinyl graphics that display high-resolution full-color imagery to exterior passers-by while allowing full visibility from inside the store.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/paper-stationery</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/production-marketing-brochures.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-paper-stationery.jpg</image:loc>
       <image:title>Bill Books, Catalogs &amp; Color Prints in Patna</image:title>
       <image:caption>High-speed business stationery printing: GST tax invoice books with carbonless duplicate sheets, tri-fold catalogs, corporate brochures, and flyers.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/corporate-gifting</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/kashish-ad-complete-signage-solution-banner.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-corporate-gifting.jpg</image:loc>
       <image:title>Promotional Merchandise &amp; Keychains in Patna</image:title>
       <image:caption>Custom laser-cut acrylic keychains, corporate name badges, executive desk accessories, and event giveaways printed with permanent UV inks.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/tshirt-printing</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.in/assets/images/kashish-ad-complete-signage-solution-banner.png</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-tshirt-printing.jpg</image:loc>
       <image:title>Custom T-Shirt &amp; Corporate Apparel Printing in Patna</image:title>
-      <image:caption>Full-color custom T-shirt printing in Patna: Corporate polo shirts, event t-shirts, dry-fit sports jerseys, staff uniforms, and promotional bulk t-shi</image:caption>
+      <image:caption>Full-color custom T-shirt printing in Patna: Corporate polo shirts, event t-shirts, dry-fit sports jerseys, staff uniforms, and promotional bulk t-shirts with DTG, sublimation, and vinyl heat transfer.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://kashishad.in/services/promotional-canopy</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.web.app/assets/images/bansal-learning-promotional-canopy-tent.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-promotional-canopy.jpg</image:loc>
       <image:title>Promotional Canopy Tent &amp; Gazebo (6×6 &amp; 4×4 ft) in Patna</image:title>
-      <image:caption>Heavy-duty pop-up promotional canopy tents with 100% waterproof printed flex or Oxford fabric, collapsible scissor frame, 4-sided valance branding, an</image:caption>
+      <image:caption>Heavy-duty pop-up promotional canopy tents with 100% waterproof printed flex or Oxford fabric, collapsible scissor frame, 4-sided valance branding, and heavy carry bag for outdoor promotions in Patna.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kashishad.web.app/services/cup-mug-printing</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://kashishad.in/services/cup-mug-printing</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.web.app/assets/images/neon-sign-coffee-house-cafe.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-cup-mug-printing.jpg</image:loc>
       <image:title>Custom Ceramic Coffee Mugs &amp; Cup Printing in Patna</image:title>
-      <image:caption>Premium gloss white, color-inside, and magic heat-sensitive ceramic mugs with high-definition permanent sublimation photo printing for corporate gifts</image:caption>
+      <image:caption>Premium gloss white, color-inside, and magic heat-sensitive ceramic mugs with high-definition permanent sublimation photo printing for corporate gifts and employee kits.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kashishad.web.app/services/trophy-memento-awards</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://kashishad.in/services/trophy-memento-awards</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.web.app/assets/images/name-plates-brushed-gold-office.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-trophy-memento-awards.jpg</image:loc>
       <image:title>Custom Trophies, Mementos &amp; Awards in Patna</image:title>
-      <image:caption>Custom laser-cut acrylic, wooden, and crystal mementos with direct UV color printing, golden foil accents, and personalized name engraving for institu</image:caption>
+      <image:caption>Custom laser-cut acrylic, wooden, and crystal mementos with direct UV color printing, golden foil accents, and personalized name engraving for institutions and events in Patna.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://kashishad.web.app/services/large-illuminated-signage</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://kashishad.in/services/large-illuminated-signage</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://kashishad.web.app/assets/images/acp-work-architectural-facade.jpg</image:loc>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-large-illuminated-signage.jpg</image:loc>
       <image:title>Large Outdoor Illuminated Sign Structures in Patna</image:title>
-      <image:caption>Turnkey structural engineering and fabrication for large-format outdoor illuminated signs, sports complex elevations, rooftop monoliths, and campus en</image:caption>
+      <image:caption>Turnkey structural engineering and fabrication for large-format outdoor illuminated signs, sports complex elevations, rooftop monoliths, and campus entrance landmarks across Bihar.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/flex-with-frame</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-flex-with-frame.jpg</image:loc>
+      <image:title>Flex Banner with MS Iron Frame in Patna</image:title>
+      <image:caption>Heavy-duty 1-inch and 1.5-inch square MS iron pipe framing with welded corner joints and high-tensile Star flex banner sheet, perfect for retail shopfronts and long-term exterior promotional displays.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/flex-mounting</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-flex-mounting.jpg</image:loc>
+      <image:title>Flex Printing &amp; On-Site Mounting Installation in Patna</image:title>
+      <image:caption>Complete turnkey outdoor flex solution: from high-speed digital printing to on-site scaffolding, crane support, iron frame fabrication, and civil fastener mounting across Patna and Bihar.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/hoarding-printing</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-hoarding-printing.jpg</image:loc>
+      <image:title>Outdoor Flex Hoardings &amp; Billboards (OOH) in Patna</image:title>
+      <image:caption>Monumental outdoor hoarding printing on heavy blackout flex, engineered for highway gantries, major Patna traffic intersections, commercial elevations, and high-impact OOH ad campaigns.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/clear-vinyl</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-clear-vinyl.jpg</image:loc>
+      <image:title>Clear &amp; Transparent Vinyl Graphics in Patna</image:title>
+      <image:caption>Ultra-clear transparent adhesive vinyl printing with high-opacity white ink underlay and vibrant CMYK color layers for glass doors, display windows, and luxury product packaging decals.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/backlit-vinyl</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-backlit-vinyl.jpg</image:loc>
+      <image:title>Backlit Translucent Vinyl &amp; Fabric Printing in Patna</image:title>
+      <image:caption>High-density translucent vinyl and tension fabric printing specially calibrated for backlit lightboxes, retail pillars, airport display boards, and illuminated showroom fascias.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/wall-wraps</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-wall-wraps.jpg</image:loc>
+      <image:title>High-Tack Vinyl Wall Wraps &amp; Media Fabrication in Patna</image:title>
+      <image:caption>Full-coverage high-tack architectural vinyl wall wraps mounted directly on primed concrete walls or fabricated over raised ACP/MDF framework for showrooms, clinics, and offices.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/digital-wall-painting</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-digital-wall-painting.jpg</image:loc>
+      <image:title>Outdoor Digital Wall Painting &amp; Stencil Signage in Patna</image:title>
+      <image:caption>Large-scale outdoor digital wall painting and high-speed stencil branding across high-traffic city junctions, highway walls, dealer networks, and rural market routes throughout Bihar.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/acp-board</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-acp-board.jpg</image:loc>
+      <image:title>ACP Sign Board &amp; Architectural Cladding in Patna</image:title>
+      <image:caption>Precision CNC router-cut Aluminum Composite Panel (ACP) sign boards with embedded 3D acrylic LED letters, metallic finishes, and seamless architectural building cladding.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/mdf-board</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-mdf-board.jpg</image:loc>
+      <image:title>Laser-Cut MDF &amp; WPC Display Panels in Patna</image:title>
+      <image:caption>Intricate CNC router and laser-cut high-density MDF and waterproof WPC foam board decorative display panels, reception feature screens, and backlit ceiling jali installations.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/digital-display-board</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-digital-display-board.jpg</image:loc>
+      <image:title>Digital LED Video Walls &amp; Electronic Displays (DOOH) in Patna</image:title>
+      <image:caption>High-brightness programmable indoor and outdoor LED display video walls (P2.5, P4, P6, P10) for commercial showrooms, conference rooms, public plazas, and digital OOH advertising.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/umbrella-branding</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-umbrella-branding.jpg</image:loc>
+      <image:title>Branded Promotional Market Umbrellas in Patna</image:title>
+      <image:caption>Heavy-duty 6-ft and 8-ft diameter promotional market/garden umbrellas featuring 100% waterproof printed canopy fabric, heavy powder-coated steel rib frame, and sturdy weighted base.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/cap-printing</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-cap-printing.jpg</image:loc>
+      <image:title>Custom Branded Corporate &amp; Event Caps in Patna</image:title>
+      <image:caption>Structured 6-panel twill and breathable sports dry-fit caps with high-density 3D embroidery, precision vinyl heat seal, and vibrant full-color printing for corporate uniforms and events.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/promotional-flags</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-promotional-flags.jpg</image:loc>
+      <image:title>Teardrop, Feather &amp; Table Promotional Flags in Patna</image:title>
+      <image:caption>High-visibility outdoor teardrop and feather flags, conference room satin flags, and corporate event buntings with 100% warp-knit polyester fabric and flexible carbon-fiber poles.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/in-shop-branding</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-in-shop-branding.jpg</image:loc>
+      <image:title>In-Shop &amp; Retail Store Branding in Patna</image:title>
+      <image:caption>Comprehensive in-shop visual merchandising and POS store transformations: cash counter wraps, pillar branding, retail shelf danglers, end-cap displays, and illuminated product alcoves.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/office-branding</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-office-branding.jpg</image:loc>
+      <image:title>Corporate Office &amp; Interior Space Branding in Patna</image:title>
+      <image:caption>End-to-end corporate interior branding: reception 3D acrylic logo elevations, frosted glass wayfinding patterns, inspirational boardroom graphics, timeline murals, and executive cabin nameplates.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/services/branding-fabrication</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/services/thumb-branding-fabrication.jpg</image:loc>
+      <image:title>Turnkey Commercial Branding Fabrication in Patna</image:title>
+      <image:caption>Custom structural engineering and architectural fabrication: metal frameworks, promotional kiosks, outdoor entrance arches, exhibition booth installations, and complex signage structures.</image:caption>
     </image:image>
   </url>
 </urlset>

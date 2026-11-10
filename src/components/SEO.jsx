@@ -127,10 +127,10 @@ export default function SEO({
     const productionOrigin = SITE_CONFIG.getProductionUrl('');
     const baseLocalBusinessSchema = {
       '@context': 'https://schema.org',
-      '@type': ['LocalBusiness', 'PrintShop', 'ProfessionalService'],
+      '@type': ['LocalBusiness', 'PrintShop', 'Manufacturer', 'ProfessionalService'],
       '@id': `${productionOrigin}/#localbusiness`,
       name: COMPANY_INFO.fullName,
-      alternateName: [COMPANY_INFO.alternateName, 'Kashish Ad Patna', 'Kashish Advertisement'],
+      alternateName: [COMPANY_INFO.alternateName, 'Kashish Ad Patna', 'Patna Signage', 'Kashish Advertisement'],
       legalName: COMPANY_INFO.legalName,
       description: COMPANY_INFO.fullDescription,
       url: productionOrigin,
@@ -183,6 +183,19 @@ export default function SEO({
         bestRating: '5',
         worstRating: '1'
       },
+      knowsAbout: [
+        'Patna Signage',
+        'LED Sign Board Manufacturing',
+        '3D Acrylic LED Letters',
+        'Stainless Steel 304 Signboards',
+        'UV Flatbed Printing',
+        'UV Roll to Roll Printing',
+        'Solvent Vinyl Graphics',
+        'Backlit Glow Sign Boards',
+        'CNC Laser Jali Cutting',
+        'Rollup Standees',
+        'Corporate Signage Facades'
+      ],
       areaServed: SERVICE_AREAS.map(a => ({
         '@type': a.type,
         name: a.name
