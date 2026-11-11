@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- Core Main Pages -->
+  <!-- 1. Core Main Pages (16 Pages) -->
   <url>
     <loc>https://kashishad.in/</loc>
     <lastmod>2026-11-10</lastmod>
@@ -22,6 +22,30 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://kashishad.in/locations</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/guides</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/reviews</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/faqs</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://kashishad.in/machinery</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -34,10 +58,10 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://kashishad.in/contact</loc>
+    <loc>https://kashishad.in/portfolio</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://kashishad.in/about</loc>
@@ -46,13 +70,125 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://kashishad.in/contact</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://kashishad.in/card</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://kashishad.in/html-sitemap</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/privacy-policy</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/terms</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.50</priority>
+  </url>
 
-  <!-- Individual Service & Product Detail Pages (38 Products) -->
+  <!-- 2. Bihar Regional District & City Hubs (6 Locations) -->
+  <url>
+    <loc>https://kashishad.in/locations/patna</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Patna Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>As Bihar’s state capital and central commercial powerhouse, Patna hosts the headquarters and primary manufacturing facility of Kashish Ad® at Capital Tower, Fraser Road. With 16+ industrial machines in-house, we cater to retail showrooms, banking institutions, corporate offices, hospitals, restaurants, and educational centers across all major Patna commercial zones.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/locations/muzaffarpur</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Muzaffarpur Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>Muzaffarpur is the undisputed economic and healthcare hub of North Bihar. Businesses in Motijheel, Kalyani Chowk, Saraiyaganj, and along the National Highway corridor demand modern illuminated branding to stand out. Kashish Ad® manufactures high-specification 3D LED acrylic letters, ACP panel facades, and UV digital prints at our Patna factory and dispatches directly to Muzaffarpur with professional on-site mounting.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/locations/gaya</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Gaya &amp; Bodh Gaya Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>As Bihar’s premier international pilgrimage and tourism center, Gaya and Bodh Gaya require world-class architectural signage for luxury hotels, monasteries, retail markets, and educational institutions. Kashish Ad® delivers international-grade titanium gold letters, brushed stainless steel 304 plates, and illuminated LED boards engineered to withstand intense Magadh temperatures.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/locations/darbhanga</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Darbhanga Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>With the rapid expansion of Darbhanga Airport and educational complexes, Darbhanga has emerged as a major commercial center in Mithila. Tower Chowk, Laheriasarai, and Benta Chowk are booming with retail stores and medical centers. Kashish Ad® provides factory-direct sign board manufacturing with prompt dispatch to Darbhanga.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/locations/bhagalpur</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Bhagalpur Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>Bhagalpur’s thriving silk trade, retail markets, and educational institutions demand sharp, durable exterior branding. Kashish Ad® fabricates high-durability signboards engineered in Patna and safely crated for Bhagalpur retail corridors including Sujaganj, Station Road, and Tilkamanjhi.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kashishad.in/locations/begusarai</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://kashishad.in/assets/images/hero-showcase-storefront-facade.png</image:loc>
+      <image:title>Begusarai Sign Board Manufacturer - Kashish Ad®</image:title>
+      <image:caption>As Bihar’s industrial powerhouse with refineries, thermal power plants, and bustling market chowks, Begusarai needs both heavy-duty industrial safety signage and attractive retail shopfronts. Kashish Ad® supplies chemical-resistant SS 304 boards, retro-reflective safety signs, and vibrant 3D LED storefronts.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Commercial & Technical Guides (3 Articles) -->
+  <url>
+    <loc>https://kashishad.in/guides/led-sign-board-price-per-sqft-patna</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/guides/uv-digital-printing-vs-solvent-vinyl</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kashishad.in/guides/sign-board-permission-bylaws-patna</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 4. Individual Commercial Service & Product Pages (38 Products) -->
   <url>
     <loc>https://kashishad.in/services/uv-digital</loc>
     <lastmod>2026-11-10</lastmod>

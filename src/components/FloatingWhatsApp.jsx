@@ -1,5 +1,6 @@
 import React from 'react';
 import { CONTACT_INFO } from '../data/siteData';
+import { trackWhatsAppClick } from '../utils/analytics';
 
 export default function FloatingWhatsApp() {
   return (
@@ -7,6 +8,7 @@ export default function FloatingWhatsApp() {
       href={CONTACT_INFO.getWhatsAppUrl()}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackWhatsAppClick('floating_desktop_button')}
       className="hidden md:flex fixed bottom-8 right-6 z-40 group items-center justify-center w-14 h-14 rounded-full bg-brand-whatsapp text-white shadow-xl shadow-emerald-500/30 hover:scale-110 active:scale-95 transition-all duration-300"
       aria-label="Order on WhatsApp"
       title={`Chat with Kashish Ad on WhatsApp (${CONTACT_INFO.phoneFormatted})`}

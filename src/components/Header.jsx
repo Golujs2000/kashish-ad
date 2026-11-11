@@ -7,6 +7,7 @@ import {
   WORKING_HOURS
 } from '../data/siteData';
 import { PRODUCTS } from '../data/products';
+import { trackPhoneCall, trackWhatsAppClick } from '../utils/analytics';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -138,6 +139,7 @@ export default function Header() {
 
               <a
                 href={CONTACT_INFO.phoneTel}
+                onClick={() => trackPhoneCall('header_topbar', CONTACT_INFO.phoneFormatted)}
                 className="inline-flex items-center gap-1.5 text-slate-200 hover:text-white font-bold transition-colors whitespace-nowrap text-xs"
               >
                 <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -281,6 +283,7 @@ export default function Header() {
               {/* Direct Phone Number before WhatsApp Quote */}
               <a
                 href={CONTACT_INFO.phoneTel}
+                onClick={() => trackPhoneCall('header_main_row', CONTACT_INFO.phoneFormatted)}
                 className="hidden sm:inline-flex items-center gap-1.5 text-slate-800 hover:text-[#1346a8] font-extrabold text-xs sm:text-[13.5px] transition-colors py-1"
                 title={`Call ${CONTACT_INFO.phoneFormatted}`}
               >
@@ -297,6 +300,7 @@ export default function Header() {
                 href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I want to inquire about printing & signage services.')}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('header_main_row')}
                 className="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-emerald-500/40 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold text-xs transition-colors shadow-2xs"
                 title="Chat on WhatsApp"
               >
@@ -531,6 +535,30 @@ export default function Header() {
 
 
                 <NavLink
+                  to="/locations"
+                  className={({ isActive }) =>
+                    `px-2.5 py-2 rounded-lg transition-colors ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    }`
+                  }
+                >
+                  Locations
+                </NavLink>
+
+                <NavLink
+                  to="/guides"
+                  className={({ isActive }) =>
+                    `px-2.5 py-2 rounded-lg transition-colors hidden lg:inline-block ${isActive
+                      ? 'text-[#1346a8] bg-blue-100/70 font-black'
+                      : 'text-slate-700 hover:text-[#1346a8] hover:bg-white'
+                    }`
+                  }
+                >
+                  Guides
+                </NavLink>
+
+                <NavLink
                   to="/portfolio"
                   className={({ isActive }) =>
                     `px-2.5 py-2 rounded-lg transition-colors ${isActive
@@ -607,6 +635,41 @@ export default function Header() {
                 📄 Portfolio PDF
               </Link>
               <Link
+                to="/calculator"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                🧮 Price Calculator
+              </Link>
+              <Link
+                to="/locations"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                🗺️ Bihar Locations
+              </Link>
+              <Link
+                to="/guides"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                📚 Pricing Guides
+              </Link>
+              <Link
+                to="/reviews"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                ⭐ 62 Google Reviews
+              </Link>
+              <Link
+                to="/faqs"
+                className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
+                onClick={closeMenu}
+              >
+                ❓ FAQs
+              </Link>
+              <Link
                 to="/about"
                 className="px-3 py-2 rounded-xl text-xs font-bold text-slate-800 bg-slate-50 hover:bg-blue-50 hover:text-[#1346a8]"
                 onClick={closeMenu}
@@ -643,6 +706,7 @@ export default function Header() {
             <div className="pt-3 border-t border-slate-100 space-y-2">
               <a
                 href={CONTACT_INFO.phoneTel}
+                onClick={() => trackPhoneCall('header_mobile_drawer', CONTACT_INFO.phoneFormatted)}
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold text-slate-800 bg-slate-100 hover:bg-slate-200"
               >
                 <svg className="w-4 h-4 text-[#1346a8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -654,6 +718,7 @@ export default function Header() {
                 href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I want to get a quote.')}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('header_mobile_drawer')}
                 className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-bold text-white bg-[#25D366] hover:bg-emerald-600"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

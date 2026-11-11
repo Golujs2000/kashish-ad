@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SEO from '../components/SEO';
 import { SITE_CONFIG, CONTACT_INFO, LOCATION_INFO } from '../data/siteData';
+import { trackQuoteSubmission, trackWhatsAppClick, trackPhoneCall } from '../utils/analytics';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    trackQuoteSubmission('contact_page_form', formData.service);
 
     const waText = encodeURIComponent(
 `*Inquiry from Kashish Ad® Website*

@@ -275,16 +275,20 @@ export default function Footer() {
 
             <div>
               <h4 className="text-xs font-bold font-display text-slate-900 uppercase tracking-wider mb-2">
-                Quick Navigation
+                Quick Navigation &amp; Resources
               </h4>
               <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
                 {[
                   { name: 'Home', path: '/' },
                   { name: 'All Services (38+)', path: '/services' },
-                  { name: 'Digital Card', path: '/card' },
-                  { name: 'Machinery', path: '/machinery' },
+                  { name: 'Price Calculator', path: '/calculator' },
+                  { name: 'Bihar Locations', path: '/locations' },
+                  { name: 'Pricing Guides', path: '/guides' },
+                  { name: 'Client Reviews (4.6★)', path: '/reviews' },
+                  { name: 'Signage FAQs', path: '/faqs' },
+                  { name: 'Machinery (16+ Units)', path: '/machinery' },
                   { name: 'Gallery', path: '/gallery' },
-                  { name: 'Portfolio PDF', path: '/portfolio' },
+                  { name: 'Digital Card', path: '/card' },
                   { name: 'About Us', path: '/about' },
                   { name: 'Contact', path: '/contact' }
                 ].map((item, idx) => (
@@ -337,18 +341,37 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bihar Service Areas Strip (SEO Chips) */}
+        {/* Bihar Service Areas Strip (SEO Internal Links) */}
         <div className="py-6 border-b border-slate-100">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
             <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
               Serving Patna &amp; All 38 Districts Across Bihar:
             </span>
+            <Link to="/locations" className="text-xs font-bold text-[#1346a8] hover:underline">
+              View All Bihar Hubs →
+            </Link>
           </div>
           <div className="flex flex-wrap gap-1.5">
-            {serviceAreas.map((area, idx) => (
+            {[
+              { name: 'Patna', path: '/locations/patna' },
+              { name: 'Muzaffarpur', path: '/locations/muzaffarpur' },
+              { name: 'Gaya', path: '/locations/gaya' },
+              { name: 'Darbhanga', path: '/locations/darbhanga' },
+              { name: 'Bhagalpur', path: '/locations/bhagalpur' },
+              { name: 'Begusarai', path: '/locations/begusarai' }
+            ].map((city, idx) => (
+              <Link
+                key={idx}
+                to={city.path}
+                className="inline-block text-[11px] font-bold text-[#1346a8] bg-blue-50 border border-blue-200 px-2.5 py-0.5 rounded-full hover:bg-[#1346a8] hover:text-white transition-colors"
+              >
+                {city.name}
+              </Link>
+            ))}
+            {serviceAreas.filter(a => !['Patna', 'Muzaffarpur', 'Gaya', 'Darbhanga', 'Bhagalpur', 'Begusarai'].includes(a)).map((area, idx) => (
               <span
                 key={idx}
-                className="inline-block text-[11px] text-slate-600 bg-slate-50 border border-slate-200/80 px-2.5 py-0.5 rounded-full hover:bg-blue-50 hover:text-[#1346a8] hover:border-blue-200 transition-colors"
+                className="inline-block text-[11px] text-slate-600 bg-slate-50 border border-slate-200/80 px-2.5 py-0.5 rounded-full hover:bg-slate-100 transition-colors"
               >
                 {area}
               </span>
@@ -356,12 +379,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright, Design Attribution & Direct Hotline */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        {/* Bottom Bar: Copyright, Legal Links & Design Attribution */}
+        <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
             &copy; {new Date().getFullYear()} {COMPANY_INFO.name}&reg;. All Rights Reserved. • Capital Tower, Fraser Road, Patna, Bihar.
           </div>
-          <div className="flex items-center gap-3 text-slate-600 flex-wrap justify-center sm:justify-end">
+
+          {/* Legal and Compliance Links */}
+          <div className="flex items-center gap-3 text-slate-600 flex-wrap justify-center">
+            <Link to="/privacy-policy" className="hover:text-[#1346a8] hover:underline">
+              Privacy Policy
+            </Link>
+            <span>•</span>
+            <Link to="/terms" className="hover:text-[#1346a8] hover:underline">
+              Terms &amp; Conditions
+            </Link>
+            <span>•</span>
+            <Link to="/html-sitemap" className="hover:text-[#1346a8] hover:underline">
+              HTML Sitemap
+            </Link>
+            <span>•</span>
+            <a href="https://kashishad.in/sitemap.xml" target="_blank" rel="noopener noreferrer" className="hover:text-[#1346a8] hover:underline">
+              XML Sitemap
+            </a>
+          </div>
+
+          <div className="flex items-center gap-2 text-slate-600 flex-wrap justify-center md:justify-end">
             <span>
               Design by{' '}
               <a
@@ -373,8 +416,6 @@ export default function Footer() {
                 nirviai.com
               </a>
             </span>
-            <span>•</span>
-            <span className="font-semibold text-slate-700">Design | Print | Brand | Grow</span>
             <span>•</span>
             <a href={CONTACT_INFO.phoneTel} className="font-bold text-[#1346a8] hover:underline">
               {CONTACT_INFO.phoneFormatted}

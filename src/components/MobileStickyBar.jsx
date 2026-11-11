@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CONTACT_INFO } from '../data/siteData';
+import { trackPhoneCall, trackWhatsAppClick } from '../utils/analytics';
 
 export default function MobileStickyBar() {
   return (
@@ -10,6 +11,7 @@ export default function MobileStickyBar() {
     >
       <a
         href={CONTACT_INFO.phoneTel}
+        onClick={() => trackPhoneCall('mobile_sticky_bar', CONTACT_INFO.phoneFormatted)}
         className="flex-1 flex flex-col items-center justify-center py-1.5 px-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs transition-colors"
       >
         <svg className="w-4 h-4 text-[#1346a8] mb-0.5" viewBox="0 0 24 24" fill="currentColor">
@@ -22,6 +24,7 @@ export default function MobileStickyBar() {
         href={CONTACT_INFO.getWhatsAppUrl('Hello Kashish Ad, I want to order printing / signage.')}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackWhatsAppClick('mobile_sticky_bar')}
         className="flex-[1.4] flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-brand-whatsapp text-white font-bold text-xs shadow-md shadow-emerald-500/20 active:scale-95 transition-all"
       >
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">

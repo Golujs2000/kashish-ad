@@ -15,6 +15,15 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Calculator from './pages/Calculator';
 import NfcVisitingCard from './pages/NfcVisitingCard';
+import Locations from './pages/Locations';
+import LocationDetail from './pages/LocationDetail';
+import Guides from './pages/Guides';
+import GuideDetail from './pages/GuideDetail';
+import FaqPage from './pages/FaqPage';
+import Reviews from './pages/Reviews';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsConditions from './pages/TermsConditions';
+import SitemapPage from './pages/SitemapPage';
 import NotFound from './pages/NotFound';
 
 // Scroll to top automatically on route change
@@ -48,6 +57,19 @@ export default function App() {
           <Route path="/nfc-card" element={<Navigate to="/card" replace />} />
           <Route path="/services/nfc-visiting-card" element={<Navigate to="/card" replace />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/locations/:cityId" element={<LocationDetail />} />
+          <Route path="/guides" element={<Guides />} />
+          <Route path="/guides/:guideSlug" element={<GuideDetail />} />
+          <Route path="/faqs" element={<FaqPage />} />
+          <Route path="/faq" element={<Navigate to="/faqs" replace />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/testimonials" element={<Navigate to="/reviews" replace />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy" element={<Navigate to="/privacy-policy" replace />} />
+          <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/terms-conditions" element={<Navigate to="/terms" replace />} />
+          <Route path="/html-sitemap" element={<SitemapPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

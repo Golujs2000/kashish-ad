@@ -131,9 +131,33 @@
         "@id": "https://kashishad.in/#website",
         "url": "https://kashishad.in",
         "name": "Kashish Ad®",
-        "alternateName": "Kashish Ad Patna"
+        "alternateName": "Kashish Ad Patna",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://kashishad.in/services?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       }
     ]
+    </script>
+
+    <!-- Google Analytics 4 (GA4) & Conversion Tracking Initialization -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Ready for live GA4 ID injection
+      var gaId = window.GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
+      if (gaId && gaId !== 'G-XXXXXXXXXX') {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+        document.head.appendChild(s);
+        gtag('config', gaId, { send_page_view: true });
+      }
     </script>
   </head>
   <body>

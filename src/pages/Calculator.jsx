@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { SITE_CONFIG } from '../data/siteData';
+import { trackCalculatorEstimate, trackWhatsAppClick, trackPhoneCall } from '../utils/analytics';
 
 const SERVICES_RATES = [
   {
@@ -618,12 +619,17 @@ Please confirm availability and the earliest fabrication/dispatch date.`;
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => {
+                      trackCalculatorEstimate(activeService.name, calculation.computedUnits, calculation.totalMin);
+                      trackWhatsAppClick('calculator_quote_send', activeService.name);
+                    }}
                     className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl font-black text-xs uppercase tracking-wider text-white bg-[#1346a8] hover:bg-[#0f3a8e] shadow-md shadow-blue-900/20 active:scale-95 transition-all text-center"
                   >
                     <span>💬 Send Quote to WhatsApp</span>
                   </a>
                   <a
                     href="tel:09308327111"
+                    onClick={() => trackPhoneCall('calculator_confirm_call', '09308327111')}
                     className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-xs text-[#1346a8] bg-white hover:bg-slate-100 border border-slate-200 transition-colors text-center"
                   >
                     <span>📞 Confirm Immediately: 09308327111</span>
